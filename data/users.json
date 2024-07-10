@@ -1,0 +1,2143 @@
+{
+  "973983152701849610": {
+    "id": "973983152701849610",
+    "region": "kanto",
+    "pokemon": [
+      {
+        "name": "Squirtle",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Water",
+        "level": 0,
+        "exp": 90480,
+        "moves": [
+          "Tackle",
+          "Tail Whip"
+        ],
+        "catchRate": 45
+      },
+      {
+        "name": "Ursaring",
+        "level": 4,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>"
+      },
+      {
+        "name": "Klinklang",
+        "level": 1,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Silcoon",
+        "level": 2,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Dratini",
+        "level": 1,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Onix",
+        "level": 8,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Dwebble",
+        "level": 11,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Weavile",
+        "level": 14,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Carbink",
+        "level": 15,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Haxorus",
+        "level": 13,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>"
+      },
+      {
+        "name": "Garchomp",
+        "level": 17,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Staraptor",
+        "level": 15,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Jynx",
+        "level": 13,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Talonflame",
+        "level": 15,
+        "isShiny": true,
+        "rarity": "<:r_:1259114608426487839>"
+      },
+      {
+        "name": "Cubchoo",
+        "level": 21,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Xatu",
+        "level": 21,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Swablu",
+        "level": 18,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Sceptile",
+        "level": 20,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Crobat",
+        "level": 21,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Escavalier",
+        "level": 20,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Porygon-z",
+        "level": 20,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Uxie",
+        "level": 20,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Rayquaza",
+        "level": 25,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Swablu",
+        "level": 21,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Swablu",
+        "level": 21,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Swablu",
+        "level": 26,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Groudon",
+        "level": 23,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Groudon",
+        "level": 30,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Groudon",
+        "level": 34,
+        "isShiny": false,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Groudon",
+        "level": 34,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Groudon",
+        "level": 31,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Sharpedo",
+        "level": 33,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Electabuzz",
+        "level": 38,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Cetoddle",
+        "level": 37,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Victini",
+        "level": 38,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Conkeldurr",
+        "level": 33,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Stantler",
+        "level": 38,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>"
+      },
+      {
+        "name": "Seviper",
+        "level": 33,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>"
+      },
+      {
+        "name": "Accelgor",
+        "level": 38,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Brionne",
+        "level": 41,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>"
+      },
+      {
+        "name": "Bisharp",
+        "level": 36,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Gorebyss",
+        "level": 45,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Kricketune",
+        "level": 46,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Altaria",
+        "level": 45,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Altaria",
+        "level": 43,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Woobat",
+        "level": 44,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Ivysaur",
+        "level": 42,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Grumpig",
+        "level": 43,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Litwick",
+        "level": 44,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Conkeldurr",
+        "level": 50,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Arceus",
+        "level": 46,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Pikachu",
+        "level": 50,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Altaria",
+        "level": 46,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Darkrai",
+        "level": 51,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Blastoise",
+        "level": 55,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Aegislash",
+        "level": 58,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Litten",
+        "level": 56,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Magnemite",
+        "level": 53,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Palkia",
+        "level": 62,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Azurill",
+        "level": 59,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Foongus",
+        "level": 62,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>"
+      },
+      {
+        "name": "Carnivine",
+        "level": 60,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Staryu",
+        "level": 64,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>"
+      },
+      {
+        "name": "Coalossal",
+        "level": 65,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Eiscue",
+        "level": 60,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Bibarel",
+        "level": 69,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Florges",
+        "level": 65,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Cosmoem",
+        "level": 64,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Lapras",
+        "level": 68,
+        "isShiny": false,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Joltik",
+        "level": 71,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>"
+      }
+    ],
+    "items": {
+      "pokeball": 9999982,
+      "greatball": 9999968,
+      "ultraball": 9999949,
+      "masterball": 9999730,
+      "Pokéball": 3,
+      "pokéball": 3
+    },
+    "money": 3990000071335,
+    "lastDaily": null,
+    "created": "2024-07-06T13:10:05.845Z",
+    "currentWildPokemon": {
+      "name": "Joltik",
+      "type": "Unknown",
+      "level": 71,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:r_:1259114608426487839>",
+      "defeated": true,
+      "encounterId": "aac07a1e-b9b4-4272-8110-7def823c6a10"
+    },
+    "lastWildEncounter": 1720606902603,
+    "caughtPokemon": {
+      "squirtle": {
+        "isShiny": false
+      },
+      "frosmoth": {
+        "isShiny": false
+      },
+      "fletchinder": {
+        "isShiny": false
+      },
+      "pupitar": {
+        "isShiny": false
+      },
+      "aipom": {
+        "isShiny": false
+      },
+      "runerigus": {
+        "isShiny": false
+      },
+      "cobalion": {
+        "isShiny": false
+      },
+      "doublade": {
+        "isShiny": false
+      },
+      "kilowattrel": {
+        "isShiny": false
+      },
+      "cubone": {
+        "isShiny": false
+      },
+      "rayquaza": {
+        "isShiny": true
+      },
+      "rellor": {
+        "isShiny": false
+      },
+      "duosion": {
+        "isShiny": false
+      },
+      "magnezone": {
+        "isShiny": false
+      },
+      "tarountula": {
+        "isShiny": false
+      },
+      "kadabra": {
+        "isShiny": false
+      },
+      "rufflet": {
+        "isShiny": false
+      },
+      "magmar": {
+        "isShiny": false
+      },
+      "escavalier": {
+        "isShiny": true
+      },
+      "gible": {
+        "isShiny": false
+      },
+      "riolu": {
+        "isShiny": false
+      },
+      "ivysaur": {
+        "isShiny": true
+      },
+      "snubbull": {
+        "isShiny": false
+      },
+      "mareep": {
+        "isShiny": false
+      },
+      "furfrou": {
+        "isShiny": false
+      },
+      "simisear": {
+        "isShiny": false
+      },
+      "golbat": {
+        "isShiny": false
+      },
+      "mismagius": {
+        "isShiny": false
+      },
+      "azelf": {
+        "isShiny": false
+      },
+      "dusclops": {
+        "isShiny": false
+      },
+      "kyogre": {
+        "isShiny": false
+      },
+      "pikachu": {
+        "isShiny": true
+      },
+      "sandshrew": {
+        "isShiny": false
+      },
+      "slugma": {
+        "isShiny": false
+      },
+      "durant": {
+        "isShiny": false
+      },
+      "leavanny": {
+        "isShiny": false
+      },
+      "ursaring": {
+        "isShiny": false
+      },
+      "klinklang": {
+        "isShiny": false
+      },
+      "silcoon": {
+        "isShiny": false
+      },
+      "dratini": {
+        "isShiny": false
+      },
+      "onix": {
+        "isShiny": false
+      },
+      "dwebble": {
+        "isShiny": false
+      },
+      "weavile": {
+        "isShiny": false
+      },
+      "carbink": {
+        "isShiny": false
+      },
+      "haxorus": {
+        "isShiny": false
+      },
+      "garchomp": {
+        "isShiny": false
+      },
+      "staraptor": {
+        "isShiny": false
+      },
+      "jynx": {
+        "isShiny": true
+      },
+      "talonflame": {
+        "isShiny": true
+      },
+      "cubchoo": {
+        "isShiny": true
+      },
+      "xatu": {
+        "isShiny": true
+      },
+      "swablu": {
+        "isShiny": true
+      },
+      "sceptile": {
+        "isShiny": true
+      },
+      "crobat": {
+        "isShiny": true
+      },
+      "porygon-z": {
+        "isShiny": true
+      },
+      "uxie": {
+        "isShiny": true
+      },
+      "groudon": {
+        "isShiny": true
+      },
+      "sharpedo": {
+        "isShiny": false
+      },
+      "electabuzz": {
+        "isShiny": false
+      },
+      "cetoddle": {
+        "isShiny": false
+      },
+      "victini": {
+        "isShiny": false
+      },
+      "conkeldurr": {
+        "isShiny": true
+      },
+      "stantler": {
+        "isShiny": false
+      },
+      "seviper": {
+        "isShiny": false
+      },
+      "accelgor": {
+        "isShiny": false
+      },
+      "brionne": {
+        "isShiny": false
+      },
+      "bisharp": {
+        "isShiny": false
+      },
+      "gorebyss": {
+        "isShiny": false
+      },
+      "kricketune": {
+        "isShiny": false
+      },
+      "altaria": {
+        "isShiny": true
+      },
+      "woobat": {
+        "isShiny": true
+      },
+      "grumpig": {
+        "isShiny": true
+      },
+      "litwick": {
+        "isShiny": true
+      },
+      "arceus": {
+        "isShiny": true
+      },
+      "darkrai": {
+        "isShiny": true
+      },
+      "blastoise": {
+        "isShiny": true
+      },
+      "aegislash": {
+        "isShiny": false
+      },
+      "litten": {
+        "isShiny": false
+      },
+      "magnemite": {
+        "isShiny": false
+      },
+      "palkia": {
+        "isShiny": false
+      },
+      "azurill": {
+        "isShiny": false
+      },
+      "foongus": {
+        "isShiny": false
+      },
+      "carnivine": {
+        "isShiny": false
+      },
+      "staryu": {
+        "isShiny": false
+      },
+      "coalossal": {
+        "isShiny": false
+      },
+      "eiscue": {
+        "isShiny": false
+      },
+      "bibarel": {
+        "isShiny": false
+      },
+      "florges": {
+        "isShiny": false
+      },
+      "cosmoem": {
+        "isShiny": false
+      },
+      "lapras": {
+        "isShiny": false
+      },
+      "joltik": {
+        "isShiny": false
+      }
+    },
+    "lastRestart": "2024-07-08T07:17:38.545Z",
+    "activePokemon": {
+      "name": "Arceus",
+      "level": 46,
+      "isShiny": true,
+      "rarity": "<:LR:1259113497053233162>",
+      "boxId": 51,
+      "exp": 3400
+    },
+    "selectedPokemon": 0
+  },
+  "1027872140227268641": {
+    "id": "1027872140227268641",
+    "region": "kalos",
+    "pokemon": [
+      {
+        "name": "Squirtle",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Water",
+        "level": 5,
+        "exp": 44280,
+        "moves": [
+          "Tackle",
+          "Tail Whip"
+        ],
+        "catchRate": 45
+      },
+      {
+        "name": "Slowking",
+        "level": 1,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Togetic",
+        "level": 6,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Drednaw",
+        "level": 1,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Cubone",
+        "level": 10,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Primeape",
+        "level": 7,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Vibrava",
+        "level": 6,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Kangaskhan",
+        "level": 10,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>"
+      },
+      {
+        "name": "Gastly",
+        "level": 9,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Emolga",
+        "level": 11,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Doduo",
+        "level": 11,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Wobbuffet",
+        "level": 6,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>"
+      },
+      {
+        "name": "Whirlipede",
+        "level": 6,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Misdreavus",
+        "level": 11,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Decidueye",
+        "level": 9,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>"
+      },
+      {
+        "name": "Conkeldurr",
+        "level": 6,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Beartic",
+        "level": 11,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Primeape",
+        "level": 12,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Kabuto",
+        "level": 15,
+        "isShiny": false,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Noivern",
+        "level": 17,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>"
+      },
+      {
+        "name": "Metang",
+        "level": 19,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Duskull",
+        "level": 22,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>"
+      },
+      {
+        "name": "Larvitar",
+        "level": 26,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Bellsprout",
+        "level": 21,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Gorebyss",
+        "level": 30,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Clodsire",
+        "level": 25,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>"
+      },
+      {
+        "name": "Clodsire",
+        "level": 25,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>"
+      },
+      {
+        "name": "Tentacool",
+        "level": 30,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Shelmet",
+        "level": 25,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Lucario",
+        "level": 27,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Drifloon",
+        "level": 31,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Duskull",
+        "level": 29,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Rhyhorn",
+        "level": 28,
+        "isShiny": true,
+        "rarity": "<:r_:1259114608426487839>"
+      },
+      {
+        "name": "Rowlet",
+        "level": 26,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      }
+    ],
+    "items": {
+      "pokeball": 999954,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 68758
+    },
+    "money": 46334,
+    "lastDaily": null,
+    "created": "2024-07-06T13:15:42.842Z",
+    "currentWildPokemon": {
+      "name": "Rowlet",
+      "type": "Unknown",
+      "level": 26,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:U_:1259114756313452680>",
+      "defeated": true,
+      "encounterId": "4733d3a5-2150-41c1-a926-09bd2a68761e"
+    },
+    "lastRestart": "2024-07-08T07:19:16.675Z",
+    "lastWildEncounter": 1720611453989,
+    "caughtPokemon": {
+      "squirtle": {},
+      "slowpoke": {
+        "isShiny": false
+      },
+      "walrein": {
+        "isShiny": false
+      },
+      "tornadus": {
+        "isShiny": false
+      },
+      "koffing": {
+        "isShiny": false
+      },
+      "octillery": {
+        "isShiny": false
+      },
+      "aerodactyl": {
+        "isShiny": false
+      },
+      "lileep": {
+        "isShiny": false
+      },
+      "roggenrola": {
+        "isShiny": false
+      },
+      "slowking": {
+        "isShiny": false
+      },
+      "togetic": {
+        "isShiny": false
+      },
+      "drednaw": {
+        "isShiny": false
+      },
+      "cubone": {
+        "isShiny": false
+      },
+      "primeape": {
+        "isShiny": false
+      },
+      "vibrava": {
+        "isShiny": false
+      },
+      "kangaskhan": {
+        "isShiny": false
+      },
+      "gastly": {
+        "isShiny": false
+      },
+      "emolga": {
+        "isShiny": false
+      },
+      "doduo": {
+        "isShiny": false
+      },
+      "wobbuffet": {
+        "isShiny": false
+      },
+      "whirlipede": {
+        "isShiny": false
+      },
+      "misdreavus": {
+        "isShiny": false
+      },
+      "decidueye": {
+        "isShiny": false
+      },
+      "conkeldurr": {
+        "isShiny": false
+      },
+      "beartic": {
+        "isShiny": false
+      },
+      "kabuto": {
+        "isShiny": false
+      },
+      "noivern": {
+        "isShiny": false
+      },
+      "metang": {
+        "isShiny": false
+      },
+      "duskull": {
+        "isShiny": false
+      },
+      "larvitar": {
+        "isShiny": false
+      },
+      "bellsprout": {
+        "isShiny": false
+      },
+      "gorebyss": {
+        "isShiny": false
+      },
+      "clodsire": {
+        "isShiny": false
+      },
+      "tentacool": {
+        "isShiny": false
+      },
+      "shelmet": {
+        "isShiny": false
+      },
+      "lucario": {
+        "isShiny": false
+      },
+      "drifloon": {
+        "isShiny": false
+      },
+      "rhyhorn": {
+        "isShiny": true
+      },
+      "rowlet": {
+        "isShiny": false
+      }
+    },
+    "activePokemon": {
+      "name": "Kabuto",
+      "level": 15,
+      "isShiny": false,
+      "rarity": "<:LR:1259113497053233162>",
+      "boxId": 19,
+      "exp": 260
+    },
+    "selectedPokemon": 0
+  },
+  "1161987382992719936": {
+    "id": "1161987382992719936",
+    "region": "kanto",
+    "pokemon": [
+      {
+        "name": "Squirtle",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Water",
+        "level": 5,
+        "exp": 1010,
+        "moves": [
+          "Tackle",
+          "Tail Whip"
+        ],
+        "catchRate": 45
+      }
+    ],
+    "caughtPokemon": {},
+    "isShiny": {},
+    "items": {
+      "pokeball": 1,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 9989
+    },
+    "money": 6999000000479,
+    "lastDaily": null,
+    "created": "2024-07-08T09:09:40.195Z",
+    "lastWildEncounter": 1720443575174,
+    "currentWildPokemon": {
+      "name": "Sunflora",
+      "type": "Unknown",
+      "level": 9,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:SR:1259113778747015233>",
+      "defeated": true,
+      "encounterId": "15915ff0-875f-4ebe-925b-a8479b7c673e"
+    }
+  },
+  "563573864349827082": {
+    "id": "563573864349827082",
+    "region": "galar",
+    "pokemon": [
+      {
+        "name": "Bulbasaur",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Grass",
+        "level": 5,
+        "exp": 18640,
+        "moves": [
+          "Tackle",
+          "Growl"
+        ],
+        "catchRate": 45
+      },
+      {
+        "name": "Gigalith",
+        "level": 8,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Chespin",
+        "level": 10,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Zygarde",
+        "level": 9,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Wartortle",
+        "level": 11,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Wynaut",
+        "level": 14,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Aurorus",
+        "level": 16,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Zubat",
+        "level": 15,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Tangela",
+        "level": 20,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Meloetta",
+        "level": 23,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Zebstrika",
+        "level": 21,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Krookodile",
+        "level": 19,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Houndour",
+        "level": 20,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Buizel",
+        "level": 21,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Bibarel",
+        "level": 25,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Clauncher",
+        "level": 20,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Golurk",
+        "level": 26,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Landorus",
+        "level": 25,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Rhydon",
+        "level": 24,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Sawsbuck",
+        "level": 25,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Rayquaza",
+        "level": 22,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Gloom",
+        "level": 30,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Swablu",
+        "level": 31,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Swablu",
+        "level": 32,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Swablu",
+        "level": 36,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Swablu",
+        "level": 33,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Swablu",
+        "level": 39,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Swablu",
+        "level": 40,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Swablu",
+        "level": 36,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Swablu",
+        "level": 41,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Groudon",
+        "level": 39,
+        "isShiny": false,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Groudon",
+        "level": 36,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Groudon",
+        "level": 37,
+        "isShiny": false,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Groudon",
+        "level": 40,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      }
+    ],
+    "caughtPokemon": {
+      "gigalith": {
+        "isShiny": true
+      },
+      "chespin": {
+        "isShiny": true
+      },
+      "zygarde": {
+        "isShiny": true
+      },
+      "wartortle": {
+        "isShiny": true
+      },
+      "wynaut": {
+        "isShiny": true
+      },
+      "aurorus": {
+        "isShiny": true
+      },
+      "zubat": {
+        "isShiny": true
+      },
+      "tangela": {
+        "isShiny": true
+      },
+      "meloetta": {
+        "isShiny": true
+      },
+      "zebstrika": {
+        "isShiny": true
+      },
+      "krookodile": {
+        "isShiny": true
+      },
+      "houndour": {
+        "isShiny": true
+      },
+      "buizel": {
+        "isShiny": true
+      },
+      "bibarel": {
+        "isShiny": true
+      },
+      "clauncher": {
+        "isShiny": true
+      },
+      "golurk": {
+        "isShiny": true
+      },
+      "landorus": {
+        "isShiny": true
+      },
+      "rhydon": {
+        "isShiny": true
+      },
+      "sawsbuck": {
+        "isShiny": true
+      },
+      "rayquaza": {
+        "isShiny": true
+      },
+      "gloom": {
+        "isShiny": true
+      },
+      "swablu": {
+        "isShiny": true
+      },
+      "groudon": {
+        "isShiny": true
+      }
+    },
+    "isShiny": {},
+    "items": {
+      "pokeball": 3,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 927
+    },
+    "money": 69999900009299,
+    "lastDaily": null,
+    "created": "2024-07-08T09:09:47.394Z",
+    "lastWildEncounter": 1720542636880,
+    "currentWildPokemon": {
+      "name": "Ledyba",
+      "type": "Unknown",
+      "level": 43,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:r_:1259114608426487839>",
+      "defeated": true,
+      "encounterId": "b730f0d8-b298-4228-bd7b-5d7740f4b223"
+    },
+    "selectedPokemon": 0
+  },
+  "861268932030758963": {
+    "id": "861268932030758963",
+    "region": "kanto",
+    "pokemon": [
+      {
+        "name": "Squirtle",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Water",
+        "level": 5,
+        "exp": 9550,
+        "moves": [
+          "Tackle",
+          "Tail Whip"
+        ],
+        "catchRate": 45
+      },
+      {
+        "name": "Rhyperior",
+        "level": 5,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>"
+      },
+      {
+        "name": "Skarmory",
+        "level": 4,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Zubat",
+        "level": 2,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>"
+      },
+      {
+        "name": "Braviary",
+        "level": 1,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Pidgey",
+        "level": 5,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Yanma",
+        "level": 8,
+        "isShiny": true,
+        "rarity": "<:SR:1259113778747015233>"
+      },
+      {
+        "name": "Wigglytuff",
+        "level": 10,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Fletchling",
+        "level": 13,
+        "isShiny": true,
+        "rarity": "<:SR:1259113778747015233>"
+      },
+      {
+        "name": "Shinx",
+        "level": 13,
+        "isShiny": true,
+        "rarity": "<:r_:1259114608426487839>"
+      },
+      {
+        "name": "Floette",
+        "level": 16,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Kabuto",
+        "level": 15,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Hippopotas",
+        "level": 14,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Ditto",
+        "level": 19,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Cacturne",
+        "level": 23,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Bisharp",
+        "level": 20,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Magneton",
+        "level": 24,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Onix",
+        "level": 20,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Rayquaza",
+        "level": 26,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Greninja",
+        "level": 23,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Swablu",
+        "level": 24,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Leavanny",
+        "level": 28,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Pawniard",
+        "level": 32,
+        "isShiny": false,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Mesprit",
+        "level": 36,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>"
+      },
+      {
+        "name": "Wartortle",
+        "level": 33,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Noctowl",
+        "level": 38,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>"
+      },
+      {
+        "name": "Mewtwo",
+        "level": 40,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>"
+      }
+    ],
+    "caughtPokemon": {
+      "rhyperior": {
+        "isShiny": false
+      },
+      "skarmory": {
+        "isShiny": false
+      },
+      "zubat": {
+        "isShiny": false
+      },
+      "braviary": {
+        "isShiny": false
+      },
+      "pidgey": {
+        "isShiny": true
+      },
+      "yanma": {
+        "isShiny": true
+      },
+      "wigglytuff": {
+        "isShiny": true
+      },
+      "fletchling": {
+        "isShiny": true
+      },
+      "shinx": {
+        "isShiny": true
+      },
+      "floette": {
+        "isShiny": true
+      },
+      "kabuto": {
+        "isShiny": true
+      },
+      "hippopotas": {
+        "isShiny": true
+      },
+      "ditto": {
+        "isShiny": true
+      },
+      "cacturne": {
+        "isShiny": true
+      },
+      "bisharp": {
+        "isShiny": true
+      },
+      "magneton": {
+        "isShiny": true
+      },
+      "onix": {
+        "isShiny": true
+      },
+      "rayquaza": {
+        "isShiny": true
+      },
+      "greninja": {
+        "isShiny": true
+      },
+      "swablu": {
+        "isShiny": true
+      },
+      "leavanny": {
+        "isShiny": false
+      },
+      "pawniard": {
+        "isShiny": false
+      },
+      "mesprit": {
+        "isShiny": false
+      },
+      "wartortle": {
+        "isShiny": false
+      },
+      "noctowl": {
+        "isShiny": false
+      },
+      "mewtwo": {
+        "isShiny": false
+      }
+    },
+    "isShiny": {},
+    "items": {
+      "pokeball": 696971,
+      "greatball": 696969,
+      "ultraball": 696969,
+      "masterball": 703913
+    },
+    "money": 6928909235744,
+    "lastDaily": null,
+    "created": "2024-07-09T10:40:59.074Z",
+    "lastWildEncounter": 1720537578085,
+    "currentWildPokemon": {
+      "name": "Slither wing",
+      "type": "Unknown",
+      "level": 44,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:r_:1259114608426487839>",
+      "defeated": false,
+      "encounterId": "3386375f-6353-43ae-9d56-f6023f95db8a"
+    },
+    "activePokemon": {
+      "name": "Rayquaza",
+      "level": 26,
+      "isShiny": true,
+      "rarity": "<:LR:1259113497053233162>",
+      "boxId": 19
+    },
+    "selectedPokemon": 0
+  },
+  "849448396209258557": {
+    "id": "849448396209258557",
+    "region": "kanto",
+    "pokemon": [
+      {
+        "name": "Squirtle",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Water",
+        "level": 5,
+        "exp": 70,
+        "moves": [
+          "Tackle",
+          "Tail Whip"
+        ],
+        "catchRate": 45
+      }
+    ],
+    "caughtPokemon": {},
+    "selectedPokemon": 0,
+    "isShiny": {},
+    "items": {
+      "pokeball": 5,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 0
+    },
+    "money": 1035,
+    "lastDaily": null,
+    "created": "2024-07-09T14:53:04.290Z",
+    "lastWildEncounter": 1720537062722,
+    "currentWildPokemon": {
+      "name": "Gourgeist",
+      "type": "Unknown",
+      "level": 7,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:r_:1259114608426487839>",
+      "defeated": true,
+      "encounterId": "8e17d9df-4a55-4b42-a6d8-c7cc4ec4bd67"
+    }
+  },
+  "751369871362621460": {
+    "id": "751369871362621460",
+    "region": "kanto",
+    "pokemon": [
+      {
+        "name": "Bulbasaur",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Grass",
+        "level": 5,
+        "exp": 16560,
+        "moves": [
+          "Tackle",
+          "Growl"
+        ],
+        "catchRate": 45
+      },
+      {
+        "name": "Croagunk",
+        "level": 8,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Fletchinder",
+        "level": 11,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>"
+      },
+      {
+        "name": "Spiritomb",
+        "level": 9,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>"
+      },
+      {
+        "name": "Nidoqueen",
+        "level": 11,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Wooper",
+        "level": 11,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Altaria",
+        "level": 9,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Altaria",
+        "level": 9,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Altaria",
+        "level": 13,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Altaria",
+        "level": 16,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Altaria",
+        "level": 13,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Altaria",
+        "level": 19,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Noctowl",
+        "level": 22,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Exploud",
+        "level": 17,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Wooper",
+        "level": 21,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Igglybuff",
+        "level": 21,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Lampent",
+        "level": 20,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Seedot",
+        "level": 20,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Eelektrik",
+        "level": 19,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Zebstrika",
+        "level": 23,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Teddiursa",
+        "level": 25,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Misdreavus",
+        "level": 22,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Greninja",
+        "level": 24,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Reshiram",
+        "level": 28,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Girafarig",
+        "level": 28,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Dusknoir",
+        "level": 32,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Darmanitan",
+        "level": 31,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Parasect",
+        "level": 30,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Larvesta",
+        "level": 29,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Porygon",
+        "level": 31,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Kangaskhan",
+        "level": 27,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Tynamo",
+        "level": 29,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Gengar",
+        "level": 33,
+        "isShiny": true,
+        "rarity": "<:LR:1259113497053233162>"
+      },
+      {
+        "name": "Tepig",
+        "level": 28,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
+      },
+      {
+        "name": "Vibrava",
+        "level": 31,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>"
+      }
+    ],
+    "caughtPokemon": {
+      "croagunk": {
+        "isShiny": false
+      },
+      "fletchinder": {
+        "isShiny": false
+      },
+      "spiritomb": {
+        "isShiny": false
+      },
+      "nidoqueen": {
+        "isShiny": false
+      },
+      "wooper": {
+        "isShiny": true
+      },
+      "altaria": {
+        "isShiny": true
+      },
+      "noctowl": {
+        "isShiny": true
+      },
+      "exploud": {
+        "isShiny": true
+      },
+      "igglybuff": {
+        "isShiny": true
+      },
+      "lampent": {
+        "isShiny": true
+      },
+      "seedot": {
+        "isShiny": true
+      },
+      "eelektrik": {
+        "isShiny": true
+      },
+      "zebstrika": {
+        "isShiny": true
+      },
+      "teddiursa": {
+        "isShiny": true
+      },
+      "misdreavus": {
+        "isShiny": true
+      },
+      "greninja": {
+        "isShiny": true
+      },
+      "reshiram": {
+        "isShiny": true
+      },
+      "girafarig": {
+        "isShiny": true
+      },
+      "dusknoir": {
+        "isShiny": true
+      },
+      "darmanitan": {
+        "isShiny": true
+      },
+      "parasect": {
+        "isShiny": true
+      },
+      "larvesta": {
+        "isShiny": true
+      },
+      "porygon": {
+        "isShiny": true
+      },
+      "kangaskhan": {
+        "isShiny": true
+      },
+      "tynamo": {
+        "isShiny": true
+      },
+      "gengar": {
+        "isShiny": true
+      },
+      "tepig": {
+        "isShiny": false
+      },
+      "vibrava": {
+        "isShiny": false
+      }
+    },
+    "selectedPokemon": 0,
+    "isShiny": {},
+    "items": {
+      "pokeball": 5,
+      "greatball": 0,
+      "ultraball": 9999987,
+      "masterball": 99999976
+    },
+    "money": 7000000008454,
+    "lastDaily": null,
+    "created": "2024-07-09T15:21:47.616Z",
+    "lastWildEncounter": 1720612300083,
+    "currentWildPokemon": {
+      "name": "Oricorio",
+      "type": "Unknown",
+      "level": 35,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:SR:1259113778747015233>",
+      "defeated": true,
+      "encounterId": "a8afde42-521c-4a20-94f7-d713f4098db9"
+    },
+    "activePokemon": {
+      "name": "Altaria",
+      "level": 13,
+      "isShiny": true,
+      "rarity": "<:LR:1259113497053233162>",
+      "boxId": 11,
+      "exp": null
+    }
+  }
+}
