@@ -6,10 +6,11 @@ function formatNumber(num) {
 }
 
 const SHOP_ITEMS = [
-    { id: 1, name: 'Pokeball', price: 100, icon: '<:Pokeball:1259115461770084457>'},
-    { id: 2, name: 'Greatball', price: 350, icon: "<:Greaball:1259115641080643657>"},
-    { id: 3, name: 'Ultraball', price: 550, icon: "<:Ultraball:1259115187990958090>" },
-    { id: 4, name: 'Masterball', price: 100000, icon: "<:Masterball:1259115795317784627>" }
+    { id: 1, name: 'Pokeball', price: 100, icon: '<:Pokeball:1259115461770084457>', category: 'Pokeballs'},
+    { id: 2, name: 'Greatball', price: 350, icon: "<:Greaball:1259115641080643657>", category: 'Pokeballs'},
+    { id: 3, name: 'Ultraball', price: 550, icon: "<:Ultraball:1259115187990958090>", category: 'Pokeballs' },
+    { id: 4, name: 'Masterball', price: 100000, icon: "<:Masterball:1259115795317784627>", category: 'Pokeballs' },
+    { id: 5, name: 'Rare Candy', price: 5000, icon: "🍬", category: 'Usable' }
 ];
 
 module.exports = {
@@ -19,7 +20,16 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('view')
-                .setDescription('View available items in the shop'))
+                .setDescription('View available items in the shop')
+                .addStringOption(option =>
+                    option.setName('category')
+                        .setDescription('The category of items to view')
+                        .setRequired(false)
+                        .addChoices(
+                            { name: 'All', value: 'all' },
+                            { name: 'Pokeballs', value: 'pokeballs' },
+                            { name: 'Usable', value: 'usable' }
+                        )))
         .addSubcommand(subcommand =>
             subcommand
                 .setName('buy')
@@ -47,18 +57,24 @@ module.exports = {
             return interaction.reply('You need to start your journey first! Use the /start command.');
         }
 
+        const category = interaction.options.getString('category') || 'all';
+        let filteredItems = SHOP_ITEMS;
+        if (category !== 'all') {
+            filteredItems = SHOP_ITEMS.filter(item => item.category.toLowerCase() === category);
+        }
+
         const embed = new EmbedBuilder()
             .setColor('#0099ff')
             .setTitle('Poké Mart')
             .setDescription(`You have ${formatNumber(userData.money)} 🪙`)
             .addFields(
-                SHOP_ITEMS.map(item => ({
+                filteredItems.map(item => ({
                     name: `#${item.id} ${item.icon} ${item.name}`,
                     value: `${formatNumber(item.price)} coins 🪙`,
                     inline: false
                 }))
             )
-            .setFooter({ text: `Page 1/1` });
+            .setFooter({ text: `Category: ${category.charAt(0).toUpperCase() + category.slice(1)}` });
 
         await interaction.reply({ embeds: [embed] });
     },
@@ -67,7 +83,6 @@ module.exports = {
         const itemIdentifier = interaction.options.getString('item');
         const quantity = interaction.options.getInteger('quantity');
 
-        // Add this check at the beginning of the function
         if (quantity <= 0) {
             const embed = new EmbedBuilder()
                 .setColor('#FF0000')
@@ -99,10 +114,16 @@ module.exports = {
         // Update user's inventory and money
         userData.money -= totalCost;
         userData.items = userData.items || {};
-        userData.items[item.name.toLowerCase()] = (userData.items[item.name.toLowerCase()] || 0) + quantity;
+    
+    // Use a consistent key for Rare Candy
+     const itemKey = item.name.toLowerCase() === 'rare candy' ? 'rarecandy' : item.name.toLowerCase();
 
-        await updateUserData(interaction.user.id, userData);
+     userData.items[itemKey] = (userData.items[itemKey] || 0) + quantity;
 
-        await interaction.reply(`You've successfully purchased ${quantity} ${item.icon} ${item.name}(s) for ${formatNumber(totalCost)} coins. You now have ${formatNumber(userData.money)} coins left.`);
+     console.log('Updated user data:', JSON.stringify(userData, null, 2));
+
+     await updateUserData(interaction.user.id, userData);
+
+     await interaction.reply(`You've successfully purchased ${quantity} ${item.icon} ${item.name}(s) for ${formatNumber(totalCost)} coins. You now have ${formatNumber(userData.money)} coins left.`);
     }
 };

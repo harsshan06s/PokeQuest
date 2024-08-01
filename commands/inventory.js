@@ -28,7 +28,8 @@ module.exports = {
                     { name: 'Poke balls', value: this.formatInventoryItem(userData.items.pokeball, 'Poke ball') },
                     { name: 'Great Balls', value: this.formatInventoryItem(userData.items.greatball, 'Great Ball') },
                     { name: 'Ultra Balls', value: this.formatInventoryItem(userData.items.ultraball, 'Ultra Ball') },
-                    { name: 'Master Balls', value: this.formatInventoryItem(userData.items.masterball, 'Master Ball') }
+                    { name: 'Master Balls', value: this.formatInventoryItem(userData.items.masterball, 'Master Ball') },
+                    { name: 'Rare Candies', value: this.formatInventoryItem(userData.items.rarecandy, 'Rare Candy') }
                 )
                 .setFooter({ text: 'Use /shop to purchase more items!' });
 

@@ -10,35 +10,28 @@ module.exports = {
                 .setDescription('The ID of the Pokémon you want to select')
                 .setRequired(true)),
 
-    async execute(interaction) {
-        const userId = interaction.user.id;
-        const selectedId = interaction.options.getInteger('id');
-
-        try {
-            const userData = await getUserData(userId);
-
-            if (!userData || !Array.isArray(userData.pokemon) || userData.pokemon.length === 0) {
-                return interaction.reply('You don\'t have any Pokémon in your box!');
-            }
-
-            // Generate IDs for each Pokémon in the box
-            const pokemonWithIds = userData.pokemon.map((pokemon, index) => ({
-                ...pokemon,
-                boxId: index + 1
-            }));
-
-            const selectedPokemon = pokemonWithIds.find(pokemon => pokemon.boxId === selectedId);
-
-            if (!selectedPokemon) {
-                const validIds = pokemonWithIds.map(p => p.boxId).join(', ');
-                return interaction.reply(`No Pokémon found with ID ${selectedId} in your box. Valid IDs are: ${validIds}`);
-            }
-
-            // Update the user's active Pokémon
-            userData.activePokemon = selectedPokemon;
-
-            // Update user data in the database
-            await updateUserData(userId, userData);
+                async execute(interaction) {
+                    const userId = interaction.user.id;
+                    const selectedId = interaction.options.getInteger('id');
+            
+                    try {
+                        const userData = await getUserData(userId);
+            
+                        if (!userData || !Array.isArray(userData.pokemon) || userData.pokemon.length === 0) {
+                            return interaction.reply('You don\'t have any Pokémon in your box!');
+                        }
+            
+                        const selectedPokemon = userData.pokemon.find((pokemon, index) => index + 1 === selectedId);
+            
+                        if (!selectedPokemon) {
+                            const validIds = userData.pokemon.map((_, index) => index + 1).join(', ');
+                            return interaction.reply(`No Pokémon found with ID ${selectedId} in your box. Valid IDs are: ${validIds}`);
+                        }
+            
+                        // Update the user's active Pokémon
+                        userData.activePokemon = selectedPokemon;
+                        userData.selectedPokemon = userData.pokemon.indexOf(selectedPokemon);
+                        await updateUserData(userId, userData);
 
             const embed = new EmbedBuilder()
                 .setColor('#00FF00')
