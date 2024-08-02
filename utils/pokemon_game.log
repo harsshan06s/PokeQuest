@@ -1,0 +1,14 @@
+2024-07-24T17:15:19.233Z [INFO]: Error in wild command for user 973983152701849610: logger.wild is not a function
+2024-07-24T17:16:09.947Z [INFO]: Wild command initiated by user 973983152701849610
+2024-07-24T17:16:09.952Z [INFO]: Pokemon list is empty, using fallback list
+2024-07-24T17:16:09.952Z [INFO]: Error in wild command for user 973983152701849610: Cannot read properties of undefined (reading 'toLowerCase')
+2024-07-24T17:31:52.449Z [INFO]: Wild command initiated by user 973983152701849610
+2024-07-24T17:31:52.454Z [INFO]: Pokemon list is empty, using fallback list
+2024-07-24T17:31:52.455Z [INFO]: Error in wild command for user 973983152701849610: Cannot read properties of undefined (reading 'toLowerCase')
+2024-07-24T17:35:27.675Z [INFO]: Wild command initiated by user 973983152701849610
+2024-07-24T17:35:27.681Z [INFO]: Pokemon list is empty, using fallback list
+2024-07-24T17:35:27.682Z [INFO]: Error in wild command for user 973983152701849610: Cannot read properties of undefined (reading 'toLowerCase')
+2024-07-24T17:35:30.551Z [INFO]: Wild command initiated by user 973983152701849610
+2024-07-24T17:35:30.557Z [INFO]: Pokemon list is empty, using fallback list
+2024-07-24T17:35:30.557Z [INFO]: Error in wild command for user 973983152701849610: Cannot read properties of undefined (reading 'toLowerCase')
+2024-07-24T17:41:08.853Z [ERROR]: Error in wild command for user 973983152701849610: logger.wild is not a function

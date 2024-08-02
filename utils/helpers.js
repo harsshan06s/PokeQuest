@@ -58,10 +58,17 @@ async function createBattleImage(userData, wildPokemonName, isWildPokemonShiny, 
     ctx.drawImage(background, 0, 0, width, height);
 
     // Load user Pokemon
-    const userPokemonUrl = `https://img.pokemondb.net/sprites/x-y${isUserPokemonShiny ? '/shiny' : '/normal'}/${userPokemonName.toLowerCase()}.png`;
-    const userPokemon = await loadImage(userPokemonUrl);
+    const userPokemonImagePath = path.join(__dirname, 'pokemon_images', `${userPokemonName.toLowerCase()}${isUserPokemonShiny ? '-shiny' : ''}.png`);
+    let userPokemon;
+    try {
+        userPokemon = await loadImage(userPokemonImagePath);
+    } catch (error) {
+        console.error(`Failed to load image for ${userPokemonName}`, error);
+        // Use a placeholder image or default Pokemon image
+        userPokemon = await loadImage(path.join(__dirname, 'pokemon_images', 'default.png'));
+    }
 
-    // Load wild Pokemon
+    // Load wild Pokemon (keep using URL for now, or implement similar local image loading if needed)
     const wildPokemonUrl1 = `https://img.pokemondb.net/sprites/x-y${isWildPokemonShiny ? '/shiny' : '/normal'}/${wildPokemonName.toLowerCase()}.png`;
     const wildPokemonUrl2 = `https://img.pokemondb.net/sprites/scarlet-violet${isWildPokemonShiny ? '/shiny/1x' : '/normal/1x'}/${wildPokemonName.toLowerCase()}.png`;
     let wildPokemon;
@@ -76,27 +83,40 @@ async function createBattleImage(userData, wildPokemonName, isWildPokemonShiny, 
             throw fallbackError;
         }
     }
+// In the createBattleImage function, replace the Pokémon drawing part with:
 
-    // Draw user Pokemon in the bottom left circle
-    ctx.drawImage(userPokemon, 50, height - 220, 190, 150);
+// Define standard dimensions for both Pokémon
+const standardPokemonWidth = 150;
+const standardPokemonHeight = 150;
 
-    // Draw wild Pokemon in the top right
-    ctx.drawImage(wildPokemon, width - 250, 20, 150, 150);
+// Calculate position for user Pokémon (bottom left)
+const userPokemonX = 100;
+const userPokemonY = height - 190;
+
+// Calculate position for wild Pokémon (top right)
+const wildPokemonX = width - 250;
+const wildPokemonY = 40;
+
+// Draw user Pokémon in the bottom left
+ctx.drawImage(userPokemon, userPokemonX, userPokemonY, standardPokemonWidth, standardPokemonHeight);
+
+// Draw wild Pokémon in the top right
+ctx.drawImage(wildPokemon, wildPokemonX, wildPokemonY, standardPokemonWidth, standardPokemonHeight);
 
     // Add Pokemon names and levels to the boxes
     ctx.fillStyle = '#000000';
     ctx.font = '20px DisposableDroidBB';
     
     // Wild Pokemon (top left box)
-    ctx.fillText(wildPokemonName, 100, 60);
+    ctx.fillText(wildPokemonName, 100, 45);
     ctx.font = '15px DisposableDroidBB'; // Smaller font for level
-    ctx.fillText(`Lv${wildPokemonLevel.toString().padStart(3, '0')}`, 270, 65);
+    ctx.fillText(`${wildPokemonLevel.toString().padStart(3, '')}`, 250, 47);
     
     // User Pokemon (bottom right box)
     ctx.font = '20px DisposableDroidBB'; // Reset to larger font for Pokemon name
-    ctx.fillText(userPokemonName, width - 220, height - 170);
+    ctx.fillText(userPokemonName, width - 250, height - 95);
     ctx.font = '15px DisposableDroidBB'; // Smaller font for level
-    ctx.fillText(`Lv${userPokemonLevel.toString().padStart(2, '0')}`, width - 80, height - 165);
+    ctx.fillText(`Lv${userPokemonLevel.toString().padStart(2, '')}`, width - 120, height - 95);
 
     // Return the canvas buffer
     return canvas.toBuffer();
@@ -144,7 +164,8 @@ async function createOrUpdateUser(userId, region) {
                 pokeball: 5,
                 greatball: 0,
                 ultraball: 0,
-                masterball: 0
+                masterball: 0,
+                rarecandy: 0
             },
             money: 1000,
             lastDaily: null,
@@ -155,7 +176,34 @@ async function createOrUpdateUser(userId, region) {
     await writeUserData(userData);
     return userData[userId];
 }
+async function useRareCandy(userId, pokemonIndex, quantity) {
+    const userData = await getUserData(userId);
+    if (!userData) {
+        throw new Error('User does not exist');
+    }
 
+    if (pokemonIndex < 0 || pokemonIndex >= userData.pokemon.length) {
+        throw new Error('Invalid Pokémon index');
+    }
+
+    if (userData.items.rarecandy < quantity) {
+        throw new Error('Not enough Rare Candy');
+    }
+
+    const pokemon = userData.pokemon[pokemonIndex];
+    const oldLevel = pokemon.level;
+    pokemon.level = Math.min(100, pokemon.level + quantity);
+    userData.items.rarecandy -= quantity;
+
+    await updateUserData(userId, userData);
+
+    return {
+        pokemon: pokemon,
+        oldLevel: oldLevel,
+        newLevel: pokemon.level,
+        usedCandy: quantity
+    };
+}
 async function updateCaughtPokemon(userId, pokemonName, isShiny = false) {
     const userData = await readUserData();
     if (!userData[userId]) {
@@ -184,37 +232,64 @@ async function updateUserData(userId, updateData) {
     return userData[userId];
 }
 
-function generateWildPokemon(userLevel) {
+function generateWildPokemon(userLevel, userData = {}) {
     if (pokemonList.length === 0) {
-        // Fallback to the original implementation if the list isn't loaded
-        const fallbackList = [
-            { name: 'Pidgey', type: 'Normal/Flying', baseLevel: 2, catchRate: 255 },
-            { name: 'Rattata', type: 'Normal', baseLevel: 1, catchRate: 255 },
-            { name: 'Caterpie', type: 'Bug', baseLevel: 1, catchRate: 255 },
-            { name: 'Weedle', type: 'Bug/Poison', baseLevel: 1, catchRate: 255 },
-            { name: 'Pikachu', type: 'Electric', baseLevel: 5, catchRate: 190 },
-            { name: 'Slowpoke', type: 'Water/Psychic', baseLevel: 5, catchRate: 190 },
-        ];
-        return generateFromList(fallbackList, userLevel);
+        // Fallback implementation
+        // ...
     }
-
     const randomPokemon = pokemonList[Math.floor(Math.random() * pokemonList.length)];
     const level = Math.min(85, Math.max(1, Math.floor(userLevel + (Math.random() * 10 - 5))));
 
     return {
         name: randomPokemon.charAt(0).toUpperCase() + randomPokemon.slice(1),
-        type: 'Unknown', // You might want to add a type database or API call to get accurate types
+        type: 'Unknown',
         level,
         exp: 0,
-        isShiny: isShiny(),
-        moves: ['Tackle'], // Add more moves based on the Pokémon and its level
-        catchRate: 100 ,
-        rarity: getPokemonRarity()
+        isShiny: isShiny(userData),
+        moves: ['Tackle'],
+        catchRate: 100,
+        rarity: getCustomRarity(userData)
     };
 }
-
-function isShiny() {
-    return Math.random() < 1 / 50; // Adjust this value to match the correct shiny probability
+function isShiny(userData) {
+    const shinyChance = userData.customChances?.shiny || 0.01; // Default 1% if not set
+    return Math.random() < shinyChance;
+}
+function getCustomRarity(userData = {}) {
+    const baseRarity = getPokemonRarity();
+    console.log(`Base rarity: ${baseRarity}`);
+    
+    if (userData.customChances?.rarity) {
+        const rarityChance = userData.customChances.rarity;
+        console.log(`User has custom rarity chance: ${rarityChance}`);
+        
+        if (Math.random() < rarityChance) {
+            console.log('Custom rarity boost applied');
+            const rarities = [
+                '<:n_:1259114941873520734>',
+                '<:U_:1259114756313452680>',
+                '<:r_:1259114608426487839>',
+                '<:SR:1259113778747015233>',
+                '<:UR:1259113669925539902>',
+                '<:LR:1259113497053233162>'
+            ];
+            
+            const currentIndex = rarities.indexOf(baseRarity);
+            console.log(`Current rarity index: ${currentIndex}`);
+            if (currentIndex < rarities.length - 1) {
+                const boostedRarity = rarities[currentIndex + 1];
+                console.log(`Boosted rarity: ${boostedRarity}`);
+                return boostedRarity;
+            }
+        } else {
+            console.log('Custom rarity boost not applied');
+        }
+    } else {
+        console.log('User does not have custom rarity chance');
+    }
+    
+    console.log(`Returning base rarity: ${baseRarity}`);
+    return baseRarity;
 }
 async function updateSelectedPokemon(userId, pokemonIndex) {
     const userData = await getUserData(userId);
@@ -229,7 +304,7 @@ async function updateSelectedPokemon(userId, pokemonIndex) {
     return userData;
 }
 
-function generateFromList(list, userLevel) {
+function generateFromList(list, userLevel, userData) {
     const pokemon = list[Math.floor(Math.random() * list.length)];
     const level = Math.max(1, Math.min(100, Math.floor(userLevel + (Math.random() * 5 - 2))));
 
@@ -237,18 +312,58 @@ function generateFromList(list, userLevel) {
         ...pokemon,
         level,
         exp: 0,
-        moves: ['Tackle'] // Add more moves based on the Pokémon and its level
+        moves: ['Tackle'], // Add more moves based on the Pokémon and its level
+        isShiny: isShiny(userData),
+        rarity: getCustomRarity(userData)
     };
 }
 function getPokemonRarity() {
     const rarities = [
-        { emoji: '<:LR:1259113497053233162>', chance: 125/1851 },
+        
         { emoji: '<:n_:1259114941873520734>', chance: 700/1851 },  
         { emoji: '<:U_:1259114756313452680>', chance: 500/1851 },  
         { emoji: '<:r_:1259114608426487839>', chance: 300/1851},  
         { emoji: '<:SR:1259113778747015233>', chance: 250/1851},  
-        { emoji: '<:UR:1259113669925539902>', chance: 150/1851 }
+        { emoji: '<:UR:1259113669925539902>', chance: 200/1851 },
+        { emoji: '<:LR:1259113497053233162>', chance: 100/1851 }
          
+    ];
+
+    const random = Math.random();
+    let cumulativeChance = 0;
+
+    for (const rarity of rarities) {
+        cumulativeChance += rarity.chance;
+        if (random < cumulativeChance) {
+            return rarity.emoji;
+        }
+    }
+
+    // Fallback to the most common rarity if something goes wrong
+    return rarities[0].emoji;
+}
+// Add this to helpers.js
+const battleImageCache = new Map();
+
+function getCachedBattleImage(userData, pokemonName, isShiny, level) {
+    const cacheKey = `${userData.id}_${pokemonName}_${isShiny}_${level}`;
+    return battleImageCache.get(cacheKey);
+}
+
+function setCachedBattleImage(userData, pokemonName, isShiny, level, image) {
+    const cacheKey = `${userData.id}_${pokemonName}_${isShiny}_${level}`;
+    battleImageCache.set(cacheKey, image);
+}
+
+
+function getRaidPokemonRarity() {
+    const rarities = [
+        { emoji: '<:n_:1259114941873520734>', chance: 0.341463 },  // 700/2050
+        { emoji: '<:U_:1259114756313452680>', chance: 0.243902 },  // 500/2050
+        { emoji: '<:r_:1259114608426487839>', chance: 0.146341 },  // 300/2050
+        { emoji: '<:SR:1259113778747015233>', chance: 0.121951 },  // 250/2050
+        { emoji: '<:UR:1259113669925539902>', chance: 0.097561 },  // 200/2050
+        { emoji: '<:LR:1259113497053233162>', chance: 0.048780 }   // 100/2050
     ];
 
     const random = Math.random();
@@ -268,7 +383,7 @@ function getPokemonRarity() {
 function getRandomStarterPokemon(region) {
     const starters = {
         kanto: [
-            { name: 'Bulbasaur',rarity:'<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 },
+            { name: 'bulbasaur',rarity:'<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 },
             { name: 'Charmander',rarity:'<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Scratch', 'Growl'], catchRate: 45 },
             { name: 'Squirtle', rarity:'<:SR:1259113778747015233>',type: 'Water', level: 5, exp: 0, moves: ['Tackle', 'Tail Whip'], catchRate: 45 }
         ],
@@ -286,7 +401,7 @@ function getRandomStarterPokemon(region) {
 
 function calculateCatchProbability(pokemon, ballType) {
     const catchRates = {
-        pokeball: 0.20,
+        pokeball: 0.40,
         greatball: 0.60,
         ultraball: 0.80,
         masterball: 1.00
@@ -337,5 +452,10 @@ module.exports = {
     clearUserBoxPokemonData,
     createBattleImage,
     updateSelectedPokemon,
-    getActivePokemon
+    getActivePokemon,
+    getRaidPokemonRarity,
+    getCachedBattleImage,
+    setCachedBattleImage,
+    useRareCandy,
+    getCustomRarity
 };
