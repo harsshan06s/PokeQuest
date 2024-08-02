@@ -1,0 +1,15 @@
+2024-07-24T14:55:49.926Z - Wild command initiated by user 973983152701849610
+2024-07-24T14:55:49.934Z - Generated wild Pokémon for user 973983152701849610: {"name":"Buzzwole","type":["Bug","Fighting"],"level":85,"exp":0,"isShiny":false,"moves":["Tackle"],"catchRate":100,"rarity":"<:UR:1259113669925539902>"}
+2024-07-24T14:55:50.250Z - Creating embed for Buzzwole. Is shiny: false
+2024-07-24T14:55:51.953Z - Wild Pokémon encounter message sent for user 973983152701849610
+2024-07-24T14:56:14.769Z - Wild command initiated by user 973983152701849610
+2024-07-24T14:56:14.773Z - Generated wild Pokémon for user 973983152701849610: {"name":"Skeledirge","type":["Fire","Ghost"],"level":85,"exp":0,"isShiny":false,"moves":["Tackle"],"catchRate":100,"rarity":"<:SR:1259113778747015233>"}
+2024-07-24T14:56:15.093Z - Creating embed for Skeledirge. Is shiny: false
+2024-07-24T14:56:16.206Z - Wild Pokémon encounter message sent for user 973983152701849610
+2024-07-24T14:56:21.956Z - Collector ended for wild encounter. User: 973983152701849610, Reason: time, Interactions collected: 1
+2024-07-24T14:56:46.212Z - Collector ended for wild encounter. User: 973983152701849610, Reason: time, Interactions collected: 1
+2024-07-24T14:57:08.189Z - Wild command initiated by user 344664075122245635
+2024-07-24T14:57:08.208Z - Generated wild Pokémon for user 344664075122245635: {"name":"Qwilfish","type":["Dark","Poison"],"level":85,"exp":0,"isShiny":false,"moves":["Tackle"],"catchRate":100,"rarity":"<:SR:1259113778747015233>"}
+2024-07-24T14:57:08.720Z - Creating embed for Qwilfish. Is shiny: false
+2024-07-24T14:57:09.885Z - Wild Pokémon encounter message sent for user 344664075122245635
+2024-07-24T14:57:39.891Z - Collector ended for wild encounter. User: 344664075122245635, Reason: time, Interactions collected: 1
