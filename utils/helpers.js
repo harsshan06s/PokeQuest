@@ -131,9 +131,28 @@ async function getActivePokemon(userData) {
 }
 
 
+
+
 async function writeUserData(userId, data) {
-    const filePath = getUserFilePath(userId);
-    await fs.writeFile(filePath, JSON.stringify(data, null, 2));
+    const userDir = path.join(__dirname, '..', 'data', 'users');
+    const filePath = path.join(userDir, `${userId}.json`);
+    
+    try {
+        await fs.mkdir(userDir, { recursive: true });
+        
+        // Create an empty file if it doesn't exist
+        await fs.writeFile(filePath, '', { flag: 'wx' });
+        
+        // Write the data
+        await fs.writeFile(filePath, JSON.stringify(data, null, 2));
+    } catch (error) {
+        if (error.code !== 'EEXIST') {
+            console.error(`Error writing user data for ${userId}:`, error);
+            throw error;
+        }
+        // If the file already exists, just write the data
+        await fs.writeFile(filePath, JSON.stringify(data, null, 2));
+    }
 }
 
 async function getUserData(userId) {

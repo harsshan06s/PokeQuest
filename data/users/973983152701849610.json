@@ -1,0 +1,46 @@
+{
+  "id": "973983152701849610",
+  "region": "kanto",
+  "pokemon": [
+    {
+      "name": "Squirtle",
+      "rarity": "<:SR:1259113778747015233>",
+      "type": "Water",
+      "level": 5,
+      "exp": 90,
+      "moves": [
+        "Tackle",
+        "Tail Whip"
+      ],
+      "catchRate": 45
+    }
+  ],
+  "caughtPokemon": {},
+  "selectedPokemon": 0,
+  "isShiny": {},
+  "items": {
+    "pokeball": 4,
+    "greatball": 0,
+    "ultraball": 0,
+    "masterball": 0,
+    "rarecandy": 0
+  },
+  "money": 1045,
+  "lastDaily": null,
+  "created": "2024-08-07T17:56:01.261Z",
+  "lastWildEncounter": 1723053426569,
+  "currentWildPokemon": {
+    "name": "Ponyta",
+    "type": "Unknown",
+    "level": 3,
+    "exp": 0,
+    "isShiny": false,
+    "moves": [
+      "Tackle"
+    ],
+    "catchRate": 100,
+    "rarity": "<:SR:1259113778747015233>",
+    "defeated": true,
+    "encounterId": "cb7daca1-6b17-4d1d-9e2b-896c9b7d3752"
+  }
+}

@@ -1,4 +1,5 @@
 const fs = require('fs');
+const fspromises = require('fs').promises;
 const path = require('path');
 const { Client, GatewayIntentBits, Collection, REST, Routes } = require('discord.js');
 const { TOKEN, CLIENT_ID, GUILD_ID } = require('./config.json');
@@ -92,6 +93,12 @@ client.on('messageCreate', async message => {
 process.on('unhandledRejection', error => {
 	console.error('Unhandled promise rejection:', error);
 });
-fs.mkdir(USER_DATA_DIR, { recursive: true }).catch(console.error);
+
+try {
+  fs.mkdirSync(USER_DATA_DIR, { recursive: true });
+  console.log('Users directory created or already exists');
+} catch (error) {
+  console.error('Error creating users directory:', error);
+}
 
 client.login(TOKEN);
