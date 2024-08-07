@@ -11,6 +11,10 @@ registerFont(path.join(__dirname, '..', 'fonts', 'DisposableDroid BB.ttf'), { fa
 const USER_DATA_PATH = path.join(__dirname, '..', 'data', 'users.json');
 const POKEMON_LIST_PATH = path.join(__dirname, '..', 'data', 'pokemon-list.json');
 
+function getUserFilePath(userId) {
+    return path.join(__dirname, '..', 'data', 'users', `${userId}.json`);
+}
+
 let pokemonList = [];
 
 // Load the Pokémon list when the module is first imported
@@ -22,17 +26,18 @@ fs.readFile(POKEMON_LIST_PATH, 'utf8')
         console.error('Error loading Pokémon list:', error);
     });
 
-async function readUserData() {
-    try {
-        const data = await fs.readFile(USER_DATA_PATH, 'utf8');
-        return JSON.parse(data);
-    } catch (error) {
-        if (error.code === 'ENOENT') {
-            return {};
+    async function readUserData(userId) {
+        const filePath = getUserFilePath(userId);
+        try {
+            const data = await fs.readFile(filePath, 'utf8');
+            return JSON.parse(data);
+        } catch (error) {
+            if (error.code === 'ENOENT') {
+                return null;
+            }
+            throw error;
         }
-        throw error;
     }
-}
 async function loadImageFromUrl(url) {
     const response = await axios.get(url, { responseType: 'arraybuffer' });
     return loadImage(response.data);
@@ -126,34 +131,35 @@ async function getActivePokemon(userData) {
 }
 
 
-async function writeUserData(data) {
-    await fs.writeFile(USER_DATA_PATH, JSON.stringify(data, null, 2));
+async function writeUserData(userId, data) {
+    const filePath = getUserFilePath(userId);
+    await fs.writeFile(filePath, JSON.stringify(data, null, 2));
 }
 
 async function getUserData(userId) {
-    const userData = await readUserData();
-    if (userData[userId] && !userData[userId].lastWildEncounter) {
-        userData[userId].lastWildEncounter = 0; // Initialize to 0 if not present
-        await writeUserData(userData);
+    const userData = await readUserData(userId);
+    if (userData && !userData.lastWildEncounter) {
+        userData.lastWildEncounter = 0;
+        await writeUserData(userId, userData);
     }
-    return userData[userId];
+    return userData;
 }
 
 async function createOrUpdateUser(userId, region) {
-    const userData = await readUserData();
+    let userData = await readUserData(userId);
     const starterPokemon = getRandomStarterPokemon(region);
 
-    if (userData[userId]) {
+    if (userData) {
         // Update existing user
-        userData[userId] = {
-            ...userData[userId],
+        userData = {
+            ...userData,
             region: region,
             pokemon: [starterPokemon],
             lastRestart: new Date().toISOString()
         };
     } else {
         // Create new user
-        userData[userId] = {
+        userData = {
             id: userId,
             region: region,
             pokemon: [starterPokemon],
@@ -173,8 +179,8 @@ async function createOrUpdateUser(userId, region) {
         };
     }
 
-    await writeUserData(userData);
-    return userData[userId];
+    await writeUserData(userId, userData);
+    return userData;
 }
 async function useRareCandy(userId, pokemonIndex, quantity) {
     const userData = await getUserData(userId);
@@ -205,31 +211,31 @@ async function useRareCandy(userId, pokemonIndex, quantity) {
     };
 }
 async function updateCaughtPokemon(userId, pokemonName, isShiny = false) {
-    const userData = await readUserData();
-    if (!userData[userId]) {
+    const userData = await readUserData(userId);
+    if (!userData) {
         throw new Error('User does not exist');
     }
     
-    if (!userData[userId].caughtPokemon) {
-        userData[userId].caughtPokemon = {};
+    if (!userData.caughtPokemon) {
+        userData.caughtPokemon = {};
     }
     
-    userData[userId].caughtPokemon[pokemonName.toLowerCase()] = { isShiny };
-    await writeUserData(userData);
-    console.log(`Updated caught Pokémon for user ${userId}: ${pokemonName}, isShiny: ${isShiny}`); // Add this log
-    return userData[userId];
+    userData.caughtPokemon[pokemonName.toLowerCase()] = { isShiny };
+    await writeUserData(userId, userData);
+    console.log(`Updated caught Pokémon for user ${userId}: ${pokemonName}, isShiny: ${isShiny}`);
+    return userData;
 }
 
 async function updateUserData(userId, updateData) {
-    const userData = await readUserData();
-    if (!userData[userId]) {
+    const userData = await readUserData(userId);
+    if (!userData) {
         throw new Error('User does not exist');
     }
 
-    userData[userId] = { ...userData[userId], ...updateData };
-    await writeUserData(userData);
-    console.log(`Updated user data for ${userId}:`, JSON.stringify(userData[userId], null, 2));
-    return userData[userId];
+    const updatedUserData = { ...userData, ...updateData };
+    await writeUserData(userId, updatedUserData);
+    console.log(`Updated user data for ${userId}:`, JSON.stringify(updatedUserData, null, 2));
+    return updatedUserData;
 }
 
 function generateWildPokemon(userLevel, userData = {}) {
@@ -457,5 +463,6 @@ module.exports = {
     getCachedBattleImage,
     setCachedBattleImage,
     useRareCandy,
-    getCustomRarity
+    getCustomRarity,
+    getUserFilePath
 };
