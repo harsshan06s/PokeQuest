@@ -13,10 +13,8 @@ module.exports = {
         const userName = interaction.user.username || 'Trainer';
 
         try {
-            console.log(`Wild command initiated by user ${userId}`);
             let userData = await getUserData(userId);
             if (!userData) {
-                console.log(`User ${userId} needs to start their journey`);
                 return interaction.reply('You need to start your journey first! Use the `/start` command.');
             }
 
@@ -31,7 +29,7 @@ module.exports = {
             const wildPokemon = generateWildPokemon(userLevel);
             const encounterId = uuidv4();
 
-            console.log(`Generated wild Pokémon for user ${userId}: ${JSON.stringify(wildPokemon)}`);
+            console.log(`User ${userName} encountered a wild ${wildPokemon.name}`);
 
             userData.currentWildPokemon = { ...wildPokemon, defeated: false, encounterId };
             userData.lastWildEncounter = now; // Update last encounter time
@@ -42,7 +40,6 @@ module.exports = {
             const actionRow = createActionRow();
 
             const response = await interaction.reply({embeds: [encounterEmbed], components: [actionRow], fetchReply: true });
-            console.log(`Wild Pokémon encounter message sent for user ${userId}`);
 
             const collector = response.createMessageComponentCollector({ 
                 filter: i => i.user.id === userId && i.customId === 'fight',
@@ -66,8 +63,6 @@ module.exports = {
             });
 
             collector.on('end', async (collected, reason) => {
-                console.log(`Collector ended for wild encounter. User: ${userId}, Reason: ${reason}, Interactions collected: ${collected.size}`);
-                
                 const disabledActionRow = actionRow.components.map(button => ButtonBuilder.from(button).setDisabled(true));
                 await response.edit({ components: [new ActionRowBuilder().addComponents(disabledActionRow)] });
             });
@@ -81,14 +76,11 @@ module.exports = {
 
 function createEncounterEmbed(pokemon, userName, avatarUrl) {
     let imgUrl = 'https://play.pokemonshowdown.com/sprites/ani/';
-
-    // Adjust imgUrl if the pokemon is shiny
     if (pokemon.isShiny) {
         imgUrl = 'https://play.pokemonshowdown.com/sprites/ani-shiny/';
     }
 
     const shinyEmoji = pokemon.isShiny ? '✨ ' : '';
-    console.log(`Creating embed for ${pokemon.name}. Is shiny: ${pokemon.isShiny}`);
     return new EmbedBuilder()
         .setColor('#0c0c0c')
         .setAuthor({ 
@@ -117,7 +109,6 @@ async function checkForLevelUp(userId, interaction) {
         const activePokemon = await getActivePokemon(userData);
 
         if (!activePokemon) {
-            console.log(`No active Pokémon found for user ${userId}`);
             return;
         }
 
@@ -126,7 +117,7 @@ async function checkForLevelUp(userId, interaction) {
             activePokemon.level += 1;
             await updateUserData(userId, userData);
             await interaction.followUp(`Congratulations! Your ${activePokemon.name} leveled up to level ${activePokemon.level}!`);
-            console.log(`Pokémon ${activePokemon.name} leveled up to ${activePokemon.level} for user ${userId}`);
+            console.log(`${interaction.user.username}'s ${activePokemon.name} leveled up to ${activePokemon.level}`);
         }
     } catch (error) {
         console.error(`Error in checkForLevelUp for user ${userId}: ${error.message}`);

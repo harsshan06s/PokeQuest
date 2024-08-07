@@ -442,20 +442,20 @@
     "lastDaily": null,
     "created": "2024-07-06T13:10:05.845Z",
     "currentWildPokemon": {
-      "name": "Joltik",
+      "name": "Elekid",
       "type": "Unknown",
-      "level": 71,
+      "level": 70,
       "exp": 0,
       "isShiny": false,
       "moves": [
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:r_:1259114608426487839>",
-      "defeated": true,
-      "encounterId": "aac07a1e-b9b4-4272-8110-7def823c6a10"
+      "rarity": "<:n_:1259114941873520734>",
+      "defeated": false,
+      "encounterId": "9ab49e7c-dae8-42ea-8a85-0c3f69e22188"
     },
-    "lastWildEncounter": 1720606902603,
+    "lastWildEncounter": 1723045560789,
     "caughtPokemon": {
       "squirtle": {
         "isShiny": false
