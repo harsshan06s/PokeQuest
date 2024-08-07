@@ -4,7 +4,7 @@ const { Client, GatewayIntentBits, Collection, REST, Routes } = require('discord
 const { TOKEN, CLIENT_ID, GUILD_ID } = require('./config.json');
 const raidModule = require('./commands/raid.js');
 global.activeTradeOffers = [];
-
+const USER_DATA_DIR = path.join(__dirname, '..', 'data', 'users');
 
 
 
@@ -92,6 +92,6 @@ client.on('messageCreate', async message => {
 process.on('unhandledRejection', error => {
 	console.error('Unhandled promise rejection:', error);
 });
-
+fs.mkdir(USER_DATA_DIR, { recursive: true }).catch(console.error);
 
 client.login(TOKEN);
