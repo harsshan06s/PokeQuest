@@ -1,7 +1,6 @@
 const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 const { getUserData, generateWildPokemon, updateUserData, getActivePokemon } = require('../utils/helpers.js');
 const { v4: uuidv4 } = require('uuid');
-const logger = require('../utils/logger.js');
 
 const COOLDOWN_TIME = 10000; // 10 seconds in milliseconds
 
@@ -14,10 +13,10 @@ module.exports = {
         const userName = interaction.user.username || 'Trainer';
 
         try {
-            logger.wild(`Wild command initiated by user ${userId}`);
+            console.log(`Wild command initiated by user ${userId}`);
             let userData = await getUserData(userId);
             if (!userData) {
-                logger.info(`User ${userId} needs to start their journey`);
+                console.log(`User ${userId} needs to start their journey`);
                 return interaction.reply('You need to start your journey first! Use the `/start` command.');
             }
 
@@ -32,7 +31,7 @@ module.exports = {
             const wildPokemon = generateWildPokemon(userLevel);
             const encounterId = uuidv4();
 
-            logger.wild(`Generated wild Pokémon for user ${userId}: ${JSON.stringify(wildPokemon)}`);
+            console.log(`Generated wild Pokémon for user ${userId}: ${JSON.stringify(wildPokemon)}`);
 
             userData.currentWildPokemon = { ...wildPokemon, defeated: false, encounterId };
             userData.lastWildEncounter = now; // Update last encounter time
@@ -43,7 +42,7 @@ module.exports = {
             const actionRow = createActionRow();
 
             const response = await interaction.reply({embeds: [encounterEmbed], components: [actionRow], fetchReply: true });
-            logger.wild(`Wild Pokémon encounter message sent for user ${userId}`);
+            console.log(`Wild Pokémon encounter message sent for user ${userId}`);
 
             const collector = response.createMessageComponentCollector({ 
                 filter: i => i.user.id === userId && i.customId === 'fight',
@@ -67,14 +66,14 @@ module.exports = {
             });
 
             collector.on('end', async (collected, reason) => {
-                logger.wild(`Collector ended for wild encounter. User: ${userId}, Reason: ${reason}, Interactions collected: ${collected.size}`);
+                console.log(`Collector ended for wild encounter. User: ${userId}, Reason: ${reason}, Interactions collected: ${collected.size}`);
                 
                 const disabledActionRow = actionRow.components.map(button => ButtonBuilder.from(button).setDisabled(true));
                 await response.edit({ components: [new ActionRowBuilder().addComponents(disabledActionRow)] });
             });
 
         } catch (error) {
-            logger.error(`Error in wild command for user ${userId}: ${error.message}`);
+            console.error(`Error in wild command for user ${userId}: ${error.message}`);
             await interaction.reply('There was an error during the wild encounter. Please try again.');
         }
     },
@@ -89,7 +88,7 @@ function createEncounterEmbed(pokemon, userName, avatarUrl) {
     }
 
     const shinyEmoji = pokemon.isShiny ? '✨ ' : '';
-    logger.wild(`Creating embed for ${pokemon.name}. Is shiny: ${pokemon.isShiny}`);
+    console.log(`Creating embed for ${pokemon.name}. Is shiny: ${pokemon.isShiny}`);
     return new EmbedBuilder()
         .setColor('#0c0c0c')
         .setAuthor({ 
@@ -118,7 +117,7 @@ async function checkForLevelUp(userId, interaction) {
         const activePokemon = await getActivePokemon(userData);
 
         if (!activePokemon) {
-            logger.info(`No active Pokémon found for user ${userId}`);
+            console.log(`No active Pokémon found for user ${userId}`);
             return;
         }
 
@@ -127,9 +126,9 @@ async function checkForLevelUp(userId, interaction) {
             activePokemon.level += 1;
             await updateUserData(userId, userData);
             await interaction.followUp(`Congratulations! Your ${activePokemon.name} leveled up to level ${activePokemon.level}!`);
-            logger.wild(`Pokémon ${activePokemon.name} leveled up to ${activePokemon.level} for user ${userId}`);
+            console.log(`Pokémon ${activePokemon.name} leveled up to ${activePokemon.level} for user ${userId}`);
         }
     } catch (error) {
-        logger.error(`Error in checkForLevelUp for user ${userId}: ${error.message}`);
+        console.error(`Error in checkForLevelUp for user ${userId}: ${error.message}`);
     }
 }
