@@ -355,15 +355,16 @@ async function handleCatch(interaction) {
         await updateUserData(interaction.user.id, userData);
 
         const embed = new EmbedBuilder()
-            .setTitle('Raid Boss Caught!')
-            .setDescription(`Congratulations! You caught the raid boss ${currentRaid.name} <:RaidBall:1262812991586435203> !`)
-            .addFields(
-                { name: 'Level', value: level.toString() },
-                { name: 'Rarity', value: rarity },
-                { name: 'Shiny', value: shiny ? 'Yes' : 'No' },
-                { name: 'Added to Box', value: 'The Pokémon has been added to your box 📥.' }
-            )
-            .setImage(getPokemonGifUrl(currentRaid.name, shiny));
+    .setTitle(` ⚔️ Raid Battle: ${currentRaid.name} ⚔️ `)
+    .setDescription(`${interaction.user.username} dealt ${damage} damage 💥!`)
+    .addFields(
+        { name: 'Raid Boss HP', value: `${currentRaid.hp}/${RAID_BOSSES.find(boss => boss.name === currentRaid.name).hp}` },
+        { name: 'Your Pokémon', value: `${activePokemon.name} (Level ${activePokemon.level})` },
+        { name: 'Type', value: Array.isArray(activePokemon.type) 
+            ? activePokemon.type.join('/') 
+            : (activePokemon.type || 'Unknown') }
+    )
+    .setImage('attachment://battle.png');
 
         await interaction.reply({ embeds: [embed] });
     } else {
