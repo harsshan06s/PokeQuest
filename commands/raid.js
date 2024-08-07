@@ -273,23 +273,36 @@ async function handleAttack(interaction) {
     userCooldowns.set(interaction.user.id, now + ATTACK_COOLDOWN);
     const battleImage = 'battle.png';
 
-    if (currentRaid.hp <= 0) {
-        await endRaid(interaction);
-    } else {
-        const embed = new EmbedBuilder()
-            .setTitle(` ⚔️ Raid Battle: ${currentRaid.name} ⚔️ `)
-            .setDescription(`${interaction.user.username} dealt ${damage} damage 💥!`)
-            .addFields(
-                { name: 'Raid Boss HP', value: `${currentRaid.hp}/${RAID_BOSSES.find(boss => boss.name === currentRaid.name).hp}` },
-                { name: 'Your Pokémon', value: `${activePokemon.name} (Level ${activePokemon.level})` },
-                { name: 'Type', value: Array.isArray(activePokemon.type) ? activePokemon.type.join('/') : activePokemon.type }
-            )
-            .setImage('attachment://battle.png');
-
-        await interaction.reply({ 
-            embeds: [embed],
-            files: [{ attachment: battleImage, name: 'battle.png' }]
-        });
+    async function handleAttack(interaction) {
+        // ... (previous code remains the same)
+    
+        if (currentRaid.hp <= 0) {
+            await endRaid(interaction);
+        } else {
+            const embed = new EmbedBuilder()
+                .setTitle(` ⚔️ Raid Battle: ${currentRaid.name} ⚔️ `)
+                .setDescription(`${interaction.user.username} dealt ${damage} damage 💥!`);
+    
+            // Add fields individually
+            embed.addFields({ name: 'Raid Boss HP', value: `${currentRaid.hp}/${RAID_BOSSES.find(boss => boss.name === currentRaid.name)?.hp || 'Unknown'}` });
+            embed.addFields({ name: 'Your Pokémon', value: `${activePokemon.name || 'Unknown'} (Level ${activePokemon.level || 'Unknown'})` });
+            
+            // Handle the type field separately
+            let typeValue = 'Unknown';
+            if (Array.isArray(activePokemon.type)) {
+                typeValue = activePokemon.type.filter(t => t).join('/') || 'Unknown';
+            } else if (typeof activePokemon.type === 'string') {
+                typeValue = activePokemon.type || 'Unknown';
+            }
+            embed.addFields({ name: 'Type', value: typeValue });
+    
+            embed.setImage('attachment://battle.png');
+    
+            await interaction.reply({ 
+                embeds: [embed],
+                files: [{ attachment: battleImage, name: 'battle.png' }]
+            });
+        }
     }
 }
 
