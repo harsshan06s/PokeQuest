@@ -9,14 +9,8 @@ const USER_DATA_PATH = path.join(__dirname, '..', 'data', 'users.json');
 const POKEMON_LIST_PATH = path.join(__dirname, '..', 'data', 'pokemon-list.json');
 const POKEMON_TYPES_PATH = path.join(__dirname, '..', 'data', 'pokemon_types.json');
 
-
-
 let pokemonList = [];
 let pokemonList1 = {};
-
-function getUserFilePath(userId) {
-    return path.join(__dirname, '..', 'data', 'users', `${userId}.json`);
-}
 
 async function loadPokemonLists() {
     try {
@@ -37,14 +31,13 @@ async function loadPokemonLists() {
     }
 }
 
-async function readUserData(userId) {
-    const filePath = getUserFilePath(userId);
+async function readUserData() {
     try {
-        const data = await fs.readFile(filePath, 'utf8');
+        const data = await fs.readFile(USER_DATA_PATH, 'utf8');
         return JSON.parse(data);
     } catch (error) {
         if (error.code === 'ENOENT') {
-            return null;
+            return {};
         }
         throw error;
     }
@@ -152,52 +145,32 @@ async function getActivePokemon(userData) {
     };
 }
 
-async function writeUserData(userId, data) {
-    const userDir = path.join(__dirname, '..', 'data', 'users');
-    const filePath = path.join(userDir, `${userId}.json`);
-    
-    try {
-        await fs.mkdir(userDir, { recursive: true });
-        
-        // Create an empty file if it doesn't exist
-        await fs.writeFile(filePath, '', { flag: 'wx' });
-        
-        // Write the data
-        await fs.writeFile(filePath, JSON.stringify(data, null, 2));
-    } catch (error) {
-        if (error.code !== 'EEXIST') {
-            console.error(`Error writing user data for ${userId}:`, error);
-            throw error;
-        }
-        // If the file already exists, just write the data
-        await fs.writeFile(filePath, JSON.stringify(data, null, 2));
-    }
+async function writeUserData(data) {
+    await fs.writeFile(USER_DATA_PATH, JSON.stringify(data, null, 2));
 }
 
 async function getUserData(userId) {
-    const userData = await readUserData(userId);
-    if (userData && !userData.lastWildEncounter) {
-        userData.lastWildEncounter = 0;
-        await writeUserData(userId, userData);
+    const userData = await readUserData();
+    if (userData[userId] && !userData[userId].lastWildEncounter) {
+        userData[userId].lastWildEncounter = 0;
+        await writeUserData(userData);
     }
-    return userData;
+    return userData[userId];
 }
 
 async function createOrUpdateUser(userId, region) {
-    let userData = await readUserData(userId);
+    const userData = await readUserData();
     const starterPokemon = getRandomStarterPokemon(region);
 
-    if (userData) {
-        // Update existing user
-        userData = {
-            ...userData,
+    if (userData[userId]) {
+        userData[userId] = {
+            ...userData[userId],
             region: region,
             pokemon: [starterPokemon],
             lastRestart: new Date().toISOString()
         };
     } else {
-        // Create new user
-        userData = {
+        userData[userId] = {
             id: userId,
             region: region,
             pokemon: [starterPokemon],
@@ -211,14 +184,14 @@ async function createOrUpdateUser(userId, region) {
                 masterball: 0,
                 rarecandy: 0
             },
-            money: 1000,
+            money: 10000,
             lastDaily: null,
             created: new Date().toISOString()
         };
     }
 
-    await writeUserData(userId, userData);
-    return userData;
+    await writeUserData(userData);
+    return userData[userId];
 }
 
 async function useRareCandy(userId, pokemonIndex, quantity) {
@@ -251,31 +224,33 @@ async function useRareCandy(userId, pokemonIndex, quantity) {
 }
 
 async function updateCaughtPokemon(userId, pokemonName, isShiny = false) {
-    const userData = await readUserData(userId);
-    if (!userData) {
+    const userData = await readUserData();
+    if (!userData[userId]) {
         throw new Error('User does not exist');
     }
-    
-    if (!userData.caughtPokemon) {
-        userData.caughtPokemon = {};
+   
+    if (!userData[userId].caughtPokemon) {
+        userData[userId].caughtPokemon = {};
     }
-    
-    userData.caughtPokemon[pokemonName.toLowerCase()] = { isShiny };
-    await writeUserData(userId, userData);
+   
+    userData[userId].caughtPokemon[pokemonName.toLowerCase()] = { isShiny };
+    await writeUserData(userData);
     console.log(`Updated caught Pokémon for user ${userId}: ${pokemonName}, isShiny: ${isShiny}`);
-    return userData;
+    return userData[userId];
 }
+
 async function updateUserData(userId, updateData) {
-    const userData = await readUserData(userId);
-    if (!userData) {
+    const userData = await readUserData();
+    if (!userData[userId]) {
         throw new Error('User does not exist');
     }
 
-    const updatedUserData = { ...userData, ...updateData };
-    await writeUserData(userId, updatedUserData);
-    console.log(`Updated user data for ${userId}:`, JSON.stringify(updatedUserData, null, 2));
-    return updatedUserData;
+    userData[userId] = { ...userData[userId], ...updateData };
+    await writeUserData(userData);
+    console.log(`Updated user data for ${userId}:`, JSON.stringify(userData[userId], null, 2));
+    return userData[userId];
 }
+
 function generateWildPokemon(userLevel) {
     if (pokemonList.length === 0) {
         const fallbackList = [
@@ -487,5 +462,6 @@ module.exports = {
     getActivePokemon,
     getRaidPokemonRarity,
     useRareCandy,
-    loadPokemonLists
+    loadPokemonLists,
+    readUserData
 }; 

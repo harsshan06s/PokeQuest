@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
-const { createOrUpdateUser, getUserData, starters } = require('../utils/helpers.js');
+const { createOrUpdateUser, getUserData, getStarterPokemon } = require('../utils/helpers.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -26,9 +26,10 @@ module.exports = {
 
             const rows = [];
             const regionsPerRow = 4;
-            for (let i = 0; i < Object.keys(starters).length; i += regionsPerRow) {
+            const regions = ['kanto', 'johto', 'hoenn', 'sinnoh', 'unova', 'kalos', 'alola', 'galar'];
+            for (let i = 0; i < regions.length; i += regionsPerRow) {
                 const row = new ActionRowBuilder();
-                Object.keys(starters).slice(i, i + regionsPerRow).forEach(region => {
+                regions.slice(i, i + regionsPerRow).forEach(region => {
                     row.addComponents(
                         new ButtonBuilder()
                             .setCustomId(`region_${region}`)
@@ -45,35 +46,42 @@ module.exports = {
             const collector = message.createMessageComponentCollector({ filter, time: 30000 });
 
             collector.on('collect', async i => {
+                await i.deferUpdate();
                 const selectedRegion = i.customId.split('_')[1];
-                const regionStarters = starters[selectedRegion];
 
-                const starterEmbed = new EmbedBuilder()
-                    .setColor('#0099ff')
-                    .setTitle(`${selectedRegion.charAt(0).toUpperCase() + selectedRegion.slice(1)} Region`)
-                    .setDescription(`Great choice! Now select your starter Pokémon from the ${selectedRegion} region:`)
-                    .setImage(`https://example.com/${selectedRegion}_starters.png`);
+                const starterOptions = await getStarterPokemon(selectedRegion);
 
-                const starterRow = new ActionRowBuilder();
-                regionStarters.forEach(starter => {
-                    starterRow.addComponents(
-                        new ButtonBuilder()
-                            .setCustomId(`starter_${starter.name.toLowerCase()}`)
-                            .setLabel(starter.name)
-                            .setStyle(ButtonStyle.Secondary)
-                    );
-                });
+const starterEmbed = new EmbedBuilder()
+    .setColor('#0099ff')
+    .setTitle(`${selectedRegion.charAt(0).toUpperCase() + selectedRegion.slice(1)} Region`)
+    .setDescription('Choose your starter Pokémon:');
 
-                await i.update({ embeds: [starterEmbed], components: [starterRow] });
+const starterRow = new ActionRowBuilder();
+starterOptions.forEach(option => {
+    starterRow.addComponents(
+        new ButtonBuilder()
+            .setCustomId(`starter_${option.toLowerCase()}`)
+            .setLabel(option)
+            .setStyle(ButtonStyle.Primary)
+    );
+});
 
-                const starterCollector = message.createMessageComponentCollector({ filter, time: 30000 });
+                const starterMessage = await i.followUp({ embeds: [starterEmbed], components: [starterRow], fetchReply: true });
 
-                starterCollector.on('collect', async starterInteraction => {
-                    const selectedStarter = starterInteraction.customId.split('_')[1];
+                const starterFilter = i2 => i2.user.id === interaction.user.id;
+                const starterCollector = starterMessage.createMessageComponentCollector({ starterFilter, time: 30000 });
+
+                starterCollector.on('collect', async i2 => {
+                    await i2.deferUpdate();
+                    const selectedStarter = i2.customId.split('_')[1];
                     const userData = await createOrUpdateUser(userId, selectedRegion, selectedStarter);
 
-                    const responseMessage = `Welcome to your new Pokémon journey in the ${selectedRegion} region! Your starter Pokémon is ${userData.pokemon[0].name}!`;
-                    await starterInteraction.update({ content: responseMessage, embeds: [], components: [] });
+                    const responseEmbed = new EmbedBuilder()
+                        .setColor('#0099ff')
+                        .setTitle(`${selectedRegion.charAt(0).toUpperCase() + selectedRegion.slice(1)} Region`)
+                        .setDescription(`Welcome to your new Pokémon journey in the ${selectedRegion} region! Your starter Pokémon is ${userData.pokemon[0].name}.`);
+
+                    await i2.editReply({ embeds: [responseEmbed], components: [] });
                     starterCollector.stop();
                 });
 

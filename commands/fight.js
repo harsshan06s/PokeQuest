@@ -1,5 +1,5 @@
 const { EmbedBuilder, AttachmentBuilder } = require('discord.js');
-const { getUserData, updateUserData, getActivePokemon, createBattleImage, getCachedBattleImage, setCachedBattleImage } = require('../utils/helpers.js');
+const { getUserData, updateUserData, getActivePokemon, createBattleImage } = require('../utils/helpers.js');
 const { createPokeBallButtons } = require('../utils/buttonUtils.js');
 const catchModule = require('./catch.js');
 
@@ -18,8 +18,8 @@ module.exports = {
                 replyFunction = (options) => originalMessage.edit(options);
             } else {
                 // We're in the context of a standalone command
-                replyFunction = interaction.deferred || interaction.replied ? 
-                    (options) => interaction.editReply(options) : 
+                replyFunction = interaction.deferred || interaction.replied ?
+                    (options) => interaction.editReply(options) :
                     (options) => interaction.reply(options);
             }
 
@@ -54,18 +54,7 @@ module.exports = {
             }
 
             // Create battle image
-            let battleImage;
-            try {
-                 battleImage = getCachedBattleImage(userData, wildPokemon.name, wildPokemon.isShiny, wildPokemon.level);
-                 if (!battleImage) {
-                    battleImage = await createBattleImage(userData, wildPokemon.name, wildPokemon.isShiny, wildPokemon.level);
-                    setCachedBattleImage(userData, wildPokemon.name, wildPokemon.isShiny, wildPokemon.level, battleImage);
-                }
-            } 
-            catch (imageError) {
-                console.error('Error creating or retrieving battle image:', imageError);
-    // Proceed without the image if there's an error
-    }
+            const battleImage = await createBattleImage(userData, wildPokemon.name, wildPokemon.isShiny, wildPokemon.level);
 
             const expGained = Math.floor(wildPokemon.level * 10);
             const coinReward = Math.floor(wildPokemon.level * 5);
@@ -78,7 +67,7 @@ module.exports = {
 
             const resultEmbed = new EmbedBuilder()
                 .setColor('#0099ff')
-                .setAuthor({ 
+                .setAuthor({
                     name: username || 'Trainer',
                     iconURL: avatarUrl
                 })
@@ -93,10 +82,10 @@ module.exports = {
 
             const pokeBallButtons = createPokeBallButtons(userData, encounterId);
 
-            const replyOptions = { 
-                embeds: [resultEmbed], 
+            const replyOptions = {
+                embeds: [resultEmbed],
                 components: [pokeBallButtons],
-                fetchReply: true 
+                fetchReply: true
             };
 
             if (battleImage) {
