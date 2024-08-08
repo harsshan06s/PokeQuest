@@ -1,15 +1,14 @@
 const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
-const { createOrUpdateUser, getUserData } = require('../utils/helpers.js');
+const { createOrUpdateUser, getUserData, starters } = require('../utils/helpers.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('start')
-        .setDescription('Start or restart your Pokémon journey!'),
+        .setDescription('Start your Pokémon journey!'),
     async execute(interaction) {
         const userId = interaction.user.id;
 
         try {
-            // Check if the user has already started their journey
             const existingUser = await getUserData(userId);
 
             if (existingUser) {
@@ -19,72 +18,70 @@ module.exports = {
                 });
             }
 
-            // If the user hasn't started, proceed with region selection
             const embed = new EmbedBuilder()
                 .setColor('#0099ff')
                 .setTitle('Pokeventure')
-                .setDescription('Welcome to the beautiful world of Pokémon Lyntriz! Select the region where you want your starter from:')
-                .setImage('https://example.com/starters_image.png')
+                .setDescription('Welcome to the beautiful world of Pokémon Lyntriz! Select the region where you want to start your journey:')
+                .setImage('https://example.com/starters_image.png');
 
-            const row1 = new ActionRowBuilder()
-                .addComponents(
-                    new ButtonBuilder()
-                        .setCustomId('kanto')
-                        .setLabel('Kanto')
-                        .setStyle(ButtonStyle.Primary),
-                    new ButtonBuilder()
-                        .setCustomId('johto')
-                        .setLabel('Johto')
-                        .setStyle(ButtonStyle.Primary),
-                    new ButtonBuilder()
-                        .setCustomId('hoenn')
-                        .setLabel('Hoenn')
-                        .setStyle(ButtonStyle.Primary),
-                    new ButtonBuilder()
-                        .setCustomId('sinnoh')
-                        .setLabel('Sinnoh')
-                        .setStyle(ButtonStyle.Primary)
-                );
+            const rows = [];
+            const regionsPerRow = 4;
+            for (let i = 0; i < Object.keys(starters).length; i += regionsPerRow) {
+                const row = new ActionRowBuilder();
+                Object.keys(starters).slice(i, i + regionsPerRow).forEach(region => {
+                    row.addComponents(
+                        new ButtonBuilder()
+                            .setCustomId(`region_${region}`)
+                            .setLabel(region.charAt(0).toUpperCase() + region.slice(1))
+                            .setStyle(ButtonStyle.Primary)
+                    );
+                });
+                rows.push(row);
+            }
 
-            const row2 = new ActionRowBuilder()
-                .addComponents(
-                    new ButtonBuilder()
-                        .setCustomId('unova')
-                        .setLabel('Unova')
-                        .setStyle(ButtonStyle.Primary),
-                    new ButtonBuilder()
-                        .setCustomId('kalos')
-                        .setLabel('Kalos')
-                        .setStyle(ButtonStyle.Primary),
-                    new ButtonBuilder()
-                        .setCustomId('alola')
-                        .setLabel('Alola')
-                        .setStyle(ButtonStyle.Primary),
-                    new ButtonBuilder()
-                        .setCustomId('galar')
-                        .setLabel('Galar')
-                        .setStyle(ButtonStyle.Primary)
-                );
-
-            const message = await interaction.reply({ embeds: [embed], components: [row1, row2], fetchReply: true });
+            const message = await interaction.reply({ embeds: [embed], components: rows, fetchReply: true });
 
             const filter = i => i.user.id === interaction.user.id;
             const collector = message.createMessageComponentCollector({ filter, time: 30000 });
 
             collector.on('collect', async i => {
-                const selectedRegion = i.customId.charAt(0).toUpperCase() + i.customId.slice(1);
-                const existingUser = await getUserData(userId);
-                const userData = await createOrUpdateUser(userId, i.customId);
+                const selectedRegion = i.customId.split('_')[1];
+                const regionStarters = starters[selectedRegion];
 
-                let responseMessage;
-                if (existingUser) {
-                    responseMessage = `Welcome back! You've restarted your Pokémon journey in the ${selectedRegion} region! Your new starter Pokémon is ${userData.pokemon[0].name}!`;
-                } else {
-                    responseMessage = `Welcome to your new Pokémon journey in the ${selectedRegion} region! Your starter Pokémon is ${userData.pokemon[0].name}!`;
-                }
+                const starterEmbed = new EmbedBuilder()
+                    .setColor('#0099ff')
+                    .setTitle(`${selectedRegion.charAt(0).toUpperCase() + selectedRegion.slice(1)} Region`)
+                    .setDescription(`Great choice! Now select your starter Pokémon from the ${selectedRegion} region:`)
+                    .setImage(`https://example.com/${selectedRegion}_starters.png`);
 
-                await i.update({ content: responseMessage, embeds: [], components: [] });
-                collector.stop();
+                const starterRow = new ActionRowBuilder();
+                regionStarters.forEach(starter => {
+                    starterRow.addComponents(
+                        new ButtonBuilder()
+                            .setCustomId(`starter_${starter.name.toLowerCase()}`)
+                            .setLabel(starter.name)
+                            .setStyle(ButtonStyle.Secondary)
+                    );
+                });
+
+                await i.update({ embeds: [starterEmbed], components: [starterRow] });
+
+                const starterCollector = message.createMessageComponentCollector({ filter, time: 30000 });
+
+                starterCollector.on('collect', async starterInteraction => {
+                    const selectedStarter = starterInteraction.customId.split('_')[1];
+                    const userData = await createOrUpdateUser(userId, selectedRegion, selectedStarter);
+
+                    const responseMessage = `Welcome to your new Pokémon journey in the ${selectedRegion} region! Your starter Pokémon is ${userData.pokemon[0].name}!`;
+                    await starterInteraction.update({ content: responseMessage, embeds: [], components: [] });
+                    starterCollector.stop();
+                });
+
+                starterCollector.on('end', collected => {
+                    if (collected.size === 0) {
+                        interaction.editReply({ content: 'You did not select a starter Pokémon in time. Please try the command again.', embeds: [], components: [] });
+                    }
+                });
             });
 
             collector.on('end', collected => {
