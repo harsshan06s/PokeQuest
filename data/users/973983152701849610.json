@@ -25,22 +25,22 @@
     "masterball": 0,
     "rarecandy": 0
   },
-  "money": 1045,
+  "money": 1080,
   "lastDaily": null,
   "created": "2024-08-07T17:56:01.261Z",
-  "lastWildEncounter": 1723053426569,
+  "lastWildEncounter": 1723054721921,
   "currentWildPokemon": {
-    "name": "Ponyta",
+    "name": "Shieldon",
     "type": "Unknown",
-    "level": 3,
+    "level": 7,
     "exp": 0,
     "isShiny": false,
     "moves": [
       "Tackle"
     ],
     "catchRate": 100,
-    "rarity": "<:SR:1259113778747015233>",
+    "rarity": "<:n_:1259114941873520734>",
     "defeated": true,
-    "encounterId": "cb7daca1-6b17-4d1d-9e2b-896c9b7d3752"
+    "encounterId": "a2c65253-3b47-4cdf-b9f0-74929e05d73d"
   }
 }
