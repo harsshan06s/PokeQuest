@@ -1,6 +1,6 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 let client;
-const { getUserData, updateUserData,getCustomRarity, getActivePokemon, getRaidPokemonRarity, isShiny } = require('../utils/helpers.js');
+const { getUserData, updateUserData,getCustomRarity, getActivePokemon, getRaidPokemonRarity, isShiny,createRaidBattleImage} = require('../utils/helpers.js');
 
 const RAID_BOSSES = [
     { name: 'Charizard-MegaX', hp: 100000, weaknesses: ['Dragon', 'Rock', 'Ground'], baseLevel: 50, type: 'Fire/Dragon' },
@@ -255,13 +255,11 @@ async function handleAttack(interaction) {
     
     // Check for type effectiveness
     if (Array.isArray(activePokemon.type)) {
-        // If the Pokemon has multiple types, check if any of them are effective
         const isEffective = activePokemon.type.some(type => currentRaid.weaknesses.includes(type));
         if (isEffective) {
             damage *= 2;
         }
     } else if (typeof activePokemon.type === 'string') {
-        // If the Pokemon has a single type
         if (currentRaid.weaknesses.includes(activePokemon.type)) {
             damage *= 2;
         }
@@ -271,38 +269,26 @@ async function handleAttack(interaction) {
     raidParticipants[interaction.user.id] = (raidParticipants[interaction.user.id] || 0) + damage;
 
     userCooldowns.set(interaction.user.id, now + ATTACK_COOLDOWN);
-    const battleImage = 'battle.png';
 
-    async function handleAttack(interaction) {
-        // ... (previous code remains the same)
-    
-        if (currentRaid.hp <= 0) {
-            await endRaid(interaction);
-        } else {
-            const embed = new EmbedBuilder()
-                .setTitle(` ⚔️ Raid Battle: ${currentRaid.name} ⚔️ `)
-                .setDescription(`${interaction.user.username} dealt ${damage} damage 💥!`);
-    
-            // Add fields individually
-            embed.addFields({ name: 'Raid Boss HP', value: `${currentRaid.hp}/${RAID_BOSSES.find(boss => boss.name === currentRaid.name)?.hp || 'Unknown'}` });
-            embed.addFields({ name: 'Your Pokémon', value: `${activePokemon.name || 'Unknown'} (Level ${activePokemon.level || 'Unknown'})` });
-            
-            // Handle the type field separately
-            let typeValue = 'Unknown';
-            if (Array.isArray(activePokemon.type)) {
-                typeValue = activePokemon.type.filter(t => t).join('/') || 'Unknown';
-            } else if (typeof activePokemon.type === 'string') {
-                typeValue = activePokemon.type || 'Unknown';
-            }
-            embed.addFields({ name: 'Type', value: typeValue });
-    
-            embed.setImage('attachment://battle.png');
-    
-            await interaction.reply({ 
-                embeds: [embed],
-                files: [{ attachment: battleImage, name: 'battle.png' }]
-            });
-        }
+    const battleImage = await createRaidBattleImage(userData, currentRaid.name, false, currentRaid.baseLevel);
+
+    if (currentRaid.hp <= 0) {
+        await endRaid(interaction);
+    } else {
+        const embed = new EmbedBuilder()
+            .setTitle(` ⚔️ Raid Battle: ${currentRaid.name} ⚔️ `)
+            .setDescription(`${interaction.user.username} dealt ${damage} damage 💥!`)
+            .addFields(
+                { name: 'Raid Boss HP', value: `${currentRaid.hp}/${RAID_BOSSES.find(boss => boss.name === currentRaid.name)?.hp || 'Unknown'}` },
+                { name: 'Your Pokémon', value: `${activePokemon.name || 'Unknown'} (Level ${activePokemon.level || 'Unknown'})` },
+                { name: 'Type', value: Array.isArray(activePokemon.type) ? activePokemon.type.filter(t => t).join('/') : (activePokemon.type || 'Unknown') }
+            )
+            .setImage('attachment://battle.png');
+
+        await interaction.reply({ 
+            embeds: [embed],
+            files: [{ attachment: battleImage, name: 'battle.png' }]
+        });
     }
 }
 
@@ -349,7 +335,6 @@ async function handleCatch(interaction) {
     if (caught) {
         const rarity = getRaidPokemonRarity();
         const shiny = Math.random() < 0.01;
-
         const level = Math.floor(20);
 
         const caughtPokemon = {
@@ -368,16 +353,14 @@ async function handleCatch(interaction) {
         await updateUserData(interaction.user.id, userData);
 
         const embed = new EmbedBuilder()
-    .setTitle(` ⚔️ Raid Battle: ${currentRaid.name} ⚔️ `)
-    .setDescription(`${interaction.user.username} dealt ${damage} damage 💥!`)
-    .addFields(
-        { name: 'Raid Boss HP', value: `${currentRaid.hp}/${RAID_BOSSES.find(boss => boss.name === currentRaid.name).hp}` },
-        { name: 'Your Pokémon', value: `${activePokemon.name} (Level ${activePokemon.level})` },
-        { name: 'Type', value: Array.isArray(activePokemon.type) 
-            ? activePokemon.type.join('/') 
-            : (activePokemon.type || 'Unknown') }
-    )
-    .setImage('attachment://battle.png');
+            .setTitle(`Caught: ${currentRaid.name}`)
+            .setDescription(`Congratulations! You caught the raid boss ${currentRaid.name}!`)
+            .addFields(
+                { name: 'Level', value: level.toString() },
+                { name: 'Rarity', value: rarity },
+                { name: 'Shiny', value: shiny ? 'Yes' : 'No' }
+            )
+            .setImage(getPokemonGifUrl(currentRaid.name, shiny));
 
         await interaction.reply({ embeds: [embed] });
     } else {

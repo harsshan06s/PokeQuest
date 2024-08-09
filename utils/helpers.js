@@ -121,6 +121,103 @@ ctx.drawImage(wildPokemon, wildPokemonX, wildPokemonY, standardPokemonWidth, sta
     // Return the canvas buffer
     return canvas.toBuffer();
 }
+
+
+
+async function createRaidBattleImage(userData, wildPokemonName, isWildPokemonShiny, wildPokemonLevel) {
+    const activePokemon = userData.activePokemon || userData.pokemon[userData.selectedPokemon];
+    if (!activePokemon) {
+        console.error('No active Pokémon found for user:', userData.id);
+        throw new Error('No active Pokémon found');
+    }
+    
+    const userPokemonName = activePokemon.name;
+    const isUserPokemonShiny = activePokemon.isShiny;
+    const userPokemonLevel = activePokemon.level;
+    const width = 719;
+    const height = 359;
+    const canvas = createCanvas(width, height);
+    const ctx = canvas.getContext('2d');
+
+    // Load and draw background
+    const backgroundImagePath = path.join(__dirname, 'battle.png');
+    let background;
+    try {
+        background = await loadImage(backgroundImagePath);
+    } catch (error) {
+        console.error(`Failed to load background image from ${backgroundImagePath}`, error);
+        throw error;
+    }
+    ctx.drawImage(background, 0, 0, width, height);
+
+    // Load user Pokémon image
+    const userPokemonImagePath = path.join(__dirname, 'pokemon_images', `${userPokemonName.toLowerCase()}${isUserPokemonShiny ? '-shiny' : ''}.png`);
+    let userPokemon;
+    try {
+        userPokemon = await loadImage(userPokemonImagePath);
+    } catch (error) {
+        console.error(`Failed to load image for ${userPokemonName}`, error);
+        userPokemon = await loadImage(path.join(__dirname, 'pokemon_images', 'default.png'));
+    }
+
+    // Load wild Pokémon image
+    const wildPokemonUrl1 = `https://img.pokemondb.net/sprites/x-y${isWildPokemonShiny ? '/shiny' : '/normal'}/${wildPokemonName.toLowerCase()}.png`;
+    const wildPokemonUrl2 = `https://img.pokemondb.net/sprites/scarlet-violet${isWildPokemonShiny ? '/shiny/1x' : '/normal/1x'}/${wildPokemonName.toLowerCase()}.png`;
+
+let wildPokemon;
+try {
+    wildPokemon = await loadImage(wildPokemonUrl1);
+} catch (error) {
+    console.log(`Failed to load image from ${wildPokemonUrl1}, trying fallback URL`);
+    try {
+        wildPokemon = await loadImage(wildPokemonUrl2);
+    } catch (fallbackError) {
+        console.error(`Failed to load image from both URLs for ${wildPokemonName}, using fallback image`);
+        
+        // Load a fallback image
+        wildPokemon = await loadImage(path.join(__dirname, 'pokemon_images', 'fallback.png'));
+    }
+}
+
+
+    // Define standard dimensions for both Pokémon
+    const standardPokemonWidth = 150;
+    const standardPokemonHeight = 150;
+
+    // Calculate position for user Pokémon (bottom left)
+    const userPokemonX = 100;
+    const userPokemonY = height - 190;
+
+    // Calculate position for wild Pokémon (top right)
+    const wildPokemonX = width - 250;
+    const wildPokemonY = 40;
+
+    // Draw user Pokémon in the bottom left
+    ctx.drawImage(userPokemon, userPokemonX, userPokemonY, standardPokemonWidth, standardPokemonHeight);
+
+    // Draw wild Pokémon in the top right
+    ctx.drawImage(wildPokemon, wildPokemonX, wildPokemonY, standardPokemonWidth, standardPokemonHeight);
+
+    // Add Pokémon names and levels to the boxes
+    ctx.fillStyle = '#000000';
+    ctx.font = '20px DisposableDroidBB';
+    
+    // Wild Pokémon (top left box)
+    ctx.fillText(wildPokemonName, 100, 45);
+    ctx.font = '15px DisposableDroidBB'; // Smaller font for level
+    ctx.fillText(`${wildPokemonLevel.toString().padStart(3, '')}`, 250, 47);
+    
+    // User Pokémon (bottom right box)
+    ctx.font = '20px DisposableDroidBB'; // Reset to larger font for Pokémon name
+    ctx.fillText(userPokemonName, width - 250, height - 95);
+    ctx.font = '15px DisposableDroidBB'; // Smaller font for level
+    ctx.fillText(`Lv${userPokemonLevel.toString().padStart(2, '')}`, width - 120, height - 95);
+
+    // Return the canvas buffer
+    return canvas.toBuffer();
+}
+
+
 async function getActivePokemon(userData) {
     return userData.activePokemon || userData.pokemon[userData.selectedPokemon];
 }
@@ -471,5 +568,6 @@ module.exports = {
     setCachedBattleImage,
     useRareCandy,
     getCustomRarity,
-    saveEssentialUserData
+    saveEssentialUserData,
+    createRaidBattleImage
 };

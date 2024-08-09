@@ -458,34 +458,40 @@
         "level": 76,
         "isShiny": false,
         "rarity": "<:UR:1259113669925539902>"
+      },
+      {
+        "name": "Cherrim",
+        "level": 74,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>"
       }
     ],
     "items": {
-      "pokeball": 9999980,
-      "greatball": 9999968,
+      "pokeball": 9999982,
+      "greatball": 9999966,
       "ultraball": 9999949,
-      "masterball": 9999726,
+      "masterball": 9999725,
       "Pokéball": 3,
       "pokéball": 3
     },
-    "money": 3990000073940,
+    "money": 3990000074860,
     "lastDaily": null,
     "created": "2024-07-06T13:10:05.845Z",
     "currentWildPokemon": {
-      "name": "Cosmog",
+      "name": "Cherrim",
       "type": "Unknown",
-      "level": 77,
+      "level": 74,
       "exp": 0,
       "isShiny": false,
       "moves": [
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:U_:1259114756313452680>",
-      "defeated": false,
-      "encounterId": "e405331e-6141-4128-b945-c3f3f8662d89"
+      "rarity": "<:n_:1259114941873520734>",
+      "defeated": true,
+      "encounterId": "4ab0610e-ae8e-415f-b5b5-7c6ad8b077a6"
     },
-    "lastWildEncounter": 1723206551855,
+    "lastWildEncounter": 1723222179015,
     "caughtPokemon": {
       "squirtle": {
         "isShiny": false
@@ -774,18 +780,20 @@
       },
       "oshawott": {
         "isShiny": false
+      },
+      "cherrim": {
+        "isShiny": false
       }
     },
     "lastRestart": "2024-07-08T07:17:38.545Z",
     "activePokemon": {
-      "name": "Arceus",
-      "level": 46,
-      "isShiny": true,
-      "rarity": "<:LR:1259113497053233162>",
-      "boxId": 51,
-      "exp": 8610
+      "name": "Togetic",
+      "level": 74,
+      "isShiny": false,
+      "rarity": "<:U_:1259114756313452680>",
+      "exp": null
     },
-    "selectedPokemon": 0
+    "selectedPokemon": 73
   },
   "1027872140227268641": {
     "id": "1027872140227268641",
@@ -1148,11 +1156,9 @@
       "name": "Kabuto",
       "level": 15,
       "isShiny": false,
-      "rarity": "<:LR:1259113497053233162>",
-      "boxId": 19,
-      "exp": 260
+      "rarity": "<:LR:1259113497053233162>"
     },
-    "selectedPokemon": 0
+    "selectedPokemon": 18
   },
   "1161987382992719936": {
     "id": "1161987382992719936",
