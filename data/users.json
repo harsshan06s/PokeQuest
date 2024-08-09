@@ -428,34 +428,64 @@
         "level": 71,
         "isShiny": false,
         "rarity": "<:r_:1259114608426487839>"
+      },
+      {
+        "name": "Bonsly",
+        "level": 75,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>"
+      },
+      {
+        "name": "Shinx",
+        "level": 72,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Morpeko",
+        "level": 71,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>"
+      },
+      {
+        "name": "Togetic",
+        "level": 74,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>"
+      },
+      {
+        "name": "Oshawott",
+        "level": 76,
+        "isShiny": false,
+        "rarity": "<:UR:1259113669925539902>"
       }
     ],
     "items": {
-      "pokeball": 9999982,
+      "pokeball": 9999980,
       "greatball": 9999968,
       "ultraball": 9999949,
-      "masterball": 9999730,
+      "masterball": 9999726,
       "Pokéball": 3,
       "pokéball": 3
     },
-    "money": 3990000071335,
+    "money": 3990000073940,
     "lastDaily": null,
     "created": "2024-07-06T13:10:05.845Z",
     "currentWildPokemon": {
-      "name": "Elekid",
+      "name": "Cosmog",
       "type": "Unknown",
-      "level": 70,
+      "level": 77,
       "exp": 0,
       "isShiny": false,
       "moves": [
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:n_:1259114941873520734>",
+      "rarity": "<:U_:1259114756313452680>",
       "defeated": false,
-      "encounterId": "9ab49e7c-dae8-42ea-8a85-0c3f69e22188"
+      "encounterId": "e405331e-6141-4128-b945-c3f3f8662d89"
     },
-    "lastWildEncounter": 1723045560789,
+    "lastWildEncounter": 1723206551855,
     "caughtPokemon": {
       "squirtle": {
         "isShiny": false
@@ -729,6 +759,21 @@
       },
       "joltik": {
         "isShiny": false
+      },
+      "bonsly": {
+        "isShiny": false
+      },
+      "shinx": {
+        "isShiny": false
+      },
+      "morpeko": {
+        "isShiny": false
+      },
+      "togetic": {
+        "isShiny": false
+      },
+      "oshawott": {
+        "isShiny": false
       }
     },
     "lastRestart": "2024-07-08T07:17:38.545Z",
@@ -738,7 +783,7 @@
       "isShiny": true,
       "rarity": "<:LR:1259113497053233162>",
       "boxId": 51,
-      "exp": 3400
+      "exp": 8610
     },
     "selectedPokemon": 0
   },

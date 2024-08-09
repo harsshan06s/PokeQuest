@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
-const { getUserData, generateWildPokemon, updateUserData, getActivePokemon } = require('../utils/helpers.js');
+const { getUserData, generateWildPokemon, updateUserData, getActivePokemon, saveEssentialUserData } = require('../utils/helpers.js');
 const { v4: uuidv4 } = require('uuid');
 
 const COOLDOWN_TIME = 10000; // 10 seconds in milliseconds
@@ -29,11 +29,12 @@ module.exports = {
             const wildPokemon = generateWildPokemon(userLevel);
             const encounterId = uuidv4();
 
-            console.log(`User ${userName} encountered a wild ${wildPokemon.name}`);
+            console.log(`User ${userName} encountered a wild ${wildPokemon.name} (Level ${wildPokemon.level})`);
 
             userData.currentWildPokemon = { ...wildPokemon, defeated: false, encounterId };
             userData.lastWildEncounter = now; // Update last encounter time
             await updateUserData(userId, userData);
+            await saveEssentialUserData(userId, userData);
 
             const avatarUrl = interaction.user.displayAvatarURL({ format: 'png', dynamic: true });
             const encounterEmbed = createEncounterEmbed(wildPokemon, userName, avatarUrl);

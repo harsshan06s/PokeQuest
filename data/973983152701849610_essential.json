@@ -1,0 +1,26 @@
+{
+  "id": "973983152701849610",
+  "selectedPokemon": 0,
+  "activePokemon": {
+    "name": "Squirtle",
+    "rarity": "<:SR:1259113778747015233>",
+    "type": "Water",
+    "level": 0,
+    "exp": 90480,
+    "moves": [
+      "Tackle",
+      "Tail Whip"
+    ],
+    "catchRate": 45
+  },
+  "money": 3990000073940,
+  "items": {
+    "pokeball": 9999980,
+    "greatball": 9999968,
+    "ultraball": 9999949,
+    "masterball": 9999726,
+    "Pokéball": 3,
+    "pokéball": 3
+  },
+  "lastWildEncounter": 1723206551855
+}

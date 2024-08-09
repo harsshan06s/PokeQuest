@@ -8,52 +8,40 @@ module.exports = {
         const userId = interaction.user.id;
         const username = interaction.user.username;
         const avatarUrl = interaction.user.displayAvatarURL({ format: 'png', dynamic: true });
-        console.log("Fight command executed for user:", userId);
 
         try {
-            // Determine how to reply based on the context
             let replyFunction;
             if (originalMessage) {
-                // If originalMessage is provided, we're in the context of a button interaction
                 replyFunction = (options) => originalMessage.edit(options);
             } else {
-                // We're in the context of a standalone command
                 replyFunction = interaction.deferred || interaction.replied ?
                     (options) => interaction.editReply(options) :
                     (options) => interaction.reply(options);
             }
 
-            // Fetch user data
             const userData = await getUserData(userId);
-            console.log("User data retrieved:", JSON.stringify(userData, null, 2));
-
             if (!userData) {
-                console.error("User data not found for user:", userId);
+                console.error(`User data not found for user: ${userId}`);
                 return replyFunction({ content: "Error: User data not found. Please try starting your journey again.", ephemeral: true });
             }
 
             if (!userData.pokemon || userData.pokemon.length === 0) {
-                console.error("User has no Pokémon:", userId);
+                console.error(`User has no Pokémon: ${userId}`);
                 return replyFunction({ content: "Error: You don't have any Pokémon. Please start your journey again.", ephemeral: true });
             }
 
             const wildPokemon = userData.currentWildPokemon;
-            console.log("Wild Pokemon data:", JSON.stringify(wildPokemon, null, 2));
-
             if (!wildPokemon || wildPokemon.encounterId !== encounterId) {
-                console.error("Invalid wild Pokemon data for user:", userId);
+                console.error(`Invalid wild Pokemon data for user: ${userId}`);
                 return replyFunction({ content: "This wild Pokémon is no longer available. Try encountering a new one!", ephemeral: true });
             }
 
             const userPokemon = await getActivePokemon(userData);
-            console.log("User Pokemon data:", JSON.stringify(userPokemon, null, 2));
-
             if (!userPokemon) {
-                console.error("Active Pokémon not found for user:", userId);
+                console.error(`Active Pokémon not found for user: ${userId}`);
                 return replyFunction({ content: "Error: Active Pokémon not found. Please try again.", ephemeral: true });
             }
 
-            // Create battle image
             const battleImage = await createBattleImage(userData, wildPokemon.name, wildPokemon.isShiny, wildPokemon.level);
 
             const expGained = Math.floor(wildPokemon.level * 10);
@@ -92,14 +80,10 @@ module.exports = {
                 replyOptions.files = [new AttachmentBuilder(battleImage, { name: 'battle.png' })];
             }
 
-            console.log('Sending fight reply...');
             const fightReply = await replyFunction(replyOptions);
-            console.log('Fight reply sent successfully');
 
-            // Update user data after sending the reply
             await updateUserData(userId, userData);
 
-            // Set up collector for catch attempts
             const catchCollector = fightReply.createMessageComponentCollector({ time: 30000 });
 
             catchCollector.on('collect', async i => {
@@ -111,7 +95,6 @@ module.exports = {
             });
 
             catchCollector.on('end', collected => {
-                console.log(`Collector ended for fight command. User: ${userId}, Reason: ${collected.size === 0 ? 'time' : 'interaction'}, Interactions collected: ${collected.size}`);
                 if (collected.size === 0) {
                     fightReply.edit({ components: [] }).catch(console.error);
                 }
