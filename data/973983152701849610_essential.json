@@ -1,20 +1,27 @@
 {
   "id": "973983152701849610",
-  "selectedPokemon": 73,
+  "selectedPokemon": 0,
   "activePokemon": {
-    "name": "Togetic",
-    "level": 74,
-    "isShiny": false,
-    "rarity": "<:U_:1259114756313452680>"
+    "name": "Squirtle",
+    "rarity": "<:SR:1259113778747015233>",
+    "type": "Water",
+    "level": 100,
+    "exp": 90480,
+    "moves": [
+      "Tackle",
+      "Tail Whip"
+    ],
+    "catchRate": 45
   },
-  "money": 3990000074860,
+  "money": 3989989574860,
   "items": {
     "pokeball": 9999982,
     "greatball": 9999966,
     "ultraball": 9999949,
-    "masterball": 9999725,
+    "masterball": 9999825,
     "Pokéball": 3,
-    "pokéball": 3
+    "pokéball": 3,
+    "rarecandy": 0
   },
-  "lastWildEncounter": 1723222179015
+  "lastWildEncounter": 1723314662269
 }

@@ -10,27 +10,27 @@ registerFont(path.join(__dirname, '..', 'fonts', 'DisposableDroid BB.ttf'), { fa
 
 const USER_DATA_PATH = path.join(__dirname, '..', 'data', 'users.json');
 const POKEMON_LIST_PATH = path.join(__dirname, '..', 'data', 'pokemon-list.json');
+const POKEMON_TYPES_PATH = path.join(__dirname, '..', 'data', 'pokemon_types.json');
 
 let pokemonList = [];
+let pokemonList1 = {};
 
-// Load the Pokémon list when the module is first imported
-fs.readFile(POKEMON_LIST_PATH, 'utf8')
-    .then(data => {
-        pokemonList = JSON.parse(data);
-    })
-    .catch(error => {
-        console.error('Error loading Pokémon list:', error);
-    });
-
-async function readUserData() {
+async function loadPokemonLists() {
     try {
-        const data = await fs.readFile(USER_DATA_PATH, 'utf8');
-        return JSON.parse(data);
+        // Load main Pokémon list
+        const listData = await fs.readFile(POKEMON_LIST_PATH, 'utf8');
+        pokemonList = JSON.parse(listData);
+        console.log(`Main Pokémon list loaded successfully. Total Pokémon: ${pokemonList.length}`);
+
+        // Load Pokémon types
+        const typesData = await fs.readFile(POKEMON_TYPES_PATH, 'utf8');
+        pokemonList1 = JSON.parse(typesData);
+        console.log(`Pokémon types loaded successfully. Total Pokémon with types: ${Object.keys(pokemonList1).length}`);
     } catch (error) {
-        if (error.code === 'ENOENT') {
-            return {};
+        console.error(`Error loading Pokémon lists: ${error}`);
+        if (error instanceof SyntaxError) {
+            console.error('JSON parsing error. Please check the format of your Pokémon data files.');
         }
-        throw error;
     }
 }
 async function loadImageFromUrl(url) {
@@ -227,6 +227,17 @@ async function writeUserData(data) {
     await fs.writeFile(USER_DATA_PATH, JSON.stringify(data, null, 2));
 }
 
+async function readUserData() {
+    try {
+        const data = await fs.readFile(USER_DATA_PATH, 'utf8');
+        return JSON.parse(data);
+    } catch (error) {
+        if (error.code === 'ENOENT') {
+            return {};
+        }
+        throw error;
+    }
+}
 async function getUserData(userId) {
     const userData = await readUserData();
     if (userData[userId] && !userData[userId].lastWildEncounter) {
@@ -323,6 +334,17 @@ async function updateUserData(userId, updateData) {
         throw new Error('User does not exist');
     }
 
+    // If updating Pokemon, ensure type information is included
+    if (updateData.pokemon) {
+        updateData.pokemon = updateData.pokemon.map(pokemon => {
+            if (!pokemon.type) {
+                const types = pokemonList1[pokemon.name.toLowerCase()] || ['Unknown'];
+                pokemon.type = types[0];
+            }
+            return pokemon;
+        });
+    }
+
     userData[userId] = { ...userData[userId], ...updateData };
     await writeUserData(userData);
     await saveEssentialUserData(userId, userData[userId]);
@@ -342,25 +364,28 @@ async function saveEssentialUserData(userId, userData) {
     await fs.writeFile(filePath, JSON.stringify(essentialData, null, 2));
 }
 
+
 function generateWildPokemon(userLevel, userData = {}) {
     if (pokemonList.length === 0) {
-        // Fallback implementation
-        // ...
+        console.error('Pokemon list is empty. Make sure loadPokemonLists() is called before generating wild Pokemon.');
+        return null;
     }
     const randomPokemon = pokemonList[Math.floor(Math.random() * pokemonList.length)];
     const level = Math.min(85, Math.max(1, Math.floor(userLevel + (Math.random() * 10 - 5))));
+    const pokemonTypes = pokemonList1[randomPokemon.toLowerCase()] || ['Unknown'];
 
     return {
         name: randomPokemon.charAt(0).toUpperCase() + randomPokemon.slice(1),
-        type: 'Unknown',
+        type: pokemonTypes[0], // Use the first type
         level,
         exp: 0,
         isShiny: isShiny(userData),
-        moves: ['Tackle'],
-        catchRate: 100,
+        moves: ['Tackle'], // You might want to generate moves based on the Pokemon and its level
+        catchRate: 100, // You might want to set this based on the specific Pokemon
         rarity: getCustomRarity(userData)
     };
 }
+
 function isShiny(userData) {
     const shinyChance = userData.customChances?.shiny || 0.01; // Default 1% if not set
     return Math.random() < shinyChance;
@@ -506,7 +531,9 @@ function getRandomStarterPokemon(region) {
     };
 
     const regionStarters = starters[region.toLowerCase()] || starters.kanto;
-    return regionStarters[Math.floor(Math.random() * regionStarters.length)];
+    return regionStarters[Math.floor(Math.random() * regionStarters.length)]
+
+
 }
 
 function calculateCatchProbability(pokemon, ballType) {
@@ -569,5 +596,6 @@ module.exports = {
     useRareCandy,
     getCustomRarity,
     saveEssentialUserData,
-    createRaidBattleImage
+    createRaidBattleImage,
+    loadPokemonLists
 };

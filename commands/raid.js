@@ -132,9 +132,9 @@ const RAID_STATES = {
 };
 
 const MAX_CATCH_ATTEMPTS = 3;
-const RAID_DURATION = 150000; // 2.5 minutes
+const RAID_DURATION = 420000; // 7 minutes (7 * 60 * 1000 milliseconds)
 const CATCH_PHASE_DURATION = 60000; // 1 minute
-const RAID_INTERVAL = 30000; // 3 minutes
+const RAID_INTERVAL = 480000; // 8 minutes (8 * 60 * 1000 milliseconds)
 const ATTACK_COOLDOWN = 5000; // 5 seconds
 
 let currentRaid = null;

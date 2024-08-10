@@ -7,7 +7,7 @@
         "name": "Squirtle",
         "rarity": "<:SR:1259113778747015233>",
         "type": "Water",
-        "level": 0,
+        "level": 100,
         "exp": 90480,
         "moves": [
           "Tackle",
@@ -19,468 +19,556 @@
         "name": "Ursaring",
         "level": 4,
         "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>"
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Normal"
       },
       {
         "name": "Klinklang",
         "level": 1,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Steel"
       },
       {
         "name": "Silcoon",
         "level": 2,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Bug"
       },
       {
         "name": "Dratini",
         "level": 1,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Dragon"
       },
       {
         "name": "Onix",
         "level": 8,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Rock"
       },
       {
         "name": "Dwebble",
         "level": 11,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Bug"
       },
       {
         "name": "Weavile",
         "level": 14,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Dark"
       },
       {
         "name": "Carbink",
         "level": 15,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Rock"
       },
       {
         "name": "Haxorus",
         "level": 13,
         "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>"
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Dragon"
       },
       {
         "name": "Garchomp",
         "level": 17,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Dragon"
       },
       {
         "name": "Staraptor",
         "level": 15,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Normal"
       },
       {
         "name": "Jynx",
         "level": 13,
         "isShiny": true,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Ice"
       },
       {
         "name": "Talonflame",
         "level": 15,
         "isShiny": true,
-        "rarity": "<:r_:1259114608426487839>"
+        "rarity": "<:r_:1259114608426487839>",
+        "type": "Fire"
       },
       {
         "name": "Cubchoo",
         "level": 21,
         "isShiny": true,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Ice"
       },
       {
         "name": "Xatu",
         "level": 21,
         "isShiny": true,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Psychic"
       },
       {
         "name": "Swablu",
         "level": 18,
         "isShiny": true,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Normal"
       },
       {
         "name": "Sceptile",
         "level": 20,
         "isShiny": true,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Grass"
       },
       {
         "name": "Crobat",
         "level": 21,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Poison"
       },
       {
         "name": "Escavalier",
         "level": 20,
         "isShiny": true,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Bug"
       },
       {
         "name": "Porygon-z",
         "level": 20,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Unknown"
       },
       {
         "name": "Uxie",
         "level": 20,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Psychic"
       },
       {
         "name": "Rayquaza",
         "level": 25,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Dragon"
       },
       {
         "name": "Swablu",
         "level": 21,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Normal"
       },
       {
         "name": "Swablu",
         "level": 21,
         "isShiny": true,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Normal"
       },
       {
         "name": "Swablu",
         "level": 26,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Normal"
       },
       {
         "name": "Groudon",
         "level": 23,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Ground"
       },
       {
         "name": "Groudon",
         "level": 30,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Ground"
       },
       {
         "name": "Groudon",
         "level": 34,
         "isShiny": false,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Ground"
       },
       {
         "name": "Groudon",
         "level": 34,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Ground"
       },
       {
         "name": "Groudon",
         "level": 31,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Ground"
       },
       {
         "name": "Sharpedo",
         "level": 33,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Water"
       },
       {
         "name": "Electabuzz",
         "level": 38,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Electric"
       },
       {
         "name": "Cetoddle",
         "level": 37,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Ice"
       },
       {
         "name": "Victini",
         "level": 38,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Psychic"
       },
       {
         "name": "Conkeldurr",
         "level": 33,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Fighting"
       },
       {
         "name": "Stantler",
         "level": 38,
         "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>"
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Normal"
       },
       {
         "name": "Seviper",
         "level": 33,
         "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>"
+        "rarity": "<:r_:1259114608426487839>",
+        "type": "Poison"
       },
       {
         "name": "Accelgor",
         "level": 38,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Bug"
       },
       {
         "name": "Brionne",
         "level": 41,
         "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>"
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Water"
       },
       {
         "name": "Bisharp",
         "level": 36,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Dark"
       },
       {
         "name": "Gorebyss",
         "level": 45,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Water"
       },
       {
         "name": "Kricketune",
         "level": 46,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Bug"
       },
       {
         "name": "Altaria",
         "level": 45,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Dragon"
       },
       {
         "name": "Altaria",
         "level": 43,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Dragon"
       },
       {
         "name": "Woobat",
         "level": 44,
         "isShiny": true,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Psychic"
       },
       {
         "name": "Ivysaur",
         "level": 42,
         "isShiny": true,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Grass"
       },
       {
         "name": "Grumpig",
         "level": 43,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Psychic"
       },
       {
         "name": "Litwick",
         "level": 44,
         "isShiny": true,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Ghost"
       },
       {
         "name": "Conkeldurr",
         "level": 50,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Fighting"
       },
       {
         "name": "Arceus",
         "level": 46,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Normal"
       },
       {
         "name": "Pikachu",
         "level": 50,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Electric"
       },
       {
         "name": "Altaria",
         "level": 46,
         "isShiny": true,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Dragon"
       },
       {
         "name": "Darkrai",
         "level": 51,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Dark"
       },
       {
         "name": "Blastoise",
         "level": 55,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Water"
       },
       {
         "name": "Aegislash",
         "level": 58,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Steel"
       },
       {
         "name": "Litten",
         "level": 56,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Fire"
       },
       {
         "name": "Magnemite",
         "level": 53,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Electric"
       },
       {
         "name": "Palkia",
         "level": 62,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Water"
       },
       {
         "name": "Azurill",
         "level": 59,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Normal"
       },
       {
         "name": "Foongus",
         "level": 62,
         "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>"
+        "rarity": "<:r_:1259114608426487839>",
+        "type": "Grass"
       },
       {
         "name": "Carnivine",
         "level": 60,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Grass"
       },
       {
         "name": "Staryu",
         "level": 64,
         "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>"
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Water"
       },
       {
         "name": "Coalossal",
         "level": 65,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Rock"
       },
       {
         "name": "Eiscue",
         "level": 60,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Ice"
       },
       {
         "name": "Bibarel",
         "level": 69,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Normal"
       },
       {
         "name": "Florges",
         "level": 65,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Fairy"
       },
       {
         "name": "Cosmoem",
         "level": 64,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Psychic"
       },
       {
         "name": "Lapras",
         "level": 68,
         "isShiny": false,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "type": "Water"
       },
       {
         "name": "Joltik",
         "level": 71,
         "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>"
+        "rarity": "<:r_:1259114608426487839>",
+        "type": "Bug"
       },
       {
         "name": "Bonsly",
         "level": 75,
         "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>"
+        "rarity": "<:r_:1259114608426487839>",
+        "type": "Rock"
       },
       {
         "name": "Shinx",
         "level": 72,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Electric"
       },
       {
         "name": "Morpeko",
         "level": 71,
         "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>"
+        "rarity": "<:r_:1259114608426487839>",
+        "type": "Electric"
       },
       {
         "name": "Togetic",
         "level": 74,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "type": "Fairy"
       },
       {
         "name": "Oshawott",
         "level": 76,
         "isShiny": false,
-        "rarity": "<:UR:1259113669925539902>"
+        "rarity": "<:UR:1259113669925539902>",
+        "type": "Water"
       },
       {
         "name": "Cherrim",
         "level": 74,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "type": "Grass"
+      },
+      {
+        "name": "Articuno",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "type": "Psychic"
       }
     ],
     "items": {
       "pokeball": 9999982,
       "greatball": 9999966,
       "ultraball": 9999949,
-      "masterball": 9999725,
+      "masterball": 9999825,
       "Pokéball": 3,
-      "pokéball": 3
+      "pokéball": 3,
+      "rarecandy": 0
     },
-    "money": 3990000074860,
+    "money": 3989989574860,
     "lastDaily": null,
     "created": "2024-07-06T13:10:05.845Z",
     "currentWildPokemon": {
-      "name": "Cherrim",
-      "type": "Unknown",
-      "level": 74,
+      "name": "Porygon",
+      "type": "Normal",
+      "level": 85,
       "exp": 0,
       "isShiny": false,
       "moves": [
@@ -488,10 +576,10 @@
       ],
       "catchRate": 100,
       "rarity": "<:n_:1259114941873520734>",
-      "defeated": true,
-      "encounterId": "4ab0610e-ae8e-415f-b5b5-7c6ad8b077a6"
+      "defeated": false,
+      "encounterId": "5deeb427-f8d4-483e-98ab-c1e55713ba18"
     },
-    "lastWildEncounter": 1723222179015,
+    "lastWildEncounter": 1723314662269,
     "caughtPokemon": {
       "squirtle": {
         "isShiny": false
@@ -787,13 +875,18 @@
     },
     "lastRestart": "2024-07-08T07:17:38.545Z",
     "activePokemon": {
-      "name": "Togetic",
-      "level": 74,
-      "isShiny": false,
-      "rarity": "<:U_:1259114756313452680>",
-      "exp": null
+      "name": "Squirtle",
+      "rarity": "<:SR:1259113778747015233>",
+      "type": "Water",
+      "level": 100,
+      "exp": 90480,
+      "moves": [
+        "Tackle",
+        "Tail Whip"
+      ],
+      "catchRate": 45
     },
-    "selectedPokemon": 73
+    "selectedPokemon": 0
   },
   "1027872140227268641": {
     "id": "1027872140227268641",

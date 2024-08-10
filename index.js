@@ -4,6 +4,8 @@ const path = require('path');
 const { Client, GatewayIntentBits, Collection, REST, Routes } = require('discord.js');
 const { TOKEN, CLIENT_ID, GUILD_ID } = require('./config.json');
 const raidModule = require('./commands/raid.js');
+const helpers = require('./utils/helpers');
+const { startRaid, setClient } = require('./commands/raid');
 global.activeTradeOffers = [];
 const USER_DATA_DIR = path.join(__dirname, '..', 'data', 'users');
 
@@ -58,6 +60,7 @@ const battle = require('./systems/battle.js');
 const trade = require('./systems/trade.js');
 const shop = require('./systems/shop.js');
 const daily = require('./systems/daily-reward.js');
+const { loadPokemonLists } = require('./utils/helpers.js');
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -83,6 +86,7 @@ client.once('ready', () => {
   console.log('Bot is ready!');
   raidModule.setClient(client);
   raidModule.scheduleNextRaid(); // Start the raid scheduling
+
 });
 
 client.on('messageCreate', async message => {
@@ -100,5 +104,25 @@ try {
 } catch (error) {
   console.error('Error creating users directory:', error);
 }
+client.once('ready', async () => {
+  console.log('Bot is ready!');
+  await helpers.loadPokemonLists();
+  // ... other startup code ...
+});
+
+client.once('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+  
+  // Set the client for the raid module
+  setClient(client);
+  
+  // Start the first raid immediately
+  startRaid();
+  
+  // You might also want to schedule future raids here
+  // For example:
+  // scheduleNextRaid();
+});
+
 
 client.login(TOKEN);
