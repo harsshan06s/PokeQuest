@@ -4,7 +4,7 @@ const { createPokeBallButtons } = require('../utils/buttonUtils.js');
 const catchModule = require('./catch.js');
 
 module.exports = {
-    async execute(interaction, originalMessage, encounterId) {
+    async execute(interaction, originalMessage, encounterId,client) {
         const userId = interaction.user.id;
         const username = interaction.user.username;
         const avatarUrl = interaction.user.displayAvatarURL({ format: 'png', dynamic: true });
