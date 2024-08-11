@@ -60,10 +60,10 @@
     "money": 3195,
     "lastDaily": null,
     "created": "2024-08-11T09:58:19.744Z",
-    "lastWildEncounter": 1723381117235,
+    "lastWildEncounter": 1723385323053,
     "currentWildPokemon": {
-      "name": "Mudkip",
-      "type": "Water",
+      "name": "Okidogi",
+      "type": "Poison",
       "level": 85,
       "exp": 0,
       "isShiny": false,
@@ -71,9 +71,9 @@
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:U_:1259114756313452680>",
+      "rarity": "<:UR:1259113669925539902>",
       "defeated": false,
-      "encounterId": "57221ea9-2990-4bc0-a81b-021c611fd895"
+      "encounterId": "43dcf2ad-4d37-4b41-9b8b-57dd90b04746"
     },
     "customChances": {
       "rarity": 1

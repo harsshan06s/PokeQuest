@@ -1,4 +1,5 @@
 .env
 node_modules/
-/data/users/
-users.json
+
+data
+users
