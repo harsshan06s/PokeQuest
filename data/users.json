@@ -1,0 +1,226 @@
+{
+  "973983152701849610": {
+    "id": "973983152701849610",
+    "region": "kalos",
+    "pokemon": [
+      {
+        "name": "Froakie",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Water",
+        "level": 5,
+        "exp": 90,
+        "moves": [
+          "Pound",
+          "Growl"
+        ],
+        "catchRate": 45,
+        "types": [
+          "Water"
+        ]
+      }
+    ],
+    "caughtPokemon": {},
+    "selectedPokemon": 0,
+    "isShiny": {},
+    "items": {
+      "pokeball": 4,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 0,
+      "rarecandy": 0
+    },
+    "money": 1045,
+    "lastDaily": null,
+    "created": "2024-08-11T09:58:19.744Z",
+    "lastWildEncounter": 1723370314399,
+    "currentWildPokemon": {
+      "name": "Corviknight",
+      "type": "Flying",
+      "level": 9,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:SR:1259113778747015233>",
+      "defeated": true,
+      "encounterId": "f65cf324-419a-4cbf-a1c3-dfe6c6211296"
+    }
+  },
+  "599809691609989120": {
+    "id": "599809691609989120",
+    "region": "kalos",
+    "pokemon": [
+      {
+        "name": "Froakie",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Water",
+        "level": 5,
+        "exp": 0,
+        "moves": [
+          "Pound",
+          "Growl"
+        ],
+        "catchRate": 45,
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Kyogre-Primal",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Groudon-Primal",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Zamazenta-Crowned",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Zacian-Crowned",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Greninja-Ash",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Rayquaza-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Eternamax-Gmax",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Mewtwo-MegaX",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Mewtwo-MegaY",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Arceus",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Normal"
+        ]
+      }
+    ],
+    "caughtPokemon": {},
+    "selectedPokemon": 0,
+    "isShiny": {},
+    "items": {
+      "pokeball": 5,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 0,
+      "rarecandy": 0
+    },
+    "money": 1000,
+    "lastDaily": null,
+    "created": "2024-08-11T10:20:26.739Z",
+    "lastWildEncounter": 0
+  }
+}
