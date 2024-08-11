@@ -8,7 +8,7 @@
         "rarity": "<:SR:1259113778747015233>",
         "type": "Water",
         "level": 5,
-        "exp": 90,
+        "exp": 990,
         "moves": [
           "Pound",
           "Growl"
@@ -17,35 +17,81 @@
         "types": [
           "Water"
         ]
+      },
+      {
+        "name": "Crocalor",
+        "level": 1,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Fire"
+        ]
+      },
+      {
+        "name": "Groudon",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Ground",
+          "Fire"
+        ]
       }
     ],
-    "caughtPokemon": {},
-    "selectedPokemon": 0,
+    "caughtPokemon": {
+      "crocalor": {
+        "isShiny": false
+      }
+    },
+    "selectedPokemon": 2,
     "isShiny": {},
     "items": {
-      "pokeball": 4,
+      "pokeball": 0,
       "greatball": 0,
       "ultraball": 0,
       "masterball": 0,
       "rarecandy": 0
     },
-    "money": 1045,
+    "money": 3195,
     "lastDaily": null,
     "created": "2024-08-11T09:58:19.744Z",
-    "lastWildEncounter": 1723370314399,
+    "lastWildEncounter": 1723381117235,
     "currentWildPokemon": {
-      "name": "Corviknight",
-      "type": "Flying",
-      "level": 9,
+      "name": "Mudkip",
+      "type": "Water",
+      "level": 85,
       "exp": 0,
       "isShiny": false,
       "moves": [
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:SR:1259113778747015233>",
-      "defeated": true,
-      "encounterId": "f65cf324-419a-4cbf-a1c3-dfe6c6211296"
+      "rarity": "<:U_:1259114756313452680>",
+      "defeated": false,
+      "encounterId": "57221ea9-2990-4bc0-a81b-021c611fd895"
+    },
+    "customChances": {
+      "rarity": 1
+    },
+    "activePokemon": {
+      "name": "Groudon",
+      "level": 100,
+      "rarity": "<:LR:1259113497053233162>",
+      "isShiny": true,
+      "moves": [
+        "Tackle"
+      ],
+      "exp": 3400,
+      "catchRate": 100,
+      "types": [
+        "Ground",
+        "Fire"
+      ]
     }
   },
   "599809691609989120": {
@@ -206,6 +252,82 @@
         "types": [
           "Normal"
         ]
+      },
+      {
+        "name": "Slakoth",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Normal"
+        ]
+      }
+    ],
+    "caughtPokemon": {
+      "slakoth": {
+        "isShiny": false
+      }
+    },
+    "selectedPokemon": 2,
+    "isShiny": {},
+    "items": {
+      "pokeball": 4,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 0,
+      "rarecandy": 0
+    },
+    "money": 1850,
+    "lastDaily": null,
+    "created": "2024-08-11T10:20:26.739Z",
+    "lastWildEncounter": 1723374434094,
+    "activePokemon": {
+      "name": "Groudon-Primal",
+      "level": 100,
+      "rarity": "<:LR:1259113497053233162>",
+      "isShiny": true,
+      "moves": [
+        "Tackle"
+      ],
+      "exp": 0,
+      "catchRate": 100,
+      "types": [
+        "Unknown"
+      ]
+    },
+    "currentWildPokemon": {
+      "name": "Bulbasaur",
+      "type": "Grass",
+      "level": 85,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:n_:1259114941873520734>",
+      "defeated": true,
+      "encounterId": "8a61d1b1-9334-4213-a75f-36f3e183ec68"
+    }
+  },
+  "800030217191161907": {
+    "id": "800030217191161907",
+    "region": "unova",
+    "pokemon": [
+      {
+        "name": "Snivy",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Grass",
+        "level": 5,
+        "exp": 0,
+        "moves": [
+          "Tackle",
+          "Leer"
+        ],
+        "catchRate": 45,
+        "types": [
+          "Grass"
+        ]
       }
     ],
     "caughtPokemon": {},
@@ -220,7 +342,145 @@
     },
     "money": 1000,
     "lastDaily": null,
-    "created": "2024-08-11T10:20:26.739Z",
+    "created": "2024-08-11T11:00:43.322Z",
+    "lastWildEncounter": 1723374088368,
+    "activePokemon": {
+      "name": "Snivy",
+      "rarity": "<:SR:1259113778747015233>",
+      "type": "Grass",
+      "level": 5,
+      "exp": 0,
+      "moves": [
+        "Tackle",
+        "Leer"
+      ],
+      "catchRate": 45,
+      "types": [
+        "Grass"
+      ]
+    },
+    "currentWildPokemon": {
+      "name": "Murkrow",
+      "type": "Dark",
+      "level": 3,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:n_:1259114941873520734>",
+      "defeated": false,
+      "encounterId": "1ff9fb1d-c82a-401f-a893-46c69248f391"
+    }
+  },
+  "1027872140227268641": {
+    "id": "1027872140227268641",
+    "region": "kalos",
+    "pokemon": [
+      {
+        "name": "Froakie",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Water",
+        "level": 5,
+        "exp": 0,
+        "moves": [
+          "Pound",
+          "Growl"
+        ],
+        "catchRate": 45
+      }
+    ],
+    "caughtPokemon": {},
+    "selectedPokemon": 0,
+    "isShiny": {},
+    "items": {
+      "pokeball": 5,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 0,
+      "rarecandy": 0
+    },
+    "money": 1000,
+    "lastDaily": null,
+    "created": "2024-08-11T11:37:49.715Z",
     "lastWildEncounter": 0
+  },
+  "303512897286438912": {
+    "id": "303512897286438912",
+    "region": "kalos",
+    "pokemon": [
+      {
+        "name": "Froakie",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Water",
+        "level": 5,
+        "exp": 300,
+        "moves": [
+          "Pound",
+          "Growl"
+        ],
+        "catchRate": 45,
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Torracat",
+        "level": 6,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Fire"
+        ]
+      },
+      {
+        "name": "Fraxure",
+        "level": 6,
+        "isShiny": true,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Dragon"
+        ]
+      }
+    ],
+    "caughtPokemon": {
+      "torracat": {
+        "isShiny": false
+      },
+      "fraxure": {
+        "isShiny": true
+      }
+    },
+    "selectedPokemon": 0,
+    "isShiny": {},
+    "items": {
+      "pokeball": 2,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 0,
+      "rarecandy": 0
+    },
+    "money": 100000000001150,
+    "lastDaily": null,
+    "created": "2024-08-11T12:07:44.298Z",
+    "lastWildEncounter": 1723381117747,
+    "currentWildPokemon": {
+      "name": "Toxicroak",
+      "type": "Poison",
+      "level": 5,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:U_:1259114756313452680>",
+      "defeated": true,
+      "encounterId": "3fb369a4-dcb5-4414-9d20-45e3252f83bc"
+    },
+    "customChances": {
+      "rarity": 1
+    }
   }
 }

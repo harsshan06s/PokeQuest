@@ -1,28 +1,28 @@
 {
   "id": "973983152701849610",
-  "selectedPokemon": 0,
+  "selectedPokemon": 2,
   "activePokemon": {
-    "name": "Froakie",
-    "rarity": "<:SR:1259113778747015233>",
-    "type": "Water",
-    "level": 5,
-    "exp": 90,
+    "name": "Groudon",
+    "level": 100,
+    "rarity": "<:LR:1259113497053233162>",
+    "isShiny": true,
     "moves": [
-      "Pound",
-      "Growl"
+      "Tackle"
     ],
-    "catchRate": 45,
+    "exp": 0,
+    "catchRate": 100,
     "types": [
-      "Water"
+      "Ground",
+      "Fire"
     ]
   },
-  "money": 1045,
+  "money": 3195,
   "items": {
-    "pokeball": 4,
+    "pokeball": 0,
     "greatball": 0,
     "ultraball": 0,
     "masterball": 0,
     "rarecandy": 0
   },
-  "lastWildEncounter": 1723370314399
+  "lastWildEncounter": 1723381117235
 }

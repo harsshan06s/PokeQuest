@@ -1,0 +1,28 @@
+{
+  "id": "303512897286438912",
+  "selectedPokemon": 0,
+  "activePokemon": {
+    "name": "Froakie",
+    "rarity": "<:SR:1259113778747015233>",
+    "type": "Water",
+    "level": 5,
+    "exp": 300,
+    "moves": [
+      "Pound",
+      "Growl"
+    ],
+    "catchRate": 45,
+    "types": [
+      "Water"
+    ]
+  },
+  "money": 100000000001150,
+  "items": {
+    "pokeball": 2,
+    "greatball": 0,
+    "ultraball": 0,
+    "masterball": 0,
+    "rarecandy": 0
+  },
+  "lastWildEncounter": 1723381117747
+}

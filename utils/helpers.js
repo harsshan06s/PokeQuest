@@ -94,7 +94,7 @@ const userPokemonX = 100;
 const userPokemonY = height - 190;
 
 // Calculate position for wild Pokémon (top right)
-const wildPokemonX = width - 250;
+const wildPokemonX = width - 220;
 const wildPokemonY = 40;
 
 // Draw user Pokémon in the bottom left
@@ -104,19 +104,19 @@ ctx.drawImage(userPokemon, userPokemonX, userPokemonY, standardPokemonWidth, sta
 ctx.drawImage(wildPokemon, wildPokemonX, wildPokemonY, standardPokemonWidth, standardPokemonHeight);
 
     // Add Pokemon names and levels to the boxes
-    ctx.fillStyle = '#000000';
+    ctx.fillStyle = '#FFFFFF';
     ctx.font = '20px DisposableDroidBB';
     
     // Wild Pokemon (top left box)
-    ctx.fillText(wildPokemonName, 100, 45);
+    ctx.fillText(wildPokemonName, 70, 70);
     ctx.font = '15px DisposableDroidBB'; // Smaller font for level
-    ctx.fillText(`${wildPokemonLevel.toString().padStart(3, '')}`, 250, 47);
+    ctx.fillText(`${wildPokemonLevel.toString().padStart(3, '')}`, 220, 75);
     
     // User Pokemon (bottom right box)
     ctx.font = '20px DisposableDroidBB'; // Reset to larger font for Pokemon name
-    ctx.fillText(userPokemonName, width - 250, height - 95);
+    ctx.fillText(userPokemonName, width - 210, height - 70);
     ctx.font = '15px DisposableDroidBB'; // Smaller font for level
-    ctx.fillText(`Lv${userPokemonLevel.toString().padStart(2, '')}`, width - 120, height - 95);
+    ctx.fillText(`${userPokemonLevel.toString().padStart(2, '')}`, width - 35, height - 67);
 
     // Return the canvas buffer
     return canvas.toBuffer();
@@ -209,7 +209,7 @@ try {
     
     // User Pokémon (bottom right box)
     ctx.font = '20px DisposableDroidBB'; // Reset to larger font for Pokémon name
-    ctx.fillText(userPokemonName, width - 250, height - 95);
+    ctx.fillText(userPokemonName, width - 210, height - 85);
     ctx.font = '15px DisposableDroidBB'; // Smaller font for level
     ctx.fillText(`Lv${userPokemonLevel.toString().padStart(2, '')}`, width - 120, height - 95);
 

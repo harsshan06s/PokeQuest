@@ -1,0 +1,28 @@
+{
+  "id": "800030217191161907",
+  "selectedPokemon": 0,
+  "activePokemon": {
+    "name": "Snivy",
+    "rarity": "<:SR:1259113778747015233>",
+    "type": "Grass",
+    "level": 5,
+    "exp": 0,
+    "moves": [
+      "Tackle",
+      "Leer"
+    ],
+    "catchRate": 45,
+    "types": [
+      "Grass"
+    ]
+  },
+  "money": 1000,
+  "items": {
+    "pokeball": 5,
+    "greatball": 0,
+    "ultraball": 0,
+    "masterball": 0,
+    "rarecandy": 0
+  },
+  "lastWildEncounter": 1723374088368
+}
