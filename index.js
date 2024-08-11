@@ -6,12 +6,9 @@ const { TOKEN, CLIENT_ID, GUILD_ID } = require('./config.json');
 const raidModule = require('./commands/raid.js');
 const helpers = require('./utils/helpers');
 const { startRaid, setClient } = require('./commands/raid');
+
 global.activeTradeOffers = [];
 const USER_DATA_DIR = path.join(__dirname, '..', 'data', 'users');
-
-
-
-
 
 const client = new Client({
   intents: [
@@ -41,17 +38,32 @@ for (const file of commandFiles) {
 
 const rest = new REST({ version: '10' }).setToken(TOKEN);
 
+async function deleteAllCommands() {
+  try {
+    console.log('Started deleting all application (/) commands.');
+    await rest.put(Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID), { body: [] });
+    console.log('Successfully deleted all application (/) commands.');
+  } catch (error) {
+    console.error('Error deleting commands:', error);
+  }
+}
+
 (async () => {
   try {
+    // First, delete all existing commands
+    await deleteAllCommands();
+
     console.log('Started refreshing application (/) commands.');
 
+    const commands = client.commands.map(command => command.data.toJSON());
+
     await rest.put(Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID), {
-      body: client.commands.map(command => command.data.toJSON()),
+      body: commands,
     });
 
     console.log('Successfully reloaded application (/) commands.');
   } catch (error) {
-    console.error(error);
+    console.error('Error refreshing commands:', error);
   }
 })();
 
@@ -65,8 +77,6 @@ const { loadPokemonLists } = require('./utils/helpers.js');
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
-
-
 
 client.on('interactionCreate', async interaction => {
     if (!interaction.isCommand()) return;
@@ -82,11 +92,22 @@ client.on('interactionCreate', async interaction => {
         await interaction.reply({ content: 'There was an error executing this command!', ephemeral: true });
     }
 });
-client.once('ready', () => {
+
+client.once('ready', async () => {
   console.log('Bot is ready!');
+  await helpers.loadPokemonLists();
   raidModule.setClient(client);
   raidModule.scheduleNextRaid(); // Start the raid scheduling
 
+  // Set the client for the raid module
+  setClient(client);
+
+  // Start the first raid immediately
+  startRaid();
+
+  // You might also want to schedule future raids here
+  // For example:
+  // scheduleNextRaid();
 });
 
 client.on('messageCreate', async message => {
@@ -104,25 +125,5 @@ try {
 } catch (error) {
   console.error('Error creating users directory:', error);
 }
-client.once('ready', async () => {
-  console.log('Bot is ready!');
-  await helpers.loadPokemonLists();
-  // ... other startup code ...
-});
-
-client.once('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-  
-  // Set the client for the raid module
-  setClient(client);
-  
-  // Start the first raid immediately
-  startRaid();
-  
-  // You might also want to schedule future raids here
-  // For example:
-  // scheduleNextRaid();
-});
-
 
 client.login(TOKEN);
