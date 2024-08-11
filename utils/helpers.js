@@ -219,9 +219,12 @@ try {
 
 
 async function getActivePokemon(userData) {
-    return userData.activePokemon || userData.pokemon[userData.selectedPokemon];
+    const activePokemon = userData.activePokemon || userData.pokemon[userData.selectedPokemon];
+    if (activePokemon && (!activePokemon.types || activePokemon.types.length === 0)) {
+        activePokemon.types = pokemonList1[activePokemon.name.toLowerCase()] || ['Unknown'];
+    }
+    return activePokemon;
 }
-
 
 async function writeUserData(data) {
     await fs.writeFile(USER_DATA_PATH, JSON.stringify(data, null, 2));
@@ -337,9 +340,8 @@ async function updateUserData(userId, updateData) {
     // If updating Pokemon, ensure type information is included
     if (updateData.pokemon) {
         updateData.pokemon = updateData.pokemon.map(pokemon => {
-            if (!pokemon.type) {
-                const types = pokemonList1[pokemon.name.toLowerCase()] || ['Unknown'];
-                pokemon.type = types[0];
+            if (!pokemon.types || pokemon.types.length === 0) {
+                pokemon.types = pokemonList1[pokemon.name.toLowerCase()] || ['Unknown'];
             }
             return pokemon;
         });
@@ -350,6 +352,8 @@ async function updateUserData(userId, updateData) {
     await saveEssentialUserData(userId, userData[userId]);
     return userData[userId];
 }
+
+
 async function saveEssentialUserData(userId, userData) {
     const essentialData = {
         id: userId,

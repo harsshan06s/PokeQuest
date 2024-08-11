@@ -230,25 +230,27 @@ async function startRaid() {
 }
 
 async function handleAttack(interaction) {
+    await interaction.deferReply();
+
     if (raidState !== RAID_STATES.ACTIVE) {
-        return interaction.reply('There is no active raid at the moment. Please wait for the next one to start!');
+        return interaction.editReply('There is no active raid at the moment. Please wait for the next one to start!');
     }
 
     const now = Date.now();
     const cooldownTime = userCooldowns.get(interaction.user.id);
     if (cooldownTime && now < cooldownTime) {
         const remainingCooldown = Math.ceil((cooldownTime - now) / 1000);
-        return interaction.reply(`You need to wait ${remainingCooldown} seconds before attacking again.`);
+        return interaction.editReply(`You need to wait ${remainingCooldown} seconds before attacking again.`);
     }
 
     const userData = await getUserData(interaction.user.id);
     if (!userData) {
-        return interaction.reply('You need to start your journey first!');
+        return interaction.editReply('You need to start your journey first!');
     }
 
     const activePokemon = await getActivePokemon(userData);
     if (!activePokemon) {
-        return interaction.reply('You need to select an active Pokémon first!');
+        return interaction.editReply('You need to select an active Pokémon first!');
     }
 
     let damage = activePokemon.level * 15;
@@ -270,11 +272,9 @@ async function handleAttack(interaction) {
 
     userCooldowns.set(interaction.user.id, now + ATTACK_COOLDOWN);
 
-    const battleImage = await createRaidBattleImage(userData, currentRaid.name, false, currentRaid.baseLevel);
+    try {
+        const battleImage = await createRaidBattleImage(userData, currentRaid.name, false, currentRaid.baseLevel);
 
-    if (currentRaid.hp <= 0) {
-        await endRaid(interaction);
-    } else {
         const embed = new EmbedBuilder()
             .setTitle(` ⚔️ Raid Battle: ${currentRaid.name} ⚔️ `)
             .setDescription(`${interaction.user.username} dealt ${damage} damage 💥!`)
@@ -285,10 +285,17 @@ async function handleAttack(interaction) {
             )
             .setImage('attachment://battle.png');
 
-        await interaction.reply({ 
+        await interaction.editReply({ 
             embeds: [embed],
             files: [{ attachment: battleImage, name: 'battle.png' }]
         });
+
+        if (currentRaid.hp <= 0) {
+            await endRaid(interaction);
+        }
+    } catch (error) {
+        console.error('Error in handleAttack:', error);
+        await interaction.editReply('There was an error processing your attack. Please try again.');
     }
 }
 
@@ -387,7 +394,8 @@ async function endRaid(interaction, timeout = false) {
         .setTitle(`Raid ${timeout ? 'Timed Out ⏰' : 'Defeated'}: ${currentRaid.name}`)
         .setDescription(timeout ? 
             'The raid has timed out. Better luck next time!' : 
-            'The raid boss has been defeated! Use `/raid catch` to attempt catching it <:RaidBall:1262812991586435203> !');
+            'The raid boss has been defeated! Use `/raid catch` to attempt catching it <:RaidBall:1262812991586435203> !')
+        .setImage(getPokemonGifUrl(currentRaid.name, false));
 
     if (!timeout) {
         for (const [userId, damage] of Object.entries(raidParticipants)) {
@@ -408,9 +416,17 @@ async function endRaid(interaction, timeout = false) {
         }
     }
 
-    const channel = client.channels.cache.get("1243828341673295929");
-    if (channel) {
-        await channel.send({ embeds: [embed] });
+    try {
+        if (interaction && interaction.deferred) {
+            await interaction.editReply({ embeds: [embed] });
+        } else {
+            const channel = client.channels.cache.get("1243828341673295929");
+            if (channel) {
+                await channel.send({ embeds: [embed] });
+            }
+        }
+    } catch (error) {
+        console.error('Error sending raid end message:', error);
     }
 
     if (!timeout) {
@@ -418,7 +434,10 @@ async function endRaid(interaction, timeout = false) {
         setTimeout(() => {
             if (raidState === RAID_STATES.CATCHABLE) {
                 raidState = RAID_STATES.INACTIVE;
-                channel.send('The raid boss has fled. The raid is now over.');
+                const channel = client.channels.cache.get("1243828341673295929");
+                if (channel) {
+                    channel.send('The raid boss has fled. The raid is now over.');
+                }
             }
         }, CATCH_PHASE_DURATION);
     }
