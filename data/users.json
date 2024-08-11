@@ -57,13 +57,13 @@
       "masterball": 0,
       "rarecandy": 0
     },
-    "money": 3620,
+    "money": 4045,
     "lastDaily": null,
     "created": "2024-08-11T09:58:19.744Z",
-    "lastWildEncounter": 1723385428466,
+    "lastWildEncounter": 1723385498965,
     "currentWildPokemon": {
-      "name": "Unfezant",
-      "type": "Normal",
+      "name": "Sudowoodo",
+      "type": "Rock",
       "level": 85,
       "exp": 0,
       "isShiny": false,
@@ -73,7 +73,7 @@
       "catchRate": 100,
       "rarity": "<:n_:1259114941873520734>",
       "defeated": true,
-      "encounterId": "097e808c-e59d-478d-a951-cbf58116e29f"
+      "encounterId": "7619bab3-22e4-4d02-8947-9ddb8343979d"
     },
     "customChances": {
       "rarity": 1
@@ -86,7 +86,7 @@
       "moves": [
         "Tackle"
       ],
-      "exp": 4250,
+      "exp": 5100,
       "catchRate": 100,
       "types": [
         "Ground",
