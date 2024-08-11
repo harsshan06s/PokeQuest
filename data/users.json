@@ -273,11 +273,11 @@
     "items": {
       "pokeball": 4,
       "greatball": 0,
-      "ultraball": 0,
-      "masterball": 0,
+      "ultraball": 7777777,
+      "masterball": 100,
       "rarecandy": 0
     },
-    "money": 1850,
+    "money": 5712224500,
     "lastDaily": null,
     "created": "2024-08-11T10:20:26.739Z",
     "lastWildEncounter": 1723374434094,
