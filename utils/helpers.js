@@ -250,16 +250,15 @@ async function getUserData(userId) {
     return userData[userId];
 }
 
-async function createOrUpdateUser(userId, region) {
+async function createOrUpdateUser(userId, region, selectedStarter) {
     const userData = await readUserData();
-    const starterPokemon = getRandomStarterPokemon(region);
 
     if (userData[userId]) {
         // Update existing user
         userData[userId] = {
             ...userData[userId],
             region: region,
-            pokemon: [starterPokemon],
+            pokemon: [selectedStarter],
             lastRestart: new Date().toISOString()
         };
     } else {
@@ -267,7 +266,7 @@ async function createOrUpdateUser(userId, region) {
         userData[userId] = {
             id: userId,
             region: region,
-            pokemon: [starterPokemon],
+            pokemon: [selectedStarter],
             caughtPokemon: {},
             selectedPokemon: 0,
             isShiny:{},
@@ -522,23 +521,108 @@ function getRaidPokemonRarity() {
 function getRandomStarterPokemon(region) {
     const starters = {
         kanto: [
-            { name: 'bulbasaur',rarity:'<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 },
-            { name: 'Charmander',rarity:'<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Scratch', 'Growl'], catchRate: 45 },
-            { name: 'Squirtle', rarity:'<:SR:1259113778747015233>',type: 'Water', level: 5, exp: 0, moves: ['Tackle', 'Tail Whip'], catchRate: 45 }
+            { name: 'Bulbasaur', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 },
+            { name: 'Charmander', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Scratch', 'Growl'], catchRate: 45 },
+            { name: 'Squirtle', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Tackle', 'Tail Whip'], catchRate: 45 }
         ],
         johto: [
-            { name: 'Chikorita', rarity:'<:SR:1259113778747015233>',type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 },
-            { name: 'Cyndaquil',rarity:'<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Tackle', 'Leer'], catchRate: 45 },
-            { name: 'Totodile', rarity:'<:SR:1259113778747015233>',type: 'Water', level: 5, exp: 0, moves: ['Scratch', 'Leer'], catchRate: 45 }
+            { name: 'Chikorita', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 },
+            { name: 'Cyndaquil', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Tackle', 'Leer'], catchRate: 45 },
+            { name: 'Totodile', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Scratch', 'Leer'], catchRate: 45 }
         ],
-        // Add more regions and their starters as needed
+        hoenn: [
+            { name: 'Treecko', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Pound', 'Leer'], catchRate: 45 },
+            { name: 'Torchic', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Scratch', 'Growl'], catchRate: 45 },
+            { name: 'Mudkip', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 }
+        ],
+        sinnoh: [
+            { name: 'Turtwig', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Withdraw'], catchRate: 45 },
+            { name: 'Chimchar', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Scratch', 'Leer'], catchRate: 45 },
+            { name: 'Piplup', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Pound', 'Growl'], catchRate: 45 }
+        ],
+        unova: [
+            { name: 'Snivy', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Leer'], catchRate: 45 },
+            { name: 'Tepig', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Tackle', 'Tail Whip'], catchRate: 45 },
+            { name: 'Oshawott', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Tackle', 'Tail Whip'], catchRate: 45 }
+        ],
+        kalos: [
+            { name: 'Chespin', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 },
+            { name: 'Fennekin', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Scratch', 'Tail Whip'], catchRate: 45 },
+            { name: 'Froakie', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Pound', 'Growl'], catchRate: 45 }
+        ],
+        alola: [
+            { name: 'Rowlet', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 },
+            { name: 'Litten', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Scratch', 'Growl'], catchRate: 45 },
+            { name: 'Popplio', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Pound', 'Growl'], catchRate: 45 }
+        ],
+        galar: [
+            { name: 'Grookey', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Scratch', 'Growl'], catchRate: 45 },
+            { name: 'Scorbunny', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 },
+            { name: 'Sobble', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Pound', 'Growl'], catchRate: 45 }
+        ]
     };
+
 
     const regionStarters = starters[region.toLowerCase()] || starters.kanto;
     return regionStarters[Math.floor(Math.random() * regionStarters.length)]
 
 
 }
+function getStarterPokemon(region, starterName) {
+    const starters = {
+        kanto: [
+            { name: 'Bulbasaur', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 },
+            { name: 'Charmander', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Scratch', 'Growl'], catchRate: 45 },
+            { name: 'Squirtle', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Tackle', 'Tail Whip'], catchRate: 45 }
+        ],
+        johto: [
+            { name: 'Chikorita', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 },
+            { name: 'Cyndaquil', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Tackle', 'Leer'], catchRate: 45 },
+            { name: 'Totodile', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Scratch', 'Leer'], catchRate: 45 }
+        ],
+        hoenn: [
+            { name: 'Treecko', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Pound', 'Leer'], catchRate: 45 },
+            { name: 'Torchic', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Scratch', 'Growl'], catchRate: 45 },
+            { name: 'Mudkip', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 }
+        ],
+        sinnoh: [
+            { name: 'Turtwig', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Withdraw'], catchRate: 45 },
+            { name: 'Chimchar', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Scratch', 'Leer'], catchRate: 45 },
+            { name: 'Piplup', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Pound', 'Growl'], catchRate: 45 }
+        ],
+        unova: [
+            { name: 'Snivy', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Leer'], catchRate: 45 },
+            { name: 'Tepig', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Tackle', 'Tail Whip'], catchRate: 45 },
+            { name: 'Oshawott', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Tackle', 'Tail Whip'], catchRate: 45 }
+        ],
+        kalos: [
+            { name: 'Chespin', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 },
+            { name: 'Fennekin', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Scratch', 'Tail Whip'], catchRate: 45 },
+            { name: 'Froakie', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Pound', 'Growl'], catchRate: 45 }
+        ],
+        alola: [
+            { name: 'Rowlet', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 },
+            { name: 'Litten', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Scratch', 'Growl'], catchRate: 45 },
+            { name: 'Popplio', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Pound', 'Growl'], catchRate: 45 }
+        ],
+        galar: [
+            { name: 'Grookey', rarity: '<:SR:1259113778747015233>', type: 'Grass', level: 5, exp: 0, moves: ['Scratch', 'Growl'], catchRate: 45 },
+            { name: 'Scorbunny', rarity: '<:SR:1259113778747015233>', type: 'Fire', level: 5, exp: 0, moves: ['Tackle', 'Growl'], catchRate: 45 },
+            { name: 'Sobble', rarity: '<:SR:1259113778747015233>', type: 'Water', level: 5, exp: 0, moves: ['Pound', 'Growl'], catchRate: 45 }
+        ]
+    };
+    if (!starters[region]) {
+        throw new Error(`Invalid region: ${region}`);
+    }
+
+    const regionStarters = starters[region];
+    if (!regionStarters || regionStarters.length === 0) {
+        throw new Error(`No starter Pokémon defined for region: ${region}`);
+    }
+
+    return regionStarters;
+}
+
 
 function calculateCatchProbability(pokemon, ballType) {
     const catchRates = {
@@ -601,5 +685,6 @@ module.exports = {
     getCustomRarity,
     saveEssentialUserData,
     createRaidBattleImage,
-    loadPokemonLists
+    loadPokemonLists,
+    getStarterPokemon
 };

@@ -1,5 +1,6 @@
 const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
-const { createOrUpdateUser, getUserData, getStarterPokemon } = require('../utils/helpers.js');
+const { createOrUpdateUser, getUserData } = require('../utils/helpers.js');
+const { getStarterPokemon } = require('../utils/helpers.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -9,10 +10,12 @@ module.exports = {
         const userId = interaction.user.id;
 
         try {
+            await interaction.deferReply();
+
             const existingUser = await getUserData(userId);
 
             if (existingUser) {
-                return interaction.reply({
+                return interaction.editReply({
                     content: "You've already started your Pokémon journey! If you want to restart, please contact an administrator.",
                     ephemeral: true
                 });
@@ -40,7 +43,7 @@ module.exports = {
                 rows.push(row);
             }
 
-            const message = await interaction.reply({ embeds: [embed], components: rows, fetchReply: true });
+            const message = await interaction.editReply({ embeds: [embed], components: rows, fetchReply: true });
 
             const filter = i => i.user.id === interaction.user.id;
             const collector = message.createMessageComponentCollector({ filter, time: 30000 });
@@ -49,37 +52,49 @@ module.exports = {
                 await i.deferUpdate();
                 const selectedRegion = i.customId.split('_')[1];
 
-                const starterOptions = await getStarterPokemon(selectedRegion);
+                const starterOptions = getStarterPokemon(selectedRegion.toLowerCase());
 
-const starterEmbed = new EmbedBuilder()
-    .setColor('#0099ff')
-    .setTitle(`${selectedRegion.charAt(0).toUpperCase() + selectedRegion.slice(1)} Region`)
-    .setDescription('Choose your starter Pokémon:');
+                const starterEmbed = new EmbedBuilder()
+                    .setColor('#0099ff')
+                    .setTitle(`${selectedRegion.charAt(0).toUpperCase() + selectedRegion.slice(1)} Region`)
+                    .setDescription('Choose your starter Pokémon:');
 
-const starterRow = new ActionRowBuilder();
-starterOptions.forEach(option => {
-    starterRow.addComponents(
-        new ButtonBuilder()
-            .setCustomId(`starter_${option.toLowerCase()}`)
-            .setLabel(option)
-            .setStyle(ButtonStyle.Primary)
-    );
-});
+                const starterRow = new ActionRowBuilder();
+                starterOptions.forEach(starter => {
+                    starterRow.addComponents(
+                        new ButtonBuilder()
+                            .setCustomId(`starter_${starter.name.toLowerCase()}`)
+                            .setLabel(starter.name)
+                            .setStyle(ButtonStyle.Primary)
+                    );
+                });
 
-                const starterMessage = await i.followUp({ embeds: [starterEmbed], components: [starterRow], fetchReply: true });
+                await i.editReply({ embeds: [starterEmbed], components: [starterRow] });
 
                 const starterFilter = i2 => i2.user.id === interaction.user.id;
-                const starterCollector = starterMessage.createMessageComponentCollector({ starterFilter, time: 30000 });
+                const starterCollector = message.createMessageComponentCollector({ filter: starterFilter, time: 30000 });
 
                 starterCollector.on('collect', async i2 => {
                     await i2.deferUpdate();
-                    const selectedStarter = i2.customId.split('_')[1];
+                    const selectedStarterName = i2.customId.split('_')[1];
+                    const selectedStarter = starterOptions.find(starter => starter.name.toLowerCase() === selectedStarterName);
+
+                    if (!selectedStarter) {
+                        return i2.editReply({ content: 'An error occurred while selecting your starter. Please try again.', components: [] });
+                    }
+
                     const userData = await createOrUpdateUser(userId, selectedRegion, selectedStarter);
 
                     const responseEmbed = new EmbedBuilder()
                         .setColor('#0099ff')
                         .setTitle(`${selectedRegion.charAt(0).toUpperCase() + selectedRegion.slice(1)} Region`)
-                        .setDescription(`Welcome to your new Pokémon journey in the ${selectedRegion} region! Your starter Pokémon is ${userData.pokemon[0].name}.`);
+                        .setDescription(`Welcome to your new Pokémon journey in the ${selectedRegion} region! Your starter Pokémon is ${selectedStarter.name}.`)
+                        .addFields(
+                            { name: 'Type', value: selectedStarter.type, inline: true },
+                            { name: 'Level', value: selectedStarter.level.toString(), inline: true },
+                            { name: 'Moves', value: selectedStarter.moves.join(', '), inline: true },
+                            { name: 'Rarity', value: selectedStarter.rarity, inline: true }
+                        );
 
                     await i2.editReply({ embeds: [responseEmbed], components: [] });
                     starterCollector.stop();
@@ -87,20 +102,20 @@ starterOptions.forEach(option => {
 
                 starterCollector.on('end', collected => {
                     if (collected.size === 0) {
-                        interaction.editReply({ content: 'You did not select a starter Pokémon in time. Please try the command again.', embeds: [], components: [] });
+                        interaction.followUp({ content: 'You did not select a starter Pokémon in time. Please try the command again.', ephemeral: true });
                     }
                 });
             });
 
             collector.on('end', collected => {
                 if (collected.size === 0) {
-                    interaction.editReply({ content: 'You did not select a region in time. Please try the command again.', embeds: [], components: [] });
+                    interaction.editReply({ content: 'You did not select a region in time. Please try the command again.', components: [] });
                 }
             });
 
         } catch (error) {
             console.error(error);
-            return interaction.followUp('There was an error with your journey. Please try again later.');
+            return interaction.followUp({ content: 'There was an error with your journey. Please try again later.', ephemeral: true });
         }
     },
 };
