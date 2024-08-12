@@ -256,15 +256,10 @@ async function handleAttack(interaction) {
     let damage = activePokemon.level * 15;
     
     // Check for type effectiveness
-    if (Array.isArray(activePokemon.type)) {
-        const isEffective = activePokemon.type.some(type => currentRaid.weaknesses.includes(type));
-        if (isEffective) {
-            damage *= 2;
-        }
-    } else if (typeof activePokemon.type === 'string') {
-        if (currentRaid.weaknesses.includes(activePokemon.type)) {
-            damage *= 2;
-        }
+    const pokemonTypes = Array.isArray(activePokemon.types) ? activePokemon.types : [activePokemon.types];
+    const isEffective = pokemonTypes.some(type => currentRaid.weaknesses.includes(type));
+    if (isEffective) {
+        damage *= 2;
     }
 
     currentRaid.hp -= damage;
@@ -281,7 +276,7 @@ async function handleAttack(interaction) {
             .addFields(
                 { name: 'Raid Boss HP', value: `${currentRaid.hp}/${RAID_BOSSES.find(boss => boss.name === currentRaid.name)?.hp || 'Unknown'}` },
                 { name: 'Your Pokémon', value: `${activePokemon.name || 'Unknown'} (Level ${activePokemon.level || 'Unknown'})` },
-                { name: 'Type', value: Array.isArray(activePokemon.type) ? activePokemon.type.filter(t => t).join('/') : (activePokemon.type || 'Unknown') }
+                { name: 'Type', value: pokemonTypes.join('/') || 'Unknown' }
             )
             .setImage('attachment://battle.png');
 
