@@ -43,31 +43,29 @@ module.exports = {
             
                 delete userData.currentWildPokemon;
                 await updateCaughtPokemon(userId, normalizedName, wildPokemon.isShiny);
-                console.log(`User ${userId} caught ${wildPokemon.name}. Caught Pokemon:`, userData.caughtPokemon);
             }
             // Update user data after the catch attempt, regardless of the outcome
             await updateUserData(userId, userData);
             const shinyEmoji = wildPokemon.isShiny ? '✨ ' : '';
             const rarityEmoji = wildPokemon.rarity;
-            console.log(`Creating catch result embed. Is shiny: ${wildPokemon.isShiny}`);
 
             let imgUrl = wildPokemon.isShiny 
             ? 'https://play.pokemonshowdown.com/sprites/ani-shiny/'
             : 'https://play.pokemonshowdown.com/sprites/ani/';
 
-                const ballTypeCapitalized = ballType.charAt(0).toUpperCase() + ballType.slice(1);
+            const ballTypeCapitalized = ballType.charAt(0).toUpperCase() + ballType.slice(1);
 
-                const resultEmbed = new EmbedBuilder()
-                    .setColor(catchSuccess ? '#00FF00' : '#FF0000')
-                    .setAuthor({ 
-                        name: userName || 'Trainer',
-                        iconURL: avatarUrl
-                    })
-                    .setDescription(`You throw a ${ballTypeCapitalized} to catch the Pokémon\n${catchSuccess
-                        ? `You caught a ${wildPokemon.name} ${rarityEmoji}${shinyEmoji} (Lvl. ${wildPokemon.level})!`
-                        : `Oh no! The wild ${shinyEmoji}${wildPokemon.name} ${rarityEmoji} broke free!${wildPokemon.isShiny ? ' (It was shiny!)' : ''}`}`)
-                    .setImage(`${imgUrl}${wildPokemon.name.toLowerCase()}.gif`)
-                    
+            const resultEmbed = new EmbedBuilder()
+                .setColor(catchSuccess ? '#00FF00' : '#FF0000')
+                .setAuthor({ 
+                    name: userName || 'Trainer',
+                    iconURL: avatarUrl
+                })
+                .setDescription(`You throw a ${ballTypeCapitalized} to catch the Pokémon\n${catchSuccess
+                    ? `You caught a ${wildPokemon.name} ${rarityEmoji}${shinyEmoji} (Lvl. ${wildPokemon.level})!`
+                    : `Oh no! The wild ${shinyEmoji}${wildPokemon.name} ${rarityEmoji} broke free!${wildPokemon.isShiny ? ' (It was shiny!)' : ''}`}`)
+                .setImage(`${imgUrl}${wildPokemon.name.toLowerCase()}.gif`)
+                
 
             await interaction.reply({ embeds: [resultEmbed], components: [] });
             await fightMessage.edit({ components: [] }); // Remove all buttons after a catch attempt

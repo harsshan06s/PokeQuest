@@ -4,6 +4,33 @@ const { v4: uuidv4 } = require('uuid');
 
 const COOLDOWN_TIME = 10000; // 10 seconds in milliseconds
 
+const baseRarities = [
+  { emoji: '<:n_:1259114941873520734>', chance: 700/1851 },
+  { emoji: '<:U_:1259114756313452680>', chance: 500/1851 },
+  { emoji: '<:r_:1259114608426487839>', chance: 300/1851},
+  { emoji: '<:SR:1259113778747015233>', chance: 250/1851},
+  { emoji: '<:UR:1259113669925539902>', chance: 200/1851 },
+  { emoji: '<:LR:1259113497053233162>', chance: 100/1851 }
+];
+
+function getcustomrarity(baseRarities, customChance) {
+  let customRarities = JSON.parse(JSON.stringify(baseRarities));
+  let highRarityChance = customRarities.slice(3).reduce((sum, rarity) => sum + rarity.chance, 0);
+  let boostFactor = 1 + (customChance * 0.5);
+  
+  for (let i = 3; i < customRarities.length; i++) {
+    customRarities[i].chance *= boostFactor;
+  }
+  
+  let newTotalChance = customRarities.reduce((sum, rarity) => sum + rarity.chance, 0);
+  
+  customRarities.forEach(rarity => {
+    rarity.chance /= newTotalChance;
+  });
+  
+  return customRarities;
+}
+
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('wild')
@@ -25,8 +52,14 @@ module.exports = {
                 return interaction.reply(`You need to wait ${remainingTime} more seconds before encountering another wild Pokémon!`);
             }
 
+            // Apply custom rarity if set
+            let rarities = baseRarities;
+            if (userData.customChances && userData.customChances.rarity) {
+                rarities = getcustomrarity(baseRarities, userData.customChances.rarity);
+            }
+
             const userLevel = Math.max(...userData.pokemon.map(p => p.level));
-            const wildPokemon = generateWildPokemon(userLevel);
+            const wildPokemon = generateWildPokemon(userLevel, rarities);
             const encounterId = uuidv4();
 
             console.log(`User ${userName} encountered a wild ${wildPokemon.name} (Level ${wildPokemon.level})`);
@@ -74,7 +107,6 @@ module.exports = {
         }
     },
 };
-
 function createEncounterEmbed(pokemon, userName, avatarUrl) {
     let imgUrl = 'https://play.pokemonshowdown.com/sprites/ani/';
     if (pokemon.isShiny) {

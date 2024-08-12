@@ -360,75 +360,109 @@ async function saveEssentialUserData(userId, userData) {
         activePokemon: userData.pokemon[userData.selectedPokemon],
         money: userData.money,
         items: userData.items,
-        lastWildEncounter: userData.lastWildEncounter
+        lastWildEncounter: userData.lastWildEncounter,
+        caughtPokemon: userData.caughtPokemon || {} // Add this line to include caught Pokémon data
     };
 
     const filePath = path.join(__dirname, '..', 'data', `${userId}_essential.json`);
     await fs.writeFile(filePath, JSON.stringify(essentialData, null, 2));
 }
 
-
-function generateWildPokemon(userLevel, userData = {}) {
-    if (pokemonList.length === 0) {
-        console.error('Pokemon list is empty. Make sure loadPokemonLists() is called before generating wild Pokemon.');
-        return null;
+const baseRarities = [
+    { emoji: '<:n_:1259114941873520734>', chance: 700/1851 },
+    { emoji: '<:U_:1259114756313452680>', chance: 500/1851 },
+    { emoji: '<:r_:1259114608426487839>', chance: 300/1851},
+    { emoji: '<:SR:1259113778747015233>', chance: 250/1851},
+    { emoji: '<:UR:1259113669925539902>', chance: 200/1851 },
+    { emoji: '<:LR:1259113497053233162>', chance: 100/1851 }
+  ];
+  
+  function getcustomrarity(baseRarities, customChance) {
+    let customRarities = JSON.parse(JSON.stringify(baseRarities));
+    let highRarityChance = customRarities.slice(3).reduce((sum, rarity) => sum + rarity.chance, 0);
+    let boostFactor = 1 + (customChance * 0.5);
+    
+    for (let i = 3; i < customRarities.length; i++) {
+      customRarities[i].chance *= boostFactor;
     }
-    const randomPokemon = pokemonList[Math.floor(Math.random() * pokemonList.length)];
-    const level = Math.min(85, Math.max(1, Math.floor(userLevel + (Math.random() * 10 - 5))));
-    const pokemonTypes = pokemonList1[randomPokemon.toLowerCase()] || ['Unknown'];
-
-    return {
-        name: randomPokemon.charAt(0).toUpperCase() + randomPokemon.slice(1),
-        type: pokemonTypes[0], // Use the first type
-        level,
-        exp: 0,
-        isShiny: isShiny(userData),
-        moves: ['Tackle'], // You might want to generate moves based on the Pokemon and its level
-        catchRate: 100, // You might want to set this based on the specific Pokemon
-        rarity: getCustomRarity(userData)
-    };
-}
-
+    
+    let newTotalChance = customRarities.reduce((sum, rarity) => sum + rarity.chance, 0);
+    
+    customRarities.forEach(rarity => {
+      rarity.chance /= newTotalChance;
+    });
+    
+    return customRarities;
+  }
+  
+  function determineRarity(rarities) {
+      const rand = Math.random();
+      let cumulativeChance = 0;
+      for (const rarity of rarities) {
+          cumulativeChance += rarity.chance;
+          if (rand < cumulativeChance) {
+              return rarity.emoji;
+          }
+      }
+      return rarities[rarities.length - 1].emoji; // Default to the last rarity if something goes wrong
+  }
+  
+  function generateWildPokemon(userLevel, userData = {}) {
+      if (pokemonList.length === 0) {
+          console.error('Pokemon list is empty. Make sure loadPokemonLists() is called before generating wild Pokemon.');
+          return null;
+      }
+  
+      // Determine rarities
+      let rarities = baseRarities;
+      if (userData.customChances && userData.customChances.rarity) {
+          rarities = getcustomrarity(baseRarities, userData.customChances.rarity);
+      }
+  
+      const randomPokemon = pokemonList[Math.floor(Math.random() * pokemonList.length)];
+      const level = Math.min(85, Math.max(1, Math.floor(userLevel + (Math.random() * 10 - 5))));
+      const pokemonTypes = pokemonList1[randomPokemon.toLowerCase()] || ['Unknown'];
+  
+      return {
+          name: randomPokemon.charAt(0).toUpperCase() + randomPokemon.slice(1),
+          type: pokemonTypes[0], // Use the first type
+          level,
+          exp: 0,
+          isShiny: isShiny(userData),
+          moves: ['Tackle'], // You might want to generate moves based on the Pokemon and its level
+          catchRate: 100, // You might want to set this based on the specific Pokemon
+          rarity: determineRarity(rarities)
+      };
+  }
 function isShiny(userData) {
     const shinyChance = userData.customChances?.shiny || 0.01; // Default 1% if not set
     return Math.random() < shinyChance;
 }
-function getCustomRarity(userData = {}) {
-    const baseRarity = getPokemonRarity();
-    console.log(`Base rarity: ${baseRarity}`);
+function getcustomrarity(baseRarities, customChance) {
+    // Create a copy of the base rarities
+    let customRarities = JSON.parse(JSON.stringify(baseRarities));
     
-    if (userData.customChances?.rarity) {
-        const rarityChance = userData.customChances.rarity;
-        console.log(`User has custom rarity chance: ${rarityChance}`);
-        
-        if (Math.random() < rarityChance) {
-            console.log('Custom rarity boost applied');
-            const rarities = [
-                '<:n_:1259114941873520734>',
-                '<:U_:1259114756313452680>',
-                '<:r_:1259114608426487839>',
-                '<:SR:1259113778747015233>',
-                '<:UR:1259113669925539902>',
-                '<:LR:1259113497053233162>'
-            ];
-            
-            const currentIndex = rarities.indexOf(baseRarity);
-            console.log(`Current rarity index: ${currentIndex}`);
-            if (currentIndex < rarities.length - 1) {
-                const boostedRarity = rarities[currentIndex + 1];
-                console.log(`Boosted rarity: ${boostedRarity}`);
-                return boostedRarity;
-            }
-        } else {
-            console.log('Custom rarity boost not applied');
-        }
-    } else {
-        console.log('User does not have custom rarity chance');
+    // Calculate the total chance of SR, UR, and LR
+    let highRarityChance = customRarities.slice(3).reduce((sum, rarity) => sum + rarity.chance, 0);
+    
+    // Calculate the boost factor (50% increase)
+    let boostFactor = 1 + (customChance * 0.5);
+    
+    // Boost the chances for SR, UR, and LR
+    for (let i = 3; i < customRarities.length; i++) {
+      customRarities[i].chance *= boostFactor;
     }
     
-    console.log(`Returning base rarity: ${baseRarity}`);
-    return baseRarity;
-}
+    // Calculate the new total chance
+    let newTotalChance = customRarities.reduce((sum, rarity) => sum + rarity.chance, 0);
+    
+    // Normalize the chances to ensure they sum up to 1
+    customRarities.forEach(rarity => {
+      rarity.chance /= newTotalChance;
+    });
+    
+    return customRarities;
+  }
 async function updateSelectedPokemon(userId, pokemonIndex) {
     const userData = await getUserData(userId);
     if (!userData) {
@@ -682,7 +716,7 @@ module.exports = {
     getCachedBattleImage,
     setCachedBattleImage,
     useRareCandy,
-    getCustomRarity,
+    getcustomrarity,
     saveEssentialUserData,
     createRaidBattleImage,
     loadPokemonLists,
