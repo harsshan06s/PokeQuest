@@ -5,55 +5,17 @@ const POKEMON_PER_PAGE = 10;
 
 // Define lists of special Pokémon
 const MYTHICAL_POKEMON = [
-    "Victini", 
-    "Keldeo", 
-    "Meloetta", 
-    "Genesect", 
-    "Diancie", 
-    "Hoopa", 
-    "Volcanion", 
-    "Mew", 
-    "Celebi", 
-    "Jirachi", 
-    "Deoxys", 
-    "Manaphy", 
-    "Phione", 
-    "Darkrai", 
-    "Shaymin", 
-    "Arceus", 
-    "Marshadow", 
-    "Magearna", 
-    "Keldeo-Resolute", 
-    "Meloetta-Pirouette", 
-    "Genesect-Chill-Drive", 
-    "Genesect-Burn-Drive", 
-    "Genesect-Douse-Drive", 
-    "Genesect-Shock-Drive", 
-    "Mega-Diancie", 
-    "Hoopa-Unbound", 
-    "Shaymin-Sky", 
-    "Deoxys-Defense", 
-    "Deoxys-Attack", 
-    "Deoxys-Speed", 
-    "Magearna-Original", 
-    "Arceus-Bug", 
-    "Arceus-Dark", 
-    "Arceus-Dragon", 
-    "Arceus-Electric", 
-    "Arceus-Fighting", 
-    "Arceus-Fire", 
-    "Arceus-Flying", 
-    "Arceus-Ghost", 
-    "Arceus-Grass", 
-    "Arceus-Ground", 
-    "Arceus-Ice", 
-    "Arceus-Poison", 
-    "Arceus-Psychic", 
-    "Arceus-Rock", 
-    "Arceus-Steel", 
-    "Arceus-Water", 
-    "Arceus-Fairy"
+    "Victini", "Keldeo", "Meloetta", "Genesect", "Diancie", "Hoopa", "Volcanion", "Mew", 
+    "Celebi", "Jirachi", "Deoxys", "Manaphy", "Phione", "Darkrai", "Shaymin", "Arceus", 
+    "Marshadow", "Magearna", "Keldeo-Resolute", "Meloetta-Pirouette", "Genesect-Chill-Drive", 
+    "Genesect-Burn-Drive", "Genesect-Douse-Drive", "Genesect-Shock-Drive", "Mega-Diancie", 
+    "Hoopa-Unbound", "Shaymin-Sky", "Deoxys-Defense", "Deoxys-Attack", "Deoxys-Speed", 
+    "Magearna-Original", "Arceus-Bug", "Arceus-Dark", "Arceus-Dragon", "Arceus-Electric", 
+    "Arceus-Fighting", "Arceus-Fire", "Arceus-Flying", "Arceus-Ghost", "Arceus-Grass", 
+    "Arceus-Ground", "Arceus-Ice", "Arceus-Poison", "Arceus-Psychic", "Arceus-Rock", 
+    "Arceus-Steel", "Arceus-Water", "Arceus-Fairy"
 ];
+
 const LEGENDARY_POKEMON = [
     "Articuno", "Zapdos", "Moltres", "Mewtwo", "Suicune", "Entei", "Raikou", "Ho-Oh", "Lugia",
     "Latias", "Latios", "Regirock", "Regice", "Registeel", "Groudon", "Kyogre", "Rayquaza",
@@ -74,18 +36,10 @@ const LEGENDARY_POKEMON = [
     "Silvally-Bug", "Silvally-Rock", "Silvally-Ghost", "Silvally-Dragon", "Silvally-Dark",
     "Silvally-Steel", "Silvally-Fairy"
 ];
+
 const ULTRA_BEASTS = [
-    "Nihilego", 
-    "Buzzwole", 
-    "Pheromosa", 
-    "Xurkitree", 
-    "Kartana", 
-    "Celesteela", 
-    "Guzzlord", 
-    "Blacephalon", 
-    "Stakataka", 
-    "Poipole", 
-    "Naganadel"
+    "Nihilego", "Buzzwole", "Pheromosa", "Xurkitree", "Kartana", "Celesteela", 
+    "Guzzlord", "Blacephalon", "Stakataka", "Poipole", "Naganadel"
 ];
 
 module.exports = {
@@ -144,7 +98,7 @@ module.exports = {
             return interaction.reply(`${userName} doesn't have any Pokémon yet!`);
         }
 
-        let filteredPokemon = userData.pokemon.filter(pokemon => {
+        let filteredPokemon = userData.pokemon.map((pokemon, index) => ({...pokemon, originalId: index + 1})).filter(pokemon => {
             if (nameFilter && !pokemon.name.toLowerCase().includes(nameFilter.toLowerCase())) return false;
             if (typeFilter && !pokemon.types.includes(typeFilter.toLowerCase())) return false;
             if (levelFilter !== null && pokemon.level !== levelFilter) return false;
@@ -172,8 +126,8 @@ module.exports = {
                 .setDescription(`Showing ${filteredPokemon.length} of ${userData.pokemon.length} Pokémon`)
                 .setFooter({ text: `Page ${page}/${pages}` });
 
-            pagePokemons.forEach((pokemon, index) => {
-                const boxId = start + index + 1;
+            pagePokemons.forEach((pokemon) => {
+                const boxId = pokemon.originalId;
                 const pokemonName = pokemon.name || 'Unknown';
                 const pokemonLevel = pokemon.level || 'N/A';
                 const shinyEmoji = pokemon.isShiny ? '✨ ' : '';
