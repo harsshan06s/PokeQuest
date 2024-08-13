@@ -75,6 +75,18 @@ module.exports = {
                     { name: 'Ultra Beast', value: 'ultrabeast' }
                 )
                 .setRequired(false))
+        .addStringOption(option =>
+            option.setName('rarity')
+                .setDescription('Filter by Pokémon rarity')
+                .addChoices(
+                    { name: 'Normal', value: '<:n_:1259114941873520734>' },
+                    { name: 'Uncommon', value: '<:U_:1259114756313452680>' },
+                    { name: 'Rare', value: '<:r_:1259114608426487839>' },
+                    { name: 'Super Rare', value: '<:SR:1259113778747015233>' },
+                    { name: 'Ultra Rare', value: '<:UR:1259113669925539902>' },
+                    {name: 'Legendary Rare', value:'<:LR:1259113497053233162>'}
+                )
+                .setRequired(false))
         .addUserOption(option => 
             option.setName('user')
                 .setDescription('The user whose collection you want to view')
@@ -91,6 +103,7 @@ module.exports = {
         const megaFilter = interaction.options.getBoolean('mega');
         const shinyFilter = interaction.options.getBoolean('shiny');
         const specialFilter = interaction.options.getString('special');
+        const rarityFilter = interaction.options.getString('rarity');
 
         const userData = await getUserData(userId);
 
@@ -109,6 +122,7 @@ module.exports = {
                 if (specialFilter === 'mythical' && !MYTHICAL_POKEMON.includes(pokemon.name)) return false;
                 if (specialFilter === 'ultrabeast' && !ULTRA_BEASTS.includes(pokemon.name)) return false;
             }
+            if (rarityFilter && pokemon.rarity !== rarityFilter) return false;
             return true;
         });
 
@@ -132,9 +146,10 @@ module.exports = {
                 const pokemonLevel = pokemon.level || 'N/A';
                 const shinyEmoji = pokemon.isShiny ? '✨ ' : '';
                 const megaEmoji = pokemon.isMega ? '🔷 ' : '';
+                const rarity = pokemon.rarity || 'C';
                 
                 embed.addFields({
-                    name: `ID: ${boxId} | ${megaEmoji}${pokemonName} ${shinyEmoji}`,
+                    name: `ID: ${boxId} | ${rarity} ${megaEmoji}${pokemonName} ${shinyEmoji}`,
                     value: `Level ${pokemonLevel} | Type: ${pokemon.types.join(', ')}`,
                     inline: false
                 });
