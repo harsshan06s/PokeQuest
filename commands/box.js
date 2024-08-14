@@ -1,5 +1,6 @@
 const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 const { getUserData } = require('../utils/helpers.js');
+const POKEMON_TYPES = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/pokemon_types.json'), 'utf8'));
 
 const POKEMON_PER_PAGE = 10;
 
@@ -148,12 +149,14 @@ module.exports = {
                 const megaEmoji = pokemon.isMega ? '🔷 ' : '';
                 const rarity = pokemon.rarity || 'C';
                 
-                embed.addFields({
-                    name: `ID: ${boxId} | ${rarity} ${megaEmoji}${pokemonName} ${shinyEmoji}`,
-                    value: `Level ${pokemonLevel} | Type: ${pokemon.types.join(', ')}`,
-                    inline: false
-                });
-            });
+                const types = POKEMON_TYPES[pokemonName.toLowerCase()] || pokemon.types || ['Unknown'];
+    
+    embed.addFields({
+        name: `ID: ${boxId} | ${rarity} ${megaEmoji}${pokemonName} ${shinyEmoji}`,
+        value: `Level ${pokemonLevel} | Type: ${types.join(', ')}`,
+        inline: false
+    });
+});
 
             if (pagePokemons.length === 0) {
                 embed.addFields({

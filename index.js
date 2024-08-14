@@ -38,17 +38,30 @@ for (const file of commandFiles) {
 
 const rest = new REST({ version: '10' }).setToken(TOKEN);
 
+
 (async () => {
   try {
     console.log('Started refreshing application (/) commands.');
 
-    await rest.put(Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID), {
-      body: client.commands.map(command => command.data.toJSON()),
-    });
+    // Register global commands
+    console.log('Registering global commands...');
+    await rest.put(
+      Routes.applicationCommands(CLIENT_ID),
+      { body: client.commands.map(command => command.data.toJSON()) }
+    );
+    console.log('Global commands registered successfully.');
 
-    console.log('Successfully reloaded application (/) commands.');
+    // Register guild-specific commands
+    console.log('Registering guild-specific commands...');
+    await rest.put(
+      Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID),
+      { body: client.commands.map(command => command.data.toJSON()) }
+    );
+    console.log('Guild-specific commands registered successfully.');
+
+    console.log('Successfully reloaded all application (/) commands.');
   } catch (error) {
-    console.error(error);
+    console.error('Error refreshing application (/) commands:', error);
   }
 })();
 
@@ -114,6 +127,23 @@ client.once('ready', () => {
 
   // Start the first raid immediately
   startRaid();
+
+  // Schedule cache cleaning every 6 hours
+  setInterval(() => {
+    // Clean text channels
+    client.channels.cache.sweep(channel => 
+      channel.type === 'GUILD_TEXT' && !channel.messages.cache.size);
+
+    // Clean users
+    client.users.cache.sweep(() => true);
+
+    // Clean guild members
+    client.guilds.cache.forEach(guild => {
+      guild.members.cache.sweep(() => true);
+    });
+
+    console.log('Cache cleaned');
+  }, 6 * 60 * 60 * 1000); // 6 hours in milliseconds
 
   // You might also want to schedule future raids here
   // For example:
