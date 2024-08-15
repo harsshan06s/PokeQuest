@@ -43,18 +43,14 @@ async function registerCommands() {
     console.log('Started refreshing application (/) commands.');
 
     // Delete all existing commands
-    console.log('Deleting existing commands...');
-    await rest.put(Routes.applicationCommands(CLIENT_ID), { body: [] });
-    await rest.put(Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID), { body: [] });
-    console.log('Existing commands deleted successfully.');
 
     // Register global commands
-    console.log('Registering global commands...');
+    /*console.log('Registering global commands...');
     await rest.put(
       Routes.applicationCommands(CLIENT_ID),
       { body: client.commands.map(command => command.data.toJSON()) }
     );
-    console.log('Global commands registered successfully.');
+    console.log('Global commands registered successfully.'); */
 
     // Register guild-specific commands
     console.log('Registering guild-specific commands...');
