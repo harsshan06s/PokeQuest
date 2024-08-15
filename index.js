@@ -38,10 +38,15 @@ for (const file of commandFiles) {
 
 const rest = new REST({ version: '10' }).setToken(TOKEN);
 
-
-(async () => {
+async function registerCommands() {
   try {
     console.log('Started refreshing application (/) commands.');
+
+    // Delete all existing commands
+    console.log('Deleting existing commands...');
+    await rest.put(Routes.applicationCommands(CLIENT_ID), { body: [] });
+    await rest.put(Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID), { body: [] });
+    console.log('Existing commands deleted successfully.');
 
     // Register global commands
     console.log('Registering global commands...');
@@ -63,7 +68,7 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
   } catch (error) {
     console.error('Error refreshing application (/) commands:', error);
   }
-})();
+}
 
 // Load systems
 const battle = require('./systems/battle.js');
@@ -74,6 +79,7 @@ const { loadPokemonLists } = require('./utils/helpers.js');
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  registerCommands(); // Register commands when the bot is ready
 });
 
 client.on('interactionCreate', async interaction => {
@@ -129,25 +135,6 @@ client.once('ready', () => {
   startRaid();
 
   // Schedule cache cleaning every 6 hours
-  setInterval(() => {
-    // Clean text channels
-    client.channels.cache.sweep(channel => 
-      channel.type === 'GUILD_TEXT' && !channel.messages.cache.size);
-
-    // Clean users
-    client.users.cache.sweep(() => true);
-
-    // Clean guild members
-    client.guilds.cache.forEach(guild => {
-      guild.members.cache.sweep(() => true);
-    });
-
-    console.log('Cache cleaned');
-  }, 6 * 60 * 60 * 1000); // 6 hours in milliseconds
-
-  // You might also want to schedule future raids here
-  // For example:
-  // scheduleNextRaid();
 });
 
 client.login(TOKEN);

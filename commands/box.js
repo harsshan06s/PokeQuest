@@ -1,5 +1,7 @@
 const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 const { getUserData } = require('../utils/helpers.js');
+const fs = require('fs');
+const path = require('path');
 const POKEMON_TYPES = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/pokemon_types.json'), 'utf8'));
 
 const POKEMON_PER_PAGE = 10;
