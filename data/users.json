@@ -3419,25 +3419,102 @@
         "types": [
           "Water"
         ]
+      },
+      {
+        "name": "Shelmet",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Bug"
+        ]
+      },
+      {
+        "name": "Shroomish",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Grass"
+        ]
+      },
+      {
+        "name": "Zacian",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Fairy",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Metapod",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Bug"
+        ]
+      },
+      {
+        "name": "Vileplume",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Grass",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Wooper",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Poison",
+          "Ground"
+        ]
+      },
+      {
+        "name": "Wormadam",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Bug",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Slowbro",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Poison",
+          "Psychic"
+        ]
       }
     ],
     "items": {
       "pokeball": 9999974,
-      "greatball": 9999963,
+      "greatball": 9999962,
       "ultraball": 9999946,
-      "masterball": 9999635,
+      "masterball": 9999628,
       "Pokéball": 3,
       "pokéball": 3,
       "raidball": 148,
       "rare candy": 205,
       "rarecandy": 34
     },
-    "money": 50057513852,
+    "money": 50057517677,
     "lastDaily": null,
     "created": "2024-07-06T13:10:05.845Z",
     "currentWildPokemon": {
-      "name": "Phione",
-      "type": "Water",
+      "name": "Excadrill",
+      "type": "Ground",
       "level": 85,
       "exp": 0,
       "isShiny": false,
@@ -3445,11 +3522,11 @@
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:UR:1259113669925539902>",
+      "rarity": "<:SR:1259113778747015233>",
       "defeated": true,
-      "encounterId": "b15641a2-ae89-4b98-80f0-90e2464859a9"
+      "encounterId": "816d2861-1abd-4806-a09f-30c7c6858f3b"
     },
-    "lastWildEncounter": 1723815766905,
+    "lastWildEncounter": 1723827753762,
     "caughtPokemon": {
       "squirtle": {
         "isShiny": false
@@ -3993,29 +4070,72 @@
       },
       "phione": {
         "isShiny": false
+      },
+      "shelmet": {
+        "isShiny": false
+      },
+      "shroomish": {
+        "isShiny": false
+      },
+      "zacian": {
+        "isShiny": false
+      },
+      "metapod": {
+        "isShiny": false
+      },
+      "vileplume": {
+        "isShiny": false
+      },
+      "wormadam": {
+        "isShiny": false
+      },
+      "slowbro": {
+        "isShiny": false
       }
     },
     "lastRestart": "2024-07-08T07:17:38.545Z",
     "activePokemon": {
-      "name": "Kyogre",
-      "level": 100,
-      "rarity": "<:LR:1259113497053233162>",
+      "name": "Nidoran-m",
+      "level": 45,
       "isShiny": true,
-      "moves": [
-        "Tackle"
-      ],
-      "exp": 850,
-      "catchRate": 100,
+      "rarity": "<:LR:1259113497053233162>",
       "types": [
-        "Water"
-      ]
+        "Unknown"
+      ],
+      "exp": null
     },
-    "selectedPokemon": 285,
+    "selectedPokemon": 37,
     "exp": 70654,
     "raidCatchAttempts": 1,
     "customChances": {
       "rarity": 1
-    }
+    },
+    "customRarities": [
+      {
+        "emoji": "<:n_:1259114941873520734>",
+        "chance": 0.30107526881720426
+      },
+      {
+        "emoji": "<:U_:1259114756313452680>",
+        "chance": 0.21505376344086016
+      },
+      {
+        "emoji": "<:r_:1259114608426487839>",
+        "chance": 0.1290322580645161
+      },
+      {
+        "emoji": "<:SR:1259113778747015233>",
+        "chance": 0.16129032258064513
+      },
+      {
+        "emoji": "<:UR:1259113669925539902>",
+        "chance": 0.1290322580645161
+      },
+      {
+        "emoji": "<:LR:1259113497053233162>",
+        "chance": 0.06451612903225805
+      }
+    ]
   },
   "1027872140227268641": {
     "id": "1027872140227268641",
@@ -5360,22 +5480,146 @@
           "Ground",
           "Ghost"
         ]
+      },
+      {
+        "name": "Sandygast",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Ghost",
+          "Ground"
+        ]
+      },
+      {
+        "name": "Drifloon",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Ghost",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Tatsugiri",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Dragon",
+          "Water"
+        ]
+      },
+      {
+        "name": "Quilava",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Fire"
+        ]
+      },
+      {
+        "name": "Simipour",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Crobat",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Poison",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Spoink",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Cranidos",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Rock"
+        ]
+      },
+      {
+        "name": "Huntail",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Giratina",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Ghost",
+          "Dragon"
+        ]
+      },
+      {
+        "name": "Bellsprout",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Grass",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Raikou",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Electric"
+        ]
+      },
+      {
+        "name": "Gourgeist",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Ghost",
+          "Grass"
+        ]
       }
     ],
     "items": {
       "pokeball": 999942,
       "greatball": 0,
       "ultraball": 0,
-      "masterball": 68698,
+      "masterball": 68685,
       "raidball": 170,
       "rarecandy": 826
     },
-    "money": 3990926355633,
+    "money": 3990926361158,
     "lastDaily": null,
     "created": "2024-07-06T13:15:42.842Z",
     "currentWildPokemon": {
-      "name": "Flabébé",
-      "type": "Unknown",
+      "name": "Klink",
+      "type": "Steel",
       "level": 85,
       "exp": 0,
       "isShiny": false,
@@ -5385,10 +5629,10 @@
       "catchRate": 100,
       "rarity": "<:U_:1259114756313452680>",
       "defeated": false,
-      "encounterId": "6135124c-d5f5-4fa1-8799-0376d2a4b16a"
+      "encounterId": "3282456f-5daf-447d-9972-2e3cac25f5f0"
     },
     "lastRestart": "2024-07-08T07:19:16.675Z",
-    "lastWildEncounter": 1723815706361,
+    "lastWildEncounter": 1723822844514,
     "caughtPokemon": {
       "squirtle": {},
       "slowpoke": {
@@ -5542,7 +5786,7 @@
         "isShiny": true
       },
       "raikou": {
-        "isShiny": true
+        "isShiny": false
       },
       "mienfoo": {
         "isShiny": true
@@ -5693,23 +5937,57 @@
       },
       "golurk": {
         "isShiny": false
+      },
+      "sandygast": {
+        "isShiny": false
+      },
+      "drifloon": {
+        "isShiny": false
+      },
+      "tatsugiri": {
+        "isShiny": false
+      },
+      "quilava": {
+        "isShiny": false
+      },
+      "simipour": {
+        "isShiny": false
+      },
+      "crobat": {
+        "isShiny": false
+      },
+      "spoink": {
+        "isShiny": false
+      },
+      "cranidos": {
+        "isShiny": false
+      },
+      "huntail": {
+        "isShiny": false
+      },
+      "giratina": {
+        "isShiny": false
+      },
+      "gourgeist": {
+        "isShiny": false
       }
     },
     "activePokemon": {
-      "name": "Kyogre",
+      "name": "Zacian",
       "level": 100,
-      "rarity": "<:UR:1259113669925539902>",
+      "rarity": "<:n_:1259114941873520734>",
       "isShiny": true,
       "moves": [
         "Tackle"
       ],
-      "exp": 0,
-      "type": "Water",
+      "exp": 7650,
+      "type": "Fairy/Steel",
       "types": [
-        "Water"
+        "Fairy",
+        "Steel"
       ]
     },
-    "selectedPokemon": 8,
+    "selectedPokemon": 18,
     "exp": 76580,
     "raidCatchAttempts": 1
   },
@@ -9616,37 +9894,58 @@
           "Scratch",
           "Leer"
         ],
-        "catchRate": 45
+        "catchRate": 45,
+        "types": [
+          "Water"
+        ]
       },
       {
         "name": "Nidoran_m",
         "level": 5,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Unknown"
+        ]
       },
       {
         "name": "Arceus",
         "level": 2,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Normal"
+        ]
       },
       {
         "name": "Doduo",
         "level": 1,
         "isShiny": true,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Normal",
+          "Flying"
+        ]
       },
       {
         "name": "Metagross",
         "level": 1,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Steel",
+          "Psychic"
+        ]
       },
       {
         "name": "Jumpluff",
         "level": 8,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Grass",
+          "Flying"
+        ]
       },
       {
         "name": "rhyhorn",
@@ -9657,31 +9956,48 @@
           "Tackle"
         ],
         "exp": 0,
-        "catchRate": 100
+        "catchRate": 100,
+        "types": [
+          "Ground",
+          "Rock"
+        ]
       },
       {
         "name": "Dewott",
         "level": 10,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Water"
+        ]
       },
       {
         "name": "Volbeat",
         "level": 6,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Bug"
+        ]
       },
       {
         "name": "Latios",
         "level": 11,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Dragon",
+          "Psychic"
+        ]
       },
       {
         "name": "Gogoat",
         "level": 11,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Grass"
+        ]
       },
       {
         "name": "Rhyhorn",
@@ -9692,61 +10008,98 @@
           "Tackle"
         ],
         "exp": 0,
-        "catchRate": 100
+        "catchRate": 100,
+        "types": [
+          "Ground",
+          "Rock"
+        ]
       },
       {
         "name": "Nymble",
         "level": 7,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Bug"
+        ]
       },
       {
         "name": "Grimmsnarl",
         "level": 7,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Dark",
+          "Fairy"
+        ]
       },
       {
         "name": "Arboliva",
         "level": 14,
         "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>"
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Grass",
+          "Normal"
+        ]
       },
       {
         "name": "Tornadus",
         "level": 12,
         "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>"
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Flying"
+        ]
       },
       {
         "name": "Blaziken",
         "level": 18,
         "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>"
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Fire",
+          "Fighting"
+        ]
       },
       {
         "name": "Lunatone",
         "level": 14,
         "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>"
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Rock",
+          "Psychic"
+        ]
       },
       {
         "name": "Beautifly",
         "level": 14,
         "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>"
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Bug",
+          "Flying"
+        ]
       },
       {
         "name": "Riolu",
         "level": 17,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Fighting"
+        ]
       },
       {
         "name": "Croagunk",
         "level": 17,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Poison",
+          "Fighting"
+        ]
       },
       {
         "name": "Solgaleo",
@@ -9757,7 +10110,11 @@
           "Tackle"
         ],
         "exp": 0,
-        "type": "Psychic/Steel"
+        "type": "Psychic/Steel",
+        "types": [
+          "Psychic",
+          "Steel"
+        ]
       },
       {
         "name": "Rhyhorn",
@@ -9768,7 +10125,11 @@
           "Tackle"
         ],
         "exp": 0,
-        "catchRate": 100
+        "catchRate": 100,
+        "types": [
+          "Ground",
+          "Rock"
+        ]
       },
       {
         "name": "Regice",
@@ -9779,7 +10140,10 @@
           "Tackle"
         ],
         "exp": 0,
-        "type": "Ice"
+        "type": "Ice",
+        "types": [
+          "Ice"
+        ]
       },
       {
         "name": "Calyrex",
@@ -9790,7 +10154,11 @@
           "Tackle"
         ],
         "exp": 0,
-        "type": "Psychic/Grass"
+        "type": "Psychic/Grass",
+        "types": [
+          "Psychic",
+          "Ghost"
+        ]
       },
       {
         "name": "Landorus-Therian",
@@ -9801,7 +10169,10 @@
           "Tackle"
         ],
         "exp": 0,
-        "type": "Ground/Flying"
+        "type": "Ground/Flying",
+        "types": [
+          "Unknown"
+        ]
       },
       {
         "name": "Raikou",
@@ -9812,7 +10183,10 @@
           "Tackle"
         ],
         "exp": 0,
-        "type": "Electric"
+        "type": "Electric",
+        "types": [
+          "Electric"
+        ]
       },
       {
         "name": "Jirachi",
@@ -9823,7 +10197,34 @@
           "Tackle"
         ],
         "exp": 0,
-        "type": "Steel/Psychic"
+        "type": "Steel/Psychic",
+        "types": [
+          "Steel",
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Blissey",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Nidoran-M",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
       }
     ],
     "caughtPokemon": {
@@ -9880,6 +10281,9 @@
       },
       "croagunk": {
         "isShiny": false
+      },
+      "blissey": {
+        "isShiny": false
       }
     },
     "selectedPokemon": 22,
@@ -9888,16 +10292,16 @@
       "pokeball": 0,
       "greatball": 0,
       "ultraball": 0,
-      "masterball": 8675294,
+      "masterball": 8675293,
       "raidball": 7
     },
     "money": 9999999131468923000,
     "lastDaily": null,
     "created": "2024-07-10T14:47:42.405Z",
-    "lastWildEncounter": 1721063706063,
+    "lastWildEncounter": 1723827483276,
     "currentWildPokemon": {
-      "name": "Cutiefly",
-      "type": "Unknown",
+      "name": "Blissey",
+      "type": "Normal",
       "level": 85,
       "exp": 0,
       "isShiny": false,
@@ -9905,9 +10309,9 @@
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:r_:1259114608426487839>",
+      "rarity": "<:n_:1259114941873520734>",
       "defeated": true,
-      "encounterId": "af922e92-07fa-417d-953e-0a4ffa9d41fc"
+      "encounterId": "57167a49-4acb-4487-80c1-890e09a63ef0"
     },
     "activePokemon": {
       "name": "Rhyhorn",
@@ -9917,8 +10321,12 @@
       "moves": [
         "Tackle"
       ],
-      "exp": 850,
-      "catchRate": 100
+      "exp": 1700,
+      "catchRate": 100,
+      "types": [
+        "Ground",
+        "Rock"
+      ]
     },
     "exp": 2454,
     "raidCatchAttempts": 2
@@ -15823,7 +16231,7 @@
         "rarity": "<:SR:1259113778747015233>",
         "type": "Fire",
         "level": 5,
-        "exp": 480,
+        "exp": 740,
         "moves": [
           "Scratch",
           "Growl"
@@ -15832,10 +16240,40 @@
         "types": [
           "Fire"
         ]
+      },
+      {
+        "name": "Mimikyu",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Ghost",
+          "Fairy"
+        ]
+      },
+      {
+        "name": "Mimikyu",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Ghost",
+          "Fairy"
+        ]
       }
     ],
     "caughtPokemon": {},
-    "selectedPokemon": 0,
+    "selectedPokemon": 2,
     "isShiny": {},
     "items": {
       "pokeball": 4,
@@ -15844,14 +16282,14 @@
       "masterball": 0,
       "rarecandy": 0
     },
-    "money": 1240,
+    "money": 2645,
     "lastDaily": null,
     "created": "2024-08-14T17:15:15.327Z",
-    "lastWildEncounter": 1723743343044,
+    "lastWildEncounter": 1723819450764,
     "currentWildPokemon": {
-      "name": "Dwebble",
-      "type": "Bug",
-      "level": 4,
+      "name": "Ogerpon",
+      "type": "Grass",
+      "level": 85,
       "exp": 0,
       "isShiny": false,
       "moves": [
@@ -15860,7 +16298,22 @@
       "catchRate": 100,
       "rarity": "<:n_:1259114941873520734>",
       "defeated": true,
-      "encounterId": "0f8f23c6-8cd6-4bd8-af82-c703c47e8e5b"
+      "encounterId": "530c6ed4-bdf6-471a-9651-39433cecb29e"
+    },
+    "activePokemon": {
+      "name": "Mimikyu",
+      "level": 100,
+      "rarity": "<:LR:1259113497053233162>",
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "exp": 850,
+      "catchRate": 100,
+      "types": [
+        "Ghost",
+        "Fairy"
+      ]
     }
   },
   "303512897286438912": {
@@ -16690,5 +17143,217 @@
       ],
       "exp": null
     }
+  },
+  "1262521336618815580": {
+    "id": "1262521336618815580",
+    "region": "sinnoh",
+    "pokemon": [
+      {
+        "name": "Chimchar",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Fire",
+        "level": 5,
+        "exp": 0,
+        "moves": [
+          "Scratch",
+          "Leer"
+        ],
+        "catchRate": 45,
+        "types": [
+          "Fire"
+        ]
+      },
+      {
+        "name": "Kyogre-Primal",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Groudon-Primal",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Rayquaza-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      }
+    ],
+    "caughtPokemon": {},
+    "selectedPokemon": 0,
+    "isShiny": {},
+    "items": {
+      "pokeball": 5,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 0,
+      "rarecandy": 0
+    },
+    "money": 1000,
+    "lastDaily": null,
+    "created": "2024-08-16T15:17:41.904Z",
+    "lastWildEncounter": 0
+  },
+  "708835190746775603": {
+    "id": "708835190746775603",
+    "region": "kanto",
+    "pokemon": [
+      {
+        "name": "Charmander",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Fire",
+        "level": 5,
+        "exp": 0,
+        "moves": [
+          "Scratch",
+          "Growl"
+        ],
+        "catchRate": 45,
+        "types": [
+          "Fire"
+        ]
+      },
+      {
+        "name": "Dreepy",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Dragon",
+          "Ghost"
+        ]
+      },
+      {
+        "name": "Eternatus",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Poison",
+          "Dragon"
+        ]
+      },
+      {
+        "name": "Vullaby",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Dark",
+          "Flying"
+        ]
+      }
+    ],
+    "caughtPokemon": {
+      "eternatus": {
+        "isShiny": false
+      },
+      "vullaby": {
+        "isShiny": false
+      }
+    },
+    "selectedPokemon": 1,
+    "isShiny": {},
+    "items": {
+      "pokeball": 103,
+      "greatball": 98,
+      "ultraball": 97,
+      "masterball": 100,
+      "rarecandy": 0
+    },
+    "money": 999989903975,
+    "lastDaily": null,
+    "created": "2024-08-16T15:19:18.290Z",
+    "lastWildEncounter": 1723822761926,
+    "activePokemon": {
+      "name": "Dreepy",
+      "level": 100,
+      "rarity": "<:LR:1259113497053233162>",
+      "isShiny": true,
+      "moves": [
+        "Tackle"
+      ],
+      "exp": 5950,
+      "catchRate": 100,
+      "types": [
+        "Dragon",
+        "Ghost"
+      ]
+    },
+    "currentWildPokemon": {
+      "name": "Meltan",
+      "type": "Steel",
+      "level": 85,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:n_:1259114941873520734>",
+      "defeated": false,
+      "encounterId": "487d6ea5-22f0-4f6f-9e08-04e0aa7fc808"
+    },
+    "customChances": {
+      "rarity": 1
+    },
+    "customRarities": [
+      {
+        "emoji": "<:n_:1259114941873520734>",
+        "chance": 0.30107526881720426
+      },
+      {
+        "emoji": "<:U_:1259114756313452680>",
+        "chance": 0.21505376344086016
+      },
+      {
+        "emoji": "<:r_:1259114608426487839>",
+        "chance": 0.1290322580645161
+      },
+      {
+        "emoji": "<:SR:1259113778747015233>",
+        "chance": 0.16129032258064513
+      },
+      {
+        "emoji": "<:UR:1259113669925539902>",
+        "chance": 0.1290322580645161
+      },
+      {
+        "emoji": "<:LR:1259113497053233162>",
+        "chance": 0.06451612903225805
+      }
+    ]
   }
 }

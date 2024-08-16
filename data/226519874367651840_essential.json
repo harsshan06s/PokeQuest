@@ -1,0 +1,87 @@
+{
+  "id": "226519874367651840",
+  "selectedPokemon": 22,
+  "activePokemon": {
+    "name": "Rhyhorn",
+    "level": 100,
+    "rarity": "<:LR:1259113497053233162>",
+    "isShiny": false,
+    "moves": [
+      "Tackle"
+    ],
+    "exp": 0,
+    "catchRate": 100,
+    "types": [
+      "Ground",
+      "Rock"
+    ]
+  },
+  "money": 9999999131468923000,
+  "items": {
+    "pokeball": 0,
+    "greatball": 0,
+    "ultraball": 0,
+    "masterball": 8675293,
+    "raidball": 7
+  },
+  "lastWildEncounter": 1723827483276,
+  "caughtPokemon": {
+    "nidoran-m": {
+      "isShiny": true
+    },
+    "arceus": {
+      "isShiny": true
+    },
+    "doduo": {
+      "isShiny": true
+    },
+    "metagross": {
+      "isShiny": true
+    },
+    "jumpluff": {
+      "isShiny": true
+    },
+    "dewott": {
+      "isShiny": true
+    },
+    "volbeat": {
+      "isShiny": true
+    },
+    "latios": {
+      "isShiny": true
+    },
+    "gogoat": {
+      "isShiny": true
+    },
+    "nymble": {
+      "isShiny": false
+    },
+    "grimmsnarl": {
+      "isShiny": false
+    },
+    "arboliva": {
+      "isShiny": false
+    },
+    "tornadus": {
+      "isShiny": false
+    },
+    "blaziken": {
+      "isShiny": false
+    },
+    "lunatone": {
+      "isShiny": false
+    },
+    "beautifly": {
+      "isShiny": false
+    },
+    "riolu": {
+      "isShiny": false
+    },
+    "croagunk": {
+      "isShiny": false
+    },
+    "blissey": {
+      "isShiny": false
+    }
+  }
+}

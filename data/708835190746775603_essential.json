@@ -1,0 +1,36 @@
+{
+  "id": "708835190746775603",
+  "selectedPokemon": 1,
+  "activePokemon": {
+    "name": "Dreepy",
+    "level": 100,
+    "rarity": "<:LR:1259113497053233162>",
+    "isShiny": true,
+    "moves": [
+      "Tackle"
+    ],
+    "exp": 0,
+    "catchRate": 100,
+    "types": [
+      "Dragon",
+      "Ghost"
+    ]
+  },
+  "money": 999989903975,
+  "items": {
+    "pokeball": 103,
+    "greatball": 98,
+    "ultraball": 97,
+    "masterball": 100,
+    "rarecandy": 0
+  },
+  "lastWildEncounter": 1723822761926,
+  "caughtPokemon": {
+    "eternatus": {
+      "isShiny": false
+    },
+    "vullaby": {
+      "isShiny": false
+    }
+  }
+}

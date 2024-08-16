@@ -1,33 +1,28 @@
 {
   "id": "973983152701849610",
-  "selectedPokemon": 285,
+  "selectedPokemon": 37,
   "activePokemon": {
-    "name": "Kyogre",
-    "level": 100,
-    "rarity": "<:LR:1259113497053233162>",
+    "name": "Nidoran-m",
+    "level": 45,
     "isShiny": true,
-    "moves": [
-      "Tackle"
-    ],
-    "exp": 0,
-    "catchRate": 100,
+    "rarity": "<:LR:1259113497053233162>",
     "types": [
-      "Water"
+      "Unknown"
     ]
   },
-  "money": 50057513852,
+  "money": 50057517677,
   "items": {
     "pokeball": 9999974,
-    "greatball": 9999963,
+    "greatball": 9999962,
     "ultraball": 9999946,
-    "masterball": 9999635,
+    "masterball": 9999628,
     "Pokéball": 3,
     "pokéball": 3,
     "raidball": 148,
     "rare candy": 205,
     "rarecandy": 34
   },
-  "lastWildEncounter": 1723815766905,
+  "lastWildEncounter": 1723827753762,
   "caughtPokemon": {
     "squirtle": {
       "isShiny": false
@@ -570,6 +565,27 @@
       "isShiny": false
     },
     "phione": {
+      "isShiny": false
+    },
+    "shelmet": {
+      "isShiny": false
+    },
+    "shroomish": {
+      "isShiny": false
+    },
+    "zacian": {
+      "isShiny": false
+    },
+    "metapod": {
+      "isShiny": false
+    },
+    "vileplume": {
+      "isShiny": false
+    },
+    "wormadam": {
+      "isShiny": false
+    },
+    "slowbro": {
       "isShiny": false
     }
   }

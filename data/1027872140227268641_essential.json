@@ -1,30 +1,31 @@
 {
   "id": "1027872140227268641",
-  "selectedPokemon": 8,
+  "selectedPokemon": 18,
   "activePokemon": {
-    "name": "Kyogre",
+    "name": "Zacian",
     "level": 100,
-    "rarity": "<:UR:1259113669925539902>",
+    "rarity": "<:n_:1259114941873520734>",
     "isShiny": true,
     "moves": [
       "Tackle"
     ],
     "exp": 0,
-    "type": "Water",
+    "type": "Fairy/Steel",
     "types": [
-      "Water"
+      "Fairy",
+      "Steel"
     ]
   },
-  "money": 3990926355633,
+  "money": 3990926361158,
   "items": {
     "pokeball": 999942,
     "greatball": 0,
     "ultraball": 0,
-    "masterball": 68698,
+    "masterball": 68685,
     "raidball": 170,
     "rarecandy": 826
   },
-  "lastWildEncounter": 1723815706361,
+  "lastWildEncounter": 1723822829679,
   "caughtPokemon": {
     "squirtle": {},
     "slowpoke": {
@@ -178,7 +179,7 @@
       "isShiny": true
     },
     "raikou": {
-      "isShiny": true
+      "isShiny": false
     },
     "mienfoo": {
       "isShiny": true
@@ -328,6 +329,39 @@
       "isShiny": false
     },
     "golurk": {
+      "isShiny": false
+    },
+    "sandygast": {
+      "isShiny": false
+    },
+    "drifloon": {
+      "isShiny": false
+    },
+    "tatsugiri": {
+      "isShiny": false
+    },
+    "quilava": {
+      "isShiny": false
+    },
+    "simipour": {
+      "isShiny": false
+    },
+    "crobat": {
+      "isShiny": false
+    },
+    "spoink": {
+      "isShiny": false
+    },
+    "cranidos": {
+      "isShiny": false
+    },
+    "huntail": {
+      "isShiny": false
+    },
+    "giratina": {
+      "isShiny": false
+    },
+    "gourgeist": {
       "isShiny": false
     }
   }

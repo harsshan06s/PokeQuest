@@ -1,22 +1,22 @@
 {
   "id": "858515856383541249",
-  "selectedPokemon": 0,
+  "selectedPokemon": 2,
   "activePokemon": {
-    "name": "Litten",
-    "rarity": "<:SR:1259113778747015233>",
-    "type": "Fire",
-    "level": 5,
-    "exp": 480,
+    "name": "Mimikyu",
+    "level": 100,
+    "rarity": "<:LR:1259113497053233162>",
+    "isShiny": false,
     "moves": [
-      "Scratch",
-      "Growl"
+      "Tackle"
     ],
-    "catchRate": 45,
+    "exp": 0,
+    "catchRate": 100,
     "types": [
-      "Fire"
+      "Ghost",
+      "Fairy"
     ]
   },
-  "money": 1240,
+  "money": 2645,
   "items": {
     "pokeball": 4,
     "greatball": 0,
@@ -24,6 +24,6 @@
     "masterball": 0,
     "rarecandy": 0
   },
-  "lastWildEncounter": 1723743343044,
+  "lastWildEncounter": 1723819450764,
   "caughtPokemon": {}
 }
