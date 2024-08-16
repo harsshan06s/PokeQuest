@@ -1,0 +1,576 @@
+{
+  "id": "973983152701849610",
+  "selectedPokemon": 285,
+  "activePokemon": {
+    "name": "Kyogre",
+    "level": 100,
+    "rarity": "<:LR:1259113497053233162>",
+    "isShiny": true,
+    "moves": [
+      "Tackle"
+    ],
+    "exp": 0,
+    "catchRate": 100,
+    "types": [
+      "Water"
+    ]
+  },
+  "money": 50057513852,
+  "items": {
+    "pokeball": 9999974,
+    "greatball": 9999963,
+    "ultraball": 9999946,
+    "masterball": 9999635,
+    "Pokéball": 3,
+    "pokéball": 3,
+    "raidball": 148,
+    "rare candy": 205,
+    "rarecandy": 34
+  },
+  "lastWildEncounter": 1723815766905,
+  "caughtPokemon": {
+    "squirtle": {
+      "isShiny": false
+    },
+    "frosmoth": {
+      "isShiny": false
+    },
+    "fletchinder": {
+      "isShiny": false
+    },
+    "pupitar": {
+      "isShiny": false
+    },
+    "aipom": {
+      "isShiny": true
+    },
+    "runerigus": {
+      "isShiny": false
+    },
+    "cobalion": {
+      "isShiny": false
+    },
+    "doublade": {
+      "isShiny": false
+    },
+    "kilowattrel": {
+      "isShiny": false
+    },
+    "cubone": {
+      "isShiny": false
+    },
+    "rayquaza": {
+      "isShiny": false
+    },
+    "rellor": {
+      "isShiny": false
+    },
+    "duosion": {
+      "isShiny": false
+    },
+    "magnezone": {
+      "isShiny": false
+    },
+    "tarountula": {
+      "isShiny": false
+    },
+    "kadabra": {
+      "isShiny": false
+    },
+    "rufflet": {
+      "isShiny": false
+    },
+    "magmar": {
+      "isShiny": false
+    },
+    "escavalier": {
+      "isShiny": false
+    },
+    "gible": {
+      "isShiny": false
+    },
+    "riolu": {
+      "isShiny": false
+    },
+    "ivysaur": {
+      "isShiny": false
+    },
+    "snubbull": {
+      "isShiny": false
+    },
+    "mareep": {
+      "isShiny": false
+    },
+    "furfrou": {
+      "isShiny": false
+    },
+    "simisear": {
+      "isShiny": false
+    },
+    "golbat": {
+      "isShiny": false
+    },
+    "mismagius": {
+      "isShiny": false
+    },
+    "azelf": {
+      "isShiny": false
+    },
+    "dusclops": {
+      "isShiny": false
+    },
+    "kyogre": {
+      "isShiny": false
+    },
+    "pikachu": {
+      "isShiny": false
+    },
+    "sandshrew": {
+      "isShiny": false
+    },
+    "slugma": {
+      "isShiny": false
+    },
+    "durant": {
+      "isShiny": false
+    },
+    "leavanny": {
+      "isShiny": false
+    },
+    "ursaring": {
+      "isShiny": false
+    },
+    "klinklang": {
+      "isShiny": false
+    },
+    "silcoon": {
+      "isShiny": false
+    },
+    "dratini": {
+      "isShiny": false
+    },
+    "onix": {
+      "isShiny": false
+    },
+    "dwebble": {
+      "isShiny": false
+    },
+    "weavile": {
+      "isShiny": false
+    },
+    "carbink": {
+      "isShiny": false
+    },
+    "haxorus": {
+      "isShiny": false
+    },
+    "garchomp": {
+      "isShiny": false
+    },
+    "staraptor": {
+      "isShiny": false
+    },
+    "jynx": {
+      "isShiny": true
+    },
+    "talonflame": {
+      "isShiny": true
+    },
+    "cubchoo": {
+      "isShiny": true
+    },
+    "xatu": {
+      "isShiny": true
+    },
+    "swablu": {
+      "isShiny": true
+    },
+    "sceptile": {
+      "isShiny": true
+    },
+    "crobat": {
+      "isShiny": true
+    },
+    "porygon-z": {
+      "isShiny": true
+    },
+    "uxie": {
+      "isShiny": false
+    },
+    "groudon": {
+      "isShiny": false
+    },
+    "sharpedo": {
+      "isShiny": false
+    },
+    "electabuzz": {
+      "isShiny": false
+    },
+    "cetoddle": {
+      "isShiny": false
+    },
+    "victini": {
+      "isShiny": false
+    },
+    "conkeldurr": {
+      "isShiny": false
+    },
+    "stantler": {
+      "isShiny": false
+    },
+    "seviper": {
+      "isShiny": false
+    },
+    "accelgor": {
+      "isShiny": false
+    },
+    "brionne": {
+      "isShiny": false
+    },
+    "bisharp": {
+      "isShiny": false
+    },
+    "gorebyss": {
+      "isShiny": false
+    },
+    "nidoran-m": {
+      "isShiny": true
+    },
+    "quilladin": {
+      "isShiny": true
+    },
+    "pachirisu": {
+      "isShiny": true
+    },
+    "latios": {
+      "isShiny": false
+    },
+    "vaporeon": {
+      "isShiny": true
+    },
+    "mantyke": {
+      "isShiny": true
+    },
+    "bibarel": {
+      "isShiny": true
+    },
+    "amaura": {
+      "isShiny": true
+    },
+    "azumarill": {
+      "isShiny": true
+    },
+    "hoopa": {
+      "isShiny": true
+    },
+    "combusken": {
+      "isShiny": true
+    },
+    "braviary": {
+      "isShiny": true
+    },
+    "staravia": {
+      "isShiny": true
+    },
+    "bulbasaur": {
+      "isShiny": true
+    },
+    "horsea": {
+      "isShiny": true
+    },
+    "hypno": {
+      "isShiny": true
+    },
+    "krookodile": {
+      "isShiny": true
+    },
+    "suicune": {
+      "isShiny": true
+    },
+    "togepi": {
+      "isShiny": true
+    },
+    "magmortar": {
+      "isShiny": false
+    },
+    "empoleon": {
+      "isShiny": true
+    },
+    "emolga": {
+      "isShiny": true
+    },
+    "karrablast": {
+      "isShiny": false
+    },
+    "shedinja": {
+      "isShiny": false
+    },
+    "seedot": {
+      "isShiny": true
+    },
+    "dewgong": {
+      "isShiny": true
+    },
+    "dunsparce": {
+      "isShiny": true
+    },
+    "spearow": {
+      "isShiny": true
+    },
+    "eelektrik": {
+      "isShiny": false
+    },
+    "thundurus": {
+      "isShiny": true
+    },
+    "arcanine": {
+      "isShiny": false
+    },
+    "regieleki": {
+      "isShiny": false
+    },
+    "aegislash": {
+      "isShiny": false
+    },
+    "swellow": {
+      "isShiny": false
+    },
+    "wo-chien": {
+      "isShiny": false
+    },
+    "primarina": {
+      "isShiny": false
+    },
+    "tauros": {
+      "isShiny": true
+    },
+    "burmy": {
+      "isShiny": false
+    },
+    "oddish": {
+      "isShiny": false
+    },
+    "toedscruel": {
+      "isShiny": false
+    },
+    "weepinbell": {
+      "isShiny": false
+    },
+    "charmander": {
+      "isShiny": false
+    },
+    "prinplup": {
+      "isShiny": false
+    },
+    "landorus": {
+      "isShiny": false
+    },
+    "magby": {
+      "isShiny": false
+    },
+    "solgaleo": {
+      "isShiny": false
+    },
+    "feraligatr": {
+      "isShiny": false
+    },
+    "pignite": {
+      "isShiny": false
+    },
+    "sawk": {
+      "isShiny": false
+    },
+    "morgrem": {
+      "isShiny": false
+    },
+    "wooper": {
+      "isShiny": false
+    },
+    "kubfu": {
+      "isShiny": false
+    },
+    "cranidos": {
+      "isShiny": true
+    },
+    "flareon": {
+      "isShiny": false
+    },
+    "parasect": {
+      "isShiny": false
+    },
+    "hydrapple": {
+      "isShiny": false
+    },
+    "drifloon": {
+      "isShiny": false
+    },
+    "lampent": {
+      "isShiny": false
+    },
+    "luxray": {
+      "isShiny": false
+    },
+    "starly": {
+      "isShiny": true
+    },
+    "dragonair": {
+      "isShiny": false
+    },
+    "hattrem": {
+      "isShiny": false
+    },
+    "trevenant": {
+      "isShiny": false
+    },
+    "corvisquire": {
+      "isShiny": false
+    },
+    "kingler": {
+      "isShiny": false
+    },
+    "flittle": {
+      "isShiny": false
+    },
+    "yveltal": {
+      "isShiny": false
+    },
+    "kleavor": {
+      "isShiny": false
+    },
+    "fezandipiti": {
+      "isShiny": false
+    },
+    "snorunt": {
+      "isShiny": false
+    },
+    "simipour": {
+      "isShiny": false
+    },
+    "cufant": {
+      "isShiny": false
+    },
+    "beautifly": {
+      "isShiny": false
+    },
+    "dugtrio": {
+      "isShiny": false
+    },
+    "lairon": {
+      "isShiny": true
+    },
+    "smeargle": {
+      "isShiny": false
+    },
+    "meowscarada": {
+      "isShiny": false
+    },
+    "cofagrigus": {
+      "isShiny": false
+    },
+    "drowzee": {
+      "isShiny": false
+    },
+    "lillipup": {
+      "isShiny": false
+    },
+    "naganadel": {
+      "isShiny": false
+    },
+    "phanpy": {
+      "isShiny": false
+    },
+    "hitmontop": {
+      "isShiny": false
+    },
+    "nidoking": {
+      "isShiny": false
+    },
+    "piloswine": {
+      "isShiny": false
+    },
+    "lapras": {
+      "isShiny": false
+    },
+    "persian": {
+      "isShiny": false
+    },
+    "luvdisc": {
+      "isShiny": false
+    },
+    "clamperl": {
+      "isShiny": false
+    },
+    "veluza": {
+      "isShiny": false
+    },
+    "goodra": {
+      "isShiny": false
+    },
+    "ferroseed": {
+      "isShiny": false
+    },
+    "copperajah": {
+      "isShiny": false
+    },
+    "meltan": {
+      "isShiny": false
+    },
+    "cacturne": {
+      "isShiny": false
+    },
+    "komala": {
+      "isShiny": false
+    },
+    "pinsir": {
+      "isShiny": false
+    },
+    "steelix": {
+      "isShiny": false
+    },
+    "granbull": {
+      "isShiny": false
+    },
+    "exeggcute": {
+      "isShiny": false
+    },
+    "bouffalant": {
+      "isShiny": false
+    },
+    "ninjask": {
+      "isShiny": false
+    },
+    "litwick": {
+      "isShiny": false
+    },
+    "buzzwole": {
+      "isShiny": false
+    },
+    "walrein": {
+      "isShiny": false
+    },
+    "vanilluxe": {
+      "isShiny": false
+    },
+    "dewpider": {
+      "isShiny": false
+    },
+    "dartrix": {
+      "isShiny": false
+    },
+    "whiscash": {
+      "isShiny": false
+    },
+    "greavard": {
+      "isShiny": false
+    },
+    "kingambit": {
+      "isShiny": false
+    },
+    "jolteon": {
+      "isShiny": false
+    },
+    "phione": {
+      "isShiny": false
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "800030217191161907",
+  "selectedPokemon": 1,
+  "activePokemon": {
+    "name": "Diancie",
+    "level": 100,
+    "rarity": "<:LR:1259113497053233162>",
+    "isShiny": true,
+    "moves": [
+      "Tackle"
+    ],
+    "exp": 0,
+    "catchRate": 100,
+    "types": [
+      "Rock",
+      "Fairy"
+    ]
+  },
+  "money": 49662554,
+  "items": {
+    "pokeball": 0,
+    "greatball": 0,
+    "ultraball": 976,
+    "masterball": 0,
+    "raidball": 27
+  },
+  "lastWildEncounter": 1723719312957,
+  "caughtPokemon": {
+    "cacnea": {
+      "isShiny": false
+    },
+    "goldeen": {
+      "isShiny": false
+    },
+    "venomoth": {
+      "isShiny": false
+    },
+    "hypno": {
+      "isShiny": false
+    },
+    "frigibax": {
+      "isShiny": false
+    },
+    "onix": {
+      "isShiny": false
+    },
+    "dolliv": {
+      "isShiny": false
+    },
+    "croconaw": {
+      "isShiny": false
+    },
+    "abra": {
+      "isShiny": false
+    },
+    "virizion": {
+      "isShiny": false
+    },
+    "togepi": {
+      "isShiny": false
+    },
+    "vespiquen": {
+      "isShiny": false
+    },
+    "toxtricity": {
+      "isShiny": false
+    },
+    "fomantis": {
+      "isShiny": false
+    },
+    "pidove": {
+      "isShiny": false
+    },
+    "drifblim": {
+      "isShiny": false
+    },
+    "diancie": {
+      "isShiny": false
+    },
+    "lurantis": {
+      "isShiny": false
+    },
+    "hariyama": {
+      "isShiny": false
+    },
+    "tyrantrum": {
+      "isShiny": false
+    },
+    "wailord": {
+      "isShiny": false
+    },
+    "starmie": {
+      "isShiny": false
+    },
+    "clamperl": {
+      "isShiny": false
+    }
+  }
+}

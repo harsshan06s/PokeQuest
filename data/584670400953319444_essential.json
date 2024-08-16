@@ -1,0 +1,130 @@
+{
+  "id": "584670400953319444",
+  "selectedPokemon": 25,
+  "activePokemon": {
+    "name": "Klawf",
+    "level": 100,
+    "isShiny": false,
+    "rarity": "<:SR:1259113778747015233>",
+    "types": [
+      "Rock"
+    ]
+  },
+  "money": 97846480,
+  "items": {
+    "pokeball": 4,
+    "greatball": 0,
+    "ultraball": 964,
+    "masterball": 1,
+    "rarecandy": 8,
+    "raidball": 1
+  },
+  "lastWildEncounter": 1723745049917,
+  "caughtPokemon": {
+    "gastrodon": {
+      "isShiny": false
+    },
+    "pachirisu": {
+      "isShiny": false
+    },
+    "baltoy": {
+      "isShiny": false
+    },
+    "ting-lu": {
+      "isShiny": false
+    },
+    "weedle": {
+      "isShiny": false
+    },
+    "phanpy": {
+      "isShiny": true
+    },
+    "starly": {
+      "isShiny": false
+    },
+    "appletun": {
+      "isShiny": false
+    },
+    "bisharp": {
+      "isShiny": false
+    },
+    "meowscarada": {
+      "isShiny": false
+    },
+    "slowbro": {
+      "isShiny": false
+    },
+    "pawmo": {
+      "isShiny": false
+    },
+    "silcoon": {
+      "isShiny": false
+    },
+    "shaymin": {
+      "isShiny": false
+    },
+    "regieleki": {
+      "isShiny": false
+    },
+    "carracosta": {
+      "isShiny": false
+    },
+    "overqwil": {
+      "isShiny": false
+    },
+    "polteageist": {
+      "isShiny": false
+    },
+    "breloom": {
+      "isShiny": false
+    },
+    "barbaracle": {
+      "isShiny": false
+    },
+    "cofagrigus": {
+      "isShiny": false
+    },
+    "floette": {
+      "isShiny": false
+    },
+    "chespin": {
+      "isShiny": false
+    },
+    "eternatus": {
+      "isShiny": false
+    },
+    "klawf": {
+      "isShiny": false
+    },
+    "jigglypuff": {
+      "isShiny": false
+    },
+    "nincada": {
+      "isShiny": false
+    },
+    "beautifly": {
+      "isShiny": false
+    },
+    "fennekin": {
+      "isShiny": false
+    },
+    "lurantis": {
+      "isShiny": false
+    },
+    "swoobat": {
+      "isShiny": false
+    },
+    "clefable": {
+      "isShiny": false
+    },
+    "seviper": {
+      "isShiny": false
+    },
+    "kingler": {
+      "isShiny": false
+    },
+    "haxorus": {
+      "isShiny": false
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "858515856383541249",
+  "selectedPokemon": 0,
+  "activePokemon": {
+    "name": "Litten",
+    "rarity": "<:SR:1259113778747015233>",
+    "type": "Fire",
+    "level": 5,
+    "exp": 480,
+    "moves": [
+      "Scratch",
+      "Growl"
+    ],
+    "catchRate": 45,
+    "types": [
+      "Fire"
+    ]
+  },
+  "money": 1240,
+  "items": {
+    "pokeball": 4,
+    "greatball": 0,
+    "ultraball": 0,
+    "masterball": 0,
+    "rarecandy": 0
+  },
+  "lastWildEncounter": 1723743343044,
+  "caughtPokemon": {}
+}

@@ -1,0 +1,69 @@
+{
+  "id": "418472068871618571",
+  "selectedPokemon": 13,
+  "activePokemon": {
+    "name": "Huntail",
+    "level": 85,
+    "isShiny": false,
+    "rarity": "<:SR:1259113778747015233>",
+    "types": [
+      "Water"
+    ]
+  },
+  "money": 92998650,
+  "items": {
+    "pokeball": 1,
+    "greatball": 0,
+    "ultraball": 987,
+    "masterball": 7,
+    "rarecandy": 985
+  },
+  "lastWildEncounter": 1723744092304,
+  "caughtPokemon": {
+    "dratini": {
+      "isShiny": false
+    },
+    "raikou": {
+      "isShiny": false
+    },
+    "mimikyu": {
+      "isShiny": false
+    },
+    "morgrem": {
+      "isShiny": false
+    },
+    "cetoddle": {
+      "isShiny": false
+    },
+    "meloetta": {
+      "isShiny": false
+    },
+    "tsareena": {
+      "isShiny": false
+    },
+    "lapras": {
+      "isShiny": false
+    },
+    "simipour": {
+      "isShiny": false
+    },
+    "skeledirge": {
+      "isShiny": false
+    },
+    "drednaw": {
+      "isShiny": false
+    },
+    "magearna": {
+      "isShiny": false
+    },
+    "huntail": {
+      "isShiny": false
+    },
+    "mew": {
+      "isShiny": false
+    },
+    "kleavor": {
+      "isShiny": false
+    }
+  }
+}

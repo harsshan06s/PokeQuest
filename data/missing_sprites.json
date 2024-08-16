@@ -1,0 +1,2122 @@
+{
+  "aipom": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "alcremie": [
+    "mega",
+    "mega-shiny"
+  ],
+  "ambipom": [
+    "mega",
+    "mega-shiny"
+  ],
+  "ampharos": [
+    "shiny",
+    "mega-shiny"
+  ],
+  "anorith": [
+    "mega",
+    "mega-shiny"
+  ],
+  "appletun": [
+    "mega",
+    "mega-shiny"
+  ],
+  "applin": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-bug": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-dark": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-dragon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-electric": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-fairy": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-fighting": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-fire": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-flying": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-ghost": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-grass": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-ground": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-ice": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-poison": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-psychic": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-rock": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-steel": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arceus-water": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arctovish": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arctozolt": [
+    "mega",
+    "mega-shiny"
+  ],
+  "ariados": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "armaldo": [
+    "mega",
+    "mega-shiny"
+  ],
+  "aron": [
+    "mega",
+    "mega-shiny"
+  ],
+  "arrokuda": [
+    "mega",
+    "mega-shiny"
+  ],
+  "azelf": [
+    "mega",
+    "mega-shiny"
+  ],
+  "azumarill": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "azurill": [
+    "mega",
+    "mega-shiny"
+  ],
+  "bagon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "baltoy": [
+    "mega",
+    "mega-shiny"
+  ],
+  "barboach": [
+    "mega",
+    "mega-shiny"
+  ],
+  "barraskewda": [
+    "mega",
+    "mega-shiny"
+  ],
+  "bastiodon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "bayleef": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "beautifly": [
+    "mega",
+    "mega-shiny"
+  ],
+  "beldum": [
+    "mega",
+    "mega-shiny"
+  ],
+  "bellossom": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "bibarel": [
+    "mega",
+    "mega-shiny"
+  ],
+  "bidoof": [
+    "mega",
+    "mega-shiny"
+  ],
+  "blipbug": [
+    "mega",
+    "mega-shiny"
+  ],
+  "blissey": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "boltund": [
+    "mega",
+    "mega-shiny"
+  ],
+  "bonsly": [
+    "mega",
+    "mega-shiny"
+  ],
+  "breloom": [
+    "mega",
+    "mega-shiny"
+  ],
+  "bronzong": [
+    "mega",
+    "mega-shiny"
+  ],
+  "bronzor": [
+    "mega",
+    "mega-shiny"
+  ],
+  "budew": [
+    "mega",
+    "mega-shiny"
+  ],
+  "buizel": [
+    "mega",
+    "mega-shiny"
+  ],
+  "buneary": [
+    "mega",
+    "mega-shiny"
+  ],
+  "burmy-plant-cloak": [
+    "mega",
+    "mega-shiny"
+  ],
+  "burmy-sandy-cloak": [
+    "mega",
+    "mega-shiny"
+  ],
+  "burmy-trash-cloak": [
+    "mega",
+    "mega-shiny"
+  ],
+  "cacnea": [
+    "mega",
+    "mega-shiny"
+  ],
+  "cacturne": [
+    "mega",
+    "mega-shiny"
+  ],
+  "calyrex": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "carkol": [
+    "mega",
+    "mega-shiny"
+  ],
+  "carnidos": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "carnivine": [
+    "mega",
+    "mega-shiny"
+  ],
+  "carvanha": [
+    "mega",
+    "mega-shiny"
+  ],
+  "cascoon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "castform": [
+    "mega",
+    "mega-shiny"
+  ],
+  "castform-railny-form": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "castform-rainy-form": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "castform-snowy-form": [
+    "mega",
+    "mega-shiny"
+  ],
+  "castform-sunny-form": [
+    "mega",
+    "mega-shiny"
+  ],
+  "centiskorch": [
+    "mega",
+    "mega-shiny"
+  ],
+  "chatot": [
+    "mega",
+    "mega-shiny"
+  ],
+  "cherrim-overcast": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "cherrim-overcast-form": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "cherrim-sunshine": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "cherrim-sunshine-form": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "cherubi": [
+    "mega",
+    "mega-shiny"
+  ],
+  "chewtle": [
+    "mega",
+    "mega-shiny"
+  ],
+  "chikorita": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "chimchar": [
+    "mega",
+    "mega-shiny"
+  ],
+  "chimecho": [
+    "mega",
+    "mega-shiny"
+  ],
+  "chinchou": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "chingling": [
+    "mega",
+    "mega-shiny"
+  ],
+  "cinderace": [
+    "mega",
+    "mega-shiny"
+  ],
+  "clamperl": [
+    "mega",
+    "mega-shiny"
+  ],
+  "claydol": [
+    "mega",
+    "mega-shiny"
+  ],
+  "clebi": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "cleffa": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "clobbopus": [
+    "mega",
+    "mega-shiny"
+  ],
+  "coalossal": [
+    "mega",
+    "mega-shiny"
+  ],
+  "combee": [
+    "mega",
+    "mega-shiny"
+  ],
+  "combusken": [
+    "mega",
+    "mega-shiny"
+  ],
+  "copperajah": [
+    "mega",
+    "mega-shiny"
+  ],
+  "corphish": [
+    "mega",
+    "mega-shiny"
+  ],
+  "corsola": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "corviknight": [
+    "mega",
+    "mega-shiny"
+  ],
+  "corvisquire": [
+    "mega",
+    "mega-shiny"
+  ],
+  "cradily": [
+    "mega",
+    "mega-shiny"
+  ],
+  "cramorant": [
+    "mega",
+    "mega-shiny"
+  ],
+  "cranidos": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "crawdaunt": [
+    "mega",
+    "mega-shiny"
+  ],
+  "cresselia": [
+    "mega",
+    "mega-shiny"
+  ],
+  "croagunk": [
+    "mega",
+    "mega-shiny"
+  ],
+  "crobat": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "croconaw": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "cufant": [
+    "mega",
+    "mega-shiny"
+  ],
+  "cursola": [
+    "mega",
+    "mega-shiny"
+  ],
+  "cyndaquil": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "darkrai": [
+    "mega",
+    "mega-shiny"
+  ],
+  "delcatty": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "delcaty": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "delibird": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "deoxys": [
+    "mega",
+    "mega-shiny"
+  ],
+  "deoxys-attack": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "deoxys-attack-forme": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "deoxys-defense": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "deoxys-defense-forme": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "deoxys-speed": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "deoxys-speed-forme": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "dialga": [
+    "mega",
+    "mega-shiny"
+  ],
+  "dolphan": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "dottler": [
+    "mega",
+    "mega-shiny"
+  ],
+  "dracovish": [
+    "mega",
+    "mega-shiny"
+  ],
+  "dracozolt": [
+    "mega",
+    "mega-shiny"
+  ],
+  "dragapult": [
+    "mega",
+    "mega-shiny"
+  ],
+  "drakloak": [
+    "mega",
+    "mega-shiny"
+  ],
+  "drapion": [
+    "mega",
+    "mega-shiny"
+  ],
+  "drednaw": [
+    "mega",
+    "mega-shiny"
+  ],
+  "dreepy": [
+    "mega",
+    "mega-shiny"
+  ],
+  "drifblim": [
+    "mega",
+    "mega-shiny"
+  ],
+  "drifloon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "drizzile": [
+    "mega",
+    "mega-shiny"
+  ],
+  "dubwool": [
+    "mega",
+    "mega-shiny"
+  ],
+  "dunsparce": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "duraludon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "dusclops": [
+    "mega",
+    "mega-shiny"
+  ],
+  "dusknoir": [
+    "mega",
+    "mega-shiny"
+  ],
+  "duskull": [
+    "mega",
+    "mega-shiny"
+  ],
+  "dustox": [
+    "mega",
+    "mega-shiny"
+  ],
+  "eiscue": [
+    "mega",
+    "mega-shiny"
+  ],
+  "eldegoss": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "electivire": [
+    "mega",
+    "mega-shiny"
+  ],
+  "electrike": [
+    "mega",
+    "mega-shiny"
+  ],
+  "elekid": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "empoleon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "entei": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "espeon": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "eternatus": [
+    "mega",
+    "mega-shiny"
+  ],
+  "exploud": [
+    "mega",
+    "mega-shiny"
+  ],
+  "falinks": [
+    "mega",
+    "mega-shiny"
+  ],
+  "fan-rotom": [
+    "mega",
+    "mega-shiny"
+  ],
+  "feebas": [
+    "mega",
+    "mega-shiny"
+  ],
+  "feraligatr": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "finneon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "flaaffy": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "flapple": [
+    "mega",
+    "mega-shiny"
+  ],
+  "floatzel": [
+    "mega",
+    "mega-shiny"
+  ],
+  "flygon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "forretress": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "froslass": [
+    "mega",
+    "mega-shiny"
+  ],
+  "frosmoth": [
+    "mega",
+    "mega-shiny"
+  ],
+  "frost-rotom": [
+    "mega",
+    "mega-shiny"
+  ],
+  "furret": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "gabite": [
+    "mega",
+    "mega-shiny"
+  ],
+  "gastrodon-east-sea": [
+    "mega",
+    "mega-shiny"
+  ],
+  "gastrodon-west-sea": [
+    "mega",
+    "mega-shiny"
+  ],
+  "gible": [
+    "mega",
+    "mega-shiny"
+  ],
+  "girafarig": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "giratina": [
+    "mega",
+    "mega-shiny"
+  ],
+  "giratina-origin": [
+    "mega",
+    "mega-shiny"
+  ],
+  "glaceon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "glameow": [
+    "mega",
+    "mega-shiny"
+  ],
+  "glastrier": [
+    "mega",
+    "mega-shiny"
+  ],
+  "gligar": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "gliscor": [
+    "mega",
+    "mega-shiny"
+  ],
+  "gorebyss": [
+    "mega",
+    "mega-shiny"
+  ],
+  "gossifleur": [
+    "mega",
+    "mega-shiny"
+  ],
+  "granbull": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "grapploct": [
+    "mega",
+    "mega-shiny"
+  ],
+  "greedent": [
+    "mega",
+    "mega-shiny"
+  ],
+  "grimmsnarl": [
+    "mega",
+    "mega-shiny"
+  ],
+  "grookey": [
+    "mega",
+    "mega-shiny"
+  ],
+  "grotle": [
+    "mega",
+    "mega-shiny"
+  ],
+  "groudon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "groudon-primal": [
+    "mega",
+    "mega-shiny"
+  ],
+  "grovyle": [
+    "mega",
+    "mega-shiny"
+  ],
+  "grumpig": [
+    "mega",
+    "mega-shiny"
+  ],
+  "gulpin": [
+    "mega",
+    "mega-shiny"
+  ],
+  "happiny": [
+    "mega",
+    "mega-shiny"
+  ],
+  "hariyama": [
+    "mega",
+    "mega-shiny"
+  ],
+  "hatenna": [
+    "mega",
+    "mega-shiny"
+  ],
+  "hatterene": [
+    "mega",
+    "mega-shiny"
+  ],
+  "hattrem": [
+    "mega",
+    "mega-shiny"
+  ],
+  "heat-rotom": [
+    "mega",
+    "mega-shiny"
+  ],
+  "heatran": [
+    "mega",
+    "mega-shiny"
+  ],
+  "heracross": [
+    "shiny",
+    "mega-shiny"
+  ],
+  "hippodon-m": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "hippopotas": [
+    "mega",
+    "mega-shiny"
+  ],
+  "hippowdon-f": [
+    "mega",
+    "mega-shiny"
+  ],
+  "hippowdon-m": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "hitmontop": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "ho-oh": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "honchkrow": [
+    "mega",
+    "mega-shiny"
+  ],
+  "hoothoot": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "hoppop": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "houndoom": [
+    "shiny",
+    "mega-shiny"
+  ],
+  "houndour": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "huntail": [
+    "mega",
+    "mega-shiny"
+  ],
+  "igglybuff": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "illumise": [
+    "mega",
+    "mega-shiny"
+  ],
+  "impidimp": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "indeedee": [
+    "mega",
+    "mega-shiny"
+  ],
+  "infernape": [
+    "mega",
+    "mega-shiny"
+  ],
+  "inteleon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "jirachi": [
+    "mega",
+    "mega-shiny"
+  ],
+  "jumpluff": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "kecleon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "kingdra": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "kirlia": [
+    "mega",
+    "mega-shiny"
+  ],
+  "kricketot": [
+    "mega",
+    "mega-shiny"
+  ],
+  "kricketune": [
+    "mega",
+    "mega-shiny"
+  ],
+  "kubfu": [
+    "mega",
+    "mega-shiny"
+  ],
+  "kyogre": [
+    "mega",
+    "mega-shiny"
+  ],
+  "kyogre-primal": [
+    "mega",
+    "mega-shiny"
+  ],
+  "lairon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "lanturn": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "larvitar": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "leafeon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "ledian": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "ledyba": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "lickilicky": [
+    "mega",
+    "mega-shiny"
+  ],
+  "lileep": [
+    "mega",
+    "mega-shiny"
+  ],
+  "linoone": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "lioone": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "lombre": [
+    "mega",
+    "mega-shiny"
+  ],
+  "lotad": [
+    "mega",
+    "mega-shiny"
+  ],
+  "loudred": [
+    "mega",
+    "mega-shiny"
+  ],
+  "ludicolo": [
+    "mega",
+    "mega-shiny"
+  ],
+  "lugia": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "lumineon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "lunatone": [
+    "mega",
+    "mega-shiny"
+  ],
+  "luvdisc": [
+    "mega",
+    "mega-shiny"
+  ],
+  "luxio": [
+    "mega",
+    "mega-shiny"
+  ],
+  "luxray": [
+    "mega",
+    "mega-shiny"
+  ],
+  "magby": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "magcargo": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "magmortar": [
+    "mega",
+    "mega-shiny"
+  ],
+  "magnezone": [
+    "mega",
+    "mega-shiny"
+  ],
+  "makuhita": [
+    "mega",
+    "mega-shiny"
+  ],
+  "mamoswine": [
+    "mega",
+    "mega-shiny"
+  ],
+  "manaphy": [
+    "mega",
+    "mega-shiny"
+  ],
+  "mantine": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "mantyke": [
+    "mega",
+    "mega-shiny"
+  ],
+  "mareep": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "marill": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "marshtomp": [
+    "mega",
+    "mega-shiny"
+  ],
+  "masquerain": [
+    "mega",
+    "mega-shiny"
+  ],
+  "meditite": [
+    "mega",
+    "mega-shiny"
+  ],
+  "meganium": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "mesprit": [
+    "mega",
+    "mega-shiny"
+  ],
+  "metang": [
+    "mega",
+    "mega-shiny"
+  ],
+  "mightyena": [
+    "mega",
+    "mega-shiny"
+  ],
+  "milcery": [
+    "mega",
+    "mega-shiny"
+  ],
+  "milotic": [
+    "mega",
+    "mega-shiny"
+  ],
+  "miltank": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "mime-jr.": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "mimejr.": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "minun": [
+    "mega",
+    "mega-shiny"
+  ],
+  "misdreavus": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "mismagius": [
+    "mega",
+    "mega-shiny"
+  ],
+  "monferno": [
+    "mega",
+    "mega-shiny"
+  ],
+  "morgrem": [
+    "mega",
+    "mega-shiny"
+  ],
+  "morpeko": [
+    "mega",
+    "mega-shiny"
+  ],
+  "mothim": [
+    "mega",
+    "mega-shiny"
+  ],
+  "mow-rotom": [
+    "mega",
+    "mega-shiny"
+  ],
+  "mudkip": [
+    "mega",
+    "mega-shiny"
+  ],
+  "munchlax": [
+    "mega",
+    "mega-shiny"
+  ],
+  "murkrow": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "natu": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "nickit": [
+    "mega",
+    "mega-shiny"
+  ],
+  "nincada": [
+    "mega",
+    "mega-shiny"
+  ],
+  "ninjask": [
+    "mega",
+    "mega-shiny"
+  ],
+  "noctowl": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "nosepass": [
+    "mega",
+    "mega-shiny"
+  ],
+  "numel": [
+    "mega",
+    "mega-shiny"
+  ],
+  "nuzleaf": [
+    "mega",
+    "mega-shiny"
+  ],
+  "obstagoon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "octillery": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "orbeetle": [
+    "mega",
+    "mega-shiny"
+  ],
+  "pachirisu": [
+    "mega",
+    "mega-shiny"
+  ],
+  "palkia": [
+    "mega",
+    "mega-shiny"
+  ],
+  "pelipper": [
+    "mega",
+    "mega-shiny"
+  ],
+  "perrserker": [
+    "mega",
+    "mega-shiny"
+  ],
+  "phanpy": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "phione": [
+    "mega",
+    "mega-shiny"
+  ],
+  "pichu": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "piloswine": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "pincurchin": [
+    "mega",
+    "mega-shiny"
+  ],
+  "pineco": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "piplup": [
+    "mega",
+    "mega-shiny"
+  ],
+  "plusle": [
+    "mega",
+    "mega-shiny"
+  ],
+  "politoed": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "polteageist": [
+    "mega",
+    "mega-shiny"
+  ],
+  "poocheyna": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "poochyena": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "porygon-z": [
+    "mega",
+    "mega-shiny"
+  ],
+  "porygon2": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "prinplup": [
+    "mega",
+    "mega-shiny"
+  ],
+  "probopass": [
+    "mega",
+    "mega-shiny"
+  ],
+  "pupitar": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "purugly": [
+    "mega",
+    "mega-shiny"
+  ],
+  "quagsire": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "quilva": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "qwilfish": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "raboot": [
+    "mega",
+    "mega-shiny"
+  ],
+  "raikou": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "ralts": [
+    "mega",
+    "mega-shiny"
+  ],
+  "ramardos": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "rampardos": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "regice": [
+    "mega",
+    "mega-shiny"
+  ],
+  "regidrago": [
+    "mega",
+    "mega-shiny"
+  ],
+  "regieleki": [
+    "mega",
+    "mega-shiny"
+  ],
+  "regigigas": [
+    "mega",
+    "mega-shiny"
+  ],
+  "regirock": [
+    "mega",
+    "mega-shiny"
+  ],
+  "registeel": [
+    "mega",
+    "mega-shiny"
+  ],
+  "relicanth": [
+    "mega",
+    "mega-shiny"
+  ],
+  "remoraid": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "rhyperior": [
+    "mega",
+    "mega-shiny"
+  ],
+  "rillaboom": [
+    "mega",
+    "mega-shiny"
+  ],
+  "riolu": [
+    "mega",
+    "mega-shiny"
+  ],
+  "rolycoly": [
+    "mega",
+    "mega-shiny"
+  ],
+  "rookidee": [
+    "mega",
+    "mega-shiny"
+  ],
+  "roselia": [
+    "mega",
+    "mega-shiny"
+  ],
+  "roserade": [
+    "mega",
+    "mega-shiny"
+  ],
+  "rotom": [
+    "mega",
+    "mega-shiny"
+  ],
+  "runerigus": [
+    "mega",
+    "mega-shiny"
+  ],
+  "sandaconda": [
+    "mega",
+    "mega-shiny"
+  ],
+  "scizor": [
+    "shiny",
+    "mega-shiny"
+  ],
+  "scorbunny": [
+    "mega",
+    "mega-shiny"
+  ],
+  "sealeo": [
+    "mega",
+    "mega-shiny"
+  ],
+  "seedot": [
+    "mega",
+    "mega-shiny"
+  ],
+  "sentret": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "serviper": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "seviper": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "shaymin": [
+    "mega",
+    "mega-shiny"
+  ],
+  "shaymin-sky": [
+    "mega",
+    "mega-shiny"
+  ],
+  "shedinja": [
+    "mega",
+    "mega-shiny"
+  ],
+  "shelgon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "shellos-east-sea": [
+    "mega",
+    "mega-shiny"
+  ],
+  "shellos-west-sea": [
+    "mega",
+    "mega-shiny"
+  ],
+  "shieldon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "shiftry": [
+    "mega",
+    "mega-shiny"
+  ],
+  "shinx": [
+    "mega",
+    "mega-shiny"
+  ],
+  "shroomish": [
+    "mega",
+    "mega-shiny"
+  ],
+  "shuckle": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "shuppet": [
+    "mega",
+    "mega-shiny"
+  ],
+  "silcoon": [
+    "mega",
+    "mega-shiny"
+  ],
+  "silicobra": [
+    "mega",
+    "mega-shiny"
+  ],
+  "sinistea": [
+    "mega",
+    "mega-shiny"
+  ],
+  "sirfetchd": [
+    "mega",
+    "mega-shiny"
+  ],
+  "sizzlipede": [
+    "mega",
+    "mega-shiny"
+  ],
+  "skarmory": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "skiploom": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "skitty": [
+    "mega",
+    "mega-shiny"
+  ],
+  "skorupi": [
+    "mega",
+    "mega-shiny"
+  ],
+  "skuntank": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "skwovet": [
+    "mega",
+    "mega-shiny"
+  ],
+  "slaking": [
+    "mega",
+    "mega-shiny"
+  ],
+  "slakoth": [
+    "mega",
+    "mega-shiny"
+  ],
+  "slowking": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "slugma": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "smeargle": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "smoochum": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "sneasel": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "snom": [
+    "mega",
+    "mega-shiny"
+  ],
+  "snorunt": [
+    "mega",
+    "mega-shiny"
+  ],
+  "snover": [
+    "mega",
+    "mega-shiny"
+  ],
+  "snubbull": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "sobble": [
+    "mega",
+    "mega-shiny"
+  ],
+  "solrock": [
+    "mega",
+    "mega-shiny"
+  ],
+  "spectrier": [
+    "mega",
+    "mega-shiny"
+  ],
+  "spheal": [
+    "mega",
+    "mega-shiny"
+  ],
+  "spinarak": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "spinda": [
+    "mega",
+    "mega-shiny"
+  ],
+  "spiritomb": [
+    "mega",
+    "mega-shiny"
+  ],
+  "spoink": [
+    "mega",
+    "mega-shiny"
+  ],
+  "stantler": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "staraptor": [
+    "mega",
+    "mega-shiny"
+  ],
+  "staravia": [
+    "mega",
+    "mega-shiny"
+  ],
+  "starly": [
+    "mega",
+    "mega-shiny"
+  ],
+  "steelix": [
+    "shiny",
+    "mega-shiny"
+  ],
+  "stonjourner": [
+    "mega",
+    "mega-shiny"
+  ],
+  "stunky": [
+    "mega",
+    "mega-shiny"
+  ],
+  "stuntank": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "sudowoodo": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "suicune": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "sunflora": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "sunkern": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "surskit": [
+    "mega",
+    "mega-shiny"
+  ],
+  "swablu": [
+    "mega",
+    "mega-shiny"
+  ],
+  "swalot": [
+    "mega",
+    "mega-shiny"
+  ],
+  "swellow": [
+    "mega",
+    "mega-shiny"
+  ],
+  "swinub": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "taillow": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "tailow": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "tangrowth": [
+    "mega",
+    "mega-shiny"
+  ],
+  "teddiursa": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "thievul": [
+    "mega",
+    "mega-shiny"
+  ],
+  "thwackey": [
+    "mega",
+    "mega-shiny"
+  ],
+  "togekiss": [
+    "mega",
+    "mega-shiny"
+  ],
+  "togepi": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "togetic": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "torchic": [
+    "mega",
+    "mega-shiny"
+  ],
+  "torkoal": [
+    "mega",
+    "mega-shiny"
+  ],
+  "torpius": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "torterra": [
+    "mega",
+    "mega-shiny"
+  ],
+  "totodile": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "toxel": [
+    "mega",
+    "mega-shiny"
+  ],
+  "toxicroak": [
+    "mega",
+    "mega-shiny"
+  ],
+  "toxtricity": [
+    "mega",
+    "mega-shiny"
+  ],
+  "trapinch": [
+    "mega",
+    "mega-shiny"
+  ],
+  "treecko": [
+    "mega",
+    "mega-shiny"
+  ],
+  "tropius": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "turtwig": [
+    "mega",
+    "mega-shiny"
+  ],
+  "typhlosion": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "tyranitar": [
+    "shiny",
+    "mega-shiny"
+  ],
+  "tyrouge": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "umbreon": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-!": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-a": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-b": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-c": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-d": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-e": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-f": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-g": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-h": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-i": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-j": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-k": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-l": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-m": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-n": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-o": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-p": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-q": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-question_mark": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-r": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-s": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-t": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-u": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-v": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-w": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-x": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-y": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "unown-z": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "ursaring": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "urshifu": [
+    "mega",
+    "mega-shiny"
+  ],
+  "uxie": [
+    "mega",
+    "mega-shiny"
+  ],
+  "vespiquen": [
+    "mega",
+    "mega-shiny"
+  ],
+  "vibrava": [
+    "mega",
+    "mega-shiny"
+  ],
+  "vigoroth": [
+    "mega",
+    "mega-shiny"
+  ],
+  "volbeat": [
+    "mega",
+    "mega-shiny"
+  ],
+  "wailmer": [
+    "mega",
+    "mega-shiny"
+  ],
+  "wailord": [
+    "mega",
+    "mega-shiny"
+  ],
+  "walrein": [
+    "mega",
+    "mega-shiny"
+  ],
+  "wash-rotom": [
+    "mega",
+    "mega-shiny"
+  ],
+  "weavile": [
+    "mega",
+    "mega-shiny"
+  ],
+  "whiscash": [
+    "mega",
+    "mega-shiny"
+  ],
+  "whismur": [
+    "mega",
+    "mega-shiny"
+  ],
+  "wingull": [
+    "mega",
+    "mega-shiny"
+  ],
+  "wobbuffet": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "wooloo": [
+    "mega",
+    "mega-shiny"
+  ],
+  "wooper": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "wormadam-plant-cloak": [
+    "mega",
+    "mega-shiny"
+  ],
+  "wormadam-sandy-cloak": [
+    "mega",
+    "mega-shiny"
+  ],
+  "wormadam-trash-cloak": [
+    "mega",
+    "mega-shiny"
+  ],
+  "wurmple": [
+    "mega",
+    "mega-shiny"
+  ],
+  "wynaut": [
+    "mega",
+    "mega-shiny"
+  ],
+  "xatu": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "yamega": [
+    "normal",
+    "mega",
+    "mega-shiny"
+  ],
+  "yamper": [
+    "mega",
+    "mega-shiny"
+  ],
+  "yanma": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "yanmega": [
+    "shiny",
+    "mega",
+    "mega-shiny"
+  ],
+  "zacian": [
+    "mega",
+    "mega-shiny"
+  ],
+  "zamazenta": [
+    "mega",
+    "mega-shiny"
+  ],
+  "zangoose": [
+    "mega",
+    "mega-shiny"
+  ],
+  "zarude": [
+    "mega",
+    "mega-shiny"
+  ],
+  "zigzagoon": [
+    "mega",
+    "mega-shiny"
+  ]
+}

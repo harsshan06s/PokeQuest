@@ -1,0 +1,29 @@
+{
+  "id": "303512897286438912",
+  "selectedPokemon": 0,
+  "activePokemon": {
+    "name": "Scorbunny",
+    "rarity": "<:SR:1259113778747015233>",
+    "type": "Fire",
+    "level": 5,
+    "exp": 0,
+    "moves": [
+      "Tackle",
+      "Growl"
+    ],
+    "catchRate": 45,
+    "types": [
+      "Fire"
+    ]
+  },
+  "money": 1000,
+  "items": {
+    "pokeball": 5,
+    "greatball": 0,
+    "ultraball": 0,
+    "masterball": 0,
+    "rarecandy": 0
+  },
+  "lastWildEncounter": 1723742295505,
+  "caughtPokemon": {}
+}
