@@ -1,8 +1,8 @@
 {
   "id": "973983152701849610",
-  "selectedPokemon": 285,
+  "selectedPokemon": 304,
   "activePokemon": {
-    "name": "Kyogre",
+    "name": "Heracross-Mega",
     "level": 100,
     "rarity": "<:LR:1259113497053233162>",
     "isShiny": true,
@@ -12,22 +12,35 @@
     "exp": 0,
     "catchRate": 100,
     "types": [
-      "Water"
+      "Unknown"
     ]
   },
+<<<<<<< HEAD
   "money": 50057514277,
   "items": {
     "pokeball": 9999974,
     "greatball": 9999963,
     "ultraball": 9999946,
     "masterball": 9999634,
+=======
+  "money": 50057523202,
+  "items": {
+    "pokeball": 9999973,
+    "greatball": 9999962,
+    "ultraball": 9999945,
+    "masterball": 9999620,
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
     "Pokéball": 3,
     "pokéball": 3,
     "raidball": 148,
     "rare candy": 205,
     "rarecandy": 34
   },
+<<<<<<< HEAD
   "lastWildEncounter": 1723996037353,
+=======
+  "lastWildEncounter": 1723900851859,
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
   "caughtPokemon": {
     "squirtle": {
       "isShiny": false
@@ -171,7 +184,7 @@
       "isShiny": false
     },
     "jynx": {
-      "isShiny": true
+      "isShiny": false
     },
     "talonflame": {
       "isShiny": true
@@ -572,7 +585,47 @@
     "phione": {
       "isShiny": false
     },
+<<<<<<< HEAD
     "aerodactyl": {
+=======
+    "shelmet": {
+      "isShiny": false
+    },
+    "shroomish": {
+      "isShiny": false
+    },
+    "zacian": {
+      "isShiny": false
+    },
+    "metapod": {
+      "isShiny": false
+    },
+    "vileplume": {
+      "isShiny": false
+    },
+    "wormadam": {
+      "isShiny": false
+    },
+    "slowbro": {
+      "isShiny": false
+    },
+    "raikou": {
+      "isShiny": false
+    },
+    "milcery": {
+      "isShiny": false
+    },
+    "musharna": {
+      "isShiny": false
+    },
+    "arctibax": {
+      "isShiny": false
+    },
+    "perrserker": {
+      "isShiny": false
+    },
+    "cherubi": {
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
       "isShiny": false
     }
   }

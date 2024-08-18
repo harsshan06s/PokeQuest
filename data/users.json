@@ -3421,33 +3421,222 @@
         ]
       },
       {
+<<<<<<< HEAD
         "name": "Aerodactyl",
+=======
+        "name": "Shelmet",
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
         "level": 85,
         "isShiny": false,
         "rarity": "<:n_:1259114941873520734>",
         "types": [
+<<<<<<< HEAD
           "Rock",
           "Flying"
+=======
+          "Bug"
+        ]
+      },
+      {
+        "name": "Shroomish",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Grass"
+        ]
+      },
+      {
+        "name": "Zacian",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Fairy",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Metapod",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Bug"
+        ]
+      },
+      {
+        "name": "Vileplume",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Grass",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Wooper",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Poison",
+          "Ground"
+        ]
+      },
+      {
+        "name": "Wormadam",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Bug",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Slowbro",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Poison",
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Raikou",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Electric"
+        ]
+      },
+      {
+        "name": "Milcery",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Fairy"
+        ]
+      },
+      {
+        "name": "Musharna",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Arctibax",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Dragon",
+          "Ice"
+        ]
+      },
+      {
+        "name": "Perrserker",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Steel"
+        ]
+      },
+      {
+        "name": "Jynx",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Ice",
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Phione",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Vanilluxe",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Ice"
+        ]
+      },
+      {
+        "name": "Cherubi",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Grass"
+        ]
+      },
+      {
+        "name": "Heracross-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
         ]
       }
     ],
     "items": {
+<<<<<<< HEAD
       "pokeball": 9999974,
       "greatball": 9999963,
       "ultraball": 9999946,
       "masterball": 9999634,
+=======
+      "pokeball": 9999973,
+      "greatball": 9999962,
+      "ultraball": 9999945,
+      "masterball": 9999620,
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
       "Pokéball": 3,
       "pokéball": 3,
       "raidball": 148,
       "rare candy": 205,
       "rarecandy": 34
     },
+<<<<<<< HEAD
     "money": 50057514277,
     "lastDaily": null,
     "created": "2024-07-06T13:10:05.845Z",
     "currentWildPokemon": {
       "name": "Aerodactyl",
       "type": "Rock",
+=======
+    "money": 50057523202,
+    "lastDaily": null,
+    "created": "2024-07-06T13:10:05.845Z",
+    "currentWildPokemon": {
+      "name": "Kadabra",
+      "type": "Psychic",
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
       "level": 85,
       "exp": 0,
       "isShiny": false,
@@ -3455,11 +3644,19 @@
         "Tackle"
       ],
       "catchRate": 100,
+<<<<<<< HEAD
       "rarity": "<:n_:1259114941873520734>",
       "defeated": true,
       "encounterId": "4055ee55-f945-4a79-a8dc-f2e6e85d4927"
     },
     "lastWildEncounter": 1723996037353,
+=======
+      "rarity": "<:SR:1259113778747015233>",
+      "defeated": true,
+      "encounterId": "acaf487d-48a0-4c3f-ade4-36ed753ea531"
+    },
+    "lastWildEncounter": 1723900851859,
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
     "caughtPokemon": {
       "squirtle": {
         "isShiny": false
@@ -3603,7 +3800,7 @@
         "isShiny": false
       },
       "jynx": {
-        "isShiny": true
+        "isShiny": false
       },
       "talonflame": {
         "isShiny": true
@@ -4004,13 +4201,53 @@
       "phione": {
         "isShiny": false
       },
+<<<<<<< HEAD
       "aerodactyl": {
+=======
+      "shelmet": {
+        "isShiny": false
+      },
+      "shroomish": {
+        "isShiny": false
+      },
+      "zacian": {
+        "isShiny": false
+      },
+      "metapod": {
+        "isShiny": false
+      },
+      "vileplume": {
+        "isShiny": false
+      },
+      "wormadam": {
+        "isShiny": false
+      },
+      "slowbro": {
+        "isShiny": false
+      },
+      "raikou": {
+        "isShiny": false
+      },
+      "milcery": {
+        "isShiny": false
+      },
+      "musharna": {
+        "isShiny": false
+      },
+      "arctibax": {
+        "isShiny": false
+      },
+      "perrserker": {
+        "isShiny": false
+      },
+      "cherubi": {
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
         "isShiny": false
       }
     },
     "lastRestart": "2024-07-08T07:17:38.545Z",
     "activePokemon": {
-      "name": "Kyogre",
+      "name": "Heracross-Mega",
       "level": 100,
       "rarity": "<:LR:1259113497053233162>",
       "isShiny": true,
@@ -4020,15 +4257,41 @@
       "exp": 1700,
       "catchRate": 100,
       "types": [
-        "Water"
+        "Unknown"
       ]
     },
-    "selectedPokemon": 285,
+    "selectedPokemon": 304,
     "exp": 70654,
     "raidCatchAttempts": 1,
     "customChances": {
       "rarity": 1
-    }
+    },
+    "customRarities": [
+      {
+        "emoji": "<:n_:1259114941873520734>",
+        "chance": 0.30107526881720426
+      },
+      {
+        "emoji": "<:U_:1259114756313452680>",
+        "chance": 0.21505376344086016
+      },
+      {
+        "emoji": "<:r_:1259114608426487839>",
+        "chance": 0.1290322580645161
+      },
+      {
+        "emoji": "<:SR:1259113778747015233>",
+        "chance": 0.16129032258064513
+      },
+      {
+        "emoji": "<:UR:1259113669925539902>",
+        "chance": 0.1290322580645161
+      },
+      {
+        "emoji": "<:LR:1259113497053233162>",
+        "chance": 0.06451612903225805
+      }
+    ]
   },
   "1027872140227268641": {
     "id": "1027872140227268641",
@@ -5375,20 +5638,259 @@
         ]
       },
       {
+<<<<<<< HEAD
         "name": "Farigiraf",
+=======
+        "name": "Sandygast",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Ghost",
+          "Ground"
+        ]
+      },
+      {
+        "name": "Drifloon",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Ghost",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Tatsugiri",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Dragon",
+          "Water"
+        ]
+      },
+      {
+        "name": "Quilava",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Fire"
+        ]
+      },
+      {
+        "name": "Simipour",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Crobat",
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
         "level": 85,
         "isShiny": false,
         "rarity": "<:n_:1259114941873520734>",
         "types": [
+<<<<<<< HEAD
           "Normal",
           "Psychic"
         ]
+=======
+          "Poison",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Spoink",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Cranidos",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Rock"
+        ]
+      },
+      {
+        "name": "Huntail",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Giratina",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Ghost",
+          "Dragon"
+        ]
+      },
+      {
+        "name": "Bellsprout",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Grass",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Raikou",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Electric"
+        ]
+      },
+      {
+        "name": "Gourgeist",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Ghost",
+          "Grass"
+        ]
+      },
+      {
+        "name": "Dodrio",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:UR:1259113669925539902>",
+        "types": [
+          "Normal",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Loudred",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Skiploom",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Grass",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Ponyta",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Magcargo",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Fire",
+          "Rock"
+        ]
+      },
+      {
+        "name": "Kommo-o",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Roserade",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Grass",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Rolycoly",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Rock"
+        ]
+      },
+      {
+        "name": "Amaura",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Rock",
+          "Ice"
+        ]
+      },
+      {
+        "name": "Wo-chien",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Froakie",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Tinkatuff",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Fairy",
+          "Steel"
+        ]
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
       }
     ],
     "items": {
-      "pokeball": 999942,
+      "pokeball": 999938,
       "greatball": 0,
       "ultraball": 0,
+<<<<<<< HEAD
       "masterball": 68697,
       "raidball": 170,
       "rarecandy": 826
@@ -5399,6 +5901,18 @@
     "currentWildPokemon": {
       "name": "Farigiraf",
       "type": "Normal",
+=======
+      "masterball": 68676,
+      "raidball": 170,
+      "rarecandy": 826
+    },
+    "money": 2990926366683,
+    "lastDaily": null,
+    "created": "2024-07-06T13:15:42.842Z",
+    "currentWildPokemon": {
+      "name": "Tinkatuff",
+      "type": "Fairy",
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
       "level": 85,
       "exp": 0,
       "isShiny": false,
@@ -5406,12 +5920,21 @@
         "Tackle"
       ],
       "catchRate": 100,
+<<<<<<< HEAD
       "rarity": "<:n_:1259114941873520734>",
       "defeated": true,
       "encounterId": "a24ad8b9-6a83-4c29-8ce6-c0f55bafd581"
     },
     "lastRestart": "2024-07-08T07:19:16.675Z",
     "lastWildEncounter": 1723997085096,
+=======
+      "rarity": "<:U_:1259114756313452680>",
+      "defeated": true,
+      "encounterId": "c90ed0b7-52e3-4b54-89c0-079557b39a65"
+    },
+    "lastRestart": "2024-07-08T07:19:16.675Z",
+    "lastWildEncounter": 1723908183062,
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
     "caughtPokemon": {
       "squirtle": {},
       "slowpoke": {
@@ -5565,7 +6088,7 @@
         "isShiny": true
       },
       "raikou": {
-        "isShiny": true
+        "isShiny": false
       },
       "mienfoo": {
         "isShiny": true
@@ -5717,7 +6240,74 @@
       "golurk": {
         "isShiny": false
       },
+<<<<<<< HEAD
       "farigiraf": {
+=======
+      "sandygast": {
+        "isShiny": false
+      },
+      "drifloon": {
+        "isShiny": false
+      },
+      "tatsugiri": {
+        "isShiny": false
+      },
+      "quilava": {
+        "isShiny": false
+      },
+      "simipour": {
+        "isShiny": false
+      },
+      "crobat": {
+        "isShiny": false
+      },
+      "spoink": {
+        "isShiny": false
+      },
+      "cranidos": {
+        "isShiny": false
+      },
+      "huntail": {
+        "isShiny": false
+      },
+      "giratina": {
+        "isShiny": false
+      },
+      "gourgeist": {
+        "isShiny": false
+      },
+      "dodrio": {
+        "isShiny": false
+      },
+      "loudred": {
+        "isShiny": false
+      },
+      "ponyta": {
+        "isShiny": false
+      },
+      "magcargo": {
+        "isShiny": false
+      },
+      "kommo-o": {
+        "isShiny": false
+      },
+      "roserade": {
+        "isShiny": false
+      },
+      "rolycoly": {
+        "isShiny": false
+      },
+      "amaura": {
+        "isShiny": false
+      },
+      "wo-chien": {
+        "isShiny": false
+      },
+      "froakie": {
+        "isShiny": false
+      },
+      "tinkatuff": {
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
         "isShiny": false
       }
     },
@@ -5729,7 +6319,11 @@
       "moves": [
         "Tackle"
       ],
+<<<<<<< HEAD
       "exp": 850,
+=======
+      "exp": 9350,
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
       "type": "Water",
       "types": [
         "Water"
@@ -9642,37 +10236,58 @@
           "Scratch",
           "Leer"
         ],
-        "catchRate": 45
+        "catchRate": 45,
+        "types": [
+          "Water"
+        ]
       },
       {
         "name": "Nidoran_m",
         "level": 5,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Unknown"
+        ]
       },
       {
         "name": "Arceus",
         "level": 2,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Normal"
+        ]
       },
       {
         "name": "Doduo",
         "level": 1,
         "isShiny": true,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Normal",
+          "Flying"
+        ]
       },
       {
         "name": "Metagross",
         "level": 1,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Steel",
+          "Psychic"
+        ]
       },
       {
         "name": "Jumpluff",
         "level": 8,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Grass",
+          "Flying"
+        ]
       },
       {
         "name": "rhyhorn",
@@ -9683,31 +10298,48 @@
           "Tackle"
         ],
         "exp": 0,
-        "catchRate": 100
+        "catchRate": 100,
+        "types": [
+          "Ground",
+          "Rock"
+        ]
       },
       {
         "name": "Dewott",
         "level": 10,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Water"
+        ]
       },
       {
         "name": "Volbeat",
         "level": 6,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Bug"
+        ]
       },
       {
         "name": "Latios",
         "level": 11,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Dragon",
+          "Psychic"
+        ]
       },
       {
         "name": "Gogoat",
         "level": 11,
         "isShiny": true,
-        "rarity": "<:LR:1259113497053233162>"
+        "rarity": "<:LR:1259113497053233162>",
+        "types": [
+          "Grass"
+        ]
       },
       {
         "name": "Rhyhorn",
@@ -9718,61 +10350,98 @@
           "Tackle"
         ],
         "exp": 0,
-        "catchRate": 100
+        "catchRate": 100,
+        "types": [
+          "Ground",
+          "Rock"
+        ]
       },
       {
         "name": "Nymble",
         "level": 7,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Bug"
+        ]
       },
       {
         "name": "Grimmsnarl",
         "level": 7,
         "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>"
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Dark",
+          "Fairy"
+        ]
       },
       {
         "name": "Arboliva",
         "level": 14,
         "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>"
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Grass",
+          "Normal"
+        ]
       },
       {
         "name": "Tornadus",
         "level": 12,
         "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>"
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Flying"
+        ]
       },
       {
         "name": "Blaziken",
         "level": 18,
         "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>"
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Fire",
+          "Fighting"
+        ]
       },
       {
         "name": "Lunatone",
         "level": 14,
         "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>"
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Rock",
+          "Psychic"
+        ]
       },
       {
         "name": "Beautifly",
         "level": 14,
         "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>"
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Bug",
+          "Flying"
+        ]
       },
       {
         "name": "Riolu",
         "level": 17,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Fighting"
+        ]
       },
       {
         "name": "Croagunk",
         "level": 17,
         "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>"
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Poison",
+          "Fighting"
+        ]
       },
       {
         "name": "Solgaleo",
@@ -9783,7 +10452,11 @@
           "Tackle"
         ],
         "exp": 0,
-        "type": "Psychic/Steel"
+        "type": "Psychic/Steel",
+        "types": [
+          "Psychic",
+          "Steel"
+        ]
       },
       {
         "name": "Rhyhorn",
@@ -9794,7 +10467,11 @@
           "Tackle"
         ],
         "exp": 0,
-        "catchRate": 100
+        "catchRate": 100,
+        "types": [
+          "Ground",
+          "Rock"
+        ]
       },
       {
         "name": "Regice",
@@ -9805,7 +10482,10 @@
           "Tackle"
         ],
         "exp": 0,
-        "type": "Ice"
+        "type": "Ice",
+        "types": [
+          "Ice"
+        ]
       },
       {
         "name": "Calyrex",
@@ -9816,7 +10496,11 @@
           "Tackle"
         ],
         "exp": 0,
-        "type": "Psychic/Grass"
+        "type": "Psychic/Grass",
+        "types": [
+          "Psychic",
+          "Ghost"
+        ]
       },
       {
         "name": "Landorus-Therian",
@@ -9827,7 +10511,10 @@
           "Tackle"
         ],
         "exp": 0,
-        "type": "Ground/Flying"
+        "type": "Ground/Flying",
+        "types": [
+          "Unknown"
+        ]
       },
       {
         "name": "Raikou",
@@ -9838,7 +10525,10 @@
           "Tackle"
         ],
         "exp": 0,
-        "type": "Electric"
+        "type": "Electric",
+        "types": [
+          "Electric"
+        ]
       },
       {
         "name": "Jirachi",
@@ -9849,7 +10539,34 @@
           "Tackle"
         ],
         "exp": 0,
-        "type": "Steel/Psychic"
+        "type": "Steel/Psychic",
+        "types": [
+          "Steel",
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Blissey",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Nidoran-M",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
       }
     ],
     "caughtPokemon": {
@@ -9906,6 +10623,9 @@
       },
       "croagunk": {
         "isShiny": false
+      },
+      "blissey": {
+        "isShiny": false
       }
     },
     "selectedPokemon": 22,
@@ -9914,16 +10634,16 @@
       "pokeball": 0,
       "greatball": 0,
       "ultraball": 0,
-      "masterball": 8675294,
+      "masterball": 8675293,
       "raidball": 7
     },
     "money": 9999999131468923000,
     "lastDaily": null,
     "created": "2024-07-10T14:47:42.405Z",
-    "lastWildEncounter": 1721063706063,
+    "lastWildEncounter": 1723827483276,
     "currentWildPokemon": {
-      "name": "Cutiefly",
-      "type": "Unknown",
+      "name": "Blissey",
+      "type": "Normal",
       "level": 85,
       "exp": 0,
       "isShiny": false,
@@ -9931,9 +10651,9 @@
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:r_:1259114608426487839>",
+      "rarity": "<:n_:1259114941873520734>",
       "defeated": true,
-      "encounterId": "af922e92-07fa-417d-953e-0a4ffa9d41fc"
+      "encounterId": "57167a49-4acb-4487-80c1-890e09a63ef0"
     },
     "activePokemon": {
       "name": "Rhyhorn",
@@ -9943,8 +10663,12 @@
       "moves": [
         "Tackle"
       ],
-      "exp": 850,
-      "catchRate": 100
+      "exp": 1700,
+      "catchRate": 100,
+      "types": [
+        "Ground",
+        "Rock"
+      ]
     },
     "exp": 2454,
     "raidCatchAttempts": 2
@@ -15849,7 +16573,7 @@
         "rarity": "<:SR:1259113778747015233>",
         "type": "Fire",
         "level": 5,
-        "exp": 480,
+        "exp": 740,
         "moves": [
           "Scratch",
           "Growl"
@@ -15858,36 +16582,84 @@
         "types": [
           "Fire"
         ]
+      },
+      {
+        "name": "Mimikyu",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Ghost",
+          "Fairy"
+        ]
+      },
+      {
+        "name": "Mimikyu",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Ghost",
+          "Fairy"
+        ]
       }
     ],
     "caughtPokemon": {},
-    "selectedPokemon": 0,
+    "selectedPokemon": 2,
     "isShiny": {},
     "items": {
-      "pokeball": 4,
+      "pokeball": 3,
       "greatball": 0,
       "ultraball": 0,
       "masterball": 0,
-      "rarecandy": 0
+      "rarecandy": 0,
+      "raidball": 0
     },
-    "money": 1240,
+    "money": 558920,
     "lastDaily": null,
     "created": "2024-08-14T17:15:15.327Z",
-    "lastWildEncounter": 1723743343044,
+    "lastWildEncounter": 1723971184841,
     "currentWildPokemon": {
-      "name": "Dwebble",
-      "type": "Bug",
-      "level": 4,
+      "name": "Riolu",
+      "type": "Fighting",
+      "level": 85,
       "exp": 0,
       "isShiny": false,
       "moves": [
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:n_:1259114941873520734>",
+      "rarity": "<:U_:1259114756313452680>",
       "defeated": true,
-      "encounterId": "0f8f23c6-8cd6-4bd8-af82-c703c47e8e5b"
-    }
+      "encounterId": "0e41f437-d201-4a99-9fc7-8e3a7f9c3719"
+    },
+    "activePokemon": {
+      "name": "Mimikyu",
+      "level": 100,
+      "rarity": "<:LR:1259113497053233162>",
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "exp": 3400,
+      "catchRate": 100,
+      "types": [
+        "Ghost",
+        "Fairy"
+      ]
+    },
+    "exp": 11100,
+    "raidCatchAttempts": 3
   },
   "303512897286438912": {
     "id": "303512897286438912",
@@ -16320,6 +17092,65 @@
           "Electric",
           "Flying"
         ]
+      },
+      {
+        "name": "Drapion",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Poison",
+          "Dark"
+        ]
+      },
+      {
+        "name": "Smoochum",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Ice",
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Starmie",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Water",
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Beautifly",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Bug",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Metagross",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Steel",
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Shuppet",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Ghost"
+        ]
       }
     ],
     "caughtPokemon": {
@@ -16427,25 +17258,40 @@
       },
       "haxorus": {
         "isShiny": false
+      },
+      "drapion": {
+        "isShiny": false
+      },
+      "smoochum": {
+        "isShiny": false
+      },
+      "starmie": {
+        "isShiny": false
+      },
+      "metagross": {
+        "isShiny": false
+      },
+      "shuppet": {
+        "isShiny": false
       }
     },
     "selectedPokemon": 25,
     "isShiny": {},
     "items": {
-      "pokeball": 4,
+      "pokeball": 3,
       "greatball": 0,
-      "ultraball": 964,
-      "masterball": 1,
+      "ultraball": 960,
+      "masterball": 0,
       "rarecandy": 8,
       "raidball": 1
     },
-    "money": 97846480,
+    "money": 97849030,
     "lastDaily": null,
     "created": "2024-08-15T16:50:25.728Z",
-    "lastWildEncounter": 1723745049917,
+    "lastWildEncounter": 1723971506144,
     "currentWildPokemon": {
-      "name": "Haxorus",
-      "type": "Dragon",
+      "name": "Shuppet",
+      "type": "Ghost",
       "level": 85,
       "exp": 0,
       "isShiny": false,
@@ -16453,9 +17299,9 @@
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:n_:1259114941873520734>",
+      "rarity": "<:r_:1259114608426487839>",
       "defeated": true,
-      "encounterId": "c677f652-7320-4a1e-8253-89c005ae9a97"
+      "encounterId": "e6883975-96f5-49aa-aac3-a91ade0f3fb4"
     },
     "activePokemon": {
       "name": "Klawf",
@@ -16464,7 +17310,8 @@
       "rarity": "<:SR:1259113778747015233>",
       "types": [
         "Rock"
-      ]
+      ],
+      "exp": 4250
     },
     "exp": 8055,
     "raidCatchAttempts": 2
@@ -16715,6 +17562,940 @@
         "Water"
       ],
       "exp": null
+    }
+  },
+  "1262521336618815580": {
+    "id": "1262521336618815580",
+    "region": "sinnoh",
+    "pokemon": [
+      {
+        "name": "Chimchar",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Fire",
+        "level": 5,
+        "exp": 0,
+        "moves": [
+          "Scratch",
+          "Leer"
+        ],
+        "catchRate": 45,
+        "types": [
+          "Fire"
+        ]
+      },
+      {
+        "name": "Kyogre-Primal",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Groudon-Primal",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Rayquaza-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      }
+    ],
+    "caughtPokemon": {},
+    "selectedPokemon": 0,
+    "isShiny": {},
+    "items": {
+      "pokeball": 5,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 0,
+      "rarecandy": 0
+    },
+    "money": 1000,
+    "lastDaily": null,
+    "created": "2024-08-16T15:17:41.904Z",
+    "lastWildEncounter": 0
+  },
+  "708835190746775603": {
+    "id": "708835190746775603",
+    "region": "kanto",
+    "pokemon": [
+      {
+        "name": "Charmander",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Fire",
+        "level": 5,
+        "exp": 0,
+        "moves": [
+          "Scratch",
+          "Growl"
+        ],
+        "catchRate": 45,
+        "types": [
+          "Fire"
+        ]
+      },
+      {
+        "name": "Dreepy",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Dragon",
+          "Ghost"
+        ]
+      },
+      {
+        "name": "Eternatus",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Poison",
+          "Dragon"
+        ]
+      },
+      {
+        "name": "Vullaby",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Dark",
+          "Flying"
+        ]
+      }
+    ],
+    "caughtPokemon": {
+      "eternatus": {
+        "isShiny": false
+      },
+      "vullaby": {
+        "isShiny": false
+      }
+    },
+    "selectedPokemon": 1,
+    "isShiny": {},
+    "items": {
+      "pokeball": 103,
+      "greatball": 98,
+      "ultraball": 97,
+      "masterball": 100,
+      "rarecandy": 0
+    },
+    "money": 999989903975,
+    "lastDaily": null,
+    "created": "2024-08-16T15:19:18.290Z",
+    "lastWildEncounter": 1723971598252,
+    "activePokemon": {
+      "name": "Dreepy",
+      "level": 100,
+      "rarity": "<:LR:1259113497053233162>",
+      "isShiny": true,
+      "moves": [
+        "Tackle"
+      ],
+      "exp": 5950,
+      "catchRate": 100,
+      "types": [
+        "Dragon",
+        "Ghost"
+      ]
+    },
+    "currentWildPokemon": {
+      "name": "Reshiram",
+      "type": "Dragon",
+      "level": 85,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:U_:1259114756313452680>",
+      "defeated": false,
+      "encounterId": "c2b40a56-4069-427d-9832-d26bbc15818f"
+    },
+    "customChances": {
+      "rarity": 1
+    },
+    "customRarities": [
+      {
+        "emoji": "<:n_:1259114941873520734>",
+        "chance": 0.30107526881720426
+      },
+      {
+        "emoji": "<:U_:1259114756313452680>",
+        "chance": 0.21505376344086016
+      },
+      {
+        "emoji": "<:r_:1259114608426487839>",
+        "chance": 0.1290322580645161
+      },
+      {
+        "emoji": "<:SR:1259113778747015233>",
+        "chance": 0.16129032258064513
+      },
+      {
+        "emoji": "<:UR:1259113669925539902>",
+        "chance": 0.1290322580645161
+      },
+      {
+        "emoji": "<:LR:1259113497053233162>",
+        "chance": 0.06451612903225805
+      }
+    ]
+  },
+  "853662122159505458": {
+    "id": "853662122159505458",
+    "region": "alola",
+    "pokemon": [
+      {
+        "name": "Rowlet",
+        "rarity": "<:SR:1259113778747015233>",
+        "type": "Grass",
+        "level": 5,
+        "exp": 0,
+        "moves": [
+          "Tackle",
+          "Growl"
+        ],
+        "catchRate": 45,
+        "types": [
+          "Grass",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Venusaur-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Charizard-MegaX",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Charizard-MegaY",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Blastoise-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Beedrill-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Pidgeot-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Alakazam-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Slowbro-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Gengar-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Kangaskhan-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Pinsir-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Gyarados-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Aerodactyl-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Mewtwo-MegaX",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Mewtwo-MegaY",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Ampharos-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Steelix-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Scizor-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Heracross-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Houndoom-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Tyranitar-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Sceptile-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Blaziken-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Swampert-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Gardevoir-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Sableye-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Mawile-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Aggron-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Medicham-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Manectric-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Sharpedo-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Camerupt-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Altaria-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Banette-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Absol-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Glalie-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Salamence-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Metagross-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Latias-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Latios-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Rayquaza-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Lopunny-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Garchomp-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Lucario-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Abomasnow-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Gallade-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Audino-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Diancie-Mega.",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      }
+    ],
+    "caughtPokemon": {},
+    "selectedPokemon": 4,
+    "isShiny": {},
+    "items": {
+      "pokeball": 5,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 0,
+      "rarecandy": 0
+    },
+    "money": 7011000000001000,
+    "lastDaily": null,
+    "created": "2024-08-17T15:24:00.302Z",
+    "lastWildEncounter": 0,
+    "activePokemon": {
+      "name": "Blastoise-Mega",
+      "level": 100,
+      "rarity": "<:LR:1259113497053233162>",
+      "isShiny": true,
+      "moves": [
+        "Tackle"
+      ],
+      "exp": 0,
+      "catchRate": 100,
+      "types": [
+        "Unknown"
+      ]
     }
   }
 }

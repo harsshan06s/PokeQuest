@@ -15,16 +15,28 @@
       "Water"
     ]
   },
+<<<<<<< HEAD
   "money": 3990926356058,
+=======
+  "money": 2990926366683,
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
   "items": {
-    "pokeball": 999942,
+    "pokeball": 999938,
     "greatball": 0,
     "ultraball": 0,
+<<<<<<< HEAD
     "masterball": 68697,
     "raidball": 170,
     "rarecandy": 826
   },
   "lastWildEncounter": 1723997085096,
+=======
+    "masterball": 68676,
+    "raidball": 170,
+    "rarecandy": 826
+  },
+  "lastWildEncounter": 1723908183062,
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
   "caughtPokemon": {
     "squirtle": {},
     "slowpoke": {
@@ -178,7 +190,7 @@
       "isShiny": true
     },
     "raikou": {
-      "isShiny": true
+      "isShiny": false
     },
     "mienfoo": {
       "isShiny": true
@@ -330,7 +342,74 @@
     "golurk": {
       "isShiny": false
     },
+<<<<<<< HEAD
     "farigiraf": {
+=======
+    "sandygast": {
+      "isShiny": false
+    },
+    "drifloon": {
+      "isShiny": false
+    },
+    "tatsugiri": {
+      "isShiny": false
+    },
+    "quilava": {
+      "isShiny": false
+    },
+    "simipour": {
+      "isShiny": false
+    },
+    "crobat": {
+      "isShiny": false
+    },
+    "spoink": {
+      "isShiny": false
+    },
+    "cranidos": {
+      "isShiny": false
+    },
+    "huntail": {
+      "isShiny": false
+    },
+    "giratina": {
+      "isShiny": false
+    },
+    "gourgeist": {
+      "isShiny": false
+    },
+    "dodrio": {
+      "isShiny": false
+    },
+    "loudred": {
+      "isShiny": false
+    },
+    "ponyta": {
+      "isShiny": false
+    },
+    "magcargo": {
+      "isShiny": false
+    },
+    "kommo-o": {
+      "isShiny": false
+    },
+    "roserade": {
+      "isShiny": false
+    },
+    "rolycoly": {
+      "isShiny": false
+    },
+    "amaura": {
+      "isShiny": false
+    },
+    "wo-chien": {
+      "isShiny": false
+    },
+    "froakie": {
+      "isShiny": false
+    },
+    "tinkatuff": {
+>>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
       "isShiny": false
     }
   }
