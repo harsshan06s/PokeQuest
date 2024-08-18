@@ -15,16 +15,16 @@
       "Water"
     ]
   },
-  "money": 3990926355633,
+  "money": 3990926356058,
   "items": {
     "pokeball": 999942,
     "greatball": 0,
     "ultraball": 0,
-    "masterball": 68698,
+    "masterball": 68697,
     "raidball": 170,
     "rarecandy": 826
   },
-  "lastWildEncounter": 1723815706361,
+  "lastWildEncounter": 1723997085096,
   "caughtPokemon": {
     "squirtle": {},
     "slowpoke": {
@@ -328,6 +328,9 @@
       "isShiny": false
     },
     "golurk": {
+      "isShiny": false
+    },
+    "farigiraf": {
       "isShiny": false
     }
   }

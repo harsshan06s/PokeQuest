@@ -3419,25 +3419,35 @@
         "types": [
           "Water"
         ]
+      },
+      {
+        "name": "Aerodactyl",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Rock",
+          "Flying"
+        ]
       }
     ],
     "items": {
       "pokeball": 9999974,
       "greatball": 9999963,
       "ultraball": 9999946,
-      "masterball": 9999635,
+      "masterball": 9999634,
       "Pokéball": 3,
       "pokéball": 3,
       "raidball": 148,
       "rare candy": 205,
       "rarecandy": 34
     },
-    "money": 50057513852,
+    "money": 50057514277,
     "lastDaily": null,
     "created": "2024-07-06T13:10:05.845Z",
     "currentWildPokemon": {
-      "name": "Phione",
-      "type": "Water",
+      "name": "Aerodactyl",
+      "type": "Rock",
       "level": 85,
       "exp": 0,
       "isShiny": false,
@@ -3445,11 +3455,11 @@
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:UR:1259113669925539902>",
+      "rarity": "<:n_:1259114941873520734>",
       "defeated": true,
-      "encounterId": "b15641a2-ae89-4b98-80f0-90e2464859a9"
+      "encounterId": "4055ee55-f945-4a79-a8dc-f2e6e85d4927"
     },
-    "lastWildEncounter": 1723815766905,
+    "lastWildEncounter": 1723996037353,
     "caughtPokemon": {
       "squirtle": {
         "isShiny": false
@@ -3993,6 +4003,9 @@
       },
       "phione": {
         "isShiny": false
+      },
+      "aerodactyl": {
+        "isShiny": false
       }
     },
     "lastRestart": "2024-07-08T07:17:38.545Z",
@@ -4004,7 +4017,7 @@
       "moves": [
         "Tackle"
       ],
-      "exp": 850,
+      "exp": 1700,
       "catchRate": 100,
       "types": [
         "Water"
@@ -5360,22 +5373,32 @@
           "Ground",
           "Ghost"
         ]
+      },
+      {
+        "name": "Farigiraf",
+        "level": 85,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Normal",
+          "Psychic"
+        ]
       }
     ],
     "items": {
       "pokeball": 999942,
       "greatball": 0,
       "ultraball": 0,
-      "masterball": 68698,
+      "masterball": 68697,
       "raidball": 170,
       "rarecandy": 826
     },
-    "money": 3990926355633,
+    "money": 3990926356058,
     "lastDaily": null,
     "created": "2024-07-06T13:15:42.842Z",
     "currentWildPokemon": {
-      "name": "Flabébé",
-      "type": "Unknown",
+      "name": "Farigiraf",
+      "type": "Normal",
       "level": 85,
       "exp": 0,
       "isShiny": false,
@@ -5383,12 +5406,12 @@
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:U_:1259114756313452680>",
-      "defeated": false,
-      "encounterId": "6135124c-d5f5-4fa1-8799-0376d2a4b16a"
+      "rarity": "<:n_:1259114941873520734>",
+      "defeated": true,
+      "encounterId": "a24ad8b9-6a83-4c29-8ce6-c0f55bafd581"
     },
     "lastRestart": "2024-07-08T07:19:16.675Z",
-    "lastWildEncounter": 1723815706361,
+    "lastWildEncounter": 1723997085096,
     "caughtPokemon": {
       "squirtle": {},
       "slowpoke": {
@@ -5693,6 +5716,9 @@
       },
       "golurk": {
         "isShiny": false
+      },
+      "farigiraf": {
+        "isShiny": false
       }
     },
     "activePokemon": {
@@ -5703,7 +5729,7 @@
       "moves": [
         "Tackle"
       ],
-      "exp": 0,
+      "exp": 850,
       "type": "Water",
       "types": [
         "Water"

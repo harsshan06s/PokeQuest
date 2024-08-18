@@ -15,19 +15,19 @@
       "Water"
     ]
   },
-  "money": 50057513852,
+  "money": 50057514277,
   "items": {
     "pokeball": 9999974,
     "greatball": 9999963,
     "ultraball": 9999946,
-    "masterball": 9999635,
+    "masterball": 9999634,
     "Pokéball": 3,
     "pokéball": 3,
     "raidball": 148,
     "rare candy": 205,
     "rarecandy": 34
   },
-  "lastWildEncounter": 1723815766905,
+  "lastWildEncounter": 1723996037353,
   "caughtPokemon": {
     "squirtle": {
       "isShiny": false
@@ -570,6 +570,9 @@
       "isShiny": false
     },
     "phione": {
+      "isShiny": false
+    },
+    "aerodactyl": {
       "isShiny": false
     }
   }
