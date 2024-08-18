@@ -1,28 +1,33 @@
 {
   "id": "973983152701849610",
-  "selectedPokemon": 37,
+  "selectedPokemon": 304,
   "activePokemon": {
-    "name": "Nidoran-m",
-    "level": 45,
-    "isShiny": true,
+    "name": "Heracross-Mega",
+    "level": 100,
     "rarity": "<:LR:1259113497053233162>",
+    "isShiny": true,
+    "moves": [
+      "Tackle"
+    ],
+    "exp": 0,
+    "catchRate": 100,
     "types": [
       "Unknown"
     ]
   },
-  "money": 50057517677,
+  "money": 50057523202,
   "items": {
-    "pokeball": 9999974,
+    "pokeball": 9999973,
     "greatball": 9999962,
-    "ultraball": 9999946,
-    "masterball": 9999628,
+    "ultraball": 9999945,
+    "masterball": 9999620,
     "Pokéball": 3,
     "pokéball": 3,
     "raidball": 148,
     "rare candy": 205,
     "rarecandy": 34
   },
-  "lastWildEncounter": 1723827753762,
+  "lastWildEncounter": 1723900851859,
   "caughtPokemon": {
     "squirtle": {
       "isShiny": false
@@ -166,7 +171,7 @@
       "isShiny": false
     },
     "jynx": {
-      "isShiny": true
+      "isShiny": false
     },
     "talonflame": {
       "isShiny": true
@@ -586,6 +591,24 @@
       "isShiny": false
     },
     "slowbro": {
+      "isShiny": false
+    },
+    "raikou": {
+      "isShiny": false
+    },
+    "milcery": {
+      "isShiny": false
+    },
+    "musharna": {
+      "isShiny": false
+    },
+    "arctibax": {
+      "isShiny": false
+    },
+    "perrserker": {
+      "isShiny": false
+    },
+    "cherubi": {
       "isShiny": false
     }
   }

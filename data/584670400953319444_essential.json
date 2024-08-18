@@ -10,16 +10,16 @@
       "Rock"
     ]
   },
-  "money": 97846480,
+  "money": 97849030,
   "items": {
-    "pokeball": 4,
+    "pokeball": 3,
     "greatball": 0,
-    "ultraball": 964,
-    "masterball": 1,
+    "ultraball": 960,
+    "masterball": 0,
     "rarecandy": 8,
     "raidball": 1
   },
-  "lastWildEncounter": 1723745049917,
+  "lastWildEncounter": 1723971506144,
   "caughtPokemon": {
     "gastrodon": {
       "isShiny": false
@@ -124,6 +124,21 @@
       "isShiny": false
     },
     "haxorus": {
+      "isShiny": false
+    },
+    "drapion": {
+      "isShiny": false
+    },
+    "smoochum": {
+      "isShiny": false
+    },
+    "starmie": {
+      "isShiny": false
+    },
+    "metagross": {
+      "isShiny": false
+    },
+    "shuppet": {
       "isShiny": false
     }
   }
