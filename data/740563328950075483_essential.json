@@ -1,0 +1,32 @@
+{
+  "id": "740563328950075483",
+  "selectedPokemon": 1,
+  "activePokemon": {
+    "name": "Rayquaza-Mega",
+    "level": 100,
+    "rarity": "<:LR:1259113497053233162>",
+    "isShiny": true,
+    "moves": [
+      "Tackle"
+    ],
+    "exp": 0,
+    "catchRate": 100,
+    "types": [
+      "Unknown"
+    ]
+  },
+  "money": 999451475,
+  "items": {
+    "pokeball": 3,
+    "greatball": 0,
+    "ultraball": 999,
+    "masterball": 0,
+    "rarecandy": 0
+  },
+  "lastWildEncounter": 1724611518100,
+  "caughtPokemon": {
+    "cresselia": {
+      "isShiny": false
+    }
+  }
+}

@@ -1,46 +1,33 @@
 {
   "id": "973983152701849610",
-  "selectedPokemon": 304,
+  "selectedPokemon": 271,
   "activePokemon": {
-    "name": "Heracross-Mega",
+    "name": "Aggron",
     "level": 100,
     "rarity": "<:LR:1259113497053233162>",
-    "isShiny": true,
+    "isShiny": false,
     "moves": [
       "Tackle"
     ],
     "exp": 0,
     "catchRate": 100,
     "types": [
-      "Unknown"
+      "Steel"
     ]
   },
-<<<<<<< HEAD
-  "money": 50057514277,
+  "money": 50057351252,
   "items": {
     "pokeball": 9999974,
-    "greatball": 9999963,
+    "greatball": 9999964,
     "ultraball": 9999946,
-    "masterball": 9999634,
-=======
-  "money": 50057523202,
-  "items": {
-    "pokeball": 9999973,
-    "greatball": 9999962,
-    "ultraball": 9999945,
-    "masterball": 9999620,
->>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
+    "masterball": 9999645,
     "Pokéball": 3,
     "pokéball": 3,
-    "raidball": 148,
+    "raidball": 146,
     "rare candy": 205,
     "rarecandy": 34
   },
-<<<<<<< HEAD
-  "lastWildEncounter": 1723996037353,
-=======
-  "lastWildEncounter": 1723900851859,
->>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
+  "lastWildEncounter": 1724606676293,
   "caughtPokemon": {
     "squirtle": {
       "isShiny": false
@@ -184,7 +171,7 @@
       "isShiny": false
     },
     "jynx": {
-      "isShiny": false
+      "isShiny": true
     },
     "talonflame": {
       "isShiny": true
@@ -256,7 +243,7 @@
       "isShiny": true
     },
     "latios": {
-      "isShiny": false
+      "isShiny": true
     },
     "vaporeon": {
       "isShiny": true
@@ -558,74 +545,7 @@
     "buzzwole": {
       "isShiny": false
     },
-    "walrein": {
-      "isShiny": false
-    },
-    "vanilluxe": {
-      "isShiny": false
-    },
-    "dewpider": {
-      "isShiny": false
-    },
-    "dartrix": {
-      "isShiny": false
-    },
-    "whiscash": {
-      "isShiny": false
-    },
-    "greavard": {
-      "isShiny": false
-    },
-    "kingambit": {
-      "isShiny": false
-    },
-    "jolteon": {
-      "isShiny": false
-    },
-    "phione": {
-      "isShiny": false
-    },
-<<<<<<< HEAD
-    "aerodactyl": {
-=======
-    "shelmet": {
-      "isShiny": false
-    },
-    "shroomish": {
-      "isShiny": false
-    },
-    "zacian": {
-      "isShiny": false
-    },
-    "metapod": {
-      "isShiny": false
-    },
-    "vileplume": {
-      "isShiny": false
-    },
-    "wormadam": {
-      "isShiny": false
-    },
-    "slowbro": {
-      "isShiny": false
-    },
-    "raikou": {
-      "isShiny": false
-    },
-    "milcery": {
-      "isShiny": false
-    },
-    "musharna": {
-      "isShiny": false
-    },
-    "arctibax": {
-      "isShiny": false
-    },
-    "perrserker": {
-      "isShiny": false
-    },
-    "cherubi": {
->>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
+    "minun": {
       "isShiny": false
     }
   }
