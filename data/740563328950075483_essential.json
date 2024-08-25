@@ -15,15 +15,15 @@
       "Unknown"
     ]
   },
-  "money": 999451475,
+  "money": 998452750,
   "items": {
     "pokeball": 3,
     "greatball": 0,
-    "ultraball": 999,
-    "masterball": 0,
+    "ultraball": 998,
+    "masterball": 10,
     "rarecandy": 0
   },
-  "lastWildEncounter": 1724611518100,
+  "lastWildEncounter": 1724611556861,
   "caughtPokemon": {
     "cresselia": {
       "isShiny": false

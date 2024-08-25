@@ -15156,17 +15156,17 @@
     "items": {
       "pokeball": 3,
       "greatball": 0,
-      "ultraball": 999,
-      "masterball": 0,
+      "ultraball": 998,
+      "masterball": 10,
       "rarecandy": 0
     },
-    "money": 999451475,
+    "money": 998452750,
     "lastDaily": null,
     "created": "2024-08-25T18:41:56.914Z",
-    "lastWildEncounter": 1724611518100,
+    "lastWildEncounter": 1724611556861,
     "currentWildPokemon": {
-      "name": "Cresselia",
-      "type": "Psychic",
+      "name": "Machoke",
+      "type": "Fighting",
       "level": 85,
       "exp": 0,
       "isShiny": false,
@@ -15174,9 +15174,9 @@
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:SR:1259113778747015233>",
+      "rarity": "<:r_:1259114608426487839>",
       "defeated": true,
-      "encounterId": "860a1d9f-de8d-4f0d-b248-32ea75af0ec6"
+      "encounterId": "53b4ded6-9333-4b9f-80f6-35cad61b60c6"
     },
     "activePokemon": {
       "name": "Rayquaza-Mega",
@@ -15186,7 +15186,7 @@
       "moves": [
         "Tackle"
       ],
-      "exp": 850,
+      "exp": 3400,
       "catchRate": 100,
       "types": [
         "Unknown"
