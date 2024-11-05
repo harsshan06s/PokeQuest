@@ -2,7 +2,7 @@
   "id": "740563328950075483",
   "selectedPokemon": 1,
   "activePokemon": {
-    "name": "Rayquaza-Mega",
+    "name": "rayquaza-mega",
     "level": 100,
     "rarity": "<:LR:1259113497053233162>",
     "isShiny": true,
@@ -15,17 +15,74 @@
       "Unknown"
     ]
   },
-  "money": 998452750,
+  "money": 443456045,
   "items": {
-    "pokeball": 3,
+    "pokeball": 1,
     "greatball": 0,
-    "ultraball": 998,
-    "masterball": 10,
+    "ultraball": 100986,
+    "masterball": 4998,
     "rarecandy": 0
   },
-  "lastWildEncounter": 1724611556861,
+  "lastWildEncounter": 1728580829930,
   "caughtPokemon": {
     "cresselia": {
+      "isShiny": false
+    },
+    "poltchageist": {
+      "isShiny": false
+    },
+    "dottler": {
+      "isShiny": false
+    },
+    "slaking": {
+      "isShiny": false
+    },
+    "finneon": {
+      "isShiny": false
+    },
+    "tandemaus": {
+      "isShiny": false
+    },
+    "zoroark": {
+      "isShiny": false
+    },
+    "qwilfish": {
+      "isShiny": false
+    },
+    "bidoof": {
+      "isShiny": false
+    },
+    "ogerpon": {
+      "isShiny": false
+    },
+    "croagunk": {
+      "isShiny": false
+    },
+    "wo-chien": {
+      "isShiny": false
+    },
+    "nymble": {
+      "isShiny": false
+    },
+    "rellor": {
+      "isShiny": false
+    },
+    "lurantis": {
+      "isShiny": false
+    },
+    "celebi": {
+      "isShiny": false
+    },
+    "drowzee": {
+      "isShiny": false
+    },
+    "victini": {
+      "isShiny": false
+    },
+    "corvisquire": {
+      "isShiny": false
+    },
+    "comfey": {
       "isShiny": false
     }
   }

@@ -1,30 +1,28 @@
 {
   "id": "858515856383541249",
-  "selectedPokemon": 2,
+  "selectedPokemon": 0,
   "activePokemon": {
-    "name": "Mimikyu",
-    "level": 100,
-    "rarity": "<:LR:1259113497053233162>",
-    "isShiny": false,
-    "moves": [
-      "Tackle"
-    ],
+    "name": "Piplup",
+    "rarity": "<:SR:1259113778747015233>",
     "exp": 0,
-    "catchRate": 100,
+    "growthType": "MediumFast",
+    "level": 5,
     "types": [
-      "Ghost",
-      "Fairy"
+      "Water"
+    ],
+    "moves": [
+      "Pound",
+      "Growl"
     ]
   },
-  "money": 558920,
+  "money": 1000,
   "items": {
-    "pokeball": 3,
+    "pokeball": 5,
     "greatball": 0,
     "ultraball": 0,
     "masterball": 0,
-    "rarecandy": 0,
-    "raidball": 0
+    "rarecandy": 0
   },
-  "lastWildEncounter": 1723971184841,
+  "lastWildEncounter": 0,
   "caughtPokemon": {}
 }

@@ -2,7 +2,7 @@
   "id": "800030217191161907",
   "selectedPokemon": 1,
   "activePokemon": {
-    "name": "Diancie",
+    "name": "diancie",
     "level": 100,
     "rarity": "<:LR:1259113497053233162>",
     "isShiny": true,
@@ -16,15 +16,15 @@
       "Fairy"
     ]
   },
-  "money": 49662554,
+  "money": 49662918,
   "items": {
     "pokeball": 0,
     "greatball": 0,
-    "ultraball": 976,
+    "ultraball": 963,
     "masterball": 0,
     "raidball": 27
   },
-  "lastWildEncounter": 1723719312957,
+  "lastWildEncounter": 1728578939087,
   "caughtPokemon": {
     "cacnea": {
       "isShiny": false
@@ -74,25 +74,55 @@
     "drifblim": {
       "isShiny": false
     },
-    "diancie": {
+    "chingling": {
       "isShiny": false
     },
-    "lurantis": {
+    "barboach": {
       "isShiny": false
     },
-    "hariyama": {
+    "honchkrow": {
+      "isShiny": true
+    },
+    "frillish": {
+      "isShiny": true
+    },
+    "crabominable": {
       "isShiny": false
     },
-    "tyrantrum": {
+    "kabuto": {
       "isShiny": false
     },
-    "wailord": {
+    "solrock": {
       "isShiny": false
     },
-    "starmie": {
+    "whismur": {
       "isShiny": false
     },
-    "clamperl": {
+    "hoothoot": {
+      "isShiny": false
+    },
+    "pinsir": {
+      "isShiny": false
+    },
+    "prinplup": {
+      "isShiny": false
+    },
+    "scizor": {
+      "isShiny": false
+    },
+    "mabosstiff": {
+      "isShiny": false
+    },
+    "herdier": {
+      "isShiny": false
+    },
+    "araquanid": {
+      "isShiny": false
+    },
+    "shelmet": {
+      "isShiny": false
+    },
+    "latias": {
       "isShiny": false
     }
   }

@@ -1,11 +1,11 @@
 {
-  "id": "973983152701849610",
-  "selectedPokemon": 6,
+  "id": "773772360255537203",
+  "selectedPokemon": 3,
   "activePokemon": {
     "name": "Charizard",
     "level": 90,
     "rarity": "<:LR:1259113497053233162>",
-    "isShiny": false,
+    "isShiny": true,
     "moves": [
       "Tackle"
     ],
@@ -16,26 +16,20 @@
       "Flying"
     ]
   },
-  "money": 6925,
+  "money": 1000000001975,
   "items": {
-    "pokeball": 0,
+    "pokeball": 1,
     "greatball": 0,
-    "ultraball": 4,
+    "ultraball": 0,
     "masterball": 0,
     "rarecandy": 0
   },
-  "lastWildEncounter": 1730730148504,
+  "lastWildEncounter": 1729100322234,
   "caughtPokemon": {
-    "finizen": {
+    "hippopotas": {
       "isShiny": false
     },
-    "oranguru": {
-      "isShiny": false
-    },
-    "sandslash": {
-      "isShiny": false
-    },
-    "spearow": {
+    "solosis": {
       "isShiny": false
     }
   }

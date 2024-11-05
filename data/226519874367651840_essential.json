@@ -21,10 +21,10 @@
     "pokeball": 0,
     "greatball": 0,
     "ultraball": 0,
-    "masterball": 8675293,
+    "masterball": 8675294,
     "raidball": 7
   },
-  "lastWildEncounter": 1723827483276,
+  "lastWildEncounter": 1728647640666,
   "caughtPokemon": {
     "nidoran-m": {
       "isShiny": true
@@ -78,9 +78,6 @@
       "isShiny": false
     },
     "croagunk": {
-      "isShiny": false
-    },
-    "blissey": {
       "isShiny": false
     }
   }

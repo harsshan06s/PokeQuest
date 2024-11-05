@@ -1,0 +1,144 @@
+{
+  "id": "1237059058310316162",
+  "selectedPokemon": 0,
+  "activePokemon": {
+    "name": "Charmander",
+    "rarity": "<:SR:1259113778747015233>",
+    "type": "Fire",
+    "level": 21,
+    "exp": 960,
+    "moves": [
+      "Scratch",
+      "Growl"
+    ],
+    "catchRate": 45,
+    "types": [
+      "Fire"
+    ]
+  },
+  "money": 99899478955,
+  "items": {
+    "pokeball": 2,
+    "greatball": 0,
+    "ultraball": 957,
+    "masterball": 1000,
+    "rarecandy": 0
+  },
+  "lastWildEncounter": 1728493876380,
+  "caughtPokemon": {
+    "registeel": {
+      "isShiny": false
+    },
+    "maschiff": {
+      "isShiny": false
+    },
+    "eelektross": {
+      "isShiny": false
+    },
+    "litleo": {
+      "isShiny": false
+    },
+    "omastar": {
+      "isShiny": false
+    },
+    "annihilape": {
+      "isShiny": false
+    },
+    "florges": {
+      "isShiny": false
+    },
+    "cosmoem": {
+      "isShiny": false
+    },
+    "thwackey": {
+      "isShiny": false
+    },
+    "aerodactyl": {
+      "isShiny": false
+    },
+    "dolliv": {
+      "isShiny": false
+    },
+    "munna": {
+      "isShiny": false
+    },
+    "claydol": {
+      "isShiny": false
+    },
+    "wattrel": {
+      "isShiny": false
+    },
+    "dunsparce": {
+      "isShiny": false
+    },
+    "mabosstiff": {
+      "isShiny": false
+    },
+    "garbodor": {
+      "isShiny": false
+    },
+    "dondozo": {
+      "isShiny": false
+    },
+    "basculin": {
+      "isShiny": false
+    },
+    "magearna": {
+      "isShiny": false
+    },
+    "klink": {
+      "isShiny": false
+    },
+    "mew": {
+      "isShiny": false
+    },
+    "steenee": {
+      "isShiny": false
+    },
+    "conkeldurr": {
+      "isShiny": false
+    },
+    "magneton": {
+      "isShiny": false
+    },
+    "amaura": {
+      "isShiny": false
+    },
+    "sceptile": {
+      "isShiny": false
+    },
+    "durant": {
+      "isShiny": false
+    },
+    "archaludon": {
+      "isShiny": false
+    },
+    "ting-lu": {
+      "isShiny": false
+    },
+    "urshifu": {
+      "isShiny": false
+    },
+    "graveler": {
+      "isShiny": false
+    },
+    "omanyte": {
+      "isShiny": false
+    },
+    "yamask": {
+      "isShiny": false
+    },
+    "terrakion": {
+      "isShiny": false
+    },
+    "koraidon": {
+      "isShiny": false
+    },
+    "bagon": {
+      "isShiny": false
+    },
+    "musharna": {
+      "isShiny": false
+    }
+  }
+}

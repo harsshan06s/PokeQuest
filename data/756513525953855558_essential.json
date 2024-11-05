@@ -1,0 +1,33 @@
+{
+  "id": "756513525953855558",
+  "selectedPokemon": 0,
+  "activePokemon": {
+    "name": "Charmander",
+    "rarity": "<:SR:1259113778747015233>",
+    "type": "Fire",
+    "level": 5,
+    "exp": 10,
+    "moves": [
+      "Scratch",
+      "Growl"
+    ],
+    "catchRate": 45,
+    "types": [
+      "Fire"
+    ]
+  },
+  "money": 1005,
+  "items": {
+    "pokeball": 4,
+    "greatball": 0,
+    "ultraball": 0,
+    "masterball": 0,
+    "rarecandy": 0
+  },
+  "lastWildEncounter": 1727890643567,
+  "caughtPokemon": {
+    "shroomish": {
+      "isShiny": false
+    }
+  }
+}

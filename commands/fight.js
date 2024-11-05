@@ -1,5 +1,5 @@
 const { EmbedBuilder, AttachmentBuilder } = require('discord.js');
-const { getUserData, updateUserData, getActivePokemon, createBattleImage } = require('../utils/helpers.js');
+const { getUserData, updateUserData, getActivePokemon, createBattleImage, calculateExperience, experienceToNextLevel } = require('../utils/helpers.js');
 const { createPokeBallButtons } = require('../utils/buttonUtils.js');
 const catchModule = require('./catch.js');
 
@@ -42,14 +42,50 @@ module.exports = {
                 return replyFunction({ content: "Error: Active Pokémon not found. Please try again.", ephemeral: true });
             }
 
+            // Assign a growth type if it's not set
+            if (!userPokemon.growthType) {
+                const growthTypes = ['Erratic', 'Fast', 'MediumFast', 'MediumSlow', 'Slow', 'Fluctuating'];
+                userPokemon.growthType = growthTypes[Math.floor(Math.random() * growthTypes.length)];
+                await updateUserData(userId, userData);  // Update after assigning growth type
+            }
+
             const battleImage = await createBattleImage(userData, wildPokemon.name, wildPokemon.isShiny, wildPokemon.level);
 
-            const expGained = Math.floor(wildPokemon.level * 10);
-            const coinReward = Math.floor(wildPokemon.level * 5);
+            // Calculate experience gained from battle
+            // Calculate the next level's experience requirement
+            const expGained = calculateExperience(userPokemon.growthType, wildPokemon.level);
+        console.log(`EXP gained: ${expGained}`);
 
-            userPokemon.exp += expGained;
-            userData.money += coinReward;
-            userData.currentWildPokemon.defeated = true;
+        // Add the experience points to the userPokemon's exp
+        userPokemon.exp += expGained;
+        console.log(`Total EXP after gain: ${userPokemon.exp}`);
+
+        // Leveling up logic with maximum level check and improved logging
+        let levelsGained = 0;
+        while (userPokemon.exp >= experienceToNextLevel(userPokemon.level, userPokemon.growthType) && userPokemon.level < 100) {
+            const currentLevelExp = experienceToNextLevel(userPokemon.level, userPokemon.growthType);
+            console.log(`Level ${userPokemon.level} requires ${currentLevelExp} EXP`);
+            
+            userPokemon.level += 1;
+            userPokemon.exp -= currentLevelExp;
+            levelsGained++;
+            
+            console.log(`Leveled up to ${userPokemon.level}, remaining EXP: ${userPokemon.exp}`);
+        }
+
+        console.log(`Total levels gained: ${levelsGained}`);
+
+        // Update the userData object with the new level and exp of the active Pokémon
+        const userPokemonIndex = userData.pokemon.findIndex(p => p.id === userPokemon.id);
+        userData.pokemon[userPokemonIndex].level = userPokemon.level;
+        userData.pokemon[userPokemonIndex].exp = userPokemon.exp;
+
+        // Update the userData in the database
+        await updateUserData(userId, userData);
+
+        const coinReward = Math.floor(wildPokemon.level * 5);
+        userData.money += coinReward;
+
 
             const shinyEmoji = wildPokemon.isShiny ? '✨ ' : '';
 

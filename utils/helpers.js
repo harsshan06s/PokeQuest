@@ -1,12 +1,8 @@
 const fs = require('fs').promises;
-const { clear } = require('console');
 const axios = require('axios');
 const path = require('path');
-const { createCanvas, loadImage,registerFont } = require('canvas');
+const { createCanvas, loadImage, registerFont } = require('canvas');
 registerFont(path.join(__dirname, '..', 'fonts', 'DisposableDroid BB.ttf'), { family: 'DisposableDroid BB' });
-
-
-
 
 const USER_DATA_PATH = path.join(__dirname, '..', 'data', 'users.json');
 const POKEMON_LIST_PATH = path.join(__dirname, '..', 'data', 'pokemon-list.json');
@@ -15,36 +11,329 @@ const POKEMON_TYPES_PATH = path.join(__dirname, '..', 'data', 'pokemon_types.jso
 let pokemonList = [];
 let pokemonList1 = {};
 
+// Load Pokémon Lists
 async function loadPokemonLists() {
     try {
-        // Load main Pokémon list
         const listData = await fs.readFile(POKEMON_LIST_PATH, 'utf8');
         pokemonList = JSON.parse(listData);
-        console.log(`Main Pokémon list loaded successfully. Total Pokémon: ${pokemonList.length}`);
-
-        // Load Pokémon types
         const typesData = await fs.readFile(POKEMON_TYPES_PATH, 'utf8');
         pokemonList1 = JSON.parse(typesData);
-        console.log(`Pokémon types loaded successfully. Total Pokémon with types: ${Object.keys(pokemonList1).length}`);
     } catch (error) {
         console.error(`Error loading Pokémon lists: ${error}`);
-        if (error instanceof SyntaxError) {
-            console.error('JSON parsing error. Please check the format of your Pokémon data files.');
-        }
     }
 }
+
+// Assign a random growth type to a Pokémon
+// Function to assign a random growth type
+function assignGrowthType() {
+    const growthTypes = ['Erratic', 'Fast', 'MediumFast', 'MediumSlow', 'Slow', 'Fluctuating'];
+    return growthTypes[Math.floor(Math.random() * growthTypes.length)];
+}
+
+// Function to calculate experience based on growth type
+function calculateExperience(growthType, level) {
+    switch (growthType) {
+        case 'Erratic':
+            return erraticExperience(level);
+        case 'Fast':
+            return fastExperience(level);
+        case 'MediumFast':
+            return mediumFastExperience(level);
+        case 'MediumSlow':
+            return mediumSlowExperience(level);
+        case 'Slow':
+            return slowExperience(level);
+        case 'Fluctuating':
+            return fluctuatingExperience(level);
+        default:
+            return mediumFastExperience(level);
+    }
+}
+
+// Experience functions for each growth type
+function fastExperience(level) {
+    return Math.floor(4 * Math.pow(level, 3) / 5);
+}
+
+function mediumFastExperience(level) {
+    return Math.pow(level, 3);
+}
+
+function slowExperience(level) {
+    return Math.floor(5 * Math.pow(level, 3) / 4);
+}
+
+function mediumSlowExperience(level) {
+    return Math.floor((6 / 5) * Math.pow(level, 3) - 15 * Math.pow(level, 2) + 100 * level - 140);
+}
+
+function fluctuatingExperience(level) {
+    if (level <= 15) return Math.floor(Math.pow(level, 3) * ((level + 1) / 3 + 24) / 50);
+    if (level <= 36) return Math.floor(Math.pow(level, 3) * (level + 14) / 50);
+    return Math.floor(Math.pow(level, 3) * (level / 2 + 32) / 50);
+}
+
+function erraticExperience(level) {
+    if (level <= 50) return Math.floor(Math.pow(level, 3) * (10 * level + 37) / 50);
+    if (level <= 68) return Math.floor(Math.pow(level, 3) * (10 * level + 70) / 50);
+    if (level <= 98) return Math.floor(Math.pow(level, 3) * (10 * level + 100) / 50);
+    return Math.floor(Math.pow(level, 3) * (10 * level + 120) / 50);
+}
+
+
+
 async function loadImageFromUrl(url) {
     const response = await axios.get(url, { responseType: 'arraybuffer' });
     return loadImage(response.data);
 }
 
+// Generate wild Pokémon (with randomized growth type)
+function generateWildPokemon(userLevel, userData = {}) {
+    if (pokemonList.length === 0) {
+        console.error('Pokemon list is empty.');
+        return null;
+    }
+
+    const randomPokemon = pokemonList[Math.floor(Math.random() * pokemonList.length)];
+    const level = Math.floor(Math.random() * 50) + 1;
+    const pokemonTypes = pokemonList1[randomPokemon.toLowerCase()] || ['Unknown'];
+
+    return {
+        name: randomPokemon.charAt(0).toUpperCase() + randomPokemon.slice(1),
+        types: pokemonTypes, 
+        level,
+        exp: 0, // Initial EXP for wild Pokémon
+        isShiny: isShiny(userData),
+        moves: ['Tackle'], 
+        catchRate: 100, 
+        rarity: determineRarity(),
+        growthType: assignGrowthType() // Random growth type for wild Pokémon
+    };
+}
+
+// Shiny probability function
+function isShiny(userData) {
+    const shinyChance = userData.customChances?.shiny || 0.01; // Default 1% if not set
+    return Math.random() < shinyChance;
+}
+const baseRarities = [
+    { emoji: '<:n_:1259114941873520734>', chance: 700/1851 },
+    { emoji: '<:U_:1259114756313452680>', chance: 500/1851 },
+    { emoji: '<:r_:1259114608426487839>', chance: 300/1851 },
+    { emoji: '<:SR:1259113778747015233>', chance: 250/1851 },
+    { emoji: '<:UR:1259113669925539902>', chance: 200/1851 },
+    { emoji: '<:LR:1259113497053233162>', chance: 100/1851 }
+];
+
+
+function determineRarity() {
+    const rand = Math.random();
+    let cumulativeChance = 0;
+    for (const rarity of baseRarities) {
+        cumulativeChance += rarity.chance;
+        if (rand < cumulativeChance) {
+            return rarity.emoji;
+        }
+    }
+    return baseRarities[baseRarities.length - 1].emoji;
+}
+
+// Create or update a user (with growth type integration for starters)
+// In your helpers.js file
+async function createOrUpdateUser(userId, region, selectedStarter, restart = false) {
+    const userData = await readUserData();
+    if (restart) {
+        delete userData[userId];
+        await writeUserData(userData);
+        return await createOrUpdateUser(userId, region, selectedStarter);
+    } else {
+        const existingUser = userData[userId];
+
+        if (existingUser) {
+            existingUser.region = region;
+            existingUser.pokemon.push({
+                name: selectedStarter.name,
+                rarity: selectedStarter.rarity,
+                exp: 0,
+                growthType: assignGrowthType(),
+                level: selectedStarter.level || 1,
+                types: selectedStarter.type ? [selectedStarter.type] : [],
+                moves: selectedStarter.moves || []
+            });
+            existingUser.lastRestart = new Date().toISOString();
+        } else {
+            userData[userId] = {
+                id: userId,
+                region: region,
+                pokemon: [{
+                    name: selectedStarter.name,
+                    rarity: selectedStarter.rarity,
+                    exp: 0,
+                    growthType: assignGrowthType(),
+                    level: selectedStarter.level || 1,
+                    types: selectedStarter.type ? [selectedStarter.type] : [],
+                    moves: selectedStarter.moves || []
+                }],
+                caughtPokemon: {},
+                selectedPokemon: 0,
+                items: {
+                    pokeball: 5,
+                    greatball: 0,
+                    ultraball: 0,
+                    masterball: 0,
+                    rarecandy: 0
+                },
+                money: 1000,
+                lastDaily: null,
+                created: new Date().toISOString()
+            };
+        }
+
+        await writeUserData(userData);
+        return userData[userId];
+    }
+}
+
+// Save user data
+async function writeUserData(data) {
+    await fs.writeFile(USER_DATA_PATH, JSON.stringify(data, null, 2));
+}
+
+// Read user data
+async function readUserData() {
+    try {
+        const data = await fs.readFile(USER_DATA_PATH, 'utf8');
+        return JSON.parse(data);
+    } catch (error) {
+        if (error.code === 'ENOENT') {
+            return {};
+        }
+        throw error;
+    }
+}
+
+// Calculate experience needed for next level
+function experienceToNextLevel(currentLevel, growthType) {
+    return calculateExperience(growthType, currentLevel + 1) - calculateExperience(growthType, currentLevel);
+}
+
+// Update user Pokémon data
+async function updateUserData(userId, updateData) {
+    const userData = await readUserData();
+    if (!userData[userId]) {
+        throw new Error('User does not exist');
+    }
+
+    // If updating Pokemon, ensure type information is included and names are strings
+    if (updateData.pokemon) {
+        updateData.pokemon = updateData.pokemon.map(pokemon => {
+            // Ensure pokemon.name is a string
+            if (typeof pokemon.name !== 'string') {
+                console.warn(`Invalid pokemon name for user ${userId}:`, pokemon.name);
+                pokemon.name = String(pokemon.name || '')
+            }
+
+            // Assign types if not present
+            if (!pokemon.types || pokemon.types.length === 0) {
+                pokemon.types = pokemonList1[pokemon.name.toLowerCase()] || ['Unknown'];
+            }
+            return pokemon;
+        });
+    }
+
+    userData[userId] = { ...userData[userId], ...updateData };
+    await writeUserData(userData);
+    await saveEssentialUserData(userId, userData[userId]);
+    return userData[userId];
+}
+
+// Get active Pokémon with type information
+async function getActivePokemon(userData) {
+    const activePokemon = userData.activePokemon || userData.pokemon[userData.selectedPokemon];
+    if (activePokemon && (!activePokemon.types || activePokemon.types.length === 0)) {
+        activePokemon.types = pokemonList1[activePokemon.name.toLowerCase()] || ['Unknown'];
+    }
+    return activePokemon;
+}
+
+// Get user data
+async function getUserData(userId) {
+    const userData = await readUserData();
+    if (userData[userId] && !userData[userId].lastWildEncounter) {
+        userData[userId].lastWildEncounter = 0; // Initialize to 0 if not present
+        await writeUserData(userData);
+    }
+    return userData[userId];
+}
+
+// Use Rare Candy to level up a Pokémon
+async function useRareCandy(userId, pokemonIndex, quantity) {
+    const userData = await getUserData(userId);
+    if (!userData) {
+        throw new Error('User does not exist');
+    }
+
+    if (pokemonIndex < 0 || pokemonIndex >= userData.pokemon.length) {
+        throw new Error('Invalid Pokémon index');
+    }
+
+    if (userData.items.rarecandy < quantity) {
+        throw new Error('Not enough Rare Candy');
+    }
+
+    const pokemon = userData.pokemon[pokemonIndex];
+    const oldLevel = pokemon.level;
+    pokemon.level = Math.min(100, pokemon.level + quantity);
+    userData.items.rarecandy -= quantity;
+
+    await updateUserData(userId, userData);
+
+    return {
+        pokemon: pokemon,
+        oldLevel: oldLevel,
+        newLevel: pokemon.level,
+        usedCandy: quantity
+    };
+}
+
+// Update caught Pokémon data
+async function updateCaughtPokemon(userId, pokemonName, isShiny = false) {
+    const userData = await readUserData();
+    if (!userData[userId]) {
+        throw new Error('User does not exist');
+    }
+
+    if (!userData[userId].caughtPokemon) {
+        userData[userId].caughtPokemon = {};
+    }
+
+    userData[userId].caughtPokemon[pokemonName.toLowerCase()] = { isShiny };
+    await writeUserData(userData);
+    return userData[userId];
+}
+
+// Update selected Pokémon
+async function updateSelectedPokemon(userId, pokemonIndex) {
+    const userData = await getUserData(userId);
+    if (!userData) {
+        throw new Error('User does not exist');
+    }
+    if (pokemonIndex < 0 || pokemonIndex >= userData.pokemon.length) {
+        throw new Error('Invalid Pokémon index');
+    }
+    userData.selectedPokemon = pokemonIndex;
+    await updateUserData(userId, userData);
+    return userData;
+}
+
+// Create battle image function (as needed in your game)
 async function createBattleImage(userData, wildPokemonName, isWildPokemonShiny, wildPokemonLevel) {
     const activePokemon = userData.activePokemon || userData.pokemon[userData.selectedPokemon];
     if (!activePokemon) {
         console.error('No active Pokémon found for user:', userData.id);
         throw new Error('No active Pokémon found');
     }
-    
+
     const userPokemonName = activePokemon.name;
     const isUserPokemonShiny = activePokemon.isShiny;
     const userPokemonLevel = activePokemon.level;
@@ -53,84 +342,62 @@ async function createBattleImage(userData, wildPokemonName, isWildPokemonShiny, 
     const canvas = createCanvas(width, height);
     const ctx = canvas.getContext('2d');
 
-    // Load and draw background
     const background = await loadImage(path.join(__dirname, 'background.png'));
     ctx.drawImage(background, 0, 0, width, height);
 
-    // Load user Pokemon
     const userPokemonImagePath = path.join(__dirname, 'pokemon_images', `${userPokemonName.toLowerCase()}${isUserPokemonShiny ? '-shiny' : ''}.png`);
     let userPokemon;
     try {
         userPokemon = await loadImage(userPokemonImagePath);
     } catch (error) {
-        console.error(`Failed to load image for ${userPokemonName}`, error);
-        // Use a placeholder image or default Pokemon image
         userPokemon = await loadImage(path.join(__dirname, 'pokemon_images', 'default.png'));
     }
 
-    // Load wild Pokemon (keep using URL for now, or implement similar local image loading if needed)
     const wildPokemonUrl1 = `https://img.pokemondb.net/sprites/x-y${isWildPokemonShiny ? '/shiny' : '/normal'}/${wildPokemonName.toLowerCase()}.png`;
-    const wildPokemonUrl2 = `https://img.pokemondb.net/sprites/scarlet-violet${isWildPokemonShiny ? '/shiny/1x' : '/normal/1x'}/${wildPokemonName.toLowerCase()}.png`;
     let wildPokemon;
     try {
         wildPokemon = await loadImage(wildPokemonUrl1);
     } catch (error) {
-        console.log(`Failed to load image from ${wildPokemonUrl1}, trying fallback URL`);
-        try {
-            wildPokemon = await loadImage(wildPokemonUrl2);
-        } catch (fallbackError) {
-            console.error(`Failed to load image from both URLs for ${wildPokemonName}`);
-            throw fallbackError;
-        }
+        wildPokemon = await loadImage(path.join(__dirname, 'pokemon_images', 'default.png'));
     }
-// In the createBattleImage function, replace the Pokémon drawing part with:
 
-// Define standard dimensions for both Pokémon
-const standardPokemonWidth = 150;
-const standardPokemonHeight = 150;
+    const standardPokemonWidth = 150;
+    const standardPokemonHeight = 150;
 
-// Calculate position for user Pokémon (bottom left)
-const userPokemonX = 100;
-const userPokemonY = height - 190;
+    const userPokemonX = 100;
+    const userPokemonY = height - 190;
+    const wildPokemonX = width - 220;
+    const wildPokemonY = 40;
 
-// Calculate position for wild Pokémon (top right)
-const wildPokemonX = width - 220;
-const wildPokemonY = 40;
+    ctx.drawImage(userPokemon, userPokemonX, userPokemonY, standardPokemonWidth, standardPokemonHeight);
+    ctx.drawImage(wildPokemon, wildPokemonX, wildPokemonY, standardPokemonWidth, standardPokemonHeight);
 
-// Draw user Pokémon in the bottom left
-ctx.drawImage(userPokemon, userPokemonX, userPokemonY, standardPokemonWidth, standardPokemonHeight);
-
-// Draw wild Pokémon in the top right
-ctx.drawImage(wildPokemon, wildPokemonX, wildPokemonY, standardPokemonWidth, standardPokemonHeight);
-
-    // Add Pokemon names and levels to the boxes
     ctx.fillStyle = '#FFFFFF';
     ctx.font = '20px DisposableDroidBB';
-    
-    // Wild Pokemon (top left box)
+
     ctx.fillText(wildPokemonName, 70, 70);
-    ctx.font = '15px DisposableDroidBB'; // Smaller font for level
+    ctx.font = '15px DisposableDroidBB';
     ctx.fillText(`${wildPokemonLevel.toString().padStart(3, '')}`, 220, 75);
-    
-    // User Pokemon (bottom right box)
-    ctx.font = '20px DisposableDroidBB'; // Reset to larger font for Pokemon name
+
+    ctx.font = '20px DisposableDroidBB';
     ctx.fillText(userPokemonName, width - 210, height - 70);
-    ctx.font = '15px DisposableDroidBB'; // Smaller font for level
+    ctx.font = '15px DisposableDroidBB';
     ctx.fillText(`${userPokemonLevel.toString().padStart(2, '')}`, width - 35, height - 67);
 
-    // Return the canvas buffer
     return canvas.toBuffer();
 }
 
 
 
+
+// Raid Battle Image Generation
 async function createRaidBattleImage(userData, wildPokemonName, isWildPokemonShiny, wildPokemonLevel) {
     const activePokemon = userData.activePokemon || userData.pokemon[userData.selectedPokemon];
     if (!activePokemon) {
         console.error('No active Pokémon found for user:', userData.id);
         throw new Error('No active Pokémon found');
     }
-    
+
     const userPokemonName = activePokemon.name;
     const isUserPokemonShiny = activePokemon.isShiny;
     const userPokemonLevel = activePokemon.level;
@@ -164,21 +431,18 @@ async function createRaidBattleImage(userData, wildPokemonName, isWildPokemonShi
     const wildPokemonUrl1 = `https://img.pokemondb.net/sprites/x-y${isWildPokemonShiny ? '/shiny' : '/normal'}/${wildPokemonName.toLowerCase()}.png`;
     const wildPokemonUrl2 = `https://img.pokemondb.net/sprites/scarlet-violet${isWildPokemonShiny ? '/shiny/1x' : '/normal/1x'}/${wildPokemonName.toLowerCase()}.png`;
 
-let wildPokemon;
-try {
-    wildPokemon = await loadImage(wildPokemonUrl1);
-} catch (error) {
-    console.log(`Failed to load image from ${wildPokemonUrl1}, trying fallback URL`);
+    let wildPokemon;
     try {
-        wildPokemon = await loadImage(wildPokemonUrl2);
-    } catch (fallbackError) {
-        console.error(`Failed to load image from both URLs for ${wildPokemonName}, using fallback image`);
-        
-        // Load a fallback image
-        wildPokemon = await loadImage(path.join(__dirname, 'pokemon_images', 'fallback.png'));
+        wildPokemon = await loadImage(wildPokemonUrl1);
+    } catch (error) {
+        console.log(`Failed to load image from ${wildPokemonUrl1}, trying fallback URL`);
+        try {
+            wildPokemon = await loadImage(wildPokemonUrl2);
+        } catch (fallbackError) {
+            console.error(`Failed to load image from both URLs for ${wildPokemonName}, using fallback image`);
+            wildPokemon = await loadImage(path.join(__dirname, 'pokemon_images', 'fallback.png'));
+        }
     }
-}
-
 
     // Define standard dimensions for both Pokémon
     const standardPokemonWidth = 150;
@@ -201,12 +465,12 @@ try {
     // Add Pokémon names and levels to the boxes
     ctx.fillStyle = '#000000';
     ctx.font = '20px DisposableDroidBB';
-    
+
     // Wild Pokémon (top left box)
     ctx.fillText(wildPokemonName, 100, 45);
     ctx.font = '15px DisposableDroidBB'; // Smaller font for level
     ctx.fillText(`${wildPokemonLevel.toString().padStart(3, '')}`, 250, 47);
-    
+
     // User Pokémon (bottom right box)
     ctx.font = '20px DisposableDroidBB'; // Reset to larger font for Pokémon name
     ctx.fillText(userPokemonName, width - 210, height - 85);
@@ -217,304 +481,7 @@ try {
     return canvas.toBuffer();
 }
 
-
-async function getActivePokemon(userData) {
-    const activePokemon = userData.activePokemon || userData.pokemon[userData.selectedPokemon];
-    if (activePokemon && (!activePokemon.types || activePokemon.types.length === 0)) {
-        activePokemon.types = pokemonList1[activePokemon.name.toLowerCase()] || ['Unknown'];
-    }
-    return activePokemon;
-}
-
-async function writeUserData(data) {
-    await fs.writeFile(USER_DATA_PATH, JSON.stringify(data, null, 2));
-}
-
-async function readUserData() {
-    try {
-        const data = await fs.readFile(USER_DATA_PATH, 'utf8');
-        return JSON.parse(data);
-    } catch (error) {
-        if (error.code === 'ENOENT') {
-            return {};
-        }
-        throw error;
-    }
-}
-async function getUserData(userId) {
-    const userData = await readUserData();
-    if (userData[userId] && !userData[userId].lastWildEncounter) {
-        userData[userId].lastWildEncounter = 0; // Initialize to 0 if not present
-        await writeUserData(userData);
-    }
-    return userData[userId];
-}
-
-async function createOrUpdateUser(userId, region, selectedStarter) {
-    const userData = await readUserData();
-
-    if (userData[userId]) {
-        // Update existing user
-        userData[userId] = {
-            ...userData[userId],
-            region: region,
-            pokemon: [selectedStarter],
-            lastRestart: new Date().toISOString()
-        };
-    } else {
-        // Create new user
-        userData[userId] = {
-            id: userId,
-            region: region,
-            pokemon: [selectedStarter],
-            caughtPokemon: {},
-            selectedPokemon: 0,
-            isShiny:{},
-            items: {
-                pokeball: 5,
-                greatball: 0,
-                ultraball: 0,
-                masterball: 0,
-                rarecandy: 0
-            },
-            money: 1000,
-            lastDaily: null,
-            created: new Date().toISOString()
-        };
-    }
-
-    await writeUserData(userData);
-    return userData[userId];
-}
-async function useRareCandy(userId, pokemonIndex, quantity) {
-    const userData = await getUserData(userId);
-    if (!userData) {
-        throw new Error('User does not exist');
-    }
-
-    if (pokemonIndex < 0 || pokemonIndex >= userData.pokemon.length) {
-        throw new Error('Invalid Pokémon index');
-    }
-
-    if (userData.items.rarecandy < quantity) {
-        throw new Error('Not enough Rare Candy');
-    }
-
-    const pokemon = userData.pokemon[pokemonIndex];
-    const oldLevel = pokemon.level;
-    pokemon.level = Math.min(100, pokemon.level + quantity);
-    userData.items.rarecandy -= quantity;
-
-    await updateUserData(userId, userData);
-
-    return {
-        pokemon: pokemon,
-        oldLevel: oldLevel,
-        newLevel: pokemon.level,
-        usedCandy: quantity
-    };
-}
-async function updateCaughtPokemon(userId, pokemonName, isShiny = false) {
-    const userData = await readUserData();
-    if (!userData[userId]) {
-        throw new Error('User does not exist');
-    }
-    
-    if (!userData[userId].caughtPokemon) {
-        userData[userId].caughtPokemon = {};
-    }
-    
-    userData[userId].caughtPokemon[pokemonName.toLowerCase()] = { isShiny };
-    await writeUserData(userData);
-    console.log(`Updated caught Pokémon for user ${userId}: ${pokemonName}, isShiny: ${isShiny}`); // Add this log
-    return userData[userId];
-}
-
-async function updateUserData(userId, updateData) {
-    const userData = await readUserData();
-    if (!userData[userId]) {
-        throw new Error('User does not exist');
-    }
-
-    // If updating Pokemon, ensure type information is included
-    if (updateData.pokemon) {
-        updateData.pokemon = updateData.pokemon.map(pokemon => {
-            if (!pokemon.types || pokemon.types.length === 0) {
-                pokemon.types = pokemonList1[pokemon.name.toLowerCase()] || ['Unknown'];
-            }
-            return pokemon;
-        });
-    }
-
-    userData[userId] = { ...userData[userId], ...updateData };
-    await writeUserData(userData);
-    await saveEssentialUserData(userId, userData[userId]);
-    return userData[userId];
-}
-
-
-async function saveEssentialUserData(userId, userData) {
-    const essentialData = {
-        id: userId,
-        selectedPokemon: userData.selectedPokemon,
-        activePokemon: userData.pokemon[userData.selectedPokemon],
-        money: userData.money,
-        items: userData.items,
-        lastWildEncounter: userData.lastWildEncounter,
-        caughtPokemon: userData.caughtPokemon || {} // Add this line to include caught Pokémon data
-    };
-
-    const filePath = path.join(__dirname, '..', 'data', `${userId}_essential.json`);
-    await fs.writeFile(filePath, JSON.stringify(essentialData, null, 2));
-}
-
-const baseRarities = [
-    { emoji: '<:n_:1259114941873520734>', chance: 700/1851 },
-    { emoji: '<:U_:1259114756313452680>', chance: 500/1851 },
-    { emoji: '<:r_:1259114608426487839>', chance: 300/1851},
-    { emoji: '<:SR:1259113778747015233>', chance: 250/1851},
-    { emoji: '<:UR:1259113669925539902>', chance: 200/1851 },
-    { emoji: '<:LR:1259113497053233162>', chance: 100/1851 }
-  ];
-  
-  function getcustomrarity(baseRarities, customChance) {
-    let customRarities = JSON.parse(JSON.stringify(baseRarities));
-    let highRarityChance = customRarities.slice(3).reduce((sum, rarity) => sum + rarity.chance, 0);
-    let boostFactor = 1 + (customChance * 0.5);
-    
-    for (let i = 3; i < customRarities.length; i++) {
-      customRarities[i].chance *= boostFactor;
-    }
-    
-    let newTotalChance = customRarities.reduce((sum, rarity) => sum + rarity.chance, 0);
-    
-    customRarities.forEach(rarity => {
-      rarity.chance /= newTotalChance;
-    });
-    
-    return customRarities;
-  }
-  
-  function determineRarity(rarities) {
-      const rand = Math.random();
-      let cumulativeChance = 0;
-      for (const rarity of rarities) {
-          cumulativeChance += rarity.chance;
-          if (rand < cumulativeChance) {
-              return rarity.emoji;
-          }
-      }
-      return rarities[rarities.length - 1].emoji; // Default to the last rarity if something goes wrong
-  }
-  
-  function generateWildPokemon(userLevel, userData = {}) {
-      if (pokemonList.length === 0) {
-          console.error('Pokemon list is empty. Make sure loadPokemonLists() is called before generating wild Pokemon.');
-          return null;
-      }
-  
-      // Determine rarities
-      let rarities = baseRarities;
-      if (userData.customChances && userData.customChances.rarity) {
-          rarities = getcustomrarity(baseRarities, userData.customChances.rarity);
-      }
-  
-      const randomPokemon = pokemonList[Math.floor(Math.random() * pokemonList.length)];
-      const level = Math.min(85, Math.max(1, Math.floor(userLevel + (Math.random() * 10 - 5))));
-      const pokemonTypes = pokemonList1[randomPokemon.toLowerCase()] || ['Unknown'];
-  
-      return {
-          name: randomPokemon.charAt(0).toUpperCase() + randomPokemon.slice(1),
-          type: pokemonTypes[0], // Use the first type
-          level,
-          exp: 0,
-          isShiny: isShiny(userData),
-          moves: ['Tackle'], // You might want to generate moves based on the Pokemon and its level
-          catchRate: 100, // You might want to set this based on the specific Pokemon
-          rarity: determineRarity(rarities)
-      };
-  }
-function isShiny(userData) {
-    const shinyChance = userData.customChances?.shiny || 0.01; // Default 1% if not set
-    return Math.random() < shinyChance;
-}
-function getcustomrarity(baseRarities, customChance) {
-    // Create a copy of the base rarities
-    let customRarities = JSON.parse(JSON.stringify(baseRarities));
-    
-    // Calculate the total chance of SR, UR, and LR
-    let highRarityChance = customRarities.slice(3).reduce((sum, rarity) => sum + rarity.chance, 0);
-    
-    // Calculate the boost factor (50% increase)
-    let boostFactor = 1 + (customChance * 0.5);
-    
-    // Boost the chances for SR, UR, and LR
-    for (let i = 3; i < customRarities.length; i++) {
-      customRarities[i].chance *= boostFactor;
-    }
-    
-    // Calculate the new total chance
-    let newTotalChance = customRarities.reduce((sum, rarity) => sum + rarity.chance, 0);
-    
-    // Normalize the chances to ensure they sum up to 1
-    customRarities.forEach(rarity => {
-      rarity.chance /= newTotalChance;
-    });
-    
-    return customRarities;
-  }
-async function updateSelectedPokemon(userId, pokemonIndex) {
-    const userData = await getUserData(userId);
-    if (!userData) {
-        throw new Error('User does not exist');
-    }
-    if (pokemonIndex < 0 || pokemonIndex >= userData.pokemon.length) {
-        throw new Error('Invalid Pokémon index');
-    }
-    userData.selectedPokemon = pokemonIndex;
-    await updateUserData(userId, userData);
-    return userData;
-}
-
-function generateFromList(list, userLevel, userData) {
-    const pokemon = list[Math.floor(Math.random() * list.length)];
-    const level = Math.max(1, Math.min(100, Math.floor(userLevel + (Math.random() * 5 - 2))));
-
-    return {
-        ...pokemon,
-        level,
-        exp: 0,
-        moves: ['Tackle'], // Add more moves based on the Pokémon and its level
-        isShiny: isShiny(userData),
-        rarity: getCustomRarity(userData)
-    };
-}
-function getPokemonRarity() {
-    const rarities = [
-        
-        { emoji: '<:n_:1259114941873520734>', chance: 700/1851 },  
-        { emoji: '<:U_:1259114756313452680>', chance: 500/1851 },  
-        { emoji: '<:r_:1259114608426487839>', chance: 300/1851},  
-        { emoji: '<:SR:1259113778747015233>', chance: 250/1851},  
-        { emoji: '<:UR:1259113669925539902>', chance: 200/1851 },
-        { emoji: '<:LR:1259113497053233162>', chance: 100/1851 }
-         
-    ];
-
-    const random = Math.random();
-    let cumulativeChance = 0;
-
-    for (const rarity of rarities) {
-        cumulativeChance += rarity.chance;
-        if (random < cumulativeChance) {
-            return rarity.emoji;
-        }
-    }
-
-    // Fallback to the most common rarity if something goes wrong
-    return rarities[0].emoji;
-}
-// Add this to helpers.js
+// Cached battle images for performance
 const battleImageCache = new Map();
 
 function getCachedBattleImage(userData, pokemonName, isShiny, level) {
@@ -527,31 +494,7 @@ function setCachedBattleImage(userData, pokemonName, isShiny, level, image) {
     battleImageCache.set(cacheKey, image);
 }
 
-
-function getRaidPokemonRarity() {
-    const rarities = [
-        { emoji: '<:n_:1259114941873520734>', chance: 0.341463 },  // 700/2050
-        { emoji: '<:U_:1259114756313452680>', chance: 0.243902 },  // 500/2050
-        { emoji: '<:r_:1259114608426487839>', chance: 0.146341 },  // 300/2050
-        { emoji: '<:SR:1259113778747015233>', chance: 0.121951 },  // 250/2050
-        { emoji: '<:UR:1259113669925539902>', chance: 0.097561 },  // 200/2050
-        { emoji: '<:LR:1259113497053233162>', chance: 0.048780 }   // 100/2050
-    ];
-
-    const random = Math.random();
-    let cumulativeChance = 0;
-
-    for (const rarity of rarities) {
-        cumulativeChance += rarity.chance;
-        if (random < cumulativeChance) {
-            return rarity.emoji;
-        }
-    }
-
-    // Fallback to the most common rarity if something goes wrong
-    return rarities[0].emoji;
-}
-
+// Get Starter Pokémon
 function getRandomStarterPokemon(region) {
     const starters = {
         kanto: [
@@ -657,23 +600,53 @@ function getStarterPokemon(region, starterName) {
     return regionStarters;
 }
 
-
-function calculateCatchProbability(pokemon, ballType) {
-    const catchRates = {
-        pokeball: 0.40,
-        greatball: 0.60,
-        ultraball: 0.80,
-        masterball: 1.00
+// Save essential user data
+async function saveEssentialUserData(userId, userData) {
+    const essentialData = {
+        id: userId,
+        selectedPokemon: userData.selectedPokemon,
+        activePokemon: userData.pokemon[userData.selectedPokemon],
+        money: userData.money,
+        items: userData.items,
+        lastWildEncounter: userData.lastWildEncounter,
+        caughtPokemon: userData.caughtPokemon || {} // Include caught Pokémon data
     };
 
-    return catchRates[ballType] || 0.55; // Default to Poké Ball rate if unknown ball type
+    const filePath = path.join(__dirname, '..', 'data', `${userId}_essential.json`);
+    await fs.writeFile(filePath, JSON.stringify(essentialData, null, 2));
+}
+async function deleteUserData(userId) {
+    try {
+        // Step 1: Read and update users.json
+        const usersData = await fs.readFile(USER_DATA_PATH, 'utf8');
+        const users = JSON.parse(usersData);
+
+        if (users[userId]) {
+            delete users[userId];  // Remove the user entry from users.json
+
+            // Write the updated users data back to users.json
+            await fs.writeFile(USER_DATA_PATH, JSON.stringify(users, null, 2));
+            console.log(`Deleted user data for ${userId} from users.json.`);
+        } else {
+            console.log(`User ID ${userId} not found in users.json.`);
+        }
+
+        // Step 2: Delete the specific user's essential data file
+        const userEssentialFilePath = path.join(__dirname, '..', 'data', `${userId}_essential.json`);
+        try {
+            await fs.unlink(userEssentialFilePath);  // Delete the essential file
+            console.log(`Deleted ${userId}_essential.json.`);
+        } catch (unlinkError) {
+            console.error(`Error deleting ${userId}_essential.json:`, unlinkError);
+        }
+
+    } catch (error) {
+        console.error(`Failed to delete data for user ${userId}:`, error);
+        throw new Error('Could not delete user data');
+    }
 }
 
-function attemptCatch(pokemon, ballType) {
-    const catchProbability = calculateCatchProbability(pokemon, ballType);
-    return Math.random() < catchProbability;
-}
-
+// Clear user box Pokémon data
 async function clearUserBoxPokemonData(userId) {
     try {
         const userData = await getUserData(userId);
@@ -685,8 +658,7 @@ async function clearUserBoxPokemonData(userId) {
         const starter = userData.pokemon[0];
         userData.pokemon = [starter];
 
-        // Preserve Pokédex data
-        // If you don't have a separate Pokédex field, you might need to adjust this
+        // Preserve Pokédex data if necessary
 
         await updateUserData(userId, userData);
 
@@ -697,28 +669,120 @@ async function clearUserBoxPokemonData(userId) {
     }
 }
 
+// Calculate catch probability
+function calculateCatchProbability(pokemon, ballType) {
+    const catchRates = {
+        pokeball: 0.40,
+        greatball: 0.60,
+        ultraball: 0.80,
+        masterball: 1.00
+    };
 
+    return catchRates[ballType] || 0.55; // Default to Poké Ball rate if unknown ball type
+}
+
+// Attempt to catch Pokémon
+function attemptCatch(pokemon, ballType) {
+    const catchProbability = calculateCatchProbability(pokemon, ballType);
+    return Math.random() < catchProbability;
+}
+
+// Function to handle the level up experience
+async function levelUp(userId, pokemonIndex) {
+    const userData = await getUserData(userId);
+    if (!userData) {
+        throw new Error('User does not exist');
+    }
+
+    const pokemon = userData.pokemon[pokemonIndex];
+    const growthType = pokemon.growthType;
+    const currentLevel = pokemon.level;
+    const expNeeded = experienceToNextLevel(currentLevel, growthType);
+
+    if (pokemon.exp >= expNeeded) {
+        pokemon.level++;
+        pokemon.exp -= expNeeded; // Carry over the excess EXP
+        await updateUserData(userId, { pokemon: userData.pokemon });
+        return `Level up! ${pokemon.name} is now level ${pokemon.level}.`;
+    } else {
+        return `${pokemon.name} needs more experience to level up.`;
+    }
+}
+
+// Example Pokémon experience calculation
+async function gainExperience(userId, pokemonIndex, experience, opponentLevel) {
+    const userData = await getUserData(userId);
+    if (!userData) {
+      throw new Error('User  does not exist');
+    }
+  
+    const pokemon = userData.pokemon[pokemonIndex];
+    const levelDifference = pokemon.level - opponentLevel;
+    const scaledExperience = experience * (1 - (levelDifference / 100));
+  
+    pokemon.exp += scaledExperience;
+  
+    while (true) {
+      const result = await levelUp(userId, pokemonIndex);
+      if (result.startsWith(`${pokemon.name} needs more experience to level up.`)) {
+        break;
+      }
+    }
+  
+    await updateUserData(userId, { pokemon: userData.pokemon });
+  }
+
+// Function to initialize Pokémon data
+function initializePokemonData(pokemonName, level, isShiny) {
+    const pokemonData = {
+        name: pokemonName,
+        level: level,
+        exp: 0,
+        isShiny: isShiny,
+        growthType: assignGrowthType(),
+        moves: ['Tackle'], // Default move; can be expanded
+        types: pokemonList1[pokemonName.toLowerCase()] || ['Unknown'],
+    };
+    return pokemonData;
+}
+
+// Random Pokémon generation for events or encounters
+function randomPokemonEncounter() {
+    const randomIndex = Math.floor(Math.random() * pokemonList.length);
+    const randomPokemonName = pokemonList[randomIndex];
+    return randomPokemonName.charAt(0).toUpperCase() + randomPokemonName.slice(1);
+}
+
+// Export the functions for use in other files
 module.exports = {
-    getUserData,
-    createOrUpdateUser,
-    updateUserData,
-    getRandomStarterPokemon,
-    generateWildPokemon,
-    attemptCatch,
-    updateCaughtPokemon,
-    isShiny,
-    getPokemonRarity,
-    clearUserBoxPokemonData,
-    createBattleImage,
-    updateSelectedPokemon,
-    getActivePokemon,
-    getRaidPokemonRarity,
-    getCachedBattleImage,
-    setCachedBattleImage,
-    useRareCandy,
-    getcustomrarity,
-    saveEssentialUserData,
-    createRaidBattleImage,
     loadPokemonLists,
-    getStarterPokemon
+    createOrUpdateUser,
+    generateWildPokemon,
+    getUserData,
+    useRareCandy,
+    updateCaughtPokemon,
+    updateSelectedPokemon,
+    createBattleImage,
+    createRaidBattleImage,
+    clearUserBoxPokemonData,
+    attemptCatch,
+    gainExperience,
+    randomPokemonEncounter,
+    initializePokemonData,
+    getStarterPokemon,
+    assignGrowthType,
+    calculateCatchProbability,
+    experienceToNextLevel,
+    isShiny,
+    determineRarity,
+    setCachedBattleImage,
+    getCachedBattleImage,
+    updateUserData,
+    saveEssentialUserData,
+    getActivePokemon,
+    calculateExperience,
+    getRandomStarterPokemon,
+    readUserData,
+    writeUserData,
+    deleteUserData
 };

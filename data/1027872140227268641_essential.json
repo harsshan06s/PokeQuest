@@ -1,42 +1,26 @@
 {
   "id": "1027872140227268641",
-  "selectedPokemon": 8,
+  "selectedPokemon": 137,
   "activePokemon": {
-    "name": "Kyogre",
-    "level": 100,
+    "name": "Yamask",
+    "level": 47,
+    "isShiny": false,
     "rarity": "<:UR:1259113669925539902>",
-    "isShiny": true,
-    "moves": [
-      "Tackle"
-    ],
-    "exp": 0,
-    "type": "Water",
     "types": [
-      "Water"
+      "Ground",
+      "Ghost"
     ]
   },
-<<<<<<< HEAD
-  "money": 3990926356058,
-=======
-  "money": 2990926366683,
->>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
+  "money": 3990825363578,
   "items": {
-    "pokeball": 999938,
+    "pokeball": 999942,
     "greatball": 0,
     "ultraball": 0,
-<<<<<<< HEAD
-    "masterball": 68697,
+    "masterball": 68641,
     "raidball": 170,
     "rarecandy": 826
   },
-  "lastWildEncounter": 1723997085096,
-=======
-    "masterball": 68676,
-    "raidball": 170,
-    "rarecandy": 826
-  },
-  "lastWildEncounter": 1723908183062,
->>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
+  "lastWildEncounter": 1730799472755,
   "caughtPokemon": {
     "squirtle": {},
     "slowpoke": {
@@ -181,7 +165,7 @@
       "isShiny": true
     },
     "armaldo": {
-      "isShiny": true
+      "isShiny": false
     },
     "bayleef": {
       "isShiny": true
@@ -190,7 +174,7 @@
       "isShiny": true
     },
     "raikou": {
-      "isShiny": false
+      "isShiny": true
     },
     "mienfoo": {
       "isShiny": true
@@ -232,7 +216,7 @@
       "isShiny": true
     },
     "mesprit": {
-      "isShiny": true
+      "isShiny": false
     },
     "mew": {
       "isShiny": true
@@ -241,7 +225,7 @@
       "isShiny": true
     },
     "vanillish": {
-      "isShiny": true
+      "isShiny": false
     },
     "dusclops": {
       "isShiny": true
@@ -339,77 +323,154 @@
     "kingler": {
       "isShiny": false
     },
-    "golurk": {
+    "torracat": {
       "isShiny": false
     },
-<<<<<<< HEAD
-    "farigiraf": {
-=======
-    "sandygast": {
+    "mamoswine": {
       "isShiny": false
     },
-    "drifloon": {
+    "quagsire": {
       "isShiny": false
     },
-    "tatsugiri": {
+    "ursaring": {
       "isShiny": false
     },
-    "quilava": {
+    "swablu": {
       "isShiny": false
     },
-    "simipour": {
+    "cascoon": {
       "isShiny": false
     },
-    "crobat": {
+    "wailmer": {
       "isShiny": false
     },
-    "spoink": {
+    "archeops": {
       "isShiny": false
     },
-    "cranidos": {
+    "klawf": {
       "isShiny": false
     },
-    "huntail": {
+    "zeraora": {
       "isShiny": false
     },
-    "giratina": {
+    "drapion": {
       "isShiny": false
     },
-    "gourgeist": {
+    "bellossom": {
       "isShiny": false
     },
-    "dodrio": {
+    "surskit": {
       "isShiny": false
     },
-    "loudred": {
+    "snom": {
       "isShiny": false
     },
-    "ponyta": {
+    "hippowdon": {
       "isShiny": false
     },
-    "magcargo": {
+    "remoraid": {
       "isShiny": false
     },
-    "kommo-o": {
+    "feebas": {
       "isShiny": false
     },
-    "roserade": {
+    "zorua": {
+      "isShiny": false
+    },
+    "purugly": {
+      "isShiny": false
+    },
+    "murkrow": {
+      "isShiny": false
+    },
+    "archaludon": {
       "isShiny": false
     },
     "rolycoly": {
       "isShiny": false
     },
-    "amaura": {
+    "rapidash": {
       "isShiny": false
     },
-    "wo-chien": {
+    "dewgong": {
+      "isShiny": false
+    },
+    "escavalier": {
+      "isShiny": false
+    },
+    "flareon": {
+      "isShiny": false
+    },
+    "mothim": {
+      "isShiny": false
+    },
+    "dudunsparce": {
+      "isShiny": false
+    },
+    "nidorino": {
       "isShiny": false
     },
     "froakie": {
       "isShiny": false
     },
-    "tinkatuff": {
->>>>>>> e1d3a985b136c87073e9d4d17be451077182205d
+    "pumpkaboo": {
+      "isShiny": false
+    },
+    "duosion": {
+      "isShiny": false
+    },
+    "hawlucha": {
+      "isShiny": false
+    },
+    "shieldon": {
+      "isShiny": false
+    },
+    "ambipom": {
+      "isShiny": false
+    },
+    "tepig": {
+      "isShiny": false
+    },
+    "sinistcha": {
+      "isShiny": false
+    },
+    "yamask": {
+      "isShiny": false
+    },
+    "joltik": {
+      "isShiny": false
+    },
+    "staravia": {
+      "isShiny": false
+    },
+    "aegislash": {
+      "isShiny": false
+    },
+    "timburr": {
+      "isShiny": false
+    },
+    "lombre": {
+      "isShiny": false
+    },
+    "kommo-o": {
+      "isShiny": false
+    },
+    "wooper": {
+      "isShiny": false
+    },
+    "tympole": {
+      "isShiny": false
+    },
+    "combusken": {
+      "isShiny": false
+    },
+    "staryu": {
+      "isShiny": false
+    },
+    "kingambit": {
+      "isShiny": false
+    },
+    "zigzagoon": {
       "isShiny": false
     }
   }

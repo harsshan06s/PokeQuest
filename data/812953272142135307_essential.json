@@ -1,0 +1,159 @@
+{
+  "id": "812953272142135307",
+  "selectedPokemon": 9,
+  "activePokemon": {
+    "name": "Groudon",
+    "level": 100,
+    "rarity": "<:LR:1259113497053233162>",
+    "isShiny": true,
+    "moves": [
+      "Tackle"
+    ],
+    "exp": 0,
+    "catchRate": 100,
+    "types": [
+      "Ground",
+      "Fire"
+    ]
+  },
+  "money": 90443610,
+  "items": {
+    "pokeball": 0,
+    "greatball": 0,
+    "ultraball": 959,
+    "masterball": 96,
+    "rarecandy": 0
+  },
+  "lastWildEncounter": 1728664762155,
+  "caughtPokemon": {
+    "latios": {
+      "isShiny": false
+    },
+    "terrakion": {
+      "isShiny": false
+    },
+    "thievul": {
+      "isShiny": false
+    },
+    "amoonguss": {
+      "isShiny": false
+    },
+    "gabite": {
+      "isShiny": false
+    },
+    "lapras": {
+      "isShiny": false
+    },
+    "flamigo": {
+      "isShiny": false
+    },
+    "pyukumuku": {
+      "isShiny": false
+    },
+    "vigoroth": {
+      "isShiny": false
+    },
+    "drakloak": {
+      "isShiny": false
+    },
+    "swoobat": {
+      "isShiny": false
+    },
+    "torkoal": {
+      "isShiny": false
+    },
+    "basculegion": {
+      "isShiny": false
+    },
+    "totodile": {
+      "isShiny": false
+    },
+    "falinks": {
+      "isShiny": false
+    },
+    "volcarona": {
+      "isShiny": false
+    },
+    "sawk": {
+      "isShiny": false
+    },
+    "gloom": {
+      "isShiny": false
+    },
+    "skorupi": {
+      "isShiny": false
+    },
+    "lotad": {
+      "isShiny": false
+    },
+    "ho-oh": {
+      "isShiny": false
+    },
+    "capsakid": {
+      "isShiny": false
+    },
+    "chien-pao": {
+      "isShiny": false
+    },
+    "doduo": {
+      "isShiny": false
+    },
+    "haunter": {
+      "isShiny": false
+    },
+    "slurpuff": {
+      "isShiny": false
+    },
+    "lanturn": {
+      "isShiny": false
+    },
+    "sandile": {
+      "isShiny": false
+    },
+    "umbreon": {
+      "isShiny": false
+    },
+    "araquanid": {
+      "isShiny": false
+    },
+    "shedinja": {
+      "isShiny": false
+    },
+    "flapple": {
+      "isShiny": false
+    },
+    "swanna": {
+      "isShiny": false
+    },
+    "ferroseed": {
+      "isShiny": false
+    },
+    "ludicolo": {
+      "isShiny": false
+    },
+    "numel": {
+      "isShiny": false
+    },
+    "wo-chien": {
+      "isShiny": false
+    },
+    "cofagrigus": {
+      "isShiny": false
+    },
+    "crabominable": {
+      "isShiny": false
+    },
+    "claydol": {
+      "isShiny": false
+    },
+    "accelgor": {
+      "isShiny": false
+    },
+    "buizel": {
+      "isShiny": false
+    },
+    "rockruff": {
+      "isShiny": false
+    }
+  }
+}

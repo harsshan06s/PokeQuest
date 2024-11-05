@@ -95,6 +95,8 @@ module.exports = {
                 .setDescription('The user whose collection you want to view')
                 .setRequired(false)),
 
+    
+
     async execute(interaction) {
         const targetUser = interaction.options.getUser('user') || interaction.user;
         const userId = targetUser.id;
@@ -128,6 +130,14 @@ module.exports = {
             if (rarityFilter && pokemon.rarity !== rarityFilter) return false;
             return true;
         });
+        function safeToLowerCase(input) {
+            if (typeof input === 'string') {
+                return input.toLowerCase();
+            } else if (input && typeof input.toString === 'function') {
+                return input.toString().toLowerCase();
+            }
+            return '';
+        }
 
         const pages = Math.ceil(filteredPokemon.length / POKEMON_PER_PAGE);
         let currentPage = 1;
@@ -151,7 +161,7 @@ module.exports = {
                 const megaEmoji = pokemon.isMega ? '🔷 ' : '';
                 const rarity = pokemon.rarity || 'C';
                 
-                const types = POKEMON_TYPES[pokemonName.toLowerCase()] || pokemon.types || ['Unknown'];
+                const types = POKEMON_TYPES[safeToLowerCase(pokemonName)] || pokemon.types || ['Unknown'];
     
     embed.addFields({
         name: `ID: ${boxId} | ${rarity} ${megaEmoji}${pokemonName} ${shinyEmoji}`,
