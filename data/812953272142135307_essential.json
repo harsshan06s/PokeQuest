@@ -16,15 +16,16 @@
       "Fire"
     ]
   },
-  "money": 90443610,
+  "money": 91073825,
   "items": {
     "pokeball": 0,
     "greatball": 0,
-    "ultraball": 959,
+    "ultraball": 958,
     "masterball": 96,
-    "rarecandy": 0
+    "rarecandy": 0,
+    "raidball": 0
   },
-  "lastWildEncounter": 1728664762155,
+  "lastWildEncounter": 1731173646491,
   "caughtPokemon": {
     "latios": {
       "isShiny": false
@@ -153,6 +154,9 @@
       "isShiny": false
     },
     "rockruff": {
+      "isShiny": false
+    },
+    "rabsca": {
       "isShiny": false
     }
   }

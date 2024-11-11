@@ -7,8 +7,8 @@
         "name": "Squirtle",
         "rarity": "<:SR:1259113778747015233>",
         "type": "Water",
-        "level": 79,
-        "exp": 14343,
+        "level": 68,
+        "exp": 13153,
         "moves": [
           "Tackle",
           "Tail Whip"
@@ -1884,26 +1884,62 @@
           "Dark",
           "Normal"
         ]
+      },
+      {
+        "name": "Electivire",
+        "level": 1,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Electric"
+        ]
+      },
+      {
+        "name": "Xurkitree",
+        "level": 9,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Electric"
+        ]
+      },
+      {
+        "name": "Genesect",
+        "level": 34,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Bug",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Capsakid",
+        "level": 41,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Grass"
+        ]
       }
     ],
     "items": {
       "pokeball": 999942,
       "greatball": 0,
       "ultraball": 0,
-      "masterball": 68641,
+      "masterball": 68637,
       "raidball": 170,
       "rarecandy": 826
     },
-    "money": 3990825363578,
+    "money": 3990825364003,
     "lastDaily": null,
     "created": "2024-07-06T13:15:42.842Z",
     "currentWildPokemon": {
-      "name": "Hawlucha",
+      "name": "Capsakid",
       "types": [
-        "Fighting",
-        "Flying"
+        "Grass"
       ],
-      "level": 35,
+      "level": 41,
       "exp": 0,
       "isShiny": false,
       "moves": [
@@ -1911,12 +1947,12 @@
       ],
       "catchRate": 100,
       "rarity": "<:n_:1259114941873520734>",
-      "growthType": "MediumFast",
+      "growthType": "Fluctuating",
       "defeated": false,
-      "encounterId": "63828528-a8e6-4e56-bcf5-4ee7674bfe5f"
+      "encounterId": "8a0ab4e6-b8dd-4945-b260-bd9ef56657b0"
     },
     "lastRestart": "2024-07-08T07:19:16.675Z",
-    "lastWildEncounter": 1730799472755,
+    "lastWildEncounter": 1731342547757,
     "caughtPokemon": {
       "squirtle": {},
       "slowpoke": {
@@ -2368,21 +2404,37 @@
       },
       "zigzagoon": {
         "isShiny": false
+      },
+      "electivire": {
+        "isShiny": false
+      },
+      "xurkitree": {
+        "isShiny": false
+      },
+      "genesect": {
+        "isShiny": false
+      },
+      "capsakid": {
+        "isShiny": false
       }
     },
     "activePokemon": {
-      "name": "Yamask",
-      "level": 79,
+      "name": "Giratina",
+      "level": 68,
+      "rarity": "<:SR:1259113778747015233>",
       "isShiny": false,
-      "rarity": "<:UR:1259113669925539902>",
-      "types": [
-        "Ground",
-        "Ghost"
+      "moves": [
+        "Tackle"
       ],
-      "growthType": "Fluctuating",
-      "exp": 14343
+      "exp": 13153,
+      "type": "Ghost/Dragon",
+      "types": [
+        "Ghost",
+        "Dragon"
+      ],
+      "growthType": "Slow"
     },
-    "selectedPokemon": 137,
+    "selectedPokemon": 11,
     "exp": 76580,
     "raidCatchAttempts": 1
   },
@@ -6718,11 +6770,29 @@
           "Tackle",
           "Growl"
         ],
-        "catchRate": 45
+        "catchRate": 45,
+        "types": [
+          "Grass",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Rockruff",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Rock"
+        ]
       }
     ],
     "caughtPokemon": {},
-    "selectedPokemon": 0,
+    "selectedPokemon": 1,
     "isShiny": {},
     "items": {
       "pokeball": 5,
@@ -6730,22 +6800,23 @@
       "ultraball": 0,
       "masterball": 0
     },
-    "money": 90110000000,
+    "money": 91110000000,
     "lastDaily": null,
     "created": "2024-07-11T14:40:19.006Z",
     "lastWildEncounter": 0,
     "activePokemon": {
-      "name": "Bulbasaur",
-      "rarity": "<:SR:1259113778747015233>",
-      "type": "Grass",
-      "level": 5,
-      "exp": 0,
+      "name": "Rockruff",
+      "level": 100,
+      "rarity": "<:LR:1259113497053233162>",
+      "isShiny": true,
       "moves": [
-        "Tackle",
-        "Growl"
+        "Tackle"
       ],
-      "catchRate": 45,
-      "boxId": 1
+      "exp": 0,
+      "catchRate": 100,
+      "types": [
+        "Rock"
+      ]
     }
   },
   "435474817488257034": {
@@ -13708,7 +13779,7 @@
         "moves": [
           "Tackle"
         ],
-        "exp": 510375,
+        "exp": 510794,
         "catchRate": 100,
         "types": [
           "Ground",
@@ -13799,6 +13870,16 @@
           "Normal",
           "Flying"
         ]
+      },
+      {
+        "name": "Gible",
+        "level": 6,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Dragon",
+          "Ground"
+        ]
       }
     ],
     "caughtPokemon": {
@@ -13813,24 +13894,28 @@
       },
       "spearow": {
         "isShiny": false
+      },
+      "gible": {
+        "isShiny": false
       }
     },
     "selectedPokemon": 6,
     "items": {
       "pokeball": 0,
       "greatball": 0,
-      "ultraball": 4,
+      "ultraball": 3,
       "masterball": 0,
       "rarecandy": 0
     },
-    "money": 6925,
+    "money": 6955,
     "lastDaily": null,
     "created": "2024-10-11T09:37:16.012Z",
-    "lastWildEncounter": 1730730148504,
+    "lastWildEncounter": 1731172534648,
     "currentWildPokemon": {
-      "name": "Treecko",
+      "name": "Gible",
       "types": [
-        "Grass"
+        "Dragon",
+        "Ground"
       ],
       "level": 6,
       "exp": 0,
@@ -13840,9 +13925,9 @@
       ],
       "catchRate": 100,
       "rarity": "<:SR:1259113778747015233>",
-      "growthType": "Slow",
+      "growthType": "MediumFast",
       "defeated": false,
-      "encounterId": "accace2f-0a7b-422b-b7c5-c49dc8234105"
+      "encounterId": "e2fb9cb8-882c-40a2-99d3-f7fe0a973ae3"
     },
     "activePokemon": {
       "name": "Charizard",
@@ -13852,7 +13937,7 @@
       "moves": [
         "Tackle"
       ],
-      "exp": 510375,
+      "exp": 510794,
       "catchRate": 100,
       "types": [
         "Fire",
@@ -13868,7 +13953,7 @@
       {
         "name": "Chikorita",
         "rarity": "<:SR:1259113778747015233>",
-        "exp": 814506,
+        "exp": 1557101,
         "growthType": "Slow",
         "level": 100,
         "types": [
@@ -14320,6 +14405,16 @@
         "types": [
           "Rock"
         ]
+      },
+      {
+        "name": "Rabsca",
+        "level": 43,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Bug",
+          "Psychic"
+        ]
       }
     ],
     "caughtPokemon": {
@@ -14451,36 +14546,41 @@
       },
       "rockruff": {
         "isShiny": false
+      },
+      "rabsca": {
+        "isShiny": false
       }
     },
     "selectedPokemon": 9,
     "items": {
       "pokeball": 0,
       "greatball": 0,
-      "ultraball": 959,
+      "ultraball": 958,
       "masterball": 96,
-      "rarecandy": 0
+      "rarecandy": 0,
+      "raidball": 0
     },
-    "money": 90443610,
+    "money": 91073825,
     "lastDaily": null,
     "created": "2024-10-11T11:30:15.394Z",
-    "lastWildEncounter": 1728664762155,
+    "lastWildEncounter": 1731173646491,
     "currentWildPokemon": {
-      "name": "Raging bolt",
+      "name": "Rabsca",
       "types": [
-        "Unknown"
+        "Bug",
+        "Psychic"
       ],
-      "level": 6,
+      "level": 43,
       "exp": 0,
       "isShiny": false,
       "moves": [
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:SR:1259113778747015233>",
-      "growthType": "MediumFast",
+      "rarity": "<:U_:1259114756313452680>",
+      "growthType": "Erratic",
       "defeated": false,
-      "encounterId": "7e732c6f-0931-4763-b266-a23dbaed6dde"
+      "encounterId": "da413c2e-85ed-4687-a773-da50cd4832b4"
     },
     "activePokemon": {
       "name": "Groudon",
@@ -14490,14 +14590,16 @@
       "moves": [
         "Tackle"
       ],
-      "exp": 814506,
+      "exp": 1557101,
       "catchRate": 100,
       "types": [
         "Ground",
         "Fire"
       ],
       "growthType": "Erratic"
-    }
+    },
+    "exp": 12600,
+    "raidCatchAttempts": 3
   },
   "773772360255537203": {
     "id": "773772360255537203",
@@ -14653,5 +14755,243 @@
     "lastDaily": null,
     "created": "2024-10-16T17:37:04.457Z",
     "lastWildEncounter": 0
+  },
+  "303512897286438912": {
+    "id": "303512897286438912",
+    "region": "hoenn",
+    "pokemon": [
+      {
+        "name": "Torchic",
+        "rarity": "<:SR:1259113778747015233>",
+        "exp": 3276,
+        "growthType": "Fluctuating",
+        "level": 100,
+        "types": [
+          "Fire"
+        ],
+        "moves": [
+          "Scratch",
+          "Growl"
+        ]
+      },
+      {
+        "name": "Ash-Greninja",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Greninja-Ash",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Greninja-Ash",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      }
+    ],
+    "caughtPokemon": {},
+    "selectedPokemon": 3,
+    "items": {
+      "pokeball": 3,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 100000,
+      "rarecandy": 0
+    },
+    "money": 990000001105,
+    "lastDaily": null,
+    "created": "2024-11-11T15:06:01.408Z",
+    "lastWildEncounter": 1731337849052,
+    "activePokemon": {
+      "name": "Greninja-Ash",
+      "level": 100,
+      "rarity": "<:LR:1259113497053233162>",
+      "isShiny": true,
+      "moves": [
+        "Tackle"
+      ],
+      "exp": 0,
+      "catchRate": 100,
+      "types": [
+        "Unknown"
+      ]
+    },
+    "currentWildPokemon": {
+      "name": "Deino",
+      "types": [
+        "Dark",
+        "Dragon"
+      ],
+      "level": 16,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:U_:1259114756313452680>",
+      "growthType": "Slow",
+      "defeated": false,
+      "encounterId": "7982a1b6-4d14-432f-a4a5-8d77498a81ad"
+    }
+  },
+  "798537896201420811": {
+    "id": "798537896201420811",
+    "region": "hoenn",
+    "pokemon": [
+      {
+        "name": "Torchic",
+        "rarity": "<:SR:1259113778747015233>",
+        "exp": 16459,
+        "growthType": "MediumSlow",
+        "level": 100,
+        "types": [
+          "Fire"
+        ],
+        "moves": [
+          "Scratch",
+          "Growl"
+        ]
+      },
+      {
+        "name": "Rayquaza-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Samurott",
+        "level": 23,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Water",
+          "Dark"
+        ]
+      },
+      {
+        "name": "Spinda",
+        "level": 3,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Zacian-Crowned",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Feraligatr",
+        "level": 22,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Water"
+        ]
+      }
+    ],
+    "caughtPokemon": {
+      "samurott": {
+        "isShiny": false
+      },
+      "spinda": {
+        "isShiny": false
+      },
+      "feraligatr": {
+        "isShiny": false
+      }
+    },
+    "selectedPokemon": 1,
+    "items": {
+      "pokeball": 4,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 9997,
+      "rarecandy": 0
+    },
+    "money": 9999000001490,
+    "lastDaily": null,
+    "created": "2024-11-11T15:07:55.168Z",
+    "lastWildEncounter": 1731337902785,
+    "currentWildPokemon": {
+      "name": "Feraligatr",
+      "types": [
+        "Water"
+      ],
+      "level": 22,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:U_:1259114756313452680>",
+      "growthType": "Erratic",
+      "defeated": false,
+      "encounterId": "65760768-dbbc-4c80-bf06-ac21139eb24a"
+    },
+    "activePokemon": {
+      "name": "Rayquaza-Mega",
+      "level": 100,
+      "rarity": "<:LR:1259113497053233162>",
+      "isShiny": true,
+      "moves": [
+        "Tackle"
+      ],
+      "exp": 16459,
+      "catchRate": 100,
+      "types": [
+        "Unknown"
+      ],
+      "growthType": "MediumSlow"
+    }
   }
 }

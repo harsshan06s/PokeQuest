@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
-const { getUserData } = require('../utils/helpers.js');
+const { getUserData,countPokemonAcrossUsers,userData} = require('../utils/helpers.js');
 const axios = require('axios');
 
 // Type effectiveness data
@@ -41,8 +41,16 @@ module.exports = {
             const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
             const speciesResponse = await axios.get(response.data.species.url);
             const pokemon = response.data;
-            
-            // Fetch all relevant data
+            const worldCount = await countPokemonAcrossUsers(pokemonName);
+    
+            // Retrieve user data and calculate owned count
+            const userId = interaction.user.id;
+            const userData = await getUserData(userId);
+            const ownedCount = userData && userData.pokemon
+                ? userData.pokemon.filter(p => p.name.toLowerCase() === pokemonName).length
+                : 0; // If userData or pokemon array is undefined, set ownedCount to 0
+    
+            // Fetch additional data
             const [evolutionData, varietiesData, formsData] = await Promise.all([
                 fetchEvolutionData(speciesResponse.data.evolution_chain.url),
                 fetchVarieties(speciesResponse.data.varieties),
@@ -52,7 +60,7 @@ module.exports = {
             // Create enhanced embeds
             const pages = [
                 {
-                    embed: createMainEmbed(pokemon, speciesResponse.data),
+                    embed: createMainEmbed(pokemon, speciesResponse.data, worldCount,ownedCount),
                     name: '📝 Overview'
                 },
                 {
@@ -61,15 +69,8 @@ module.exports = {
                 }
             ];
 
-            const formsEmbed = createFormsEmbed(varietiesData, formsData);
-            if (formsEmbed) pages.push({ embed: formsEmbed, name: '🔄 Forms' });
-
-            const evolutionEmbed = createEvolutionEmbed(evolutionData);
-            if (evolutionEmbed) pages.push({ embed: evolutionEmbed, name: '⚡ Evolution' });
-
-            // Create enhanced navigation
+            // Additional code for pagination setup
             const row = createNavigationButtons(pages);
-
             const replyMessage = await interaction.editReply({
                 embeds: [pages[0].embed],
                 components: pages.length > 1 ? [row] : []
@@ -83,19 +84,17 @@ module.exports = {
                     if (i.user.id !== interaction.user.id) {
                         return i.reply({ content: "❌ Only the command user can navigate through pages!", ephemeral: true });
                     }
-            
-                    if (i.customId === 'previous') {
-                        currentPage = currentPage > 0 ? currentPage - 1 : pages.length - 1;
-                    } else if (i.customId === 'next') {
-                        currentPage = currentPage < pages.length - 1 ? currentPage + 1 : 0;
-                    }
-            
+
+                    currentPage = (i.customId === 'previous')
+                        ? (currentPage > 0 ? currentPage - 1 : pages.length - 1)
+                        : (currentPage < pages.length - 1 ? currentPage + 1 : 0);
+
                     await i.update({
                         embeds: [pages[currentPage].embed],
                         components: [createNavigationButtons(pages, currentPage)]
                     });
                 });
-            
+                
                 collector.on('end', () => {
                     const disabledRow = createNavigationButtons(pages, currentPage, true);
                     interaction.editReply({ components: [disabledRow] });
@@ -111,10 +110,14 @@ module.exports = {
                 .setFooter({ text: 'Tip: Try using the English name of the Pokémon' });
             await interaction.editReply({ embeds: [errorEmbed] });
         }
-    },
+    }
 };
 
-function createMainEmbed(pokemon, speciesData) {
+
+
+
+// Function to create the main embed with Pokémon data
+function createMainEmbed(pokemon, speciesData, worldCount,ownedCount) {
     const types = pokemon.types.map(type => {
         const typeEmojis = {
             normal: '⚪', fire: '🔥', water: '💧', electric: '⚡',
@@ -137,7 +140,9 @@ function createMainEmbed(pokemon, speciesData) {
             { name: '⚖️ Weight', value: `${pokemon.weight / 10}kg`, inline: true },
             { name: '💫 Abilities', value: pokemon.abilities.map(ability => 
                 `${ability.is_hidden ? '🔮' : '⭐'} ${capitalizeFirst(ability.ability.name)}`
-            ).join('\n') }
+            ).join('\n') },
+            { name: '🌍 World Count', value: `${worldCount}`, inline: true },
+            { name: '👤 Owned Count', value: `${ownedCount}`, inline: true } // Add owned count here
         );
 
     if (speciesData.has_gender_differences) {
@@ -146,7 +151,6 @@ function createMainEmbed(pokemon, speciesData) {
 
     return embed;
 }
-
 function createStatsEmbed(pokemon) {
     const statEmojis = {
       'hp': '❤️',

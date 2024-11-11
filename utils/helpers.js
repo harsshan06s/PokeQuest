@@ -731,6 +731,24 @@ async function gainExperience(userId, pokemonIndex, experience, opponentLevel) {
   
     await updateUserData(userId, { pokemon: userData.pokemon });
   }
+  async function countPokemonAcrossUsers(pokemonName) {
+    const userData = await readUserData();
+    let count = 0;
+    
+    for (const userId in userData) {
+        const user = userData[userId];
+        const userPokemon = user.pokemon || [];
+        
+        userPokemon.forEach(p => {
+            // Check if p.name exists and is a string
+            if (p.name && typeof p.name === 'string' && p.name.toLowerCase() === pokemonName.toLowerCase()) {
+                count++;
+            }
+        });
+    }
+    
+    return count;
+}
 
 // Function to initialize Pokémon data
 function initializePokemonData(pokemonName, level, isShiny) {
@@ -784,5 +802,6 @@ module.exports = {
     getRandomStarterPokemon,
     readUserData,
     writeUserData,
-    deleteUserData
+    deleteUserData,
+    countPokemonAcrossUsers
 };

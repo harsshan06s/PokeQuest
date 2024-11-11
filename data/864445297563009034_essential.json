@@ -1,8 +1,8 @@
 {
-  "id": "303512897286438912",
-  "selectedPokemon": 3,
+  "id": "864445297563009034",
+  "selectedPokemon": 1,
   "activePokemon": {
-    "name": "Greninja-Ash",
+    "name": "Rockruff",
     "level": 100,
     "rarity": "<:LR:1259113497053233162>",
     "isShiny": true,
@@ -12,17 +12,16 @@
     "exp": 0,
     "catchRate": 100,
     "types": [
-      "Unknown"
+      "Rock"
     ]
   },
-  "money": 990000001105,
+  "money": 91110000000,
   "items": {
-    "pokeball": 3,
+    "pokeball": 5,
     "greatball": 0,
     "ultraball": 0,
-    "masterball": 100000,
-    "rarecandy": 0
+    "masterball": 0
   },
-  "lastWildEncounter": 1731337849052,
+  "lastWildEncounter": 0,
   "caughtPokemon": {}
 }

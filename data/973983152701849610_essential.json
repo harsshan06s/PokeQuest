@@ -16,15 +16,15 @@
       "Flying"
     ]
   },
-  "money": 6925,
+  "money": 6955,
   "items": {
     "pokeball": 0,
     "greatball": 0,
-    "ultraball": 4,
+    "ultraball": 3,
     "masterball": 0,
     "rarecandy": 0
   },
-  "lastWildEncounter": 1730730148504,
+  "lastWildEncounter": 1731172534648,
   "caughtPokemon": {
     "finizen": {
       "isShiny": false
@@ -36,6 +36,9 @@
       "isShiny": false
     },
     "spearow": {
+      "isShiny": false
+    },
+    "gible": {
       "isShiny": false
     }
   }
