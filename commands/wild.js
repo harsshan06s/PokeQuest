@@ -1,8 +1,19 @@
 const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
-const { getUserData, generateWildPokemon, updateUserData, getActivePokemon, saveEssentialUserData } = require('../utils/helpers.js');
+const { getUserData, generateWildPokemon, updateUserData, getActivePokemon, saveEssentialUserData,checkRegionTaskProgress } = require('../utils/helpers.js');
 const { v4: uuidv4 } = require('uuid');
 
+// Macro detection configuration
+const MACRO_DETECTION = {
+    MAX_CLICKS: 3, // Maximum allowed clicks
+    TIME_WINDOW: 1000, // 1 second time window
+    BAN_DURATION: 5 * 60 * 1000, // 5 minutes in milliseconds
+};
+
+// Temporary storage for macro tracking
+const macroTracker = new Map();
+
 const COOLDOWN_TIME = 10000; // 10 seconds in milliseconds
+const FIGHT_BUTTON_COOLDOWN = 3000; // 3 seconds cooldown for fight button
 
 const baseRarities = [
   { emoji: '<:n_:1259114941873520734>', chance: 700/1851 },
@@ -31,6 +42,48 @@ function getcustomrarity(baseRarities, customChance) {
   return customRarities;
 }
 
+// Function to check and update macro tracking
+function checkMacroAbuse(userId) {
+    const now = Date.now();
+    
+    // Check if user is currently banned
+    if (macroTracker.has(userId) && macroTracker.get(userId).bannedUntil > now) {
+        const remainingTime = Math.ceil((macroTracker.get(userId).bannedUntil - now) / 1000);
+        return {
+            isBanned: true,
+            remainingTime
+        };
+    }
+
+    // Initialize or get user's click tracking
+    if (!macroTracker.has(userId)) {
+        macroTracker.set(userId, {
+            clicks: [],
+            bannedUntil: 0
+        });
+    }
+
+    const userTracker = macroTracker.get(userId);
+
+    // Remove old clicks
+    userTracker.clicks = userTracker.clicks.filter(time => now - time < MACRO_DETECTION.TIME_WINDOW);
+
+    // Add current click
+    userTracker.clicks.push(now);
+
+    // Check for macro abuse
+    if (userTracker.clicks.length > MACRO_DETECTION.MAX_CLICKS) {
+        // Ban the user
+        userTracker.bannedUntil = now + MACRO_DETECTION.BAN_DURATION;
+        return {
+            isBanned: true,
+            remainingTime: MACRO_DETECTION.BAN_DURATION / 1000
+        };
+    }
+
+    return { isBanned: false };
+}
+
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('wild')
@@ -38,6 +91,15 @@ module.exports = {
     async execute(interaction) {
         const userId = interaction.user.id;
         const userName = interaction.user.username || 'Trainer';
+
+        // Check for macro abuse
+        const macroCheck = checkMacroAbuse(userId);
+        if (macroCheck.isBanned) {
+            return interaction.reply({
+                content: `You've been temporarily banned from the wild encounter for macro abuse. Please wait ${Math.ceil(macroCheck.remainingTime)} seconds.`,
+                ephemeral: true
+            });
+        }
 
         try {
             let userData = await getUserData(userId);
@@ -63,6 +125,8 @@ module.exports = {
             const encounterId = uuidv4();
 
             console.log(`User ${userName} encountered a wild ${wildPokemon.name} (Level ${wildPokemon.level})`);
+            const progressMessage = await checkRegionTaskProgress(userId);
+            
 
             userData.currentWildPokemon = { ...wildPokemon, defeated: false, encounterId };
             userData.lastWildEncounter = now; // Update last encounter time
@@ -71,29 +135,64 @@ module.exports = {
 
             const avatarUrl = interaction.user.displayAvatarURL({ format: 'png', dynamic: true });
             const encounterEmbed = createEncounterEmbed(wildPokemon, userName, avatarUrl);
-            const actionRow = createActionRow();
+            
+            // Randomly determine fight button position
+            const actionRow = createActionRowWithRandomButtons();
 
             const response = await interaction.reply({embeds: [encounterEmbed], components: [actionRow], fetchReply: true });
 
             const collector = response.createMessageComponentCollector({ 
-                filter: i => i.user.id === userId && i.customId === 'fight',
+                filter: i => i.user.id === userId && 
+                             (i.customId === 'fight' || 
+                              i.customId === 'dummy1' || 
+                              i.customId === 'dummy2'),
                 time: 30000 // 30 seconds
             });
+
+            // Track the first valid interaction to prevent multiple clicks
+            let firstInteractionTime = null;
+            let fightButtonClicked = false;
 
             collector.on('collect', async i => {
                 if (i.user.id !== userId) {
                     return i.reply({ content: "This isn't your encounter!", ephemeral: true });
                 }
 
-                if (i.customId === 'fight') {
+                // Check for macro abuse on each interaction
+                const macroCheck = checkMacroAbuse(userId);
+                if (macroCheck.isBanned) {
+                    return i.reply({
+                        content: `You've been temporarily banned from the wild encounter for macro abuse. Please wait ${Math.ceil(macroCheck.remainingTime)} seconds.`,
+                        ephemeral: true
+                    });
+                }
+
+                // Prevent multiple interactions within a short time
+                if (firstInteractionTime && (now - firstInteractionTime < FIGHT_BUTTON_COOLDOWN)) {
+                    return i.reply({ content: "Please wait a moment before interacting again.", ephemeral: true });
+                }
+
+                // Only process the first interaction
+                if (!firstInteractionTime) {
+                    firstInteractionTime = Date.now();
+                }
+
+                // Only proceed if fight button is clicked
+                if (i.customId === 'fight' && !fightButtonClicked) {
+                    fightButtonClicked = true;
                     await i.deferUpdate();
                     const fightCommand = require('./fight.js');
                     const fightResult = await fightCommand.execute(i, response, userData.currentWildPokemon.encounterId);
+                    
                     // After the fight, check for level up if the user won
                     if (fightResult && fightResult.userWon) {
                         await checkForLevelUp(userId, interaction);
                     }
+                } else if (i.customId !== 'fight') {
+                    // Dummy buttons do nothing
+                    await i.deferUpdate();
                 }
+                await interaction.followUp(progressMessage);
             });
 
             collector.on('end', async (collected, reason) => {
@@ -107,6 +206,7 @@ module.exports = {
         }
     },
 };
+
 function createEncounterEmbed(pokemon, userName, avatarUrl) {
     let imgUrl = 'https://play.pokemonshowdown.com/sprites/ani/';
     if (pokemon.isShiny) {
@@ -123,17 +223,38 @@ function createEncounterEmbed(pokemon, userName, avatarUrl) {
         .setTitle(`A wild ${pokemon.name} ${shinyEmoji} appeared!`)
         .setDescription(`Level ${pokemon.level}${pokemon.isShiny ? ' (Shiny!)' : ''}`)
         .setImage(`${imgUrl}${pokemon.name.toLowerCase()}.gif`)
-        .setFooter({ text: 'Click the Fight button to battle!' });
+        .setFooter({ text: 'Click the correct button to battle!' });
 }
 
-function createActionRow() {
-    return new ActionRowBuilder()
-        .addComponents(
-            new ButtonBuilder()
+function createActionRowWithRandomButtons() {
+    // Create an array of button positions
+    const positions = [0, 1, 2];
+    const fightPosition = Math.floor(Math.random() * 3);
+
+    // Create buttons
+    const buttons = positions.map(pos => {
+        if (pos === fightPosition) {
+            return new ButtonBuilder()
                 .setCustomId('fight')
                 .setLabel('Fight')
-                .setStyle(ButtonStyle.Primary)
-        );
+                .setStyle(ButtonStyle.Primary);
+        } else {
+            // Dummy buttons
+            return new ButtonBuilder()
+                .setCustomId(pos === 1 ? 'dummy1' : 'dummy2')
+                .setLabel('???')
+                .setStyle(ButtonStyle.Secondary)
+                .setDisabled(false);
+        }
+    });
+
+    // Shuffle the buttons to randomize their order
+    for (let i = buttons.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [buttons[i], buttons[j]] = [buttons[j], buttons[i]];
+    }
+
+    return new ActionRowBuilder().addComponents(buttons);
 }
 
 async function checkForLevelUp(userId, interaction) {

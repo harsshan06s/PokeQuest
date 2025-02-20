@@ -4,13 +4,104 @@ const path = require('path');
 const { createCanvas, loadImage, registerFont } = require('canvas');
 registerFont(path.join(__dirname, '..', 'fonts', 'DisposableDroid BB.ttf'), { family: 'DisposableDroid BB' });
 
+const regions = {
+    kanto: {
+        name: "Kanto",
+        requiredPokemon: 100, // Number of Pokémon to catch to unlock the next region
+        nextRegion: "johto",  // The next region to unlock
+        pokedexRange: [1, 151] // National Dex IDs for Kanto Pokémon
+    },
+    johto: {
+        name: "Johto",
+        requiredPokemon: 80,
+        nextRegion: "hoenn",
+        pokedexRange: [152, 251]
+    },
+    hoenn: {
+        name: "Hoenn",
+        requiredPokemon: 70,
+        nextRegion: "sinnoh",
+        pokedexRange: [252, 386]
+    },
+    sinnoh: {
+        name: "Sinnoh",
+        requiredPokemon: 60,
+        nextRegion: "unova",
+        pokedexRange: [387, 493]
+    },
+    unova: {
+        name: "Unova",
+        requiredPokemon: 50,
+        nextRegion: "kalos",
+        pokedexRange: [494, 649]
+    },
+    kalos: {
+        name: "Kalos",
+        requiredPokemon: 40,
+        nextRegion: "alola",
+        pokedexRange: [650, 721]
+    },
+    alola: {
+        name: "Alola",
+        requiredPokemon: 30,
+        nextRegion: "galar",
+        pokedexRange: [722, 809]
+    },
+    galar: {
+        name: "Galar",
+        requiredPokemon: 20,
+        nextRegion: null, // Final region
+        pokedexRange: [810, 898]
+    }
+};
+
+
 const USER_DATA_PATH = path.join(__dirname, '..', 'data', 'users.json');
 const POKEMON_LIST_PATH = path.join(__dirname, '..', 'data', 'pokemon-list.json');
 const POKEMON_TYPES_PATH = path.join(__dirname, '..', 'data', 'pokemon_types.json');
+const POKEMON_LIST_PATH1 = path.join(__dirname, '../data/pokemon-list1.json');
+
+async function loadPokemonLists1() {
+    const data = await fs.readFile(POKEMON_LIST_PATH1, 'utf8');
+    return JSON.parse(data);
+
+
+
+}
+
+// Evolution data file path
+const POKEMON_EVOLUTIONS_PATH = path.join(__dirname, '..', 'data', 'pokemon-evolutions.json');
+let evolutionData = {};
+
 
 let pokemonList = [];
 let pokemonList1 = {};
 
+// Load evolution data
+async function loadEvolutionData() {
+    try {
+        const data = await fs.readFile(POKEMON_EVOLUTIONS_PATH, 'utf8');
+        evolutionData = JSON.parse(data);
+        console.log('Evolution data loaded successfully.');
+        return evolutionData;
+    } catch (error) {
+        console.error('Error loading evolution data:', error.message);
+        return null;
+    }
+}
+
+
+(async () => {
+    evolutionData = await loadEvolutionData();
+    if (!evolutionData) {
+        console.error("Failed to load evolution data.");
+    }
+})();
+
+
+  
+
+ 
 // Load Pokémon Lists
 async function loadPokemonLists() {
     try {
@@ -18,6 +109,8 @@ async function loadPokemonLists() {
         pokemonList = JSON.parse(listData);
         const typesData = await fs.readFile(POKEMON_TYPES_PATH, 'utf8');
         pokemonList1 = JSON.parse(typesData);
+        const list1data=await fs.readFile(POKEMON_LIST_PATH1, 'utf8');
+        pokemonList2=JSON.parse(list1data);
     } catch (error) {
         console.error(`Error loading Pokémon lists: ${error}`);
     }
@@ -87,29 +180,52 @@ async function loadImageFromUrl(url) {
     return loadImage(response.data);
 }
 
-// Generate wild Pokémon (with randomized growth type)
+// Generate wild Pokémon based on user region and randomized growth type
 function generateWildPokemon(userLevel, userData = {}) {
-    if (pokemonList.length === 0) {
+    if (pokemonList2.length === 0) {
         console.error('Pokemon list is empty.');
         return null;
     }
 
-    const randomPokemon = pokemonList[Math.floor(Math.random() * pokemonList.length)];
-    const level = Math.floor(Math.random() * 50) + 1;
-    const pokemonTypes = pokemonList1[randomPokemon.toLowerCase()] || ['Unknown'];
+    // Determine the current region
+    const currentRegion = userData.region || "kanto";
+    const regionConfig = regions[currentRegion];
+
+    if (!regionConfig) {
+        console.error('Invalid region configuration.');
+        return null;
+    }
+
+    // Filter Pokémon by the region's Pokédex range
+    const regionPokemon = pokemonList2.filter(pokemon => {
+        return pokemon.id >= regionConfig.pokedexRange[0] && pokemon.id <= regionConfig.pokedexRange[1];
+    });
+
+    if (regionPokemon.length === 0) {
+        console.error(`No Pokémon available for region: ${currentRegion}`);
+        return null;
+    }
+
+    // Select a random Pokémon from the filtered list
+    const randomPokemon = regionPokemon[Math.floor(Math.random() * regionPokemon.length)];
+
+    // Generate Pokémon details
+    const level = Math.floor(Math.random() * userLevel) + 1; // Random level up to user level
+    const pokemonTypes = pokemonList2[randomPokemon.name.toLowerCase()] || ['Unknown'];
 
     return {
-        name: randomPokemon.charAt(0).toUpperCase() + randomPokemon.slice(1),
-        types: pokemonTypes, 
+        name: randomPokemon.name.charAt(0).toUpperCase() + randomPokemon.name.slice(1),
+        types: pokemonTypes,
         level,
         exp: 0, // Initial EXP for wild Pokémon
         isShiny: isShiny(userData),
-        moves: ['Tackle'], 
+        moves: ['Tackle'], // Default move; can be expanded
         catchRate: 100, 
         rarity: determineRarity(),
         growthType: assignGrowthType() // Random growth type for wild Pokémon
     };
 }
+
 
 // Shiny probability function
 function isShiny(userData) {
@@ -142,7 +258,9 @@ function determineRarity() {
 // In your helpers.js file
 async function createOrUpdateUser(userId, region, selectedStarter, restart = false) {
     const userData = await readUserData();
+
     if (restart) {
+        // Restart user data
         delete userData[userId];
         await writeUserData(userData);
         return await createOrUpdateUser(userId, region, selectedStarter);
@@ -150,7 +268,8 @@ async function createOrUpdateUser(userId, region, selectedStarter, restart = fal
         const existingUser = userData[userId];
 
         if (existingUser) {
-            existingUser.region = region;
+            // Update region or add a new Pokémon if the user exists
+            existingUser.region = region || existingUser.region;
             existingUser.pokemon.push({
                 name: selectedStarter.name,
                 rarity: selectedStarter.rarity,
@@ -162,9 +281,11 @@ async function createOrUpdateUser(userId, region, selectedStarter, restart = fal
             });
             existingUser.lastRestart = new Date().toISOString();
         } else {
+            // Initialize a new user
             userData[userId] = {
                 id: userId,
-                region: region,
+                region: region || "kanto", // Start in Kanto by default
+                progress: { caughtPokemon: 0 }, // Track progress for the current task
                 pokemon: [{
                     name: selectedStarter.name,
                     rarity: selectedStarter.rarity,
@@ -193,6 +314,8 @@ async function createOrUpdateUser(userId, region, selectedStarter, restart = fal
         return userData[userId];
     }
 }
+
+
 
 // Save user data
 async function writeUserData(data) {
@@ -248,13 +371,21 @@ async function updateUserData(userId, updateData) {
 }
 
 // Get active Pokémon with type information
+// helpers.js
+
+// Function to get the active (selected) Pokémon from userData
 async function getActivePokemon(userData) {
+    // Use activePokemon if set, otherwise use the Pokémon at selectedPokemon index
     const activePokemon = userData.activePokemon || userData.pokemon[userData.selectedPokemon];
+    
+    // Ensure the active Pokémon has types; if not, assign types from pokemonList1 or use 'Unknown'
     if (activePokemon && (!activePokemon.types || activePokemon.types.length === 0)) {
         activePokemon.types = pokemonList1[activePokemon.name.toLowerCase()] || ['Unknown'];
     }
+
     return activePokemon;
 }
+
 
 // Get user data
 async function getUserData(userId) {
@@ -277,14 +408,16 @@ async function useRareCandy(userId, pokemonIndex, quantity) {
         throw new Error('Invalid Pokémon index');
     }
 
-    if (userData.items.rarecandy < quantity) {
+    if (userData.items[5] < quantity) {
         throw new Error('Not enough Rare Candy');
     }
+    
 
     const pokemon = userData.pokemon[pokemonIndex];
     const oldLevel = pokemon.level;
     pokemon.level = Math.min(100, pokemon.level + quantity);
-    userData.items.rarecandy -= quantity;
+    userData.items[5] -= quantity;
+
 
     await updateUserData(userId, userData);
 
@@ -710,27 +843,49 @@ async function levelUp(userId, pokemonIndex) {
 }
 
 // Example Pokémon experience calculation
+// helpers.js
+
+// Gain experience and handle level up and evolution if eligible
 async function gainExperience(userId, pokemonIndex, experience, opponentLevel) {
     const userData = await getUserData(userId);
     if (!userData) {
-      throw new Error('User  does not exist');
+        throw new Error('User does not exist');
     }
-  
+
     const pokemon = userData.pokemon[pokemonIndex];
+    const growthType = pokemon.growthType || 'MediumFast'; // Default to MediumFast if growthType is not set
     const levelDifference = pokemon.level - opponentLevel;
-    const scaledExperience = experience * (1 - (levelDifference / 100));
-  
+    const scaledExperience = Math.max(1, experience * (1 - (levelDifference / 100))); // Ensure minimum gain
+
+    // Apply experience to the Pokémon
     pokemon.exp += scaledExperience;
-  
-    while (true) {
-      const result = await levelUp(userId, pokemonIndex);
-      if (result.startsWith(`${pokemon.name} needs more experience to level up.`)) {
-        break;
-      }
+
+    let leveledUp = false;
+    // Loop to handle multiple level-ups in case of high EXP gain
+    while (pokemon.exp >= experienceToNextLevel(pokemon.level, growthType) && pokemon.level < 100) {
+        pokemon.exp -= experienceToNextLevel(pokemon.level, growthType);
+        pokemon.level += 1;
+        leveledUp = true;
     }
-  
-    await updateUserData(userId, { pokemon: userData.pokemon });
-  }
+
+    // Update the user data with the leveled Pokémon
+    userData.pokemon[pokemonIndex] = pokemon;
+    await updateUserData(userId, userData);
+
+    if (leveledUp) {
+        console.log(`${pokemon.name} leveled up! Now at level ${pokemon.level}.`);
+
+        // Check for evolution if the Pokémon leveled up
+        const evolutionMessage = await evolveSelectedPokemonIfEligible(userId);
+        if (evolutionMessage) {
+            console.log(evolutionMessage); // Log evolution message
+        }
+    }
+}
+
+// Calculate experience required for the next level
+
+
   async function countPokemonAcrossUsers(pokemonName) {
     const userData = await readUserData();
     let count = 0;
@@ -771,6 +926,171 @@ function randomPokemonEncounter() {
     return randomPokemonName.charAt(0).toUpperCase() + randomPokemonName.slice(1);
 }
 
+// Check if selected Pokémon can evolve
+const evolveSelectedPokemonIfEligible = async (userId, usedItem = null) => {
+    const userData = await getUserData(userId);
+    if (!userData || !userData.pokemon || userData.pokemon.length === 0) {
+        return { success: false, message: "No Pokémon found for this user." };
+    }
+
+    const selectedPokemonIndex = userData.selectedPokemon;
+    const pokemon = userData.pokemon[selectedPokemonIndex];
+
+    if (!pokemon) {
+        return { success: false, message: "No Pokémon selected for evolution." };
+    }
+
+    const pokemonName = pokemon.name.toLowerCase();
+    const pokemonEvolutions = evolutionData[pokemonName];
+
+    if (!pokemonEvolutions || pokemonEvolutions.length === 0) {
+        return { success: false, message: `${capitalizeFirstLetter(pokemon.name)} cannot evolve.` };
+    }
+
+    for (const evo of pokemonEvolutions) {
+        // Level-based evolution
+        if (evo.triggerType === 'level-up' && pokemon.level >= evo.level) {
+            const message = await applyEvolution(userId, pokemon, evo.evolvesTo, selectedPokemonIndex);
+            return { success: true, message };
+        }
+
+        // Item-based evolution
+        if (
+            evo.triggerType === 'use-item' &&
+            usedItem &&
+            evo.item.toLowerCase() === usedItem.toLowerCase()
+        ) {
+            const message = await applyEvolution(userId, pokemon, evo.evolvesTo, selectedPokemonIndex);
+            return { success: true, message };
+        }
+    }
+
+    return { success: false, message: `No valid evolution conditions met for ${capitalizeFirstLetter(pokemon.name)}.` };
+};
+
+
+const applyEvolution = async (userId, pokemon, evolvedName, pokemonIndex) => {
+    try {
+        const previousName = pokemon.name;
+        pokemon.name = capitalizeFirstLetter(evolvedName);
+
+        // Update sprite URL
+        const imgUrlBase = "https://play.pokemonshowdown.com/sprites/ani";
+        pokemon.spriteUrl = pokemon.isShiny
+            ? `${imgUrlBase}-shiny/${evolvedName.toLowerCase()}.gif`
+            : `${imgUrlBase}/${evolvedName.toLowerCase()}.gif`;
+
+        // Update the user's data for the selected Pokémon
+        const userData = await getUserData(userId);
+        userData.pokemon[pokemonIndex] = pokemon;
+        await updateUserData(userId, userData);
+
+        // Return success message
+        return `${capitalizeFirstLetter(previousName)} evolved into ${pokemon.name}!`;
+    } catch (error) {
+        console.error("Error in applyEvolution:", error.message);
+        throw new Error("Failed to apply evolution.");
+    }
+};
+
+const useEvolutionItem = async (userId, itemIdentifier) => {
+    try {
+        const userData = await getUserData(userId);
+        const activePokemon = await getActivePokemon(userData);
+
+        if (!activePokemon) {
+            console.error("No active Pokémon found for user:", userId);
+            return { success: false, message: "You don't have an active Pokémon selected." };
+        }
+        
+        // Debug logging
+        console.log("Active Pokémon:", activePokemon.name);
+        console.log("Item Identifier:", itemIdentifier);
+        
+        const pokemonName = activePokemon.name?.toLowerCase();
+
+        if (!pokemonName) {
+            return { success: false, message: "Active Pokémon has no valid name." };
+        }
+
+        const pokemonEvolutions = evolutionData[pokemonName];
+
+        // Debug logging for evolutions
+        console.log("Pokemon Evolutions:", JSON.stringify(pokemonEvolutions, null, 2));
+
+        if (!pokemonEvolutions || pokemonEvolutions.length === 0) {
+            console.error("No evolution data found for Pokémon:", pokemonName);
+            return { success: false, message: `${capitalizeFirstLetter(activePokemon.name)} cannot evolve.` };
+        }
+
+        // Find valid evolution triggered by the specific item
+        const validEvolution = pokemonEvolutions.find(
+            evo => evo.triggerType === 'use-item' && 
+                   evo.item.toLowerCase().replace(/\s+/g, '-') === itemIdentifier.toLowerCase().replace(/\s+/g, '-')
+        );
+
+        // Debug logging for valid evolution
+        console.log("Valid Evolution:", validEvolution);
+
+        if (!validEvolution) {
+            return {
+                success: false,
+                message: `${capitalizeFirstLetter(activePokemon.name)} cannot evolve with ${capitalizeFirstLetter(itemIdentifier)}.`,
+            };
+        }
+
+        // Perform evolution
+        const message = await applyEvolution(
+            userId,
+            activePokemon,
+            validEvolution.evolvesTo,
+            userData.selectedPokemon
+        );
+
+        return { success: true, message, itemUsed: itemIdentifier };
+    } catch (error) {
+        console.error("Error in useEvolutionItem:", error.message);
+        return { success: false, message: "An error occurred while trying to evolve the Pokémon." };
+    }
+};
+
+
+// Helper function to capitalize the first letter of a string
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+async function checkRegionTaskProgress(userId) {
+    const userData = await getUserData(userId);
+    const currentRegion = userData.region || "kanto";
+    const regionConfig = regions[currentRegion];
+
+    if (!regionConfig) {
+        throw new Error("Invalid region configuration.");
+    }
+
+    // Count caught Pokémon progress
+    const caughtPokemonCount = Object.keys(userData.caughtPokemon || {}).length;
+
+    // Check if the task is completed
+    if (caughtPokemonCount >= regionConfig.requiredPokemon) {
+        const nextRegion = regionConfig.nextRegion;
+
+        if (nextRegion) {
+            userData.region = nextRegion;
+            userData.progress.caughtPokemon = 0; // Reset progress for the new region
+            await updateUserData(userId, userData);
+            return `🎉 You have unlocked the **${regions[nextRegion].name}** region! 🎉`;
+        } else {
+            return "You have completed all available regions! Congratulations!";
+        }
+    }
+
+    return `You need to catch ${regionConfig.requiredPokemon - caughtPokemonCount} more Pokémon to unlock the next region.`;
+}
+
+
+
 // Export the functions for use in other files
 module.exports = {
     loadPokemonLists,
@@ -803,5 +1123,12 @@ module.exports = {
     readUserData,
     writeUserData,
     deleteUserData,
-    countPokemonAcrossUsers
+    countPokemonAcrossUsers,
+    loadEvolutionData,
+    evolveSelectedPokemonIfEligible,
+    applyEvolution,
+    capitalizeFirstLetter,
+    useEvolutionItem,
+    loadPokemonLists1,
+    checkRegionTaskProgress
 };

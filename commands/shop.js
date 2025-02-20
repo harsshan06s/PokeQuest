@@ -69,23 +69,36 @@ const SHOP_ITEMS = [
 
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName('shop')
-    .setDescription('View and purchase items from the shop')
-    .addSubcommand(subcommand =>
-        subcommand
-            .setName('view')
-            .setDescription('View available items in the shop')
-            .addStringOption(option =>
-                option.setName('category')
-                    .setDescription('The category of items to view')
-                    .setRequired(false)
-                    .addChoices(
-                        { name: 'All', value: 'all' },
-                        { name: 'Pokeballs', value: 'pokeballs' },
-                        { name: 'Usable', value: 'usable' },
-                        { name: 'Evolution', value: 'evolution' }
-                    ))),
-
+        .setName('shop')
+        .setDescription('View and purchase items from the shop')
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('view')
+                .setDescription('View available items in the shop')
+                .addStringOption(option =>
+                    option.setName('category')
+                        .setDescription('The category of items to view')
+                        .setRequired(false)
+                        .addChoices(
+                            { name: 'All', value: 'all' },
+                            { name: 'Pokeballs', value: 'pokeballs' },
+                            { name: 'Usable', value: 'usable' },
+                            { name: 'Evolution', value: 'evolution' }
+                        )))
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('buy')
+                .setDescription('Purchase an item from the shop')
+                .addStringOption(option =>
+                    option.setName('item')
+                        .setDescription('The item ID or name you want to buy')
+                        .setRequired(true))
+                .addIntegerOption(option =>
+                    option.setName('quantity')
+                        .setDescription('How many of the item you want to buy')
+                        .setRequired(true)
+                        .setMinValue(1)
+                        .setMaxValue(100))),
     async execute(interaction) {
         if (interaction.options.getSubcommand() === 'view') {
             return this.viewShop(interaction, 1);
@@ -231,11 +244,10 @@ module.exports = {
         }
 
         userData.money -= totalCost;
-        userData.items = userData.items || {};
-        const itemKey = item.name.toLowerCase().replace(/\s+/g, '_');
-        userData.items[itemKey] = (userData.items[itemKey] || 0) + quantity;
+    userData.items = userData.items || {};
+    userData.items[item.id] = (userData.items[item.id] || 0) + quantity;
 
-        await updateUserData(interaction.user.id, userData);
-        await interaction.reply(`You've successfully purchased ${quantity} ${item.icon} ${item.name}(s) for ${formatNumber(totalCost)} coins. You now have ${formatNumber(userData.money)} coins left.`);
-    }
-};
+    await updateUserData(interaction.user.id, userData);
+    await interaction.reply(`You've successfully purchased ${quantity} ${item.icon} ${item.name}(s) for ${formatNumber(totalCost)} coins. You now have ${formatNumber(userData.money)} coins left.`);
+}
+}

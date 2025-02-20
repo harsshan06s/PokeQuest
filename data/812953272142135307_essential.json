@@ -1,31 +1,30 @@
 {
   "id": "812953272142135307",
-  "selectedPokemon": 9,
+  "selectedPokemon": 49,
   "activePokemon": {
-    "name": "Groudon",
+    "name": "Tyranitar",
     "level": 100,
-    "rarity": "<:LR:1259113497053233162>",
-    "isShiny": true,
-    "moves": [
-      "Tackle"
-    ],
-    "exp": 0,
-    "catchRate": 100,
+    "isShiny": false,
+    "rarity": "<:UR:1259113669925539902>",
     "types": [
-      "Ground",
-      "Fire"
-    ]
+      "Rock",
+      "Dark"
+    ],
+    "exp": 296291.06
   },
-  "money": 91073825,
+  "money": 9999982072110,
   "items": {
+    "4": 988,
+    "5": 1290,
     "pokeball": 0,
     "greatball": 0,
-    "ultraball": 958,
-    "masterball": 96,
+    "ultraball": 901,
+    "masterball": 88,
     "rarecandy": 0,
-    "raidball": 0
+    "raidball": 0,
+    "rare_candy": 396
   },
-  "lastWildEncounter": 1731173646491,
+  "lastWildEncounter": 1731691797203,
   "caughtPokemon": {
     "latios": {
       "isShiny": false
@@ -157,6 +156,201 @@
       "isShiny": false
     },
     "rabsca": {
+      "isShiny": false
+    },
+    "bellibolt": {
+      "isShiny": false
+    },
+    "buneary": {
+      "isShiny": false
+    },
+    "tyranitar": {
+      "isShiny": false
+    },
+    "sewaddle": {
+      "isShiny": true
+    },
+    "tyrogue": {
+      "isShiny": false
+    },
+    "unown": {
+      "isShiny": false
+    },
+    "corviknight": {
+      "isShiny": false
+    },
+    "stufful": {
+      "isShiny": false
+    },
+    "koraidon": {
+      "isShiny": false
+    },
+    "malamar": {
+      "isShiny": false
+    },
+    "swablu": {
+      "isShiny": false
+    },
+    "lokix": {
+      "isShiny": false
+    },
+    "greedent": {
+      "isShiny": false
+    },
+    "chandelure": {
+      "isShiny": false
+    },
+    "pawmot": {
+      "isShiny": false
+    },
+    "charjabug": {
+      "isShiny": false
+    },
+    "tirtouga": {
+      "isShiny": false
+    },
+    "shroodle": {
+      "isShiny": false
+    },
+    "dipplin": {
+      "isShiny": false
+    },
+    "kilowattrel": {
+      "isShiny": false
+    },
+    "nihilego": {
+      "isShiny": false
+    },
+    "arcanine": {
+      "isShiny": false
+    },
+    "snom": {
+      "isShiny": false
+    },
+    "arrokuda": {
+      "isShiny": false
+    },
+    "squirtle": {
+      "isShiny": false
+    },
+    "blacephalon": {
+      "isShiny": false
+    },
+    "quilava": {
+      "isShiny": false
+    },
+    "bouffalant": {
+      "isShiny": false
+    },
+    "zarude": {
+      "isShiny": false
+    },
+    "glaceon": {
+      "isShiny": false
+    },
+    "cyclizar": {
+      "isShiny": false
+    },
+    "nosepass": {
+      "isShiny": false
+    },
+    "treecko": {
+      "isShiny": false
+    },
+    "whismur": {
+      "isShiny": false
+    },
+    "hawlucha": {
+      "isShiny": false
+    },
+    "lechonk": {
+      "isShiny": false
+    },
+    "wattrel": {
+      "isShiny": false
+    },
+    "palpitoad": {
+      "isShiny": false
+    },
+    "primarina": {
+      "isShiny": true
+    },
+    "zigzagoon": {
+      "isShiny": false
+    },
+    "ninjask": {
+      "isShiny": false
+    },
+    "baxcalibur": {
+      "isShiny": false
+    },
+    "thwackey": {
+      "isShiny": false
+    },
+    "zorua": {
+      "isShiny": false
+    },
+    "lumineon": {
+      "isShiny": false
+    },
+    "chi-yu": {
+      "isShiny": false
+    },
+    "swirlix": {
+      "isShiny": false
+    },
+    "braviary": {
+      "isShiny": false
+    },
+    "cutiefly": {
+      "isShiny": false
+    },
+    "emboar": {
+      "isShiny": false
+    },
+    "yamper": {
+      "isShiny": false
+    },
+    "ursaring": {
+      "isShiny": false
+    },
+    "tinkaton": {
+      "isShiny": false
+    },
+    "appletun": {
+      "isShiny": false
+    },
+    "pecharunt": {
+      "isShiny": false
+    },
+    "weavile": {
+      "isShiny": false
+    },
+    "glimmet": {
+      "isShiny": false
+    },
+    "chespin": {
+      "isShiny": false
+    },
+    "zamazenta": {
+      "isShiny": false
+    },
+    "lampent": {
+      "isShiny": false
+    },
+    "minccino": {
+      "isShiny": false
+    },
+    "shelgon": {
+      "isShiny": false
+    },
+    "golem": {
+      "isShiny": false
+    },
+    "electrode": {
+      "isShiny": false
+    },
+    "kecleon": {
       "isShiny": false
     }
   }

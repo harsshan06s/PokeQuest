@@ -1,2443 +1,4 @@
 {
-  "1027872140227268641": {
-    "id": "1027872140227268641",
-    "region": "kalos",
-    "pokemon": [
-      {
-        "name": "Squirtle",
-        "rarity": "<:SR:1259113778747015233>",
-        "type": "Water",
-        "level": 68,
-        "exp": 13153,
-        "moves": [
-          "Tackle",
-          "Tail Whip"
-        ],
-        "catchRate": 45,
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Kyogre",
-        "level": 48,
-        "rarity": "<:r_:1259114608426487839>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Water",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Groudon-Primal",
-        "level": 100,
-        "rarity": "<:LR:1259113497053233162>",
-        "isShiny": true,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "catchRate": 100,
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Victreebel",
-        "level": 85,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Grass",
-          "Poison"
-        ]
-      },
-      {
-        "name": "Mewtwo",
-        "level": 65,
-        "rarity": "<:SR:1259113778747015233>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Kyogre",
-        "level": 50,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Water",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Kyogre",
-        "level": 52,
-        "rarity": "<:r_:1259114608426487839>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Water",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Mewtwo",
-        "level": 100,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": true,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Kyogre",
-        "level": 100,
-        "rarity": "<:UR:1259113669925539902>",
-        "isShiny": true,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Water",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Mega Charizard X",
-        "level": 52,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Fire/Dragon",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Charizard-MegaX",
-        "level": 54,
-        "rarity": "<:SR:1259113778747015233>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Fire/Dragon",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Giratina",
-        "level": 60,
-        "rarity": "<:SR:1259113778747015233>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Ghost/Dragon",
-        "types": [
-          "Ghost",
-          "Dragon"
-        ]
-      },
-      {
-        "name": "Kyogre",
-        "level": 50,
-        "rarity": "<:SR:1259113778747015233>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Water",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Zekrom",
-        "level": 52,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Electric",
-        "types": [
-          "Dragon",
-          "Electric"
-        ]
-      },
-      {
-        "name": "Charizard-MegaX",
-        "level": 48,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Fire/Dragon",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Zekrom",
-        "level": 52,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Electric",
-        "types": [
-          "Dragon",
-          "Electric"
-        ]
-      },
-      {
-        "name": "Zekrom",
-        "level": 56,
-        "rarity": "<:SR:1259113778747015233>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Electric",
-        "types": [
-          "Dragon",
-          "Electric"
-        ]
-      },
-      {
-        "name": "Giratina",
-        "level": 53,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Ghost/Dragon",
-        "types": [
-          "Ghost",
-          "Dragon"
-        ]
-      },
-      {
-        "name": "Zacian",
-        "level": 100,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": true,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Fairy/Steel",
-        "types": [
-          "Fairy",
-          "Steel"
-        ]
-      },
-      {
-        "name": "Kyogre",
-        "level": 47,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Water",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Giratina",
-        "level": 54,
-        "rarity": "<:r_:1259114608426487839>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Ghost/Dragon",
-        "types": [
-          "Ghost",
-          "Dragon"
-        ]
-      },
-      {
-        "name": "Rayquaza",
-        "level": 59,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Flying",
-        "types": [
-          "Dragon",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Genesect",
-        "level": 57,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Bug/Steel",
-        "types": [
-          "Bug",
-          "Steel"
-        ]
-      },
-      {
-        "name": "Zekrom",
-        "level": 51,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Electric",
-        "types": [
-          "Dragon",
-          "Electric"
-        ]
-      },
-      {
-        "name": "Reshiram",
-        "level": 52,
-        "rarity": "<:r_:1259114608426487839>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Fire",
-        "types": [
-          "Dragon",
-          "Fire"
-        ]
-      },
-      {
-        "name": "Mewtwo",
-        "level": 60,
-        "rarity": "<:r_:1259114608426487839>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Rayquaza",
-        "level": 55,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Flying",
-        "types": [
-          "Dragon",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Zacian",
-        "level": 55,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Fairy/Steel",
-        "types": [
-          "Fairy",
-          "Steel"
-        ]
-      },
-      {
-        "name": "Rayquaza",
-        "level": 59,
-        "rarity": "<:r_:1259114608426487839>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Flying",
-        "types": [
-          "Dragon",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Dewpider",
-        "level": 85,
-        "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>",
-        "types": [
-          "Water",
-          "Bug"
-        ]
-      },
-      {
-        "name": "Mewtwo",
-        "level": 62,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Mew",
-        "level": 49,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Kyogre",
-        "level": 49,
-        "rarity": "<:SR:1259113778747015233>",
-        "isShiny": true,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Water",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Giratina",
-        "level": 50,
-        "rarity": "<:UR:1259113669925539902>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Ghost/Dragon",
-        "types": [
-          "Ghost",
-          "Dragon"
-        ]
-      },
-      {
-        "name": "Kyogre",
-        "level": 50,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Water",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Kyurem",
-        "level": 57,
-        "rarity": "<:UR:1259113669925539902>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Ice",
-        "types": [
-          "Dragon",
-          "Ice"
-        ]
-      },
-      {
-        "name": "Kyurem",
-        "level": 53,
-        "rarity": "<:SR:1259113778747015233>",
-        "isShiny": true,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Ice",
-        "types": [
-          "Dragon",
-          "Ice"
-        ]
-      },
-      {
-        "name": "Rayquaza",
-        "level": 54,
-        "rarity": "<:r_:1259114608426487839>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Flying",
-        "types": [
-          "Dragon",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Mewtwo",
-        "level": 58,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Kyurem",
-        "level": 100,
-        "rarity": "<:UR:1259113669925539902>",
-        "isShiny": true,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Ice",
-        "types": [
-          "Dragon",
-          "Ice"
-        ]
-      },
-      {
-        "name": "Mew",
-        "level": 53,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Giratina",
-        "level": 54,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Ghost/Dragon",
-        "types": [
-          "Ghost",
-          "Dragon"
-        ]
-      },
-      {
-        "name": "Wattrel",
-        "level": 85,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Electric",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Skiploom",
-        "level": 85,
-        "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>",
-        "types": [
-          "Grass",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Mew",
-        "level": 56,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Genesect",
-        "level": 52,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Bug/Steel",
-        "types": [
-          "Bug",
-          "Steel"
-        ]
-      },
-      {
-        "name": "Mew",
-        "level": 53,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": true,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Jirachi",
-        "level": 52,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Steel/Psychic",
-        "types": [
-          "Steel",
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Dragonair",
-        "level": 85,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Dragon"
-        ]
-      },
-      {
-        "name": "Zekrom",
-        "level": 55,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Electric",
-        "types": [
-          "Dragon",
-          "Electric"
-        ]
-      },
-      {
-        "name": "Rayquaza",
-        "level": 62,
-        "rarity": "<:SR:1259113778747015233>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Flying",
-        "types": [
-          "Dragon",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Zygarde-Complete",
-        "level": 56,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Ground",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Genesect",
-        "level": 54,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Bug/Steel",
-        "types": [
-          "Bug",
-          "Steel"
-        ]
-      },
-      {
-        "name": "Groudon",
-        "level": 54,
-        "rarity": "<:r_:1259114608426487839>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Ground",
-        "types": [
-          "Ground",
-          "Fire"
-        ]
-      },
-      {
-        "name": "Xerneas-Neutral",
-        "level": 54,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Fairy",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Entei",
-        "level": 51,
-        "rarity": "<:SR:1259113778747015233>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Fire",
-        "types": [
-          "Fire"
-        ]
-      },
-      {
-        "name": "Vigoroth",
-        "level": 85,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Normal"
-        ]
-      },
-      {
-        "name": "Kingler",
-        "level": 85,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Drednaw",
-        "level": 85,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Water",
-          "Rock"
-        ]
-      },
-      {
-        "name": "Mesprit",
-        "level": 46,
-        "rarity": "<:r_:1259114608426487839>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Ho-Oh",
-        "level": 50,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Fire/Flying",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Necrozma",
-        "level": 58,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic",
-          "Dragon"
-        ]
-      },
-      {
-        "name": "Calyrex",
-        "level": 53,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic/Grass",
-        "types": [
-          "Psychic",
-          "Ghost"
-        ]
-      },
-      {
-        "name": "Palkia-Origin",
-        "level": 65,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Water/Dragon",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Landorus-Therian",
-        "level": 53,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Ground/Flying",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Raikou",
-        "level": 56,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Electric",
-        "types": [
-          "Electric"
-        ]
-      },
-      {
-        "name": "Articuno-Galar",
-        "level": 53,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic/Flying",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Mewtwo",
-        "level": 62,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Rayquaza",
-        "level": 52,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": true,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Flying",
-        "types": [
-          "Dragon",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Mesprit",
-        "level": 53,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Kyogre",
-        "level": 52,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Water",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Calyrex",
-        "level": 58,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic/Grass",
-        "types": [
-          "Psychic",
-          "Ghost"
-        ]
-      },
-      {
-        "name": "Groudon-Primal",
-        "level": 54,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Ground/Fire",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Kyurem-White",
-        "level": 60,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Ice",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Lunala",
-        "level": 56,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic/Ghost",
-        "types": [
-          "Psychic",
-          "Ghost"
-        ]
-      },
-      {
-        "name": "Lunala",
-        "level": 54,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic/Ghost",
-        "types": [
-          "Psychic",
-          "Ghost"
-        ]
-      },
-      {
-        "name": "Kyogre-Primal",
-        "level": 20,
-        "rarity": "<:r_:1259114608426487839>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Water",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Groudon-Primal",
-        "level": 20,
-        "rarity": "<:SR:1259113778747015233>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Ground/Fire",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Regirock",
-        "level": 20,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Rock",
-        "types": [
-          "Rock"
-        ]
-      },
-      {
-        "name": "Kyurem-Black",
-        "level": 20,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Dragon/Ice",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Tornadus-Therian",
-        "level": 20,
-        "rarity": "<:r_:1259114608426487839>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Flying",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Regice",
-        "level": 20,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Ice",
-        "types": [
-          "Ice"
-        ]
-      },
-      {
-        "name": "Cosmoem",
-        "level": 20,
-        "rarity": "<:UR:1259113669925539902>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Mewtwo-MegaX",
-        "level": 20,
-        "rarity": "<:r_:1259114608426487839>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic/Fighting",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Dialga-Origin",
-        "level": 20,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Steel/Dragon",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Giratina-Origin",
-        "level": 20,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Ghost/Dragon",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Articuno",
-        "level": 20,
-        "rarity": "<:SR:1259113778747015233>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Ice/Flying",
-        "types": [
-          "Psychic",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Ho-Oh",
-        "level": 20,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Fire/Flying",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Mesprit",
-        "level": 20,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Giratina-Origin",
-        "level": 20,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Ghost/Dragon",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Zacian",
-        "level": 20,
-        "rarity": "<:n_:1259114941873520734>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Fairy/Steel",
-        "types": [
-          "Fairy",
-          "Steel"
-        ]
-      },
-      {
-        "name": "Cosmoem",
-        "level": 20,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Psychic",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Tapu Bulu",
-        "level": 20,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Grass/Fairy",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Entei",
-        "level": 20,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Fire",
-        "types": [
-          "Fire"
-        ]
-      },
-      {
-        "name": "Groudon-Primal",
-        "level": 20,
-        "rarity": "<:U_:1259114756313452680>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "type": "Ground/Fire",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Torracat",
-        "level": 50,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Fire"
-        ]
-      },
-      {
-        "name": "Mamoswine",
-        "level": 49,
-        "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>",
-        "types": [
-          "Ice",
-          "Ground"
-        ]
-      },
-      {
-        "name": "Quagsire",
-        "level": 22,
-        "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>",
-        "types": [
-          "Water",
-          "Ground"
-        ]
-      },
-      {
-        "name": "Ursaring",
-        "level": 5,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Normal"
-        ]
-      },
-      {
-        "name": "Swablu",
-        "level": 5,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Normal",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Cascoon",
-        "level": 48,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Bug"
-        ]
-      },
-      {
-        "name": "Wailmer",
-        "level": 14,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Archeops",
-        "level": 44,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Rock",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Klawf",
-        "level": 32,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Rock"
-        ]
-      },
-      {
-        "name": "Zeraora",
-        "level": 5,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Electric"
-        ]
-      },
-      {
-        "name": "Drapion",
-        "level": 45,
-        "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>",
-        "types": [
-          "Poison",
-          "Dark"
-        ]
-      },
-      {
-        "name": "Bellossom",
-        "level": 49,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Grass"
-        ]
-      },
-      {
-        "name": "Chewtle",
-        "level": 6,
-        "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Surskit",
-        "level": 20,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Bug",
-          "Water"
-        ]
-      },
-      {
-        "name": "Beartic",
-        "level": 1,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Ice"
-        ]
-      },
-      {
-        "name": "Snom",
-        "level": 49,
-        "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>",
-        "types": [
-          "Ice",
-          "Bug"
-        ]
-      },
-      {
-        "name": "Hippowdon",
-        "level": 11,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Ground"
-        ]
-      },
-      {
-        "name": "Remoraid",
-        "level": 8,
-        "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Feebas",
-        "level": 17,
-        "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Zorua",
-        "level": 46,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Normal",
-          "Ghost"
-        ]
-      },
-      {
-        "name": "Purugly",
-        "level": 4,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Normal"
-        ]
-      },
-      {
-        "name": "Murkrow",
-        "level": 16,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Dark",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Archaludon",
-        "level": 34,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Steel",
-          "Dragon"
-        ]
-      },
-      {
-        "name": "Rolycoly",
-        "level": 41,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Rock"
-        ]
-      },
-      {
-        "name": "Rapidash",
-        "level": 36,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Psychic",
-          "Fairy"
-        ]
-      },
-      {
-        "name": "Dewgong",
-        "level": 46,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Water",
-          "Ice"
-        ]
-      },
-      {
-        "name": "Escavalier",
-        "level": 19,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Bug",
-          "Steel"
-        ]
-      },
-      {
-        "name": "Flareon",
-        "level": 22,
-        "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>",
-        "types": [
-          "Fire"
-        ]
-      },
-      {
-        "name": "Manectric",
-        "level": 27,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Electric"
-        ]
-      },
-      {
-        "name": "Mothim",
-        "level": 9,
-        "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>",
-        "types": [
-          "Bug",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Dudunsparce",
-        "level": 3,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Normal"
-        ]
-      },
-      {
-        "name": "Victreebel",
-        "level": 27,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Grass",
-          "Poison"
-        ]
-      },
-      {
-        "name": "Nidorino",
-        "level": 35,
-        "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>",
-        "types": [
-          "Poison"
-        ]
-      },
-      {
-        "name": "Froakie",
-        "level": 46,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Pumpkaboo",
-        "level": 43,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Ghost",
-          "Grass"
-        ]
-      },
-      {
-        "name": "Duosion",
-        "level": 33,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Hawlucha",
-        "level": 22,
-        "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>",
-        "types": [
-          "Fighting",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Shieldon",
-        "level": 30,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Rock",
-          "Steel"
-        ]
-      },
-      {
-        "name": "Ambipom",
-        "level": 17,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Normal"
-        ]
-      },
-      {
-        "name": "Tepig",
-        "level": 22,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Fire"
-        ]
-      },
-      {
-        "name": "Mesprit",
-        "level": 45,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Sinistcha",
-        "level": 3,
-        "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>",
-        "types": [
-          "Grass",
-          "Ghost"
-        ]
-      },
-      {
-        "name": "Yamask",
-        "level": 47,
-        "isShiny": false,
-        "rarity": "<:UR:1259113669925539902>",
-        "types": [
-          "Ground",
-          "Ghost"
-        ]
-      },
-      {
-        "name": "Archeops",
-        "level": 24,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Rock",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Joltik",
-        "level": 31,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Bug",
-          "Electric"
-        ]
-      },
-      {
-        "name": "Staravia",
-        "level": 49,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Normal",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Aegislash",
-        "level": 28,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Steel",
-          "Ghost"
-        ]
-      },
-      {
-        "name": "Timburr",
-        "level": 38,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Fighting"
-        ]
-      },
-      {
-        "name": "Lombre",
-        "level": 6,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Water",
-          "Grass"
-        ]
-      },
-      {
-        "name": "Kommo-o",
-        "level": 33,
-        "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>",
-        "types": [
-          "Unknown"
-        ]
-      },
-      {
-        "name": "Armaldo",
-        "level": 25,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Rock",
-          "Bug"
-        ]
-      },
-      {
-        "name": "Wooper",
-        "level": 17,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Poison",
-          "Ground"
-        ]
-      },
-      {
-        "name": "Tympole",
-        "level": 19,
-        "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Vanillish",
-        "level": 19,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Ice"
-        ]
-      },
-      {
-        "name": "Combusken",
-        "level": 37,
-        "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>",
-        "types": [
-          "Fire",
-          "Fighting"
-        ]
-      },
-      {
-        "name": "Staryu",
-        "level": 50,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Kingambit",
-        "level": 50,
-        "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>",
-        "types": [
-          "Dark",
-          "Steel"
-        ]
-      },
-      {
-        "name": "Zigzagoon",
-        "level": 16,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Dark",
-          "Normal"
-        ]
-      },
-      {
-        "name": "Electivire",
-        "level": 1,
-        "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>",
-        "types": [
-          "Electric"
-        ]
-      },
-      {
-        "name": "Xurkitree",
-        "level": 9,
-        "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>",
-        "types": [
-          "Electric"
-        ]
-      },
-      {
-        "name": "Genesect",
-        "level": 34,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Bug",
-          "Steel"
-        ]
-      },
-      {
-        "name": "Capsakid",
-        "level": 41,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Grass"
-        ]
-      }
-    ],
-    "items": {
-      "pokeball": 999942,
-      "greatball": 0,
-      "ultraball": 0,
-      "masterball": 68637,
-      "raidball": 170,
-      "rarecandy": 826
-    },
-    "money": 3990825364003,
-    "lastDaily": null,
-    "created": "2024-07-06T13:15:42.842Z",
-    "currentWildPokemon": {
-      "name": "Capsakid",
-      "types": [
-        "Grass"
-      ],
-      "level": 41,
-      "exp": 0,
-      "isShiny": false,
-      "moves": [
-        "Tackle"
-      ],
-      "catchRate": 100,
-      "rarity": "<:n_:1259114941873520734>",
-      "growthType": "Fluctuating",
-      "defeated": false,
-      "encounterId": "8a0ab4e6-b8dd-4945-b260-bd9ef56657b0"
-    },
-    "lastRestart": "2024-07-08T07:19:16.675Z",
-    "lastWildEncounter": 1731342547757,
-    "caughtPokemon": {
-      "squirtle": {},
-      "slowpoke": {
-        "isShiny": false
-      },
-      "walrein": {
-        "isShiny": false
-      },
-      "tornadus": {
-        "isShiny": false
-      },
-      "koffing": {
-        "isShiny": false
-      },
-      "octillery": {
-        "isShiny": false
-      },
-      "aerodactyl": {
-        "isShiny": false
-      },
-      "lileep": {
-        "isShiny": false
-      },
-      "roggenrola": {
-        "isShiny": false
-      },
-      "slowking": {
-        "isShiny": false
-      },
-      "togetic": {
-        "isShiny": false
-      },
-      "drednaw": {
-        "isShiny": false
-      },
-      "cubone": {
-        "isShiny": false
-      },
-      "primeape": {
-        "isShiny": false
-      },
-      "vibrava": {
-        "isShiny": false
-      },
-      "kangaskhan": {
-        "isShiny": false
-      },
-      "gastly": {
-        "isShiny": false
-      },
-      "emolga": {
-        "isShiny": false
-      },
-      "doduo": {
-        "isShiny": false
-      },
-      "wobbuffet": {
-        "isShiny": false
-      },
-      "whirlipede": {
-        "isShiny": false
-      },
-      "misdreavus": {
-        "isShiny": false
-      },
-      "decidueye": {
-        "isShiny": false
-      },
-      "conkeldurr": {
-        "isShiny": false
-      },
-      "beartic": {
-        "isShiny": false
-      },
-      "kabuto": {
-        "isShiny": false
-      },
-      "noivern": {
-        "isShiny": false
-      },
-      "metang": {
-        "isShiny": false
-      },
-      "duskull": {
-        "isShiny": false
-      },
-      "larvitar": {
-        "isShiny": false
-      },
-      "bellsprout": {
-        "isShiny": false
-      },
-      "gorebyss": {
-        "isShiny": false
-      },
-      "clodsire": {
-        "isShiny": false
-      },
-      "tentacool": {
-        "isShiny": false
-      },
-      "shelmet": {
-        "isShiny": false
-      },
-      "lucario": {
-        "isShiny": false
-      },
-      "psyduck": {
-        "isShiny": true
-      },
-      "torchic": {
-        "isShiny": true
-      },
-      "kricketot": {
-        "isShiny": true
-      },
-      "sneasel": {
-        "isShiny": true
-      },
-      "vespiquen": {
-        "isShiny": true
-      },
-      "scizor": {
-        "isShiny": true
-      },
-      "treecko": {
-        "isShiny": true
-      },
-      "masquerain": {
-        "isShiny": true
-      },
-      "bibarel": {
-        "isShiny": true
-      },
-      "eevee": {
-        "isShiny": true
-      },
-      "cloyster": {
-        "isShiny": true
-      },
-      "ferrothorn": {
-        "isShiny": true
-      },
-      "armaldo": {
-        "isShiny": false
-      },
-      "bayleef": {
-        "isShiny": true
-      },
-      "pidgeot": {
-        "isShiny": true
-      },
-      "raikou": {
-        "isShiny": true
-      },
-      "mienfoo": {
-        "isShiny": true
-      },
-      "marshtomp": {
-        "isShiny": false
-      },
-      "electrike": {
-        "isShiny": true
-      },
-      "tirtouga": {
-        "isShiny": true
-      },
-      "raichu": {
-        "isShiny": false
-      },
-      "swellow": {
-        "isShiny": true
-      },
-      "magnemite": {
-        "isShiny": true
-      },
-      "metagross": {
-        "isShiny": true
-      },
-      "barboach": {
-        "isShiny": true
-      },
-      "fletchling": {
-        "isShiny": true
-      },
-      "arbok": {
-        "isShiny": true
-      },
-      "riolu": {
-        "isShiny": true
-      },
-      "aipom": {
-        "isShiny": true
-      },
-      "mesprit": {
-        "isShiny": false
-      },
-      "mew": {
-        "isShiny": true
-      },
-      "tangrowth": {
-        "isShiny": true
-      },
-      "vanillish": {
-        "isShiny": false
-      },
-      "dusclops": {
-        "isShiny": true
-      },
-      "hariyama": {
-        "isShiny": true
-      },
-      "infernape": {
-        "isShiny": true
-      },
-      "paras": {
-        "isShiny": true
-      },
-      "chewtle": {
-        "isShiny": false
-      },
-      "kubfu": {
-        "isShiny": false
-      },
-      "munna": {
-        "isShiny": true
-      },
-      "smoochum": {
-        "isShiny": false
-      },
-      "persian": {
-        "isShiny": false
-      },
-      "snorunt": {
-        "isShiny": false
-      },
-      "swanna": {
-        "isShiny": false
-      },
-      "starly": {
-        "isShiny": false
-      },
-      "corsola": {
-        "isShiny": false
-      },
-      "pelipper": {
-        "isShiny": false
-      },
-      "reuniclus": {
-        "isShiny": false
-      },
-      "zarude": {
-        "isShiny": false
-      },
-      "pecharunt": {
-        "isShiny": false
-      },
-      "shuckle": {
-        "isShiny": false
-      },
-      "manectric": {
-        "isShiny": false
-      },
-      "seadra": {
-        "isShiny": false
-      },
-      "gogoat": {
-        "isShiny": false
-      },
-      "wartortle": {
-        "isShiny": false
-      },
-      "electabuzz": {
-        "isShiny": false
-      },
-      "ledyba": {
-        "isShiny": false
-      },
-      "butterfree": {
-        "isShiny": true
-      },
-      "victreebel": {
-        "isShiny": false
-      },
-      "dewpider": {
-        "isShiny": false
-      },
-      "wattrel": {
-        "isShiny": false
-      },
-      "skiploom": {
-        "isShiny": false
-      },
-      "dragonair": {
-        "isShiny": false
-      },
-      "vigoroth": {
-        "isShiny": false
-      },
-      "kingler": {
-        "isShiny": false
-      },
-      "torracat": {
-        "isShiny": false
-      },
-      "mamoswine": {
-        "isShiny": false
-      },
-      "quagsire": {
-        "isShiny": false
-      },
-      "ursaring": {
-        "isShiny": false
-      },
-      "swablu": {
-        "isShiny": false
-      },
-      "cascoon": {
-        "isShiny": false
-      },
-      "wailmer": {
-        "isShiny": false
-      },
-      "archeops": {
-        "isShiny": false
-      },
-      "klawf": {
-        "isShiny": false
-      },
-      "zeraora": {
-        "isShiny": false
-      },
-      "drapion": {
-        "isShiny": false
-      },
-      "bellossom": {
-        "isShiny": false
-      },
-      "surskit": {
-        "isShiny": false
-      },
-      "snom": {
-        "isShiny": false
-      },
-      "hippowdon": {
-        "isShiny": false
-      },
-      "remoraid": {
-        "isShiny": false
-      },
-      "feebas": {
-        "isShiny": false
-      },
-      "zorua": {
-        "isShiny": false
-      },
-      "purugly": {
-        "isShiny": false
-      },
-      "murkrow": {
-        "isShiny": false
-      },
-      "archaludon": {
-        "isShiny": false
-      },
-      "rolycoly": {
-        "isShiny": false
-      },
-      "rapidash": {
-        "isShiny": false
-      },
-      "dewgong": {
-        "isShiny": false
-      },
-      "escavalier": {
-        "isShiny": false
-      },
-      "flareon": {
-        "isShiny": false
-      },
-      "mothim": {
-        "isShiny": false
-      },
-      "dudunsparce": {
-        "isShiny": false
-      },
-      "nidorino": {
-        "isShiny": false
-      },
-      "froakie": {
-        "isShiny": false
-      },
-      "pumpkaboo": {
-        "isShiny": false
-      },
-      "duosion": {
-        "isShiny": false
-      },
-      "hawlucha": {
-        "isShiny": false
-      },
-      "shieldon": {
-        "isShiny": false
-      },
-      "ambipom": {
-        "isShiny": false
-      },
-      "tepig": {
-        "isShiny": false
-      },
-      "sinistcha": {
-        "isShiny": false
-      },
-      "yamask": {
-        "isShiny": false
-      },
-      "joltik": {
-        "isShiny": false
-      },
-      "staravia": {
-        "isShiny": false
-      },
-      "aegislash": {
-        "isShiny": false
-      },
-      "timburr": {
-        "isShiny": false
-      },
-      "lombre": {
-        "isShiny": false
-      },
-      "kommo-o": {
-        "isShiny": false
-      },
-      "wooper": {
-        "isShiny": false
-      },
-      "tympole": {
-        "isShiny": false
-      },
-      "combusken": {
-        "isShiny": false
-      },
-      "staryu": {
-        "isShiny": false
-      },
-      "kingambit": {
-        "isShiny": false
-      },
-      "zigzagoon": {
-        "isShiny": false
-      },
-      "electivire": {
-        "isShiny": false
-      },
-      "xurkitree": {
-        "isShiny": false
-      },
-      "genesect": {
-        "isShiny": false
-      },
-      "capsakid": {
-        "isShiny": false
-      }
-    },
-    "activePokemon": {
-      "name": "Giratina",
-      "level": 68,
-      "rarity": "<:SR:1259113778747015233>",
-      "isShiny": false,
-      "moves": [
-        "Tackle"
-      ],
-      "exp": 13153,
-      "type": "Ghost/Dragon",
-      "types": [
-        "Ghost",
-        "Dragon"
-      ],
-      "growthType": "Slow"
-    },
-    "selectedPokemon": 11,
-    "exp": 76580,
-    "raidCatchAttempts": 1
-  },
   "1161987382992719936": {
     "id": "1161987382992719936",
     "region": "kanto",
@@ -13767,185 +11328,6 @@
     "created": "2024-10-09T18:27:46.704Z",
     "lastWildEncounter": 0
   },
-  "973983152701849610": {
-    "id": "973983152701849610",
-    "region": "kanto",
-    "pokemon": [
-      {
-        "name": "Groudon",
-        "level": 93,
-        "rarity": "<:LR:1259113497053233162>",
-        "isShiny": true,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 510794,
-        "catchRate": 100,
-        "types": [
-          "Ground",
-          "Fire"
-        ],
-        "growthType": "Fast"
-      },
-      {
-        "name": "Finizen",
-        "level": 4,
-        "isShiny": false,
-        "rarity": "<:U_:1259114756313452680>",
-        "types": [
-          "Water"
-        ]
-      },
-      {
-        "name": "Groudon",
-        "level": 9,
-        "rarity": "<:LR:1259113497053233162>",
-        "isShiny": true,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "catchRate": 100,
-        "types": [
-          "Ground",
-          "Fire"
-        ]
-      },
-      {
-        "name": "Oranguru",
-        "level": 4,
-        "isShiny": false,
-        "rarity": "<:n_:1259114941873520734>",
-        "types": [
-          "Normal",
-          "Psychic"
-        ]
-      },
-      {
-        "name": "Sandslash",
-        "level": 16,
-        "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>",
-        "types": [
-          "Ice",
-          "Steel"
-        ]
-      },
-      {
-        "name": "Groudon",
-        "level": 1,
-        "rarity": "<:LR:1259113497053233162>",
-        "isShiny": true,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "catchRate": 100,
-        "types": [
-          "Ground",
-          "Fire"
-        ]
-      },
-      {
-        "name": "Charizard",
-        "level": 90,
-        "rarity": "<:LR:1259113497053233162>",
-        "isShiny": false,
-        "moves": [
-          "Tackle"
-        ],
-        "exp": 0,
-        "catchRate": 100,
-        "types": [
-          "Fire",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Spearow",
-        "level": 34,
-        "isShiny": false,
-        "rarity": "<:r_:1259114608426487839>",
-        "types": [
-          "Normal",
-          "Flying"
-        ]
-      },
-      {
-        "name": "Gible",
-        "level": 6,
-        "isShiny": false,
-        "rarity": "<:SR:1259113778747015233>",
-        "types": [
-          "Dragon",
-          "Ground"
-        ]
-      }
-    ],
-    "caughtPokemon": {
-      "finizen": {
-        "isShiny": false
-      },
-      "oranguru": {
-        "isShiny": false
-      },
-      "sandslash": {
-        "isShiny": false
-      },
-      "spearow": {
-        "isShiny": false
-      },
-      "gible": {
-        "isShiny": false
-      }
-    },
-    "selectedPokemon": 6,
-    "items": {
-      "pokeball": 0,
-      "greatball": 0,
-      "ultraball": 3,
-      "masterball": 0,
-      "rarecandy": 0
-    },
-    "money": 6955,
-    "lastDaily": null,
-    "created": "2024-10-11T09:37:16.012Z",
-    "lastWildEncounter": 1731172534648,
-    "currentWildPokemon": {
-      "name": "Gible",
-      "types": [
-        "Dragon",
-        "Ground"
-      ],
-      "level": 6,
-      "exp": 0,
-      "isShiny": false,
-      "moves": [
-        "Tackle"
-      ],
-      "catchRate": 100,
-      "rarity": "<:SR:1259113778747015233>",
-      "growthType": "MediumFast",
-      "defeated": false,
-      "encounterId": "e2fb9cb8-882c-40a2-99d3-f7fe0a973ae3"
-    },
-    "activePokemon": {
-      "name": "Charizard",
-      "level": 93,
-      "rarity": "<:LR:1259113497053233162>",
-      "isShiny": false,
-      "moves": [
-        "Tackle"
-      ],
-      "exp": 510794,
-      "catchRate": 100,
-      "types": [
-        "Fire",
-        "Flying"
-      ],
-      "growthType": "Erratic"
-    }
-  },
   "812953272142135307": {
     "id": "812953272142135307",
     "region": "johto",
@@ -13953,7 +11335,7 @@
       {
         "name": "Chikorita",
         "rarity": "<:SR:1259113778747015233>",
-        "exp": 1557101,
+        "exp": null,
         "growthType": "Slow",
         "level": 100,
         "types": [
@@ -14415,6 +11797,686 @@
           "Bug",
           "Psychic"
         ]
+      },
+      {
+        "name": "Bellibolt",
+        "level": 20,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Electric"
+        ]
+      },
+      {
+        "name": "Buneary",
+        "level": 20,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Tyranitar",
+        "level": 100,
+        "isShiny": false,
+        "rarity": "<:UR:1259113669925539902>",
+        "types": [
+          "Rock",
+          "Dark"
+        ],
+        "exp": 296291.06
+      },
+      {
+        "name": "Sewaddle",
+        "level": 24,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Bug",
+          "Grass"
+        ]
+      },
+      {
+        "name": "Tyrogue",
+        "level": 20,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Fighting"
+        ]
+      },
+      {
+        "name": "Unown",
+        "level": 10,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Corviknight",
+        "level": 17,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Flying",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Stufful",
+        "level": 14,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Normal",
+          "Fighting"
+        ]
+      },
+      {
+        "name": "Koraidon",
+        "level": 23,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Fighting",
+          "Dragon"
+        ]
+      },
+      {
+        "name": "Malamar",
+        "level": 39,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Dark",
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Swablu",
+        "level": 18,
+        "isShiny": false,
+        "rarity": "<:UR:1259113669925539902>",
+        "types": [
+          "Normal",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Lokix",
+        "level": 47,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Bug",
+          "Dark"
+        ]
+      },
+      {
+        "name": "Greedent",
+        "level": 7,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Chandelure",
+        "level": 21,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Ghost",
+          "Fire"
+        ]
+      },
+      {
+        "name": "Pawmot",
+        "level": 30,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Electric",
+          "Fighting"
+        ]
+      },
+      {
+        "name": "Charjabug",
+        "level": 9,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Bug",
+          "Electric"
+        ]
+      },
+      {
+        "name": "Tirtouga",
+        "level": 5,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Water",
+          "Rock"
+        ]
+      },
+      {
+        "name": "Corviknight",
+        "level": 2,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Flying",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Shroodle",
+        "level": 40,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Poison",
+          "Normal"
+        ]
+      },
+      {
+        "name": "Lokix",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": true,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Bug",
+          "Dark"
+        ]
+      },
+      {
+        "name": "Dipplin",
+        "level": 25,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Grass",
+          "Dragon"
+        ]
+      },
+      {
+        "name": "Kilowattrel",
+        "level": 5,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Electric",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Nihilego",
+        "level": 43,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Rock",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Arcanine",
+        "level": 30,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Fire",
+          "Rock"
+        ]
+      },
+      {
+        "name": "Snom",
+        "level": 29,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Ice",
+          "Bug"
+        ]
+      },
+      {
+        "name": "Arrokuda",
+        "level": 10,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Squirtle",
+        "level": 33,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Blacephalon",
+        "level": 23,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Fire",
+          "Ghost"
+        ]
+      },
+      {
+        "name": "Quilava",
+        "level": 23,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Fire"
+        ]
+      },
+      {
+        "name": "Bouffalant",
+        "level": 24,
+        "isShiny": false,
+        "rarity": "<:UR:1259113669925539902>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Zarude",
+        "level": 1,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Dark",
+          "Grass"
+        ]
+      },
+      {
+        "name": "Glaceon",
+        "level": 10,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Ice"
+        ]
+      },
+      {
+        "name": "Cyclizar",
+        "level": 28,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Dragon",
+          "Normal"
+        ]
+      },
+      {
+        "name": "Nosepass",
+        "level": 20,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Rock"
+        ]
+      },
+      {
+        "name": "Treecko",
+        "level": 44,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Grass"
+        ]
+      },
+      {
+        "name": "Bellibolt",
+        "level": 46,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Electric"
+        ]
+      },
+      {
+        "name": "Whismur",
+        "level": 12,
+        "isShiny": false,
+        "rarity": "<:UR:1259113669925539902>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Hawlucha",
+        "level": 12,
+        "isShiny": false,
+        "rarity": "<:UR:1259113669925539902>",
+        "types": [
+          "Fighting",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Lechonk",
+        "level": 22,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Wattrel",
+        "level": 5,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Electric",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Latios",
+        "level": 32,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Dragon",
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Palpitoad",
+        "level": 40,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Water",
+          "Ground"
+        ]
+      },
+      {
+        "name": "Primarina",
+        "level": 33,
+        "isShiny": true,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Water",
+          "Fairy"
+        ]
+      },
+      {
+        "name": "Zigzagoon",
+        "level": 42,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Dark",
+          "Normal"
+        ]
+      },
+      {
+        "name": "Ninjask",
+        "level": 44,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Bug",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Baxcalibur",
+        "level": 14,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Dragon",
+          "Ice"
+        ]
+      },
+      {
+        "name": "Thwackey",
+        "level": 14,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Grass"
+        ]
+      },
+      {
+        "name": "Zorua",
+        "level": 43,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Normal",
+          "Ghost"
+        ]
+      },
+      {
+        "name": "Lumineon",
+        "level": 23,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Chi-yu",
+        "level": 14,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Swirlix",
+        "level": 39,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Fairy"
+        ]
+      },
+      {
+        "name": "Braviary",
+        "level": 32,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Psychic",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Cutiefly",
+        "level": 46,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Bug",
+          "Fairy"
+        ]
+      },
+      {
+        "name": "Emboar",
+        "level": 17,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Fire",
+          "Fighting"
+        ]
+      },
+      {
+        "name": "Yamper",
+        "level": 21,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Electric"
+        ]
+      },
+      {
+        "name": "Ursaring",
+        "level": 31,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Tinkaton",
+        "level": 5,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Fairy",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Appletun",
+        "level": 20,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Grass",
+          "Dragon"
+        ]
+      },
+      {
+        "name": "Pecharunt",
+        "level": 43,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Poison",
+          "Ghost"
+        ]
+      },
+      {
+        "name": "Weavile",
+        "level": 50,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Dark",
+          "Ice"
+        ]
+      },
+      {
+        "name": "Glimmet",
+        "level": 47,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Rock",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Chespin",
+        "level": 1,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Grass"
+        ]
+      },
+      {
+        "name": "Zamazenta",
+        "level": 10,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Fighting",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Lampent",
+        "level": 37,
+        "isShiny": false,
+        "rarity": "<:UR:1259113669925539902>",
+        "types": [
+          "Ghost",
+          "Fire"
+        ]
+      },
+      {
+        "name": "Minccino",
+        "level": 32,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Shelgon",
+        "level": 43,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Dragon"
+        ]
+      },
+      {
+        "name": "Golem",
+        "level": 29,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Rock",
+          "Electric"
+        ]
+      },
+      {
+        "name": "Electrode",
+        "level": 11,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Electric",
+          "Grass"
+        ]
+      },
+      {
+        "name": "Kecleon",
+        "level": 22,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Pyukumuku",
+        "level": 10,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Water"
+        ]
       }
     ],
     "caughtPokemon": {
@@ -14549,54 +12611,247 @@
       },
       "rabsca": {
         "isShiny": false
+      },
+      "bellibolt": {
+        "isShiny": false
+      },
+      "buneary": {
+        "isShiny": false
+      },
+      "tyranitar": {
+        "isShiny": false
+      },
+      "sewaddle": {
+        "isShiny": true
+      },
+      "tyrogue": {
+        "isShiny": false
+      },
+      "unown": {
+        "isShiny": false
+      },
+      "corviknight": {
+        "isShiny": false
+      },
+      "stufful": {
+        "isShiny": false
+      },
+      "koraidon": {
+        "isShiny": false
+      },
+      "malamar": {
+        "isShiny": false
+      },
+      "swablu": {
+        "isShiny": false
+      },
+      "lokix": {
+        "isShiny": false
+      },
+      "greedent": {
+        "isShiny": false
+      },
+      "chandelure": {
+        "isShiny": false
+      },
+      "pawmot": {
+        "isShiny": false
+      },
+      "charjabug": {
+        "isShiny": false
+      },
+      "tirtouga": {
+        "isShiny": false
+      },
+      "shroodle": {
+        "isShiny": false
+      },
+      "dipplin": {
+        "isShiny": false
+      },
+      "kilowattrel": {
+        "isShiny": false
+      },
+      "nihilego": {
+        "isShiny": false
+      },
+      "arcanine": {
+        "isShiny": false
+      },
+      "snom": {
+        "isShiny": false
+      },
+      "arrokuda": {
+        "isShiny": false
+      },
+      "squirtle": {
+        "isShiny": false
+      },
+      "blacephalon": {
+        "isShiny": false
+      },
+      "quilava": {
+        "isShiny": false
+      },
+      "bouffalant": {
+        "isShiny": false
+      },
+      "zarude": {
+        "isShiny": false
+      },
+      "glaceon": {
+        "isShiny": false
+      },
+      "cyclizar": {
+        "isShiny": false
+      },
+      "nosepass": {
+        "isShiny": false
+      },
+      "treecko": {
+        "isShiny": false
+      },
+      "whismur": {
+        "isShiny": false
+      },
+      "hawlucha": {
+        "isShiny": false
+      },
+      "lechonk": {
+        "isShiny": false
+      },
+      "wattrel": {
+        "isShiny": false
+      },
+      "palpitoad": {
+        "isShiny": false
+      },
+      "primarina": {
+        "isShiny": true
+      },
+      "zigzagoon": {
+        "isShiny": false
+      },
+      "ninjask": {
+        "isShiny": false
+      },
+      "baxcalibur": {
+        "isShiny": false
+      },
+      "thwackey": {
+        "isShiny": false
+      },
+      "zorua": {
+        "isShiny": false
+      },
+      "lumineon": {
+        "isShiny": false
+      },
+      "chi-yu": {
+        "isShiny": false
+      },
+      "swirlix": {
+        "isShiny": false
+      },
+      "braviary": {
+        "isShiny": false
+      },
+      "cutiefly": {
+        "isShiny": false
+      },
+      "emboar": {
+        "isShiny": false
+      },
+      "yamper": {
+        "isShiny": false
+      },
+      "ursaring": {
+        "isShiny": false
+      },
+      "tinkaton": {
+        "isShiny": false
+      },
+      "appletun": {
+        "isShiny": false
+      },
+      "pecharunt": {
+        "isShiny": false
+      },
+      "weavile": {
+        "isShiny": false
+      },
+      "glimmet": {
+        "isShiny": false
+      },
+      "chespin": {
+        "isShiny": false
+      },
+      "zamazenta": {
+        "isShiny": false
+      },
+      "lampent": {
+        "isShiny": false
+      },
+      "minccino": {
+        "isShiny": false
+      },
+      "shelgon": {
+        "isShiny": false
+      },
+      "golem": {
+        "isShiny": false
+      },
+      "electrode": {
+        "isShiny": false
+      },
+      "kecleon": {
+        "isShiny": false
       }
     },
-    "selectedPokemon": 9,
+    "selectedPokemon": 49,
     "items": {
+      "4": 988,
+      "5": 1290,
       "pokeball": 0,
       "greatball": 0,
-      "ultraball": 958,
-      "masterball": 96,
+      "ultraball": 901,
+      "masterball": 88,
       "rarecandy": 0,
-      "raidball": 0
+      "raidball": 0,
+      "rare_candy": 396
     },
-    "money": 91073825,
+    "money": 9999982072110,
     "lastDaily": null,
     "created": "2024-10-11T11:30:15.394Z",
-    "lastWildEncounter": 1731173646491,
+    "lastWildEncounter": 1731691797203,
     "currentWildPokemon": {
-      "name": "Rabsca",
+      "name": "Pyukumuku",
       "types": [
-        "Bug",
-        "Psychic"
+        "Water"
       ],
-      "level": 43,
+      "level": 10,
       "exp": 0,
       "isShiny": false,
       "moves": [
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:U_:1259114756313452680>",
+      "rarity": "<:n_:1259114941873520734>",
       "growthType": "Erratic",
       "defeated": false,
-      "encounterId": "da413c2e-85ed-4687-a773-da50cd4832b4"
+      "encounterId": "198e8d6e-61eb-4cbc-b9e9-8f8e9f9e16c0"
     },
     "activePokemon": {
-      "name": "Groudon",
+      "name": "Tyranitar",
       "level": 100,
-      "rarity": "<:LR:1259113497053233162>",
-      "isShiny": true,
-      "moves": [
-        "Tackle"
-      ],
-      "exp": 1557101,
-      "catchRate": 100,
+      "isShiny": false,
+      "rarity": "<:UR:1259113669925539902>",
       "types": [
-        "Ground",
-        "Fire"
+        "Rock",
+        "Dark"
       ],
-      "growthType": "Erratic"
+      "growthType": "MediumFast",
+      "exp": null
     },
     "exp": 12600,
     "raidCatchAttempts": 3
@@ -14870,7 +13125,7 @@
       {
         "name": "Torchic",
         "rarity": "<:SR:1259113778747015233>",
-        "exp": 16459,
+        "exp": 128012,
         "growthType": "MediumSlow",
         "level": 100,
         "types": [
@@ -14936,6 +13191,930 @@
         "types": [
           "Water"
         ]
+      },
+      {
+        "name": "Bewear",
+        "level": 36,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Normal",
+          "Fighting"
+        ]
+      },
+      {
+        "name": "Lillipup",
+        "level": 45,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Metapod",
+        "level": 16,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Bug"
+        ]
+      },
+      {
+        "name": "Torchic",
+        "level": 3,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Fire"
+        ]
+      },
+      {
+        "name": "Flareon",
+        "level": 10,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Fire"
+        ]
+      },
+      {
+        "name": "Charizard-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Gengar-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Pikachu",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Electric"
+        ]
+      },
+      {
+        "name": "Dragonite",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Dragon",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Mewtwo-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Umbreon",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Dark"
+        ]
+      },
+      {
+        "name": "Tyranitar",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Rock",
+          "Dark"
+        ]
+      },
+      {
+        "name": "Gardevoir-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Metagross-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Lucario-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Rayquaza-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Garchomp",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Dragon",
+          "Ground"
+        ]
+      },
+      {
+        "name": "Greninja",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Water",
+          "Dark"
+        ]
+      },
+      {
+        "name": "Aegislash",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Steel",
+          "Ghost"
+        ]
+      },
+      {
+        "name": "Sylveon",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 37480.95999999999,
+        "catchRate": 100,
+        "types": [
+          "Fairy"
+        ]
+      },
+      {
+        "name": "Salamence-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Mawile-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Excadrill",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Ground",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Landorus-Therian",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Tapu Koko",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Incineroar",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Fire",
+          "Dark"
+        ]
+      },
+      {
+        "name": "Zacian-Crowned",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Urshifu",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Fighting",
+          "Water"
+        ]
+      },
+      {
+        "name": "Blaziken-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Kangaskhan-Mega",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Cinderace",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Fire"
+        ]
+      },
+      {
+        "name": "Kartana",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Grass",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Zoroark",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Normal",
+          "Ghost"
+        ]
+      },
+      {
+        "name": "Heatran",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Fire",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Scizor",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Bug",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Delcatty",
+        "level": 46,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Fraxure",
+        "level": 12,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Dragon"
+        ]
+      },
+      {
+        "name": "Lucario",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Fighting",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Weavile",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 11543.780000000002,
+        "catchRate": 100,
+        "types": [
+          "Dark",
+          "Ice"
+        ]
+      },
+      {
+        "name": "Pheromosa",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Bug",
+          "Fighting"
+        ]
+      },
+      {
+        "name": "Hoopa-Unbound",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Xurkitree",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Electric"
+        ]
+      },
+      {
+        "name": "Xerneas",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Fairy"
+        ]
+      },
+      {
+        "name": "Conkeldurr",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Fighting"
+        ]
+      },
+      {
+        "name": "Reshiram",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Dragon",
+          "Fire"
+        ]
+      },
+      {
+        "name": "Yveltal",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Dark",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Spectrier",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Ghost"
+        ]
+      },
+      {
+        "name": "Rillaboom",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Grass"
+        ]
+      },
+      {
+        "name": "Groudon",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Ground",
+          "Fire"
+        ]
+      },
+      {
+        "name": "Kyurem-Black",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Slaking",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Nihilego",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Rock",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Deoxys-Attack",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Tyrantrum",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 30888.190000000002,
+        "catchRate": 100,
+        "types": [
+          "Rock",
+          "Dragon"
+        ]
+      },
+      {
+        "name": "Duraludon",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Steel",
+          "Dragon"
+        ]
+      },
+      {
+        "name": "Palkia",
+        "level": 100,
+        "rarity": "<:LR:1259113497053233162>",
+        "isShiny": false,
+        "moves": [
+          "Tackle"
+        ],
+        "exp": 0,
+        "catchRate": 100,
+        "types": [
+          "Water",
+          "Dragon"
+        ]
+      },
+      {
+        "name": "Numel",
+        "level": 28,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Fire",
+          "Ground"
+        ]
+      },
+      {
+        "name": "Meowstic",
+        "level": 25,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Xatu",
+        "level": 10,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Psychic",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Kleavor",
+        "level": 4,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Bug",
+          "Rock"
+        ]
+      },
+      {
+        "name": "Bunnelby",
+        "level": 7,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Golisopod",
+        "level": 37,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Bug",
+          "Water"
+        ]
+      },
+      {
+        "name": "Sudowoodo",
+        "level": 3,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Rock"
+        ]
+      },
+      {
+        "name": "Electrike",
+        "level": 35,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Electric"
+        ]
+      },
+      {
+        "name": "Pawmot",
+        "level": 2,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Electric",
+          "Fighting"
+        ]
+      },
+      {
+        "name": "Floette",
+        "level": 17,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Fairy"
+        ]
+      },
+      {
+        "name": "Swirlix",
+        "level": 25,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Fairy"
+        ]
+      },
+      {
+        "name": "Claydol",
+        "level": 38,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Ground",
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Sentret",
+        "level": 30,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Ekans",
+        "level": 31,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Poison"
+        ]
+      },
+      {
+        "name": "Electrode",
+        "level": 44,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Electric",
+          "Grass"
+        ]
+      },
+      {
+        "name": "Vileplume",
+        "level": 43,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Grass",
+          "Poison"
+        ]
       }
     ],
     "caughtPokemon": {
@@ -14947,51 +14126,939 @@
       },
       "feraligatr": {
         "isShiny": false
+      },
+      "bewear": {
+        "isShiny": false
+      },
+      "lillipup": {
+        "isShiny": false
+      },
+      "metapod": {
+        "isShiny": false
+      },
+      "torchic": {
+        "isShiny": false
+      },
+      "flareon": {
+        "isShiny": false
+      },
+      "delcatty": {
+        "isShiny": false
+      },
+      "fraxure": {
+        "isShiny": false
+      },
+      "numel": {
+        "isShiny": false
+      },
+      "meowstic": {
+        "isShiny": false
+      },
+      "xatu": {
+        "isShiny": false
+      },
+      "kleavor": {
+        "isShiny": false
+      },
+      "bunnelby": {
+        "isShiny": false
+      },
+      "golisopod": {
+        "isShiny": false
+      },
+      "sudowoodo": {
+        "isShiny": false
+      },
+      "electrike": {
+        "isShiny": false
+      },
+      "pawmot": {
+        "isShiny": false
+      },
+      "floette": {
+        "isShiny": false
+      },
+      "swirlix": {
+        "isShiny": false
+      },
+      "claydol": {
+        "isShiny": false
+      },
+      "sentret": {
+        "isShiny": false
+      },
+      "ekans": {
+        "isShiny": false
+      },
+      "electrode": {
+        "isShiny": false
+      },
+      "vileplume": {
+        "isShiny": false
       }
     },
-    "selectedPokemon": 1,
+    "selectedPokemon": 59,
     "items": {
+      "4": 1497,
       "pokeball": 4,
       "greatball": 0,
       "ultraball": 0,
-      "masterball": 9997,
-      "rarecandy": 0
+      "masterball": 9977,
+      "rarecandy": 0,
+      "raidball": 12
     },
-    "money": 9999000001490,
+    "money": 9998852554066,
     "lastDaily": null,
     "created": "2024-11-11T15:07:55.168Z",
-    "lastWildEncounter": 1731337902785,
+    "lastWildEncounter": 1739714618728,
     "currentWildPokemon": {
-      "name": "Feraligatr",
+      "name": "Vileplume",
       "types": [
-        "Water"
+        "Unknown"
       ],
-      "level": 22,
+      "level": 43,
       "exp": 0,
       "isShiny": false,
       "moves": [
         "Tackle"
       ],
       "catchRate": 100,
-      "rarity": "<:U_:1259114756313452680>",
-      "growthType": "Erratic",
+      "rarity": "<:n_:1259114941873520734>",
+      "growthType": "Fluctuating",
       "defeated": false,
-      "encounterId": "65760768-dbbc-4c80-bf06-ac21139eb24a"
+      "encounterId": "f8a73019-4dbc-4402-b650-ca0eab561dcf"
     },
     "activePokemon": {
-      "name": "Rayquaza-Mega",
+      "name": "Tyrantrum",
       "level": 100,
       "rarity": "<:LR:1259113497053233162>",
-      "isShiny": true,
+      "isShiny": false,
       "moves": [
         "Tackle"
       ],
-      "exp": 16459,
+      "exp": 0,
       "catchRate": 100,
+      "types": [
+        "Rock",
+        "Dragon"
+      ],
+      "growthType": "MediumSlow"
+    },
+    "exp": 51000,
+    "raidCatchAttempts": 2
+  },
+  "973983152701849610": {
+    "id": "973983152701849610",
+    "region": "kanto",
+    "progress": {
+      "caughtPokemon": 0
+    },
+    "pokemon": [
+      {
+        "name": "Ivysaur",
+        "rarity": "<:SR:1259113778747015233>",
+        "exp": 1077.2099999999998,
+        "growthType": "Fluctuating",
+        "level": 21,
+        "types": [
+          "Grass"
+        ],
+        "moves": [
+          "Tackle",
+          "Growl"
+        ],
+        "spriteUrl": "https://play.pokemonshowdown.com/sprites/ani/ivysaur.gif"
+      },
+      {
+        "name": "Staryu",
+        "level": 2,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Flareon",
+        "level": 2,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Fire"
+        ]
+      },
+      {
+        "name": "Kabutops",
+        "level": 5,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Rock",
+          "Water"
+        ]
+      },
+      {
+        "name": "Lapras",
+        "level": 6,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Water",
+          "Ice"
+        ]
+      },
+      {
+        "name": "Chansey",
+        "level": 8,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Golbat",
+        "level": 2,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Poison",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Magneton",
+        "level": 8,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Electric",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Vileplume",
+        "level": 4,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Grass",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Caterpie",
+        "level": 11,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Bug"
+        ]
+      },
+      {
+        "name": "Poliwhirl",
+        "level": 12,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Tauros",
+        "level": 4,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Fighting",
+          "Water"
+        ]
+      },
+      {
+        "name": "Raichu",
+        "level": 2,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Electric",
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Seaking",
+        "level": 3,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Gastly",
+        "level": 15,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Ghost",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Omastar",
+        "level": 2,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Rock",
+          "Water"
+        ]
+      },
+      {
+        "name": "Gloom",
+        "level": 1,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Grass",
+          "Poison"
+        ]
+      }
+    ],
+    "caughtPokemon": {
+      "staryu": {
+        "isShiny": false
+      },
+      "flareon": {
+        "isShiny": false
+      },
+      "kabutops": {
+        "isShiny": false
+      },
+      "lapras": {
+        "isShiny": false
+      },
+      "chansey": {
+        "isShiny": false
+      },
+      "golbat": {
+        "isShiny": false
+      },
+      "magneton": {
+        "isShiny": false
+      },
+      "vileplume": {
+        "isShiny": false
+      },
+      "caterpie": {
+        "isShiny": false
+      },
+      "poliwhirl": {
+        "isShiny": false
+      },
+      "tauros": {
+        "isShiny": false
+      },
+      "raichu": {
+        "isShiny": false
+      },
+      "seaking": {
+        "isShiny": false
+      },
+      "gastly": {
+        "isShiny": false
+      },
+      "omastar": {
+        "isShiny": false
+      },
+      "gloom": {
+        "isShiny": false
+      }
+    },
+    "selectedPokemon": 0,
+    "items": {
+      "4": 84,
+      "pokeball": 5,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 0,
+      "rarecandy": 0
+    },
+    "money": 99999990002000,
+    "lastDaily": null,
+    "created": "2024-12-17T12:55:44.134Z",
+    "lastWildEncounter": 1740043706352,
+    "activePokemon": {
+      "name": "Ivysaur",
+      "rarity": "<:SR:1259113778747015233>",
+      "exp": 137.93999999999997,
+      "growthType": "Fluctuating",
+      "level": 16,
+      "types": [
+        "Grass"
+      ],
+      "moves": [
+        "Tackle",
+        "Growl"
+      ],
+      "spriteUrl": "https://play.pokemonshowdown.com/sprites/ani/ivysaur.gif"
+    },
+    "currentWildPokemon": {
+      "name": "Gloom",
       "types": [
         "Unknown"
       ],
-      "growthType": "MediumSlow"
+      "level": 1,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:r_:1259114608426487839>",
+      "growthType": "Fluctuating",
+      "defeated": false,
+      "encounterId": "fa102eed-d9e8-431a-9dcd-e39366bdde87"
+    }
+  },
+  "1027872140227268641": {
+    "id": "1027872140227268641",
+    "region": "kanto",
+    "progress": {
+      "caughtPokemon": 0
+    },
+    "pokemon": [
+      {
+        "name": "Blastoise",
+        "rarity": "<:SR:1259113778747015233>",
+        "exp": 2696.6300000000047,
+        "growthType": "Fast",
+        "level": 59,
+        "types": [
+          "Water"
+        ],
+        "moves": [
+          "Tackle",
+          "Tail Whip"
+        ],
+        "spriteUrl": "https://play.pokemonshowdown.com/sprites/ani/blastoise.gif"
+      },
+      {
+        "name": "Kingler",
+        "level": 5,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Gastly",
+        "level": 5,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Ghost",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Primeape",
+        "level": 4,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Fighting"
+        ]
+      },
+      {
+        "name": "Golem",
+        "level": 2,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Rock",
+          "Electric"
+        ]
+      },
+      {
+        "name": "Voltorb",
+        "level": 4,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Electric",
+          "Grass"
+        ]
+      },
+      {
+        "name": "Pidgeot",
+        "level": 2,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Normal",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Mankey",
+        "level": 8,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Fighting"
+        ]
+      },
+      {
+        "name": "Pikachu",
+        "level": 5,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Electric"
+        ]
+      },
+      {
+        "name": "Raichu",
+        "level": 2,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Electric",
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Machop",
+        "level": 1,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Fighting"
+        ]
+      },
+      {
+        "name": "Mr-mime",
+        "level": 7,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Unknown"
+        ]
+      },
+      {
+        "name": "Articuno",
+        "level": 6,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Psychic",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Chansey",
+        "level": 7,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Weedle",
+        "level": 8,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Bug",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Snorlax",
+        "level": 1,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Horsea",
+        "level": 6,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Ponyta",
+        "level": 11,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Psychic"
+        ]
+      },
+      {
+        "name": "Kangaskhan",
+        "level": 9,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Machop",
+        "level": 16,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Fighting"
+        ]
+      },
+      {
+        "name": "Geodude",
+        "level": 17,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Rock",
+          "Electric"
+        ]
+      },
+      {
+        "name": "Charmander",
+        "level": 3,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Fire"
+        ]
+      },
+      {
+        "name": "Weedle",
+        "level": 4,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Bug",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Blastoise",
+        "level": 21,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Dewgong",
+        "level": 1,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Water",
+          "Ice"
+        ]
+      },
+      {
+        "name": "Krabby",
+        "level": 12,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Weepinbell",
+        "level": 9,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Grass",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Ditto",
+        "level": 14,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Bulbasaur",
+        "level": 2,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Grass",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Ivysaur",
+        "level": 4,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Grass",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Goldeen",
+        "level": 25,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Water"
+        ]
+      },
+      {
+        "name": "Cloyster",
+        "level": 20,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Water",
+          "Ice"
+        ]
+      },
+      {
+        "name": "Snorlax",
+        "level": 2,
+        "isShiny": false,
+        "rarity": "<:UR:1259113669925539902>",
+        "types": [
+          "Normal"
+        ]
+      },
+      {
+        "name": "Sandslash",
+        "level": 22,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Ice",
+          "Steel"
+        ]
+      },
+      {
+        "name": "Machop",
+        "level": 16,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Fighting"
+        ]
+      },
+      {
+        "name": "Dodrio",
+        "level": 3,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Normal",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Jigglypuff",
+        "level": 20,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Normal",
+          "Fairy"
+        ]
+      },
+      {
+        "name": "Raticate",
+        "level": 32,
+        "isShiny": false,
+        "rarity": "<:r_:1259114608426487839>",
+        "types": [
+          "Dark",
+          "Normal"
+        ]
+      },
+      {
+        "name": "Gloom",
+        "level": 6,
+        "isShiny": false,
+        "rarity": "<:n_:1259114941873520734>",
+        "types": [
+          "Grass",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Tentacool",
+        "level": 21,
+        "isShiny": false,
+        "rarity": "<:SR:1259113778747015233>",
+        "types": [
+          "Water",
+          "Poison"
+        ]
+      },
+      {
+        "name": "Goldeen",
+        "level": 47,
+        "isShiny": false,
+        "rarity": "<:U_:1259114756313452680>",
+        "types": [
+          "Water"
+        ]
+      }
+    ],
+    "caughtPokemon": {
+      "kingler": {
+        "isShiny": false
+      },
+      "gastly": {
+        "isShiny": false
+      },
+      "primeape": {
+        "isShiny": false
+      },
+      "golem": {
+        "isShiny": false
+      },
+      "voltorb": {
+        "isShiny": false
+      },
+      "pidgeot": {
+        "isShiny": false
+      },
+      "mankey": {
+        "isShiny": false
+      },
+      "pikachu": {
+        "isShiny": false
+      },
+      "raichu": {
+        "isShiny": false
+      },
+      "machop": {
+        "isShiny": false
+      },
+      "mr-mime": {
+        "isShiny": false
+      },
+      "articuno": {
+        "isShiny": false
+      },
+      "chansey": {
+        "isShiny": false
+      },
+      "weedle": {
+        "isShiny": false
+      },
+      "snorlax": {
+        "isShiny": false
+      },
+      "horsea": {
+        "isShiny": false
+      },
+      "ponyta": {
+        "isShiny": false
+      },
+      "kangaskhan": {
+        "isShiny": false
+      },
+      "geodude": {
+        "isShiny": false
+      },
+      "charmander": {
+        "isShiny": false
+      },
+      "blastoise": {
+        "isShiny": false
+      },
+      "dewgong": {
+        "isShiny": false
+      },
+      "krabby": {
+        "isShiny": false
+      },
+      "weepinbell": {
+        "isShiny": false
+      },
+      "ditto": {
+        "isShiny": false
+      },
+      "bulbasaur": {
+        "isShiny": false
+      },
+      "ivysaur": {
+        "isShiny": false
+      },
+      "goldeen": {
+        "isShiny": false
+      },
+      "cloyster": {
+        "isShiny": false
+      },
+      "sandslash": {
+        "isShiny": false
+      },
+      "dodrio": {
+        "isShiny": false
+      },
+      "jigglypuff": {
+        "isShiny": false
+      },
+      "raticate": {
+        "isShiny": false
+      },
+      "gloom": {
+        "isShiny": false
+      },
+      "tentacool": {
+        "isShiny": false
+      }
+    },
+    "selectedPokemon": 0,
+    "items": {
+      "4": 260,
+      "pokeball": 5,
+      "greatball": 0,
+      "ultraball": 0,
+      "masterball": 0,
+      "rarecandy": 0
+    },
+    "money": 660001000,
+    "lastDaily": null,
+    "created": "2024-12-17T14:28:42.179Z",
+    "lastWildEncounter": 1734447315911,
+    "currentWildPokemon": {
+      "name": "Oddish",
+      "types": [
+        "Unknown"
+      ],
+      "level": 56,
+      "exp": 0,
+      "isShiny": false,
+      "moves": [
+        "Tackle"
+      ],
+      "catchRate": 100,
+      "rarity": "<:r_:1259114608426487839>",
+      "growthType": "Erratic",
+      "defeated": false,
+      "encounterId": "e1817546-6250-46d3-8683-7b59d738a417"
     }
   }
 }

@@ -1,44 +1,78 @@
 {
   "id": "973983152701849610",
-  "selectedPokemon": 6,
+  "selectedPokemon": 0,
   "activePokemon": {
-    "name": "Charizard",
-    "level": 90,
-    "rarity": "<:LR:1259113497053233162>",
-    "isShiny": false,
-    "moves": [
-      "Tackle"
-    ],
-    "exp": 0,
-    "catchRate": 100,
+    "name": "Ivysaur",
+    "rarity": "<:SR:1259113778747015233>",
+    "exp": 1077.2099999999998,
+    "growthType": "Fluctuating",
+    "level": 21,
     "types": [
-      "Fire",
-      "Flying"
-    ]
+      "Grass"
+    ],
+    "moves": [
+      "Tackle",
+      "Growl"
+    ],
+    "spriteUrl": "https://play.pokemonshowdown.com/sprites/ani/ivysaur.gif"
   },
-  "money": 6955,
+  "money": 99999990002000,
   "items": {
-    "pokeball": 0,
+    "4": 84,
+    "pokeball": 5,
     "greatball": 0,
-    "ultraball": 3,
+    "ultraball": 0,
     "masterball": 0,
     "rarecandy": 0
   },
-  "lastWildEncounter": 1731172534648,
+  "lastWildEncounter": 1740043706352,
   "caughtPokemon": {
-    "finizen": {
+    "staryu": {
       "isShiny": false
     },
-    "oranguru": {
+    "flareon": {
       "isShiny": false
     },
-    "sandslash": {
+    "kabutops": {
       "isShiny": false
     },
-    "spearow": {
+    "lapras": {
       "isShiny": false
     },
-    "gible": {
+    "chansey": {
+      "isShiny": false
+    },
+    "golbat": {
+      "isShiny": false
+    },
+    "magneton": {
+      "isShiny": false
+    },
+    "vileplume": {
+      "isShiny": false
+    },
+    "caterpie": {
+      "isShiny": false
+    },
+    "poliwhirl": {
+      "isShiny": false
+    },
+    "tauros": {
+      "isShiny": false
+    },
+    "raichu": {
+      "isShiny": false
+    },
+    "seaking": {
+      "isShiny": false
+    },
+    "gastly": {
+      "isShiny": false
+    },
+    "omastar": {
+      "isShiny": false
+    },
+    "gloom": {
       "isShiny": false
     }
   }

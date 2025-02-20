@@ -1,0 +1,6140 @@
+{
+  "bulbasaur": [
+    {
+      "level": 16,
+      "evolvesTo": "ivysaur",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "ivysaur",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "ivysaur",
+      "triggerType": "level-up"
+    }
+  ],
+  "ivysaur": [
+    {
+      "level": 32,
+      "evolvesTo": "venusaur",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "venusaur",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "venusaur",
+      "triggerType": "level-up"
+    }
+  ],
+  "charmander": [
+    {
+      "level": 16,
+      "evolvesTo": "charmeleon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "charmeleon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "charmeleon",
+      "triggerType": "level-up"
+    }
+  ],
+  "charmeleon": [
+    {
+      "level": 36,
+      "evolvesTo": "charizard",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "charizard",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "charizard",
+      "triggerType": "level-up"
+    }
+  ],
+  "squirtle": [
+    {
+      "level": 16,
+      "evolvesTo": "wartortle",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "wartortle",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "wartortle",
+      "triggerType": "level-up"
+    }
+  ],
+  "wartortle": [
+    {
+      "level": 36,
+      "evolvesTo": "blastoise",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "blastoise",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "blastoise",
+      "triggerType": "level-up"
+    }
+  ],
+  "caterpie": [
+    {
+      "level": 7,
+      "evolvesTo": "metapod",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 7,
+      "evolvesTo": "metapod",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 7,
+      "evolvesTo": "metapod",
+      "triggerType": "level-up"
+    }
+  ],
+  "metapod": [
+    {
+      "level": 10,
+      "evolvesTo": "butterfree",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 10,
+      "evolvesTo": "butterfree",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 10,
+      "evolvesTo": "butterfree",
+      "triggerType": "level-up"
+    }
+  ],
+  "weedle": [
+    {
+      "level": 7,
+      "evolvesTo": "kakuna",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 7,
+      "evolvesTo": "kakuna",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 7,
+      "evolvesTo": "kakuna",
+      "triggerType": "level-up"
+    }
+  ],
+  "kakuna": [
+    {
+      "level": 10,
+      "evolvesTo": "beedrill",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 10,
+      "evolvesTo": "beedrill",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 10,
+      "evolvesTo": "beedrill",
+      "triggerType": "level-up"
+    }
+  ],
+  "pidgey": [
+    {
+      "level": 18,
+      "evolvesTo": "pidgeotto",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "pidgeotto",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "pidgeotto",
+      "triggerType": "level-up"
+    }
+  ],
+  "pidgeotto": [
+    {
+      "level": 36,
+      "evolvesTo": "pidgeot",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "pidgeot",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "pidgeot",
+      "triggerType": "level-up"
+    }
+  ],
+  "rattata": [
+    {
+      "level": 20,
+      "evolvesTo": "raticate",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "raticate",
+      "triggerType": "level-up"
+    }
+  ],
+  "spearow": [
+    {
+      "level": 20,
+      "evolvesTo": "fearow",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "fearow",
+      "triggerType": "level-up"
+    }
+  ],
+  "ekans": [
+    {
+      "level": 22,
+      "evolvesTo": "arbok",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 22,
+      "evolvesTo": "arbok",
+      "triggerType": "level-up"
+    }
+  ],
+  "pichu": [],
+  "pikachu": [
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "raichu",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "raichu",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "raichu",
+      "triggerType": "use-item"
+    }
+  ],
+  "sandshrew": [
+    {
+      "level": 22,
+      "evolvesTo": "sandslash",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 22,
+      "evolvesTo": "sandslash",
+      "triggerType": "level-up"
+    }
+  ],
+  "nidoran-f": [
+    {
+      "level": 16,
+      "evolvesTo": "nidorina",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "nidorina",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "nidorina",
+      "triggerType": "level-up"
+    }
+  ],
+  "nidorina": [
+    {
+      "item": "moon-stone",
+      "evolvesTo": "nidoqueen",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "moon-stone",
+      "evolvesTo": "nidoqueen",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "moon-stone",
+      "evolvesTo": "nidoqueen",
+      "triggerType": "use-item"
+    }
+  ],
+  "nidoran-m": [
+    {
+      "level": 16,
+      "evolvesTo": "nidorino",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "nidorino",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "nidorino",
+      "triggerType": "level-up"
+    }
+  ],
+  "nidorino": [
+    {
+      "item": "moon-stone",
+      "evolvesTo": "nidoking",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "moon-stone",
+      "evolvesTo": "nidoking",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "moon-stone",
+      "evolvesTo": "nidoking",
+      "triggerType": "use-item"
+    }
+  ],
+  "cleffa": [],
+  "clefairy": [
+    {
+      "item": "moon-stone",
+      "evolvesTo": "clefable",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "moon-stone",
+      "evolvesTo": "clefable",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "moon-stone",
+      "evolvesTo": "clefable",
+      "triggerType": "use-item"
+    }
+  ],
+  "vulpix": [
+    {
+      "item": "fire-stone",
+      "evolvesTo": "ninetales",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "fire-stone",
+      "evolvesTo": "ninetales",
+      "triggerType": "use-item"
+    }
+  ],
+  "igglybuff": [],
+  "jigglypuff": [
+    {
+      "item": "moon-stone",
+      "evolvesTo": "wigglytuff",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "moon-stone",
+      "evolvesTo": "wigglytuff",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "moon-stone",
+      "evolvesTo": "wigglytuff",
+      "triggerType": "use-item"
+    }
+  ],
+  "zubat": [
+    {
+      "level": 22,
+      "evolvesTo": "golbat",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 22,
+      "evolvesTo": "golbat",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 22,
+      "evolvesTo": "golbat",
+      "triggerType": "level-up"
+    }
+  ],
+  "golbat": [],
+  "oddish": [
+    {
+      "level": 21,
+      "evolvesTo": "gloom",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 21,
+      "evolvesTo": "gloom",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 21,
+      "evolvesTo": "gloom",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 21,
+      "evolvesTo": "gloom",
+      "triggerType": "level-up"
+    }
+  ],
+  "gloom": [
+    {
+      "item": "leaf-stone",
+      "evolvesTo": "vileplume",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "sun-stone",
+      "evolvesTo": "bellossom",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "leaf-stone",
+      "evolvesTo": "vileplume",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "sun-stone",
+      "evolvesTo": "bellossom",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "leaf-stone",
+      "evolvesTo": "vileplume",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "sun-stone",
+      "evolvesTo": "bellossom",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "leaf-stone",
+      "evolvesTo": "vileplume",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "sun-stone",
+      "evolvesTo": "bellossom",
+      "triggerType": "use-item"
+    }
+  ],
+  "paras": [
+    {
+      "level": 24,
+      "evolvesTo": "parasect",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 24,
+      "evolvesTo": "parasect",
+      "triggerType": "level-up"
+    }
+  ],
+  "venonat": [
+    {
+      "level": 31,
+      "evolvesTo": "venomoth",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 31,
+      "evolvesTo": "venomoth",
+      "triggerType": "level-up"
+    }
+  ],
+  "diglett": [
+    {
+      "level": 26,
+      "evolvesTo": "dugtrio",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 26,
+      "evolvesTo": "dugtrio",
+      "triggerType": "level-up"
+    }
+  ],
+  "meowth": [
+    {
+      "level": 28,
+      "evolvesTo": "persian",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "perrserker",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "persian",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "perrserker",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "persian",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "perrserker",
+      "triggerType": "level-up"
+    }
+  ],
+  "psyduck": [
+    {
+      "level": 33,
+      "evolvesTo": "golduck",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 33,
+      "evolvesTo": "golduck",
+      "triggerType": "level-up"
+    }
+  ],
+  "mankey": [
+    {
+      "level": 28,
+      "evolvesTo": "primeape",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "primeape",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "primeape",
+      "triggerType": "level-up"
+    }
+  ],
+  "primeape": [],
+  "growlithe": [
+    {
+      "item": "fire-stone",
+      "evolvesTo": "arcanine",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "fire-stone",
+      "evolvesTo": "arcanine",
+      "triggerType": "use-item"
+    }
+  ],
+  "poliwag": [
+    {
+      "level": 25,
+      "evolvesTo": "poliwhirl",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "poliwhirl",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "poliwhirl",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "poliwhirl",
+      "triggerType": "level-up"
+    }
+  ],
+  "poliwhirl": [
+    {
+      "item": "water-stone",
+      "evolvesTo": "poliwrath",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "poliwrath",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "poliwrath",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "poliwrath",
+      "triggerType": "use-item"
+    }
+  ],
+  "abra": [
+    {
+      "level": 16,
+      "evolvesTo": "kadabra",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "kadabra",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "kadabra",
+      "triggerType": "level-up"
+    }
+  ],
+  "kadabra": [],
+  "machop": [
+    {
+      "level": 28,
+      "evolvesTo": "machoke",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "machoke",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "machoke",
+      "triggerType": "level-up"
+    }
+  ],
+  "machoke": [],
+  "bellsprout": [
+    {
+      "level": 21,
+      "evolvesTo": "weepinbell",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 21,
+      "evolvesTo": "weepinbell",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 21,
+      "evolvesTo": "weepinbell",
+      "triggerType": "level-up"
+    }
+  ],
+  "weepinbell": [
+    {
+      "item": "leaf-stone",
+      "evolvesTo": "victreebel",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "leaf-stone",
+      "evolvesTo": "victreebel",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "leaf-stone",
+      "evolvesTo": "victreebel",
+      "triggerType": "use-item"
+    }
+  ],
+  "tentacool": [
+    {
+      "level": 30,
+      "evolvesTo": "tentacruel",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "tentacruel",
+      "triggerType": "level-up"
+    }
+  ],
+  "geodude": [
+    {
+      "level": 25,
+      "evolvesTo": "graveler",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "graveler",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "graveler",
+      "triggerType": "level-up"
+    }
+  ],
+  "graveler": [],
+  "ponyta": [
+    {
+      "level": 40,
+      "evolvesTo": "rapidash",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "rapidash",
+      "triggerType": "level-up"
+    }
+  ],
+  "slowpoke": [
+    {
+      "level": 37,
+      "evolvesTo": "slowbro",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 37,
+      "evolvesTo": "slowbro",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 37,
+      "evolvesTo": "slowbro",
+      "triggerType": "level-up"
+    }
+  ],
+  "magnemite": [
+    {
+      "level": 30,
+      "evolvesTo": "magneton",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "magneton",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "magneton",
+      "triggerType": "level-up"
+    }
+  ],
+  "magneton": [],
+  "farfetchd": [],
+  "doduo": [
+    {
+      "level": 31,
+      "evolvesTo": "dodrio",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 31,
+      "evolvesTo": "dodrio",
+      "triggerType": "level-up"
+    }
+  ],
+  "seel": [
+    {
+      "level": 34,
+      "evolvesTo": "dewgong",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "dewgong",
+      "triggerType": "level-up"
+    }
+  ],
+  "grimer": [
+    {
+      "level": 38,
+      "evolvesTo": "muk",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 38,
+      "evolvesTo": "muk",
+      "triggerType": "level-up"
+    }
+  ],
+  "shellder": [
+    {
+      "item": "water-stone",
+      "evolvesTo": "cloyster",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "cloyster",
+      "triggerType": "use-item"
+    }
+  ],
+  "gastly": [
+    {
+      "level": 25,
+      "evolvesTo": "haunter",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "haunter",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "haunter",
+      "triggerType": "level-up"
+    }
+  ],
+  "haunter": [],
+  "onix": [],
+  "drowzee": [
+    {
+      "level": 26,
+      "evolvesTo": "hypno",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 26,
+      "evolvesTo": "hypno",
+      "triggerType": "level-up"
+    }
+  ],
+  "krabby": [
+    {
+      "level": 28,
+      "evolvesTo": "kingler",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "kingler",
+      "triggerType": "level-up"
+    }
+  ],
+  "voltorb": [
+    {
+      "level": 30,
+      "evolvesTo": "electrode",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "electrode",
+      "triggerType": "level-up"
+    }
+  ],
+  "exeggcute": [
+    {
+      "item": "leaf-stone",
+      "evolvesTo": "exeggutor",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "leaf-stone",
+      "evolvesTo": "exeggutor",
+      "triggerType": "use-item"
+    }
+  ],
+  "cubone": [
+    {
+      "level": 28,
+      "evolvesTo": "marowak",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "marowak",
+      "triggerType": "level-up"
+    }
+  ],
+  "tyrogue": [
+    {
+      "level": 20,
+      "evolvesTo": "hitmonlee",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "hitmonchan",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "hitmontop",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "hitmonlee",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "hitmonchan",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "hitmontop",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "hitmonlee",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "hitmonchan",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "hitmontop",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "hitmonlee",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "hitmonchan",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "hitmontop",
+      "triggerType": "level-up"
+    }
+  ],
+  "lickitung": [],
+  "koffing": [
+    {
+      "level": 35,
+      "evolvesTo": "weezing",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "weezing",
+      "triggerType": "level-up"
+    }
+  ],
+  "rhyhorn": [
+    {
+      "level": 42,
+      "evolvesTo": "rhydon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 42,
+      "evolvesTo": "rhydon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 42,
+      "evolvesTo": "rhydon",
+      "triggerType": "level-up"
+    }
+  ],
+  "rhydon": [],
+  "happiny": [],
+  "chansey": [],
+  "tangela": [],
+  "horsea": [
+    {
+      "level": 32,
+      "evolvesTo": "seadra",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "seadra",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "seadra",
+      "triggerType": "level-up"
+    }
+  ],
+  "seadra": [],
+  "goldeen": [
+    {
+      "level": 33,
+      "evolvesTo": "seaking",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 33,
+      "evolvesTo": "seaking",
+      "triggerType": "level-up"
+    }
+  ],
+  "staryu": [
+    {
+      "item": "water-stone",
+      "evolvesTo": "starmie",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "starmie",
+      "triggerType": "use-item"
+    }
+  ],
+  "mime-jr": [],
+  "mr-mime": [
+    {
+      "level": 42,
+      "evolvesTo": "mr-rime",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 42,
+      "evolvesTo": "mr-rime",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 42,
+      "evolvesTo": "mr-rime",
+      "triggerType": "level-up"
+    }
+  ],
+  "scyther": [
+    {
+      "item": "black-augurite",
+      "evolvesTo": "kleavor",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "black-augurite",
+      "evolvesTo": "kleavor",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "black-augurite",
+      "evolvesTo": "kleavor",
+      "triggerType": "use-item"
+    }
+  ],
+  "smoochum": [
+    {
+      "level": 30,
+      "evolvesTo": "jynx",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "jynx",
+      "triggerType": "level-up"
+    }
+  ],
+  "elekid": [
+    {
+      "level": 30,
+      "evolvesTo": "electabuzz",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "electabuzz",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "electabuzz",
+      "triggerType": "level-up"
+    }
+  ],
+  "electabuzz": [],
+  "magby": [
+    {
+      "level": 30,
+      "evolvesTo": "magmar",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "magmar",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "magmar",
+      "triggerType": "level-up"
+    }
+  ],
+  "magmar": [],
+  "magikarp": [
+    {
+      "level": 20,
+      "evolvesTo": "gyarados",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "gyarados",
+      "triggerType": "level-up"
+    }
+  ],
+  "eevee": [
+    {
+      "item": "water-stone",
+      "evolvesTo": "vaporeon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "jolteon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "fire-stone",
+      "evolvesTo": "flareon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "vaporeon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "jolteon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "fire-stone",
+      "evolvesTo": "flareon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "vaporeon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "jolteon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "fire-stone",
+      "evolvesTo": "flareon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "vaporeon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "jolteon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "fire-stone",
+      "evolvesTo": "flareon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "vaporeon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "jolteon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "fire-stone",
+      "evolvesTo": "flareon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "vaporeon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "jolteon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "fire-stone",
+      "evolvesTo": "flareon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "vaporeon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "jolteon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "fire-stone",
+      "evolvesTo": "flareon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "vaporeon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "jolteon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "fire-stone",
+      "evolvesTo": "flareon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "vaporeon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "jolteon",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "fire-stone",
+      "evolvesTo": "flareon",
+      "triggerType": "use-item"
+    }
+  ],
+  "porygon": [],
+  "porygon2": [],
+  "omanyte": [
+    {
+      "level": 40,
+      "evolvesTo": "omastar",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "omastar",
+      "triggerType": "level-up"
+    }
+  ],
+  "kabuto": [
+    {
+      "level": 40,
+      "evolvesTo": "kabutops",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "kabutops",
+      "triggerType": "level-up"
+    }
+  ],
+  "munchlax": [],
+  "dratini": [
+    {
+      "level": 30,
+      "evolvesTo": "dragonair",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "dragonair",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "dragonair",
+      "triggerType": "level-up"
+    }
+  ],
+  "dragonair": [
+    {
+      "level": 55,
+      "evolvesTo": "dragonite",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 55,
+      "evolvesTo": "dragonite",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 55,
+      "evolvesTo": "dragonite",
+      "triggerType": "level-up"
+    }
+  ],
+  "chikorita": [
+    {
+      "level": 16,
+      "evolvesTo": "bayleef",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "bayleef",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "bayleef",
+      "triggerType": "level-up"
+    }
+  ],
+  "bayleef": [
+    {
+      "level": 32,
+      "evolvesTo": "meganium",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "meganium",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "meganium",
+      "triggerType": "level-up"
+    }
+  ],
+  "cyndaquil": [
+    {
+      "level": 14,
+      "evolvesTo": "quilava",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 14,
+      "evolvesTo": "quilava",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 14,
+      "evolvesTo": "quilava",
+      "triggerType": "level-up"
+    }
+  ],
+  "quilava": [
+    {
+      "level": 36,
+      "evolvesTo": "typhlosion",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "typhlosion",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "typhlosion",
+      "triggerType": "level-up"
+    }
+  ],
+  "totodile": [
+    {
+      "level": 18,
+      "evolvesTo": "croconaw",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "croconaw",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "croconaw",
+      "triggerType": "level-up"
+    }
+  ],
+  "croconaw": [
+    {
+      "level": 30,
+      "evolvesTo": "feraligatr",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "feraligatr",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "feraligatr",
+      "triggerType": "level-up"
+    }
+  ],
+  "sentret": [
+    {
+      "level": 15,
+      "evolvesTo": "furret",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 15,
+      "evolvesTo": "furret",
+      "triggerType": "level-up"
+    }
+  ],
+  "hoothoot": [
+    {
+      "level": 20,
+      "evolvesTo": "noctowl",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "noctowl",
+      "triggerType": "level-up"
+    }
+  ],
+  "ledyba": [
+    {
+      "level": 18,
+      "evolvesTo": "ledian",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "ledian",
+      "triggerType": "level-up"
+    }
+  ],
+  "spinarak": [
+    {
+      "level": 22,
+      "evolvesTo": "ariados",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 22,
+      "evolvesTo": "ariados",
+      "triggerType": "level-up"
+    }
+  ],
+  "chinchou": [
+    {
+      "level": 27,
+      "evolvesTo": "lanturn",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 27,
+      "evolvesTo": "lanturn",
+      "triggerType": "level-up"
+    }
+  ],
+  "togepi": [],
+  "togetic": [
+    {
+      "item": "shiny-stone",
+      "evolvesTo": "togekiss",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "shiny-stone",
+      "evolvesTo": "togekiss",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "shiny-stone",
+      "evolvesTo": "togekiss",
+      "triggerType": "use-item"
+    }
+  ],
+  "natu": [
+    {
+      "level": 25,
+      "evolvesTo": "xatu",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "xatu",
+      "triggerType": "level-up"
+    }
+  ],
+  "mareep": [
+    {
+      "level": 15,
+      "evolvesTo": "flaaffy",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 15,
+      "evolvesTo": "flaaffy",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 15,
+      "evolvesTo": "flaaffy",
+      "triggerType": "level-up"
+    }
+  ],
+  "flaaffy": [
+    {
+      "level": 30,
+      "evolvesTo": "ampharos",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "ampharos",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "ampharos",
+      "triggerType": "level-up"
+    }
+  ],
+  "azurill": [],
+  "marill": [
+    {
+      "level": 18,
+      "evolvesTo": "azumarill",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "azumarill",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "azumarill",
+      "triggerType": "level-up"
+    }
+  ],
+  "bonsly": [],
+  "hoppip": [
+    {
+      "level": 18,
+      "evolvesTo": "skiploom",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "skiploom",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "skiploom",
+      "triggerType": "level-up"
+    }
+  ],
+  "skiploom": [
+    {
+      "level": 27,
+      "evolvesTo": "jumpluff",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 27,
+      "evolvesTo": "jumpluff",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 27,
+      "evolvesTo": "jumpluff",
+      "triggerType": "level-up"
+    }
+  ],
+  "aipom": [],
+  "sunkern": [
+    {
+      "item": "sun-stone",
+      "evolvesTo": "sunflora",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "sun-stone",
+      "evolvesTo": "sunflora",
+      "triggerType": "use-item"
+    }
+  ],
+  "yanma": [],
+  "wooper": [
+    {
+      "level": 20,
+      "evolvesTo": "quagsire",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "clodsire",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "quagsire",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "clodsire",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "quagsire",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "clodsire",
+      "triggerType": "level-up"
+    }
+  ],
+  "murkrow": [
+    {
+      "item": "dusk-stone",
+      "evolvesTo": "honchkrow",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "dusk-stone",
+      "evolvesTo": "honchkrow",
+      "triggerType": "use-item"
+    }
+  ],
+  "misdreavus": [
+    {
+      "item": "dusk-stone",
+      "evolvesTo": "mismagius",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "dusk-stone",
+      "evolvesTo": "mismagius",
+      "triggerType": "use-item"
+    }
+  ],
+  "wynaut": [
+    {
+      "level": 15,
+      "evolvesTo": "wobbuffet",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 15,
+      "evolvesTo": "wobbuffet",
+      "triggerType": "level-up"
+    }
+  ],
+  "girafarig": [],
+  "pineco": [
+    {
+      "level": 31,
+      "evolvesTo": "forretress",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 31,
+      "evolvesTo": "forretress",
+      "triggerType": "level-up"
+    }
+  ],
+  "dunsparce": [],
+  "gligar": [],
+  "snubbull": [
+    {
+      "level": 23,
+      "evolvesTo": "granbull",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 23,
+      "evolvesTo": "granbull",
+      "triggerType": "level-up"
+    }
+  ],
+  "qwilfish": [],
+  "sneasel": [],
+  "teddiursa": [
+    {
+      "level": 30,
+      "evolvesTo": "ursaring",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "ursaring",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "ursaring",
+      "triggerType": "level-up"
+    }
+  ],
+  "ursaring": [
+    {
+      "item": "peat-block",
+      "evolvesTo": "ursaluna",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "peat-block",
+      "evolvesTo": "ursaluna",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "peat-block",
+      "evolvesTo": "ursaluna",
+      "triggerType": "use-item"
+    }
+  ],
+  "slugma": [
+    {
+      "level": 38,
+      "evolvesTo": "magcargo",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 38,
+      "evolvesTo": "magcargo",
+      "triggerType": "level-up"
+    }
+  ],
+  "swinub": [
+    {
+      "level": 33,
+      "evolvesTo": "piloswine",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 33,
+      "evolvesTo": "piloswine",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 33,
+      "evolvesTo": "piloswine",
+      "triggerType": "level-up"
+    }
+  ],
+  "piloswine": [],
+  "corsola": [
+    {
+      "level": 38,
+      "evolvesTo": "cursola",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 38,
+      "evolvesTo": "cursola",
+      "triggerType": "level-up"
+    }
+  ],
+  "remoraid": [
+    {
+      "level": 25,
+      "evolvesTo": "octillery",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "octillery",
+      "triggerType": "level-up"
+    }
+  ],
+  "mantyke": [],
+  "houndour": [
+    {
+      "level": 24,
+      "evolvesTo": "houndoom",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 24,
+      "evolvesTo": "houndoom",
+      "triggerType": "level-up"
+    }
+  ],
+  "phanpy": [
+    {
+      "level": 25,
+      "evolvesTo": "donphan",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "donphan",
+      "triggerType": "level-up"
+    }
+  ],
+  "stantler": [],
+  "larvitar": [
+    {
+      "level": 30,
+      "evolvesTo": "pupitar",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "pupitar",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "pupitar",
+      "triggerType": "level-up"
+    }
+  ],
+  "pupitar": [
+    {
+      "level": 55,
+      "evolvesTo": "tyranitar",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 55,
+      "evolvesTo": "tyranitar",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 55,
+      "evolvesTo": "tyranitar",
+      "triggerType": "level-up"
+    }
+  ],
+  "treecko": [
+    {
+      "level": 16,
+      "evolvesTo": "grovyle",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "grovyle",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "grovyle",
+      "triggerType": "level-up"
+    }
+  ],
+  "grovyle": [
+    {
+      "level": 36,
+      "evolvesTo": "sceptile",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "sceptile",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "sceptile",
+      "triggerType": "level-up"
+    }
+  ],
+  "torchic": [
+    {
+      "level": 16,
+      "evolvesTo": "combusken",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "combusken",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "combusken",
+      "triggerType": "level-up"
+    }
+  ],
+  "combusken": [
+    {
+      "level": 36,
+      "evolvesTo": "blaziken",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "blaziken",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "blaziken",
+      "triggerType": "level-up"
+    }
+  ],
+  "mudkip": [
+    {
+      "level": 16,
+      "evolvesTo": "marshtomp",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "marshtomp",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "marshtomp",
+      "triggerType": "level-up"
+    }
+  ],
+  "marshtomp": [
+    {
+      "level": 36,
+      "evolvesTo": "swampert",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "swampert",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "swampert",
+      "triggerType": "level-up"
+    }
+  ],
+  "poochyena": [
+    {
+      "level": 18,
+      "evolvesTo": "mightyena",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "mightyena",
+      "triggerType": "level-up"
+    }
+  ],
+  "zigzagoon": [
+    {
+      "level": 20,
+      "evolvesTo": "linoone",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "linoone",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "linoone",
+      "triggerType": "level-up"
+    }
+  ],
+  "linoone": [
+    {
+      "level": 35,
+      "evolvesTo": "obstagoon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "obstagoon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "obstagoon",
+      "triggerType": "level-up"
+    }
+  ],
+  "wurmple": [
+    {
+      "level": 7,
+      "evolvesTo": "silcoon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 7,
+      "evolvesTo": "cascoon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 7,
+      "evolvesTo": "silcoon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 7,
+      "evolvesTo": "cascoon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 7,
+      "evolvesTo": "silcoon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 7,
+      "evolvesTo": "cascoon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 7,
+      "evolvesTo": "silcoon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 7,
+      "evolvesTo": "cascoon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 7,
+      "evolvesTo": "silcoon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 7,
+      "evolvesTo": "cascoon",
+      "triggerType": "level-up"
+    }
+  ],
+  "silcoon": [
+    {
+      "level": 10,
+      "evolvesTo": "beautifly",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 10,
+      "evolvesTo": "beautifly",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 10,
+      "evolvesTo": "beautifly",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 10,
+      "evolvesTo": "beautifly",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 10,
+      "evolvesTo": "beautifly",
+      "triggerType": "level-up"
+    }
+  ],
+  "cascoon": [
+    {
+      "level": 10,
+      "evolvesTo": "dustox",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 10,
+      "evolvesTo": "dustox",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 10,
+      "evolvesTo": "dustox",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 10,
+      "evolvesTo": "dustox",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 10,
+      "evolvesTo": "dustox",
+      "triggerType": "level-up"
+    }
+  ],
+  "lotad": [
+    {
+      "level": 14,
+      "evolvesTo": "lombre",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 14,
+      "evolvesTo": "lombre",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 14,
+      "evolvesTo": "lombre",
+      "triggerType": "level-up"
+    }
+  ],
+  "lombre": [
+    {
+      "item": "water-stone",
+      "evolvesTo": "ludicolo",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "ludicolo",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "ludicolo",
+      "triggerType": "use-item"
+    }
+  ],
+  "seedot": [
+    {
+      "level": 14,
+      "evolvesTo": "nuzleaf",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 14,
+      "evolvesTo": "nuzleaf",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 14,
+      "evolvesTo": "nuzleaf",
+      "triggerType": "level-up"
+    }
+  ],
+  "nuzleaf": [
+    {
+      "item": "leaf-stone",
+      "evolvesTo": "shiftry",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "leaf-stone",
+      "evolvesTo": "shiftry",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "leaf-stone",
+      "evolvesTo": "shiftry",
+      "triggerType": "use-item"
+    }
+  ],
+  "taillow": [
+    {
+      "level": 22,
+      "evolvesTo": "swellow",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 22,
+      "evolvesTo": "swellow",
+      "triggerType": "level-up"
+    }
+  ],
+  "wingull": [
+    {
+      "level": 25,
+      "evolvesTo": "pelipper",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "pelipper",
+      "triggerType": "level-up"
+    }
+  ],
+  "ralts": [
+    {
+      "level": 20,
+      "evolvesTo": "kirlia",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "kirlia",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "kirlia",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "kirlia",
+      "triggerType": "level-up"
+    }
+  ],
+  "kirlia": [
+    {
+      "level": 30,
+      "evolvesTo": "gardevoir",
+      "triggerType": "level-up"
+    },
+    {
+      "item": "dawn-stone",
+      "evolvesTo": "gallade",
+      "triggerType": "use-item"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "gardevoir",
+      "triggerType": "level-up"
+    },
+    {
+      "item": "dawn-stone",
+      "evolvesTo": "gallade",
+      "triggerType": "use-item"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "gardevoir",
+      "triggerType": "level-up"
+    },
+    {
+      "item": "dawn-stone",
+      "evolvesTo": "gallade",
+      "triggerType": "use-item"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "gardevoir",
+      "triggerType": "level-up"
+    },
+    {
+      "item": "dawn-stone",
+      "evolvesTo": "gallade",
+      "triggerType": "use-item"
+    }
+  ],
+  "surskit": [
+    {
+      "level": 22,
+      "evolvesTo": "masquerain",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 22,
+      "evolvesTo": "masquerain",
+      "triggerType": "level-up"
+    }
+  ],
+  "shroomish": [
+    {
+      "level": 23,
+      "evolvesTo": "breloom",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 23,
+      "evolvesTo": "breloom",
+      "triggerType": "level-up"
+    }
+  ],
+  "slakoth": [
+    {
+      "level": 18,
+      "evolvesTo": "vigoroth",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "vigoroth",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "vigoroth",
+      "triggerType": "level-up"
+    }
+  ],
+  "vigoroth": [
+    {
+      "level": 36,
+      "evolvesTo": "slaking",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "slaking",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "slaking",
+      "triggerType": "level-up"
+    }
+  ],
+  "nincada": [
+    {
+      "level": 20,
+      "evolvesTo": "ninjask",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "ninjask",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "ninjask",
+      "triggerType": "level-up"
+    }
+  ],
+  "whismur": [
+    {
+      "level": 20,
+      "evolvesTo": "loudred",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "loudred",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "loudred",
+      "triggerType": "level-up"
+    }
+  ],
+  "loudred": [
+    {
+      "level": 40,
+      "evolvesTo": "exploud",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "exploud",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "exploud",
+      "triggerType": "level-up"
+    }
+  ],
+  "makuhita": [
+    {
+      "level": 24,
+      "evolvesTo": "hariyama",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 24,
+      "evolvesTo": "hariyama",
+      "triggerType": "level-up"
+    }
+  ],
+  "nosepass": [],
+  "skitty": [
+    {
+      "item": "moon-stone",
+      "evolvesTo": "delcatty",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "moon-stone",
+      "evolvesTo": "delcatty",
+      "triggerType": "use-item"
+    }
+  ],
+  "aron": [
+    {
+      "level": 32,
+      "evolvesTo": "lairon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "lairon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "lairon",
+      "triggerType": "level-up"
+    }
+  ],
+  "lairon": [
+    {
+      "level": 42,
+      "evolvesTo": "aggron",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 42,
+      "evolvesTo": "aggron",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 42,
+      "evolvesTo": "aggron",
+      "triggerType": "level-up"
+    }
+  ],
+  "meditite": [
+    {
+      "level": 37,
+      "evolvesTo": "medicham",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 37,
+      "evolvesTo": "medicham",
+      "triggerType": "level-up"
+    }
+  ],
+  "electrike": [
+    {
+      "level": 26,
+      "evolvesTo": "manectric",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 26,
+      "evolvesTo": "manectric",
+      "triggerType": "level-up"
+    }
+  ],
+  "budew": [],
+  "roselia": [
+    {
+      "item": "shiny-stone",
+      "evolvesTo": "roserade",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "shiny-stone",
+      "evolvesTo": "roserade",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "shiny-stone",
+      "evolvesTo": "roserade",
+      "triggerType": "use-item"
+    }
+  ],
+  "gulpin": [
+    {
+      "level": 26,
+      "evolvesTo": "swalot",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 26,
+      "evolvesTo": "swalot",
+      "triggerType": "level-up"
+    }
+  ],
+  "carvanha": [
+    {
+      "level": 30,
+      "evolvesTo": "sharpedo",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "sharpedo",
+      "triggerType": "level-up"
+    }
+  ],
+  "wailmer": [
+    {
+      "level": 40,
+      "evolvesTo": "wailord",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "wailord",
+      "triggerType": "level-up"
+    }
+  ],
+  "numel": [
+    {
+      "level": 33,
+      "evolvesTo": "camerupt",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 33,
+      "evolvesTo": "camerupt",
+      "triggerType": "level-up"
+    }
+  ],
+  "spoink": [
+    {
+      "level": 32,
+      "evolvesTo": "grumpig",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "grumpig",
+      "triggerType": "level-up"
+    }
+  ],
+  "trapinch": [
+    {
+      "level": 35,
+      "evolvesTo": "vibrava",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "vibrava",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "vibrava",
+      "triggerType": "level-up"
+    }
+  ],
+  "vibrava": [
+    {
+      "level": 45,
+      "evolvesTo": "flygon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 45,
+      "evolvesTo": "flygon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 45,
+      "evolvesTo": "flygon",
+      "triggerType": "level-up"
+    }
+  ],
+  "cacnea": [
+    {
+      "level": 32,
+      "evolvesTo": "cacturne",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "cacturne",
+      "triggerType": "level-up"
+    }
+  ],
+  "swablu": [
+    {
+      "level": 35,
+      "evolvesTo": "altaria",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "altaria",
+      "triggerType": "level-up"
+    }
+  ],
+  "barboach": [
+    {
+      "level": 30,
+      "evolvesTo": "whiscash",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "whiscash",
+      "triggerType": "level-up"
+    }
+  ],
+  "corphish": [
+    {
+      "level": 30,
+      "evolvesTo": "crawdaunt",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "crawdaunt",
+      "triggerType": "level-up"
+    }
+  ],
+  "baltoy": [
+    {
+      "level": 36,
+      "evolvesTo": "claydol",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "claydol",
+      "triggerType": "level-up"
+    }
+  ],
+  "lileep": [
+    {
+      "level": 40,
+      "evolvesTo": "cradily",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "cradily",
+      "triggerType": "level-up"
+    }
+  ],
+  "anorith": [
+    {
+      "level": 40,
+      "evolvesTo": "armaldo",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "armaldo",
+      "triggerType": "level-up"
+    }
+  ],
+  "feebas": [],
+  "shuppet": [
+    {
+      "level": 37,
+      "evolvesTo": "banette",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 37,
+      "evolvesTo": "banette",
+      "triggerType": "level-up"
+    }
+  ],
+  "duskull": [
+    {
+      "level": 37,
+      "evolvesTo": "dusclops",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 37,
+      "evolvesTo": "dusclops",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 37,
+      "evolvesTo": "dusclops",
+      "triggerType": "level-up"
+    }
+  ],
+  "dusclops": [],
+  "chingling": [],
+  "snorunt": [
+    {
+      "level": 42,
+      "evolvesTo": "glalie",
+      "triggerType": "level-up"
+    },
+    {
+      "item": "dawn-stone",
+      "evolvesTo": "froslass",
+      "triggerType": "use-item"
+    },
+    {
+      "level": 42,
+      "evolvesTo": "glalie",
+      "triggerType": "level-up"
+    },
+    {
+      "item": "dawn-stone",
+      "evolvesTo": "froslass",
+      "triggerType": "use-item"
+    },
+    {
+      "level": 42,
+      "evolvesTo": "glalie",
+      "triggerType": "level-up"
+    },
+    {
+      "item": "dawn-stone",
+      "evolvesTo": "froslass",
+      "triggerType": "use-item"
+    }
+  ],
+  "spheal": [
+    {
+      "level": 32,
+      "evolvesTo": "sealeo",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "sealeo",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "sealeo",
+      "triggerType": "level-up"
+    }
+  ],
+  "sealeo": [
+    {
+      "level": 44,
+      "evolvesTo": "walrein",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 44,
+      "evolvesTo": "walrein",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 44,
+      "evolvesTo": "walrein",
+      "triggerType": "level-up"
+    }
+  ],
+  "clamperl": [],
+  "bagon": [
+    {
+      "level": 30,
+      "evolvesTo": "shelgon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "shelgon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "shelgon",
+      "triggerType": "level-up"
+    }
+  ],
+  "shelgon": [
+    {
+      "level": 50,
+      "evolvesTo": "salamence",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 50,
+      "evolvesTo": "salamence",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 50,
+      "evolvesTo": "salamence",
+      "triggerType": "level-up"
+    }
+  ],
+  "beldum": [
+    {
+      "level": 20,
+      "evolvesTo": "metang",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "metang",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "metang",
+      "triggerType": "level-up"
+    }
+  ],
+  "metang": [
+    {
+      "level": 45,
+      "evolvesTo": "metagross",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 45,
+      "evolvesTo": "metagross",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 45,
+      "evolvesTo": "metagross",
+      "triggerType": "level-up"
+    }
+  ],
+  "turtwig": [
+    {
+      "level": 18,
+      "evolvesTo": "grotle",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "grotle",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "grotle",
+      "triggerType": "level-up"
+    }
+  ],
+  "grotle": [
+    {
+      "level": 32,
+      "evolvesTo": "torterra",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "torterra",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "torterra",
+      "triggerType": "level-up"
+    }
+  ],
+  "chimchar": [
+    {
+      "level": 14,
+      "evolvesTo": "monferno",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 14,
+      "evolvesTo": "monferno",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 14,
+      "evolvesTo": "monferno",
+      "triggerType": "level-up"
+    }
+  ],
+  "monferno": [
+    {
+      "level": 36,
+      "evolvesTo": "infernape",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "infernape",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "infernape",
+      "triggerType": "level-up"
+    }
+  ],
+  "piplup": [
+    {
+      "level": 16,
+      "evolvesTo": "prinplup",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "prinplup",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "prinplup",
+      "triggerType": "level-up"
+    }
+  ],
+  "prinplup": [
+    {
+      "level": 36,
+      "evolvesTo": "empoleon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "empoleon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "empoleon",
+      "triggerType": "level-up"
+    }
+  ],
+  "starly": [
+    {
+      "level": 14,
+      "evolvesTo": "staravia",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 14,
+      "evolvesTo": "staravia",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 14,
+      "evolvesTo": "staravia",
+      "triggerType": "level-up"
+    }
+  ],
+  "staravia": [
+    {
+      "level": 34,
+      "evolvesTo": "staraptor",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "staraptor",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "staraptor",
+      "triggerType": "level-up"
+    }
+  ],
+  "bidoof": [
+    {
+      "level": 15,
+      "evolvesTo": "bibarel",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 15,
+      "evolvesTo": "bibarel",
+      "triggerType": "level-up"
+    }
+  ],
+  "kricketot": [
+    {
+      "level": 10,
+      "evolvesTo": "kricketune",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 10,
+      "evolvesTo": "kricketune",
+      "triggerType": "level-up"
+    }
+  ],
+  "shinx": [
+    {
+      "level": 15,
+      "evolvesTo": "luxio",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 15,
+      "evolvesTo": "luxio",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 15,
+      "evolvesTo": "luxio",
+      "triggerType": "level-up"
+    }
+  ],
+  "luxio": [
+    {
+      "level": 30,
+      "evolvesTo": "luxray",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "luxray",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "luxray",
+      "triggerType": "level-up"
+    }
+  ],
+  "cranidos": [
+    {
+      "level": 30,
+      "evolvesTo": "rampardos",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "rampardos",
+      "triggerType": "level-up"
+    }
+  ],
+  "shieldon": [
+    {
+      "level": 30,
+      "evolvesTo": "bastiodon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "bastiodon",
+      "triggerType": "level-up"
+    }
+  ],
+  "burmy": [
+    {
+      "level": 20,
+      "evolvesTo": "wormadam",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "mothim",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "wormadam",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "mothim",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "wormadam",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "mothim",
+      "triggerType": "level-up"
+    }
+  ],
+  "combee": [
+    {
+      "level": 21,
+      "evolvesTo": "vespiquen",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 21,
+      "evolvesTo": "vespiquen",
+      "triggerType": "level-up"
+    }
+  ],
+  "buizel": [
+    {
+      "level": 26,
+      "evolvesTo": "floatzel",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 26,
+      "evolvesTo": "floatzel",
+      "triggerType": "level-up"
+    }
+  ],
+  "cherubi": [
+    {
+      "level": 25,
+      "evolvesTo": "cherrim",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "cherrim",
+      "triggerType": "level-up"
+    }
+  ],
+  "shellos": [
+    {
+      "level": 30,
+      "evolvesTo": "gastrodon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "gastrodon",
+      "triggerType": "level-up"
+    }
+  ],
+  "drifloon": [
+    {
+      "level": 28,
+      "evolvesTo": "drifblim",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "drifblim",
+      "triggerType": "level-up"
+    }
+  ],
+  "buneary": [],
+  "glameow": [
+    {
+      "level": 38,
+      "evolvesTo": "purugly",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 38,
+      "evolvesTo": "purugly",
+      "triggerType": "level-up"
+    }
+  ],
+  "stunky": [
+    {
+      "level": 34,
+      "evolvesTo": "skuntank",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "skuntank",
+      "triggerType": "level-up"
+    }
+  ],
+  "bronzor": [
+    {
+      "level": 33,
+      "evolvesTo": "bronzong",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 33,
+      "evolvesTo": "bronzong",
+      "triggerType": "level-up"
+    }
+  ],
+  "gible": [
+    {
+      "level": 24,
+      "evolvesTo": "gabite",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 24,
+      "evolvesTo": "gabite",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 24,
+      "evolvesTo": "gabite",
+      "triggerType": "level-up"
+    }
+  ],
+  "gabite": [
+    {
+      "level": 48,
+      "evolvesTo": "garchomp",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 48,
+      "evolvesTo": "garchomp",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 48,
+      "evolvesTo": "garchomp",
+      "triggerType": "level-up"
+    }
+  ],
+  "riolu": [],
+  "hippopotas": [
+    {
+      "level": 34,
+      "evolvesTo": "hippowdon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "hippowdon",
+      "triggerType": "level-up"
+    }
+  ],
+  "skorupi": [
+    {
+      "level": 40,
+      "evolvesTo": "drapion",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "drapion",
+      "triggerType": "level-up"
+    }
+  ],
+  "croagunk": [
+    {
+      "level": 37,
+      "evolvesTo": "toxicroak",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 37,
+      "evolvesTo": "toxicroak",
+      "triggerType": "level-up"
+    }
+  ],
+  "finneon": [
+    {
+      "level": 31,
+      "evolvesTo": "lumineon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 31,
+      "evolvesTo": "lumineon",
+      "triggerType": "level-up"
+    }
+  ],
+  "snover": [
+    {
+      "level": 40,
+      "evolvesTo": "abomasnow",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "abomasnow",
+      "triggerType": "level-up"
+    }
+  ],
+  "phione": [],
+  "snivy": [
+    {
+      "level": 17,
+      "evolvesTo": "servine",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 17,
+      "evolvesTo": "servine",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 17,
+      "evolvesTo": "servine",
+      "triggerType": "level-up"
+    }
+  ],
+  "servine": [
+    {
+      "level": 36,
+      "evolvesTo": "serperior",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "serperior",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "serperior",
+      "triggerType": "level-up"
+    }
+  ],
+  "tepig": [
+    {
+      "level": 17,
+      "evolvesTo": "pignite",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 17,
+      "evolvesTo": "pignite",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 17,
+      "evolvesTo": "pignite",
+      "triggerType": "level-up"
+    }
+  ],
+  "pignite": [
+    {
+      "level": 36,
+      "evolvesTo": "emboar",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "emboar",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "emboar",
+      "triggerType": "level-up"
+    }
+  ],
+  "oshawott": [
+    {
+      "level": 17,
+      "evolvesTo": "dewott",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 17,
+      "evolvesTo": "dewott",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 17,
+      "evolvesTo": "dewott",
+      "triggerType": "level-up"
+    }
+  ],
+  "dewott": [
+    {
+      "level": 36,
+      "evolvesTo": "samurott",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "samurott",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "samurott",
+      "triggerType": "level-up"
+    }
+  ],
+  "patrat": [
+    {
+      "level": 20,
+      "evolvesTo": "watchog",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "watchog",
+      "triggerType": "level-up"
+    }
+  ],
+  "lillipup": [
+    {
+      "level": 16,
+      "evolvesTo": "herdier",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "herdier",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "herdier",
+      "triggerType": "level-up"
+    }
+  ],
+  "herdier": [
+    {
+      "level": 32,
+      "evolvesTo": "stoutland",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "stoutland",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "stoutland",
+      "triggerType": "level-up"
+    }
+  ],
+  "purrloin": [
+    {
+      "level": 20,
+      "evolvesTo": "liepard",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "liepard",
+      "triggerType": "level-up"
+    }
+  ],
+  "pansage": [
+    {
+      "item": "leaf-stone",
+      "evolvesTo": "simisage",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "leaf-stone",
+      "evolvesTo": "simisage",
+      "triggerType": "use-item"
+    }
+  ],
+  "pansear": [
+    {
+      "item": "fire-stone",
+      "evolvesTo": "simisear",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "fire-stone",
+      "evolvesTo": "simisear",
+      "triggerType": "use-item"
+    }
+  ],
+  "panpour": [
+    {
+      "item": "water-stone",
+      "evolvesTo": "simipour",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "water-stone",
+      "evolvesTo": "simipour",
+      "triggerType": "use-item"
+    }
+  ],
+  "munna": [
+    {
+      "item": "moon-stone",
+      "evolvesTo": "musharna",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "moon-stone",
+      "evolvesTo": "musharna",
+      "triggerType": "use-item"
+    }
+  ],
+  "pidove": [
+    {
+      "level": 21,
+      "evolvesTo": "tranquill",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 21,
+      "evolvesTo": "tranquill",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 21,
+      "evolvesTo": "tranquill",
+      "triggerType": "level-up"
+    }
+  ],
+  "tranquill": [
+    {
+      "level": 32,
+      "evolvesTo": "unfezant",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "unfezant",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "unfezant",
+      "triggerType": "level-up"
+    }
+  ],
+  "blitzle": [
+    {
+      "level": 27,
+      "evolvesTo": "zebstrika",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 27,
+      "evolvesTo": "zebstrika",
+      "triggerType": "level-up"
+    }
+  ],
+  "roggenrola": [
+    {
+      "level": 25,
+      "evolvesTo": "boldore",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "boldore",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "boldore",
+      "triggerType": "level-up"
+    }
+  ],
+  "boldore": [],
+  "woobat": [],
+  "drilbur": [
+    {
+      "level": 31,
+      "evolvesTo": "excadrill",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 31,
+      "evolvesTo": "excadrill",
+      "triggerType": "level-up"
+    }
+  ],
+  "timburr": [
+    {
+      "level": 25,
+      "evolvesTo": "gurdurr",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "gurdurr",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "gurdurr",
+      "triggerType": "level-up"
+    }
+  ],
+  "gurdurr": [],
+  "tympole": [
+    {
+      "level": 25,
+      "evolvesTo": "palpitoad",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "palpitoad",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "palpitoad",
+      "triggerType": "level-up"
+    }
+  ],
+  "palpitoad": [
+    {
+      "level": 36,
+      "evolvesTo": "seismitoad",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "seismitoad",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "seismitoad",
+      "triggerType": "level-up"
+    }
+  ],
+  "sewaddle": [
+    {
+      "level": 20,
+      "evolvesTo": "swadloon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "swadloon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "swadloon",
+      "triggerType": "level-up"
+    }
+  ],
+  "swadloon": [],
+  "venipede": [
+    {
+      "level": 22,
+      "evolvesTo": "whirlipede",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 22,
+      "evolvesTo": "whirlipede",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 22,
+      "evolvesTo": "whirlipede",
+      "triggerType": "level-up"
+    }
+  ],
+  "whirlipede": [
+    {
+      "level": 30,
+      "evolvesTo": "scolipede",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "scolipede",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "scolipede",
+      "triggerType": "level-up"
+    }
+  ],
+  "cottonee": [
+    {
+      "item": "sun-stone",
+      "evolvesTo": "whimsicott",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "sun-stone",
+      "evolvesTo": "whimsicott",
+      "triggerType": "use-item"
+    }
+  ],
+  "petilil": [
+    {
+      "item": "sun-stone",
+      "evolvesTo": "lilligant",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "sun-stone",
+      "evolvesTo": "lilligant",
+      "triggerType": "use-item"
+    }
+  ],
+  "basculin": [],
+  "sandile": [
+    {
+      "level": 29,
+      "evolvesTo": "krokorok",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 29,
+      "evolvesTo": "krokorok",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 29,
+      "evolvesTo": "krokorok",
+      "triggerType": "level-up"
+    }
+  ],
+  "krokorok": [
+    {
+      "level": 40,
+      "evolvesTo": "krookodile",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "krookodile",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "krookodile",
+      "triggerType": "level-up"
+    }
+  ],
+  "darumaka": [
+    {
+      "level": 35,
+      "evolvesTo": "darmanitan",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "darmanitan",
+      "triggerType": "level-up"
+    }
+  ],
+  "dwebble": [
+    {
+      "level": 34,
+      "evolvesTo": "crustle",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "crustle",
+      "triggerType": "level-up"
+    }
+  ],
+  "scraggy": [
+    {
+      "level": 39,
+      "evolvesTo": "scrafty",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 39,
+      "evolvesTo": "scrafty",
+      "triggerType": "level-up"
+    }
+  ],
+  "yamask": [
+    {
+      "level": 34,
+      "evolvesTo": "cofagrigus",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "cofagrigus",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "cofagrigus",
+      "triggerType": "level-up"
+    }
+  ],
+  "tirtouga": [
+    {
+      "level": 37,
+      "evolvesTo": "carracosta",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 37,
+      "evolvesTo": "carracosta",
+      "triggerType": "level-up"
+    }
+  ],
+  "archen": [
+    {
+      "level": 37,
+      "evolvesTo": "archeops",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 37,
+      "evolvesTo": "archeops",
+      "triggerType": "level-up"
+    }
+  ],
+  "trubbish": [
+    {
+      "level": 36,
+      "evolvesTo": "garbodor",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "garbodor",
+      "triggerType": "level-up"
+    }
+  ],
+  "zorua": [
+    {
+      "level": 30,
+      "evolvesTo": "zoroark",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "zoroark",
+      "triggerType": "level-up"
+    }
+  ],
+  "minccino": [
+    {
+      "item": "shiny-stone",
+      "evolvesTo": "cinccino",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "shiny-stone",
+      "evolvesTo": "cinccino",
+      "triggerType": "use-item"
+    }
+  ],
+  "gothita": [
+    {
+      "level": 32,
+      "evolvesTo": "gothorita",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "gothorita",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "gothorita",
+      "triggerType": "level-up"
+    }
+  ],
+  "gothorita": [
+    {
+      "level": 41,
+      "evolvesTo": "gothitelle",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 41,
+      "evolvesTo": "gothitelle",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 41,
+      "evolvesTo": "gothitelle",
+      "triggerType": "level-up"
+    }
+  ],
+  "solosis": [
+    {
+      "level": 32,
+      "evolvesTo": "duosion",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "duosion",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "duosion",
+      "triggerType": "level-up"
+    }
+  ],
+  "duosion": [
+    {
+      "level": 41,
+      "evolvesTo": "reuniclus",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 41,
+      "evolvesTo": "reuniclus",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 41,
+      "evolvesTo": "reuniclus",
+      "triggerType": "level-up"
+    }
+  ],
+  "ducklett": [
+    {
+      "level": 35,
+      "evolvesTo": "swanna",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "swanna",
+      "triggerType": "level-up"
+    }
+  ],
+  "vanillite": [
+    {
+      "level": 35,
+      "evolvesTo": "vanillish",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "vanillish",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "vanillish",
+      "triggerType": "level-up"
+    }
+  ],
+  "vanillish": [
+    {
+      "level": 47,
+      "evolvesTo": "vanilluxe",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 47,
+      "evolvesTo": "vanilluxe",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 47,
+      "evolvesTo": "vanilluxe",
+      "triggerType": "level-up"
+    }
+  ],
+  "deerling": [
+    {
+      "level": 34,
+      "evolvesTo": "sawsbuck",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "sawsbuck",
+      "triggerType": "level-up"
+    }
+  ],
+  "karrablast": [],
+  "foongus": [
+    {
+      "level": 39,
+      "evolvesTo": "amoonguss",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 39,
+      "evolvesTo": "amoonguss",
+      "triggerType": "level-up"
+    }
+  ],
+  "frillish": [
+    {
+      "level": 40,
+      "evolvesTo": "jellicent",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "jellicent",
+      "triggerType": "level-up"
+    }
+  ],
+  "joltik": [
+    {
+      "level": 36,
+      "evolvesTo": "galvantula",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "galvantula",
+      "triggerType": "level-up"
+    }
+  ],
+  "ferroseed": [
+    {
+      "level": 40,
+      "evolvesTo": "ferrothorn",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "ferrothorn",
+      "triggerType": "level-up"
+    }
+  ],
+  "klink": [
+    {
+      "level": 38,
+      "evolvesTo": "klang",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 38,
+      "evolvesTo": "klang",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 38,
+      "evolvesTo": "klang",
+      "triggerType": "level-up"
+    }
+  ],
+  "klang": [
+    {
+      "level": 49,
+      "evolvesTo": "klinklang",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 49,
+      "evolvesTo": "klinklang",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 49,
+      "evolvesTo": "klinklang",
+      "triggerType": "level-up"
+    }
+  ],
+  "tynamo": [
+    {
+      "level": 39,
+      "evolvesTo": "eelektrik",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 39,
+      "evolvesTo": "eelektrik",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 39,
+      "evolvesTo": "eelektrik",
+      "triggerType": "level-up"
+    }
+  ],
+  "eelektrik": [
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "eelektross",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "eelektross",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "eelektross",
+      "triggerType": "use-item"
+    }
+  ],
+  "elgyem": [
+    {
+      "level": 42,
+      "evolvesTo": "beheeyem",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 42,
+      "evolvesTo": "beheeyem",
+      "triggerType": "level-up"
+    }
+  ],
+  "litwick": [
+    {
+      "level": 41,
+      "evolvesTo": "lampent",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 41,
+      "evolvesTo": "lampent",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 41,
+      "evolvesTo": "lampent",
+      "triggerType": "level-up"
+    }
+  ],
+  "lampent": [
+    {
+      "item": "dusk-stone",
+      "evolvesTo": "chandelure",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "dusk-stone",
+      "evolvesTo": "chandelure",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "dusk-stone",
+      "evolvesTo": "chandelure",
+      "triggerType": "use-item"
+    }
+  ],
+  "axew": [
+    {
+      "level": 38,
+      "evolvesTo": "fraxure",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 38,
+      "evolvesTo": "fraxure",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 38,
+      "evolvesTo": "fraxure",
+      "triggerType": "level-up"
+    }
+  ],
+  "fraxure": [
+    {
+      "level": 48,
+      "evolvesTo": "haxorus",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 48,
+      "evolvesTo": "haxorus",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 48,
+      "evolvesTo": "haxorus",
+      "triggerType": "level-up"
+    }
+  ],
+  "cubchoo": [
+    {
+      "level": 37,
+      "evolvesTo": "beartic",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 37,
+      "evolvesTo": "beartic",
+      "triggerType": "level-up"
+    }
+  ],
+  "shelmet": [],
+  "mienfoo": [
+    {
+      "level": 50,
+      "evolvesTo": "mienshao",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 50,
+      "evolvesTo": "mienshao",
+      "triggerType": "level-up"
+    }
+  ],
+  "golett": [
+    {
+      "level": 43,
+      "evolvesTo": "golurk",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 43,
+      "evolvesTo": "golurk",
+      "triggerType": "level-up"
+    }
+  ],
+  "pawniard": [
+    {
+      "level": 52,
+      "evolvesTo": "bisharp",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 52,
+      "evolvesTo": "bisharp",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 52,
+      "evolvesTo": "bisharp",
+      "triggerType": "level-up"
+    }
+  ],
+  "bisharp": [],
+  "rufflet": [
+    {
+      "level": 54,
+      "evolvesTo": "braviary",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 54,
+      "evolvesTo": "braviary",
+      "triggerType": "level-up"
+    }
+  ],
+  "vullaby": [
+    {
+      "level": 54,
+      "evolvesTo": "mandibuzz",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 54,
+      "evolvesTo": "mandibuzz",
+      "triggerType": "level-up"
+    }
+  ],
+  "deino": [
+    {
+      "level": 50,
+      "evolvesTo": "zweilous",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 50,
+      "evolvesTo": "zweilous",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 50,
+      "evolvesTo": "zweilous",
+      "triggerType": "level-up"
+    }
+  ],
+  "zweilous": [
+    {
+      "level": 64,
+      "evolvesTo": "hydreigon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 64,
+      "evolvesTo": "hydreigon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 64,
+      "evolvesTo": "hydreigon",
+      "triggerType": "level-up"
+    }
+  ],
+  "larvesta": [
+    {
+      "level": 59,
+      "evolvesTo": "volcarona",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 59,
+      "evolvesTo": "volcarona",
+      "triggerType": "level-up"
+    }
+  ],
+  "chespin": [
+    {
+      "level": 16,
+      "evolvesTo": "quilladin",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "quilladin",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "quilladin",
+      "triggerType": "level-up"
+    }
+  ],
+  "quilladin": [
+    {
+      "level": 36,
+      "evolvesTo": "chesnaught",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "chesnaught",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "chesnaught",
+      "triggerType": "level-up"
+    }
+  ],
+  "fennekin": [
+    {
+      "level": 16,
+      "evolvesTo": "braixen",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "braixen",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "braixen",
+      "triggerType": "level-up"
+    }
+  ],
+  "braixen": [
+    {
+      "level": 36,
+      "evolvesTo": "delphox",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "delphox",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "delphox",
+      "triggerType": "level-up"
+    }
+  ],
+  "froakie": [
+    {
+      "level": 16,
+      "evolvesTo": "frogadier",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "frogadier",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "frogadier",
+      "triggerType": "level-up"
+    }
+  ],
+  "frogadier": [
+    {
+      "level": 36,
+      "evolvesTo": "greninja",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "greninja",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "greninja",
+      "triggerType": "level-up"
+    }
+  ],
+  "bunnelby": [
+    {
+      "level": 20,
+      "evolvesTo": "diggersby",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "diggersby",
+      "triggerType": "level-up"
+    }
+  ],
+  "fletchling": [
+    {
+      "level": 17,
+      "evolvesTo": "fletchinder",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 17,
+      "evolvesTo": "fletchinder",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 17,
+      "evolvesTo": "fletchinder",
+      "triggerType": "level-up"
+    }
+  ],
+  "fletchinder": [
+    {
+      "level": 35,
+      "evolvesTo": "talonflame",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "talonflame",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "talonflame",
+      "triggerType": "level-up"
+    }
+  ],
+  "scatterbug": [
+    {
+      "level": 9,
+      "evolvesTo": "spewpa",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 9,
+      "evolvesTo": "spewpa",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 9,
+      "evolvesTo": "spewpa",
+      "triggerType": "level-up"
+    }
+  ],
+  "spewpa": [
+    {
+      "level": 12,
+      "evolvesTo": "vivillon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 12,
+      "evolvesTo": "vivillon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 12,
+      "evolvesTo": "vivillon",
+      "triggerType": "level-up"
+    }
+  ],
+  "litleo": [
+    {
+      "level": 35,
+      "evolvesTo": "pyroar",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "pyroar",
+      "triggerType": "level-up"
+    }
+  ],
+  "flabebe": [
+    {
+      "level": 19,
+      "evolvesTo": "floette",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 19,
+      "evolvesTo": "floette",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 19,
+      "evolvesTo": "floette",
+      "triggerType": "level-up"
+    }
+  ],
+  "floette": [
+    {
+      "item": "shiny-stone",
+      "evolvesTo": "florges",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "shiny-stone",
+      "evolvesTo": "florges",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "shiny-stone",
+      "evolvesTo": "florges",
+      "triggerType": "use-item"
+    }
+  ],
+  "skiddo": [
+    {
+      "level": 32,
+      "evolvesTo": "gogoat",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "gogoat",
+      "triggerType": "level-up"
+    }
+  ],
+  "pancham": [
+    {
+      "level": 32,
+      "evolvesTo": "pangoro",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "pangoro",
+      "triggerType": "level-up"
+    }
+  ],
+  "espurr": [
+    {
+      "level": 25,
+      "evolvesTo": "meowstic",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "meowstic",
+      "triggerType": "level-up"
+    }
+  ],
+  "honedge": [
+    {
+      "level": 35,
+      "evolvesTo": "doublade",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "doublade",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "doublade",
+      "triggerType": "level-up"
+    }
+  ],
+  "doublade": [
+    {
+      "item": "dusk-stone",
+      "evolvesTo": "aegislash",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "dusk-stone",
+      "evolvesTo": "aegislash",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "dusk-stone",
+      "evolvesTo": "aegislash",
+      "triggerType": "use-item"
+    }
+  ],
+  "spritzee": [],
+  "swirlix": [],
+  "inkay": [
+    {
+      "level": 30,
+      "evolvesTo": "malamar",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "malamar",
+      "triggerType": "level-up"
+    }
+  ],
+  "binacle": [
+    {
+      "level": 39,
+      "evolvesTo": "barbaracle",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 39,
+      "evolvesTo": "barbaracle",
+      "triggerType": "level-up"
+    }
+  ],
+  "skrelp": [
+    {
+      "level": 48,
+      "evolvesTo": "dragalge",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 48,
+      "evolvesTo": "dragalge",
+      "triggerType": "level-up"
+    }
+  ],
+  "clauncher": [
+    {
+      "level": 37,
+      "evolvesTo": "clawitzer",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 37,
+      "evolvesTo": "clawitzer",
+      "triggerType": "level-up"
+    }
+  ],
+  "helioptile": [
+    {
+      "item": "sun-stone",
+      "evolvesTo": "heliolisk",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "sun-stone",
+      "evolvesTo": "heliolisk",
+      "triggerType": "use-item"
+    }
+  ],
+  "tyrunt": [
+    {
+      "level": 39,
+      "evolvesTo": "tyrantrum",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 39,
+      "evolvesTo": "tyrantrum",
+      "triggerType": "level-up"
+    }
+  ],
+  "amaura": [
+    {
+      "level": 39,
+      "evolvesTo": "aurorus",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 39,
+      "evolvesTo": "aurorus",
+      "triggerType": "level-up"
+    }
+  ],
+  "goomy": [
+    {
+      "level": 40,
+      "evolvesTo": "sliggoo",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "sliggoo",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "sliggoo",
+      "triggerType": "level-up"
+    }
+  ],
+  "sliggoo": [
+    {
+      "level": 50,
+      "evolvesTo": "goodra",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 50,
+      "evolvesTo": "goodra",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 50,
+      "evolvesTo": "goodra",
+      "triggerType": "level-up"
+    }
+  ],
+  "phantump": [],
+  "pumpkaboo": [],
+  "bergmite": [
+    {
+      "level": 37,
+      "evolvesTo": "avalugg",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 37,
+      "evolvesTo": "avalugg",
+      "triggerType": "level-up"
+    }
+  ],
+  "noibat": [
+    {
+      "level": 48,
+      "evolvesTo": "noivern",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 48,
+      "evolvesTo": "noivern",
+      "triggerType": "level-up"
+    }
+  ],
+  "rowlet": [
+    {
+      "level": 17,
+      "evolvesTo": "dartrix",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 17,
+      "evolvesTo": "dartrix",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 17,
+      "evolvesTo": "dartrix",
+      "triggerType": "level-up"
+    }
+  ],
+  "dartrix": [
+    {
+      "level": 34,
+      "evolvesTo": "decidueye",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "decidueye",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "decidueye",
+      "triggerType": "level-up"
+    }
+  ],
+  "litten": [
+    {
+      "level": 17,
+      "evolvesTo": "torracat",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 17,
+      "evolvesTo": "torracat",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 17,
+      "evolvesTo": "torracat",
+      "triggerType": "level-up"
+    }
+  ],
+  "torracat": [
+    {
+      "level": 34,
+      "evolvesTo": "incineroar",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "incineroar",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "incineroar",
+      "triggerType": "level-up"
+    }
+  ],
+  "popplio": [
+    {
+      "level": 17,
+      "evolvesTo": "brionne",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 17,
+      "evolvesTo": "brionne",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 17,
+      "evolvesTo": "brionne",
+      "triggerType": "level-up"
+    }
+  ],
+  "brionne": [
+    {
+      "level": 34,
+      "evolvesTo": "primarina",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "primarina",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "primarina",
+      "triggerType": "level-up"
+    }
+  ],
+  "pikipek": [
+    {
+      "level": 14,
+      "evolvesTo": "trumbeak",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 14,
+      "evolvesTo": "trumbeak",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 14,
+      "evolvesTo": "trumbeak",
+      "triggerType": "level-up"
+    }
+  ],
+  "trumbeak": [
+    {
+      "level": 28,
+      "evolvesTo": "toucannon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "toucannon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "toucannon",
+      "triggerType": "level-up"
+    }
+  ],
+  "yungoos": [
+    {
+      "level": 20,
+      "evolvesTo": "gumshoos",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "gumshoos",
+      "triggerType": "level-up"
+    }
+  ],
+  "grubbin": [
+    {
+      "level": 20,
+      "evolvesTo": "charjabug",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "charjabug",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "charjabug",
+      "triggerType": "level-up"
+    }
+  ],
+  "charjabug": [],
+  "crabrawler": [],
+  "cutiefly": [
+    {
+      "level": 25,
+      "evolvesTo": "ribombee",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "ribombee",
+      "triggerType": "level-up"
+    }
+  ],
+  "rockruff": [
+    {
+      "level": 25,
+      "evolvesTo": "lycanroc",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "lycanroc",
+      "triggerType": "level-up"
+    }
+  ],
+  "mareanie": [
+    {
+      "level": 38,
+      "evolvesTo": "toxapex",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 38,
+      "evolvesTo": "toxapex",
+      "triggerType": "level-up"
+    }
+  ],
+  "mudbray": [
+    {
+      "level": 30,
+      "evolvesTo": "mudsdale",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "mudsdale",
+      "triggerType": "level-up"
+    }
+  ],
+  "dewpider": [
+    {
+      "level": 22,
+      "evolvesTo": "araquanid",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 22,
+      "evolvesTo": "araquanid",
+      "triggerType": "level-up"
+    }
+  ],
+  "fomantis": [
+    {
+      "level": 34,
+      "evolvesTo": "lurantis",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "lurantis",
+      "triggerType": "level-up"
+    }
+  ],
+  "morelull": [
+    {
+      "level": 24,
+      "evolvesTo": "shiinotic",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 24,
+      "evolvesTo": "shiinotic",
+      "triggerType": "level-up"
+    }
+  ],
+  "salandit": [
+    {
+      "level": 33,
+      "evolvesTo": "salazzle",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 33,
+      "evolvesTo": "salazzle",
+      "triggerType": "level-up"
+    }
+  ],
+  "stufful": [
+    {
+      "level": 27,
+      "evolvesTo": "bewear",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 27,
+      "evolvesTo": "bewear",
+      "triggerType": "level-up"
+    }
+  ],
+  "bounsweet": [
+    {
+      "level": 18,
+      "evolvesTo": "steenee",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "steenee",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "steenee",
+      "triggerType": "level-up"
+    }
+  ],
+  "steenee": [],
+  "wimpod": [
+    {
+      "level": 30,
+      "evolvesTo": "golisopod",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "golisopod",
+      "triggerType": "level-up"
+    }
+  ],
+  "sandygast": [
+    {
+      "level": 42,
+      "evolvesTo": "palossand",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 42,
+      "evolvesTo": "palossand",
+      "triggerType": "level-up"
+    }
+  ],
+  "type-null": [],
+  "jangmo-o": [
+    {
+      "level": 35,
+      "evolvesTo": "hakamo-o",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "hakamo-o",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "hakamo-o",
+      "triggerType": "level-up"
+    }
+  ],
+  "hakamo-o": [
+    {
+      "level": 45,
+      "evolvesTo": "kommo-o",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 45,
+      "evolvesTo": "kommo-o",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 45,
+      "evolvesTo": "kommo-o",
+      "triggerType": "level-up"
+    }
+  ],
+  "cosmog": [
+    {
+      "level": 43,
+      "evolvesTo": "cosmoem",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 43,
+      "evolvesTo": "cosmoem",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 43,
+      "evolvesTo": "cosmoem",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 43,
+      "evolvesTo": "cosmoem",
+      "triggerType": "level-up"
+    }
+  ],
+  "cosmoem": [
+    {
+      "level": 53,
+      "evolvesTo": "solgaleo",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 53,
+      "evolvesTo": "lunala",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 53,
+      "evolvesTo": "solgaleo",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 53,
+      "evolvesTo": "lunala",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 53,
+      "evolvesTo": "solgaleo",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 53,
+      "evolvesTo": "lunala",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 53,
+      "evolvesTo": "solgaleo",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 53,
+      "evolvesTo": "lunala",
+      "triggerType": "level-up"
+    }
+  ],
+  "poipole": [],
+  "grookey": [
+    {
+      "level": 16,
+      "evolvesTo": "thwackey",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "thwackey",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "thwackey",
+      "triggerType": "level-up"
+    }
+  ],
+  "thwackey": [
+    {
+      "level": 35,
+      "evolvesTo": "rillaboom",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "rillaboom",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "rillaboom",
+      "triggerType": "level-up"
+    }
+  ],
+  "scorbunny": [
+    {
+      "level": 16,
+      "evolvesTo": "raboot",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "raboot",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "raboot",
+      "triggerType": "level-up"
+    }
+  ],
+  "raboot": [
+    {
+      "level": 35,
+      "evolvesTo": "cinderace",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "cinderace",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "cinderace",
+      "triggerType": "level-up"
+    }
+  ],
+  "sobble": [
+    {
+      "level": 16,
+      "evolvesTo": "drizzile",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "drizzile",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "drizzile",
+      "triggerType": "level-up"
+    }
+  ],
+  "drizzile": [
+    {
+      "level": 35,
+      "evolvesTo": "inteleon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "inteleon",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "inteleon",
+      "triggerType": "level-up"
+    }
+  ],
+  "skwovet": [
+    {
+      "level": 24,
+      "evolvesTo": "greedent",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 24,
+      "evolvesTo": "greedent",
+      "triggerType": "level-up"
+    }
+  ],
+  "rookidee": [
+    {
+      "level": 18,
+      "evolvesTo": "corvisquire",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "corvisquire",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "corvisquire",
+      "triggerType": "level-up"
+    }
+  ],
+  "corvisquire": [
+    {
+      "level": 38,
+      "evolvesTo": "corviknight",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 38,
+      "evolvesTo": "corviknight",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 38,
+      "evolvesTo": "corviknight",
+      "triggerType": "level-up"
+    }
+  ],
+  "blipbug": [
+    {
+      "level": 10,
+      "evolvesTo": "dottler",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 10,
+      "evolvesTo": "dottler",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 10,
+      "evolvesTo": "dottler",
+      "triggerType": "level-up"
+    }
+  ],
+  "dottler": [
+    {
+      "level": 30,
+      "evolvesTo": "orbeetle",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "orbeetle",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "orbeetle",
+      "triggerType": "level-up"
+    }
+  ],
+  "nickit": [
+    {
+      "level": 18,
+      "evolvesTo": "thievul",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "thievul",
+      "triggerType": "level-up"
+    }
+  ],
+  "gossifleur": [
+    {
+      "level": 20,
+      "evolvesTo": "eldegoss",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 20,
+      "evolvesTo": "eldegoss",
+      "triggerType": "level-up"
+    }
+  ],
+  "wooloo": [
+    {
+      "level": 24,
+      "evolvesTo": "dubwool",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 24,
+      "evolvesTo": "dubwool",
+      "triggerType": "level-up"
+    }
+  ],
+  "chewtle": [
+    {
+      "level": 22,
+      "evolvesTo": "drednaw",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 22,
+      "evolvesTo": "drednaw",
+      "triggerType": "level-up"
+    }
+  ],
+  "yamper": [
+    {
+      "level": 25,
+      "evolvesTo": "boltund",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "boltund",
+      "triggerType": "level-up"
+    }
+  ],
+  "rolycoly": [
+    {
+      "level": 18,
+      "evolvesTo": "carkol",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "carkol",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "carkol",
+      "triggerType": "level-up"
+    }
+  ],
+  "carkol": [
+    {
+      "level": 34,
+      "evolvesTo": "coalossal",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "coalossal",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "coalossal",
+      "triggerType": "level-up"
+    }
+  ],
+  "applin": [
+    {
+      "item": "tart-apple",
+      "evolvesTo": "flapple",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "sweet-apple",
+      "evolvesTo": "appletun",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "tart-apple",
+      "evolvesTo": "flapple",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "sweet-apple",
+      "evolvesTo": "appletun",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "tart-apple",
+      "evolvesTo": "flapple",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "sweet-apple",
+      "evolvesTo": "appletun",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "tart-apple",
+      "evolvesTo": "flapple",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "sweet-apple",
+      "evolvesTo": "appletun",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "tart-apple",
+      "evolvesTo": "flapple",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "sweet-apple",
+      "evolvesTo": "appletun",
+      "triggerType": "use-item"
+    }
+  ],
+  "dipplin": [],
+  "silicobra": [
+    {
+      "level": 36,
+      "evolvesTo": "sandaconda",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "sandaconda",
+      "triggerType": "level-up"
+    }
+  ],
+  "arrokuda": [
+    {
+      "level": 26,
+      "evolvesTo": "barraskewda",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 26,
+      "evolvesTo": "barraskewda",
+      "triggerType": "level-up"
+    }
+  ],
+  "toxel": [
+    {
+      "level": 30,
+      "evolvesTo": "toxtricity",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "toxtricity",
+      "triggerType": "level-up"
+    }
+  ],
+  "sizzlipede": [
+    {
+      "level": 28,
+      "evolvesTo": "centiskorch",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "centiskorch",
+      "triggerType": "level-up"
+    }
+  ],
+  "clobbopus": [],
+  "sinistea": [
+    {
+      "item": "cracked-pot",
+      "evolvesTo": "polteageist",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "cracked-pot",
+      "evolvesTo": "polteageist",
+      "triggerType": "use-item"
+    }
+  ],
+  "hatenna": [
+    {
+      "level": 32,
+      "evolvesTo": "hattrem",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "hattrem",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "hattrem",
+      "triggerType": "level-up"
+    }
+  ],
+  "hattrem": [
+    {
+      "level": 42,
+      "evolvesTo": "hatterene",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 42,
+      "evolvesTo": "hatterene",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 42,
+      "evolvesTo": "hatterene",
+      "triggerType": "level-up"
+    }
+  ],
+  "impidimp": [
+    {
+      "level": 32,
+      "evolvesTo": "morgrem",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "morgrem",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 32,
+      "evolvesTo": "morgrem",
+      "triggerType": "level-up"
+    }
+  ],
+  "morgrem": [
+    {
+      "level": 42,
+      "evolvesTo": "grimmsnarl",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 42,
+      "evolvesTo": "grimmsnarl",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 42,
+      "evolvesTo": "grimmsnarl",
+      "triggerType": "level-up"
+    }
+  ],
+  "milcery": [],
+  "snom": [],
+  "cufant": [
+    {
+      "level": 34,
+      "evolvesTo": "copperajah",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 34,
+      "evolvesTo": "copperajah",
+      "triggerType": "level-up"
+    }
+  ],
+  "duraludon": [],
+  "dreepy": [
+    {
+      "level": 50,
+      "evolvesTo": "drakloak",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 50,
+      "evolvesTo": "drakloak",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 50,
+      "evolvesTo": "drakloak",
+      "triggerType": "level-up"
+    }
+  ],
+  "drakloak": [
+    {
+      "level": 60,
+      "evolvesTo": "dragapult",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 60,
+      "evolvesTo": "dragapult",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 60,
+      "evolvesTo": "dragapult",
+      "triggerType": "level-up"
+    }
+  ],
+  "kubfu": [],
+  "sprigatito": [
+    {
+      "level": 16,
+      "evolvesTo": "floragato",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "floragato",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "floragato",
+      "triggerType": "level-up"
+    }
+  ],
+  "floragato": [
+    {
+      "level": 36,
+      "evolvesTo": "meowscarada",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "meowscarada",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "meowscarada",
+      "triggerType": "level-up"
+    }
+  ],
+  "fuecoco": [
+    {
+      "level": 16,
+      "evolvesTo": "crocalor",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "crocalor",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "crocalor",
+      "triggerType": "level-up"
+    }
+  ],
+  "crocalor": [
+    {
+      "level": 36,
+      "evolvesTo": "skeledirge",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "skeledirge",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "skeledirge",
+      "triggerType": "level-up"
+    }
+  ],
+  "quaxly": [
+    {
+      "level": 16,
+      "evolvesTo": "quaxwell",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "quaxwell",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 16,
+      "evolvesTo": "quaxwell",
+      "triggerType": "level-up"
+    }
+  ],
+  "quaxwell": [
+    {
+      "level": 36,
+      "evolvesTo": "quaquaval",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "quaquaval",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 36,
+      "evolvesTo": "quaquaval",
+      "triggerType": "level-up"
+    }
+  ],
+  "lechonk": [
+    {
+      "level": 18,
+      "evolvesTo": "oinkologne",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "oinkologne",
+      "triggerType": "level-up"
+    }
+  ],
+  "tarountula": [
+    {
+      "level": 15,
+      "evolvesTo": "spidops",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 15,
+      "evolvesTo": "spidops",
+      "triggerType": "level-up"
+    }
+  ],
+  "nymble": [
+    {
+      "level": 24,
+      "evolvesTo": "lokix",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 24,
+      "evolvesTo": "lokix",
+      "triggerType": "level-up"
+    }
+  ],
+  "pawmi": [
+    {
+      "level": 18,
+      "evolvesTo": "pawmo",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "pawmo",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 18,
+      "evolvesTo": "pawmo",
+      "triggerType": "level-up"
+    }
+  ],
+  "pawmo": [],
+  "tandemaus": [],
+  "fidough": [
+    {
+      "level": 26,
+      "evolvesTo": "dachsbun",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 26,
+      "evolvesTo": "dachsbun",
+      "triggerType": "level-up"
+    }
+  ],
+  "smoliv": [
+    {
+      "level": 25,
+      "evolvesTo": "dolliv",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "dolliv",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "dolliv",
+      "triggerType": "level-up"
+    }
+  ],
+  "dolliv": [
+    {
+      "level": 35,
+      "evolvesTo": "arboliva",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "arboliva",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "arboliva",
+      "triggerType": "level-up"
+    }
+  ],
+  "nacli": [
+    {
+      "level": 24,
+      "evolvesTo": "naclstack",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 24,
+      "evolvesTo": "naclstack",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 24,
+      "evolvesTo": "naclstack",
+      "triggerType": "level-up"
+    }
+  ],
+  "naclstack": [
+    {
+      "level": 38,
+      "evolvesTo": "garganacl",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 38,
+      "evolvesTo": "garganacl",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 38,
+      "evolvesTo": "garganacl",
+      "triggerType": "level-up"
+    }
+  ],
+  "charcadet": [
+    {
+      "item": "auspicious-armor",
+      "evolvesTo": "armarouge",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "malicious-armor",
+      "evolvesTo": "ceruledge",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "auspicious-armor",
+      "evolvesTo": "armarouge",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "malicious-armor",
+      "evolvesTo": "ceruledge",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "auspicious-armor",
+      "evolvesTo": "armarouge",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "malicious-armor",
+      "evolvesTo": "ceruledge",
+      "triggerType": "use-item"
+    }
+  ],
+  "tadbulb": [
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "bellibolt",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "thunder-stone",
+      "evolvesTo": "bellibolt",
+      "triggerType": "use-item"
+    }
+  ],
+  "wattrel": [
+    {
+      "level": 25,
+      "evolvesTo": "kilowattrel",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 25,
+      "evolvesTo": "kilowattrel",
+      "triggerType": "level-up"
+    }
+  ],
+  "maschiff": [
+    {
+      "level": 30,
+      "evolvesTo": "mabosstiff",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "mabosstiff",
+      "triggerType": "level-up"
+    }
+  ],
+  "shroodle": [
+    {
+      "level": 28,
+      "evolvesTo": "grafaiai",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 28,
+      "evolvesTo": "grafaiai",
+      "triggerType": "level-up"
+    }
+  ],
+  "bramblin": [],
+  "toedscool": [
+    {
+      "level": 30,
+      "evolvesTo": "toedscruel",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "toedscruel",
+      "triggerType": "level-up"
+    }
+  ],
+  "capsakid": [
+    {
+      "item": "fire-stone",
+      "evolvesTo": "scovillain",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "fire-stone",
+      "evolvesTo": "scovillain",
+      "triggerType": "use-item"
+    }
+  ],
+  "rellor": [],
+  "flittle": [
+    {
+      "level": 35,
+      "evolvesTo": "espathra",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "espathra",
+      "triggerType": "level-up"
+    }
+  ],
+  "tinkatink": [
+    {
+      "level": 24,
+      "evolvesTo": "tinkatuff",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 24,
+      "evolvesTo": "tinkatuff",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 24,
+      "evolvesTo": "tinkatuff",
+      "triggerType": "level-up"
+    }
+  ],
+  "tinkatuff": [
+    {
+      "level": 38,
+      "evolvesTo": "tinkaton",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 38,
+      "evolvesTo": "tinkaton",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 38,
+      "evolvesTo": "tinkaton",
+      "triggerType": "level-up"
+    }
+  ],
+  "wiglett": [
+    {
+      "level": 26,
+      "evolvesTo": "wugtrio",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 26,
+      "evolvesTo": "wugtrio",
+      "triggerType": "level-up"
+    }
+  ],
+  "finizen": [],
+  "varoom": [
+    {
+      "level": 40,
+      "evolvesTo": "revavroom",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 40,
+      "evolvesTo": "revavroom",
+      "triggerType": "level-up"
+    }
+  ],
+  "glimmet": [
+    {
+      "level": 35,
+      "evolvesTo": "glimmora",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "glimmora",
+      "triggerType": "level-up"
+    }
+  ],
+  "greavard": [
+    {
+      "level": 30,
+      "evolvesTo": "houndstone",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 30,
+      "evolvesTo": "houndstone",
+      "triggerType": "level-up"
+    }
+  ],
+  "cetoddle": [
+    {
+      "item": "ice-stone",
+      "evolvesTo": "cetitan",
+      "triggerType": "use-item"
+    },
+    {
+      "item": "ice-stone",
+      "evolvesTo": "cetitan",
+      "triggerType": "use-item"
+    }
+  ],
+  "frigibax": [
+    {
+      "level": 35,
+      "evolvesTo": "arctibax",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "arctibax",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 35,
+      "evolvesTo": "arctibax",
+      "triggerType": "level-up"
+    }
+  ],
+  "arctibax": [
+    {
+      "level": 54,
+      "evolvesTo": "baxcalibur",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 54,
+      "evolvesTo": "baxcalibur",
+      "triggerType": "level-up"
+    },
+    {
+      "level": 54,
+      "evolvesTo": "baxcalibur",
+      "triggerType": "level-up"
+    }
+  ],
+  "gimmighoul": [],
+  "poltchageist": []
+}

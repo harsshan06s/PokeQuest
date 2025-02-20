@@ -8,14 +8,14 @@ const POKEMON_PER_PAGE = 10;
 
 // Define lists of special Pokémon
 const MYTHICAL_POKEMON = [
-    "Victini", "Keldeo", "Meloetta", "Genesect", "Diancie", "Hoopa", "Volcanion", "Mew", 
-    "Celebi", "Jirachi", "Deoxys", "Manaphy", "Phione", "Darkrai", "Shaymin", "Arceus", 
-    "Marshadow", "Magearna", "Keldeo-Resolute", "Meloetta-Pirouette", "Genesect-Chill-Drive", 
-    "Genesect-Burn-Drive", "Genesect-Douse-Drive", "Genesect-Shock-Drive", "Mega-Diancie", 
-    "Hoopa-Unbound", "Shaymin-Sky", "Deoxys-Defense", "Deoxys-Attack", "Deoxys-Speed", 
-    "Magearna-Original", "Arceus-Bug", "Arceus-Dark", "Arceus-Dragon", "Arceus-Electric", 
-    "Arceus-Fighting", "Arceus-Fire", "Arceus-Flying", "Arceus-Ghost", "Arceus-Grass", 
-    "Arceus-Ground", "Arceus-Ice", "Arceus-Poison", "Arceus-Psychic", "Arceus-Rock", 
+    "Victini", "Keldeo", "Meloetta", "Genesect", "Diancie", "Hoopa", "Volcanion", "Mew",
+    "Celebi", "Jirachi", "Deoxys", "Manaphy", "Phione", "Darkrai", "Shaymin", "Arceus",
+    "Marshadow", "Magearna", "Keldeo-Resolute", "Meloetta-Pirouette", "Genesect-Chill-Drive",
+    "Genesect-Burn-Drive", "Genesect-Douse-Drive", "Genesect-Shock-Drive", "Mega-Diancie",
+    "Hoopa-Unbound", "Shaymin-Sky", "Deoxys-Defense", "Deoxys-Attack", "Deoxys-Speed",
+    "Magearna-Original", "Arceus-Bug", "Arceus-Dark", "Arceus-Dragon", "Arceus-Electric",
+    "Arceus-Fighting", "Arceus-Fire", "Arceus-Flying", "Arceus-Ghost", "Arceus-Grass",
+    "Arceus-Ground", "Arceus-Ice", "Arceus-Poison", "Arceus-Psychic", "Arceus-Rock",
     "Arceus-Steel", "Arceus-Water", "Arceus-Fairy"
 ];
 
@@ -41,7 +41,7 @@ const LEGENDARY_POKEMON = [
 ];
 
 const ULTRA_BEASTS = [
-    "Nihilego", "Buzzwole", "Pheromosa", "Xurkitree", "Kartana", "Celesteela", 
+    "Nihilego", "Buzzwole", "Pheromosa", "Xurkitree", "Kartana", "Celesteela",
     "Guzzlord", "Blacephalon", "Stakataka", "Poipole", "Naganadel"
 ];
 
@@ -56,6 +56,11 @@ module.exports = {
         .addStringOption(option =>
             option.setName('type')
                 .setDescription('Filter by Pokémon type')
+                .setChoices(
+                    ...(Object.keys(POKEMON_TYPES).length <= 25
+                        ? Object.keys(POKEMON_TYPES).map(type => ({ name: type.charAt(0).toUpperCase() + type.slice(1), value: type }))
+                        : [])
+                )
                 .setRequired(false))
         .addIntegerOption(option =>
             option.setName('level')
@@ -87,15 +92,13 @@ module.exports = {
                     { name: 'Rare', value: '<:r_:1259114608426487839>' },
                     { name: 'Super Rare', value: '<:SR:1259113778747015233>' },
                     { name: 'Ultra Rare', value: '<:UR:1259113669925539902>' },
-                    {name: 'Legendary Rare', value:'<:LR:1259113497053233162>'}
+                    { name: 'Legendary Rare', value: '<:LR:1259113497053233162>' }
                 )
                 .setRequired(false))
-        .addUserOption(option => 
+        .addUserOption(option =>
             option.setName('user')
                 .setDescription('The user whose collection you want to view')
                 .setRequired(false)),
-
-    
 
     async execute(interaction) {
         const targetUser = interaction.options.getUser('user') || interaction.user;
@@ -116,9 +119,9 @@ module.exports = {
             return interaction.reply(`${userName} doesn't have any Pokémon yet!`);
         }
 
-        let filteredPokemon = userData.pokemon.map((pokemon, index) => ({...pokemon, originalId: index + 1})).filter(pokemon => {
+        let filteredPokemon = userData.pokemon.map((pokemon, index) => ({ ...pokemon, originalId: index + 1 })).filter(pokemon => {
             if (nameFilter && !pokemon.name.toLowerCase().includes(nameFilter.toLowerCase())) return false;
-            if (typeFilter && !pokemon.types.includes(typeFilter.toLowerCase())) return false;
+            if (typeFilter && !pokemon.types.some(type => type.toLowerCase() === typeFilter.toLowerCase())) return false;
             if (levelFilter !== null && pokemon.level !== levelFilter) return false;
             if (megaFilter !== null && pokemon.isMega !== megaFilter) return false;
             if (shinyFilter !== null && pokemon.isShiny !== shinyFilter) return false;
@@ -130,6 +133,7 @@ module.exports = {
             if (rarityFilter && pokemon.rarity !== rarityFilter) return false;
             return true;
         });
+
         function safeToLowerCase(input) {
             if (typeof input === 'string') {
                 return input.toLowerCase();
@@ -160,15 +164,15 @@ module.exports = {
                 const shinyEmoji = pokemon.isShiny ? '✨ ' : '';
                 const megaEmoji = pokemon.isMega ? '🔷 ' : '';
                 const rarity = pokemon.rarity || 'C';
-                
+
                 const types = POKEMON_TYPES[safeToLowerCase(pokemonName)] || pokemon.types || ['Unknown'];
-    
-    embed.addFields({
-        name: `ID: ${boxId} | ${rarity} ${megaEmoji}${pokemonName} ${shinyEmoji}`,
-        value: `Level ${pokemonLevel} | Type: ${types.join(', ')}`,
-        inline: false
-    });
-});
+
+                embed.addFields({
+                    name: `ID: ${boxId} | ${rarity} ${megaEmoji}${pokemonName} ${shinyEmoji}`,
+                    value: `Level ${pokemonLevel} | Type: ${types.join(', ')}`,
+                    inline: false
+                });
+            });
 
             if (pagePokemons.length === 0) {
                 embed.addFields({
@@ -183,7 +187,7 @@ module.exports = {
 
         const generateRow = (currentPage, pages) => {
             const row = new ActionRowBuilder();
-            
+
             if (pages > 1) {
                 row.addComponents(
                     new ButtonBuilder()
@@ -196,7 +200,7 @@ module.exports = {
                         .setStyle(ButtonStyle.Primary)
                 );
             }
-            
+
             return row;
         };
 

@@ -1,29 +1,32 @@
 {
   "id": "798537896201420811",
-  "selectedPokemon": 1,
+  "selectedPokemon": 59,
   "activePokemon": {
-    "name": "Rayquaza-Mega",
+    "name": "Tyrantrum",
     "level": 100,
     "rarity": "<:LR:1259113497053233162>",
-    "isShiny": true,
+    "isShiny": false,
     "moves": [
       "Tackle"
     ],
-    "exp": 0,
+    "exp": 30888.190000000002,
     "catchRate": 100,
     "types": [
-      "Unknown"
+      "Rock",
+      "Dragon"
     ]
   },
-  "money": 9999000001490,
+  "money": 9998852554066,
   "items": {
+    "4": 1497,
     "pokeball": 4,
     "greatball": 0,
     "ultraball": 0,
-    "masterball": 9997,
-    "rarecandy": 0
+    "masterball": 9977,
+    "rarecandy": 0,
+    "raidball": 12
   },
-  "lastWildEncounter": 1731337902785,
+  "lastWildEncounter": 1739714618728,
   "caughtPokemon": {
     "samurott": {
       "isShiny": false
@@ -32,6 +35,75 @@
       "isShiny": false
     },
     "feraligatr": {
+      "isShiny": false
+    },
+    "bewear": {
+      "isShiny": false
+    },
+    "lillipup": {
+      "isShiny": false
+    },
+    "metapod": {
+      "isShiny": false
+    },
+    "torchic": {
+      "isShiny": false
+    },
+    "flareon": {
+      "isShiny": false
+    },
+    "delcatty": {
+      "isShiny": false
+    },
+    "fraxure": {
+      "isShiny": false
+    },
+    "numel": {
+      "isShiny": false
+    },
+    "meowstic": {
+      "isShiny": false
+    },
+    "xatu": {
+      "isShiny": false
+    },
+    "kleavor": {
+      "isShiny": false
+    },
+    "bunnelby": {
+      "isShiny": false
+    },
+    "golisopod": {
+      "isShiny": false
+    },
+    "sudowoodo": {
+      "isShiny": false
+    },
+    "electrike": {
+      "isShiny": false
+    },
+    "pawmot": {
+      "isShiny": false
+    },
+    "floette": {
+      "isShiny": false
+    },
+    "swirlix": {
+      "isShiny": false
+    },
+    "claydol": {
+      "isShiny": false
+    },
+    "sentret": {
+      "isShiny": false
+    },
+    "ekans": {
+      "isShiny": false
+    },
+    "electrode": {
+      "isShiny": false
+    },
+    "vileplume": {
       "isShiny": false
     }
   }

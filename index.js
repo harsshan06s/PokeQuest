@@ -118,6 +118,7 @@ try {
 client.once('ready', async () => {
   console.log('Bot is ready!');
   await helpers.loadPokemonLists();
+  await helpers.loadPokemonLists1()
   // ... other startup code ...
 });
 
